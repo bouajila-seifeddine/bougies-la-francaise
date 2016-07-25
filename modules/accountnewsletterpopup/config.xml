@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>accountnewsletterpopup</name>
+            <displayName><![CDATA[Account Newsletter Popup]]></displayName>
+            <version><![CDATA[1.0.0]]></version>
+            <description><![CDATA[Affiche une popup pour souscrire &agrave; la newsletter lorsque le client a oubli&eacute;]]></description>
+            <author><![CDATA[Vupar]]></author>
+            <tab><![CDATA[others]]></tab>
+	<confirmUninstall>Êtes vous sur de vouloir désinstaller Account Newsletter Popup</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+        </module>

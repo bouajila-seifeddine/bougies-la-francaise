@@ -1,0 +1,1 @@
+// JavaScript Documentfunction addslashes (str) { return (str + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');}function isNumber(fData){  var reg = new RegExp("^[-]?[0-9]+[\.]?[0-9]+$");  return reg.test(fData);}

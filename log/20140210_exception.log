@@ -1,0 +1,22 @@
+*ERROR* 	2014/02/10 - 11:25:35: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '))
+            ORDER BY `level_depth` ASC, cs.`position` ASC' at line 8<br /><br /><pre>
+            SELECT DISTINCT c.id_parent, c.id_category, cl.name, cl.description, cl.link_rewrite
+            FROM `ps_category` c
+            INNER JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category` AND cl.`id_lang` = 1 AND cl.id_shop = 1 )
+            INNER JOIN `ps_category_shop` cs ON (cs.`id_category` = c.`id_category` AND cs.`id_shop` = 1)
+            WHERE (c.`active` = 1 OR c.`id_category` = 2)
+            AND c.`id_category` != 1
+            
+            AND c.id_category IN (SELECT id_category FROM `ps_category_group` WHERE `id_group` IN ())
+            ORDER BY `level_depth` ASC, cs.`position` ASC</pre> at line 613 in file classes/db/Db.php
+*ERROR* 	2014/02/10 - 11:25:59: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '))
+            ORDER BY `level_depth` ASC, cs.`position` ASC' at line 8<br /><br /><pre>
+            SELECT DISTINCT c.id_parent, c.id_category, cl.name, cl.description, cl.link_rewrite
+            FROM `ps_category` c
+            INNER JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category` AND cl.`id_lang` = 1 AND cl.id_shop = 1 )
+            INNER JOIN `ps_category_shop` cs ON (cs.`id_category` = c.`id_category` AND cs.`id_shop` = 1)
+            WHERE (c.`active` = 1 OR c.`id_category` = 2)
+            AND c.`id_category` != 1
+             AND `level_depth` <= 3
+            AND c.id_category IN (SELECT id_category FROM `ps_category_group` WHERE `id_group` IN ())
+            ORDER BY `level_depth` ASC, cs.`position` ASC</pre> at line 613 in file classes/db/Db.php

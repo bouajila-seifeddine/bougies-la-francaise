@@ -1,0 +1,108 @@
+/*
+ * 2007-2016 PrestaShop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ *  @author PrestaShop SA <contact@prestashop.com>
+ *  @author Quadra Informatique <modules@quadra-informatique.fr>
+ *  @copyright  2007-2016 PrestaShop SA / 1997-2014 Quadra Informatique
+ *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ *  International Registered Trademark & Property of PrestaShop SA
+ */
+
+2.9.23 :
+- "SoColissimo Simplicité" is now "Colissimo Simplicité"
+
+2.9.22 :
+- Delete field overcost in back office setting, it will not be used anymore by Laposte from october 2015.
+- fix belgium phone number format
+- fix cart rule for prestashop 1.6
+
+2.9.21 :
+- fix for redirect in fancybox mode
+- fix install for multishop
+- change api url to automatic settings for ssl if needed
+ 
+2.9.20 :
+- Bug fix for calling API La poste in SSL for prestashop  1.5 and >
+ 
+2.9.19 :
+- Add 3 new fields in table deliveries_info : lotacheminement, distributionsort, versionplantri
+
+2.9.16 :
+- Force SSL when SSL on all pages is actived
+- Enabled field TTC on translation
+- Minor visual improvement in back office order in 1.6
+
+2.9.15 :
+- Switch ceaddress4 to ceaddress2 in validation.php for printing
+- Adding check validatity siret number
+
+2.9.14 :
+- Siret number is now mandatory for new user
+- For old user siret number will be asked
+- encoding detection fixed on validation.php
+
+2.9.13 :
+- Fix bug gift and gif message on fancy box mode
+- Fix bug on trader compnay name encoding
+- adding at least one phone number on table socolissimo delivery
+
+2.9.12 :
+- Fix bug free cost for CC carrier
+- Fix bug redirection to api mobile
+
+2.9.8 :
+- Fix message notice with range on module page
+- Fix message error during checking step when tradename company have accentued char
+ 
+Socolissimo 2.9.6 :
+- Some Coding standard prestashop
+- Fix bug OPC 1.6 themes
+
+Socolissimo
+2.8.5 :
+
+- Add new Carrier for Seller Cost
+- This carrier is configurable like normal Carrier to allow price/weight bracket
+- It will be use in place of socolissimo if seller relay point is selected
+- It wont appeare in front office, and we recommanded to desactived it once configurated
+
+- seller cost in back office deleted, replaced by activation/desactivation seller cost carrier
+- Overcost for belgium now setting in HT , the amount in TTC visible for information.
+- bug fix rounded amount in front Office
+- bug fix delivery in belgium in post office
+- Improvement relay point shipping address: the customer name, fisrtname now appears in address before name of relay point.
+
+
+2.8 :
+
+- API socolissimo 4.0
+- Add seller unique cost for seller delivery
+- Add delivery in Belgium
+- Add so mobile device for smartphone(use API 3.0)
+- New Params in Back office
+- Fix various from previous versions :
+    - Gift message now working
+    - OPC now working for both 1.4 and 1.5
+- Note : OPC mobile theme 1.5 not available yet , will be soon.
+
+2.3 :
+
+- Add Backward compatibility to use the module on 1.4 / 1.5 PrestaShop version.
+	(OPC and 5 steps process works)
+

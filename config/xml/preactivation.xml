@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<partners>
+<partner>
+	<name><![CDATA[yousticeresolutionsystem3]]></name>
+	<module>yousticeresolutionsystem</module>
+	<checkconfiguration>
+		<key>NO_CHECK_REQUIRED_YET</key>
+	</checkconfiguration>
+	<logo><![CDATA[https://api.prestashop.com/partner/premium/images/yousticeresolutionsystem.png]]></logo>
+	<labels>
+		<label iso="en"><![CDATA[Resolve customer disputes in accordance with the new European legislation]]></label>
+		<label iso="fr"><![CDATA[Réglez les litiges clients en conformité avec la nouvelle législation européenne]]></label>
+	</labels>
+	<optionals>
+	</optionals>
+	<descriptions>
+	</descriptions>
+</partner>
+<partner>
+	<name><![CDATA[trustedshops]]></name>
+	<module>trustedshops</module>
+	<checkconfiguration>
+		<key>NO_CHECK_REQUIRED_YET</key>
+	</checkconfiguration>
+	<logo><![CDATA[https://api.prestashop.com/partner/premium/images/trustedshops.png]]></logo>
+	<labels>
+		<label iso="en"><![CDATA[People care about reviews. Use them to transform visitors into loyal customers]]></label>
+		<label iso="fr"><![CDATA[Les avis sont importants. Utilisez les pour transformer vos visiteurs en clients fidèles ]]></label>
+		<label iso="de"><![CDATA[Kunden schätzen Bewertungen. Nutzen Sie dies um aus Besuchern Stammkunden zu machen]]></label>
+		<label iso="se"><![CDATA[Kundomdömena är mycket viktiga. Använd dem för att förvandla dina besökare till trogna kunder]]></label>
+	</labels>
+	<optionals>
+	</optionals>
+	<descriptions>
+	</descriptions>
+</partner>
+</partners>

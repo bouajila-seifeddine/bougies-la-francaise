@@ -1,0 +1,1 @@
+$(function(){"undefined"==typeof homeslider_speed&&(homeslider_speed=500),"undefined"==typeof homeslider_pause&&(homeslider_pause=3e3),"undefined"==typeof homeslider_loop&&(homeslider_loop=!0),$("#homeslider").bxSlider({infiniteLoop:homeslider_loop,hideControlOnEnd:!0,pager:!0,autoHover:!0,auto:homeslider_loop,speed:homeslider_speed,pause:homeslider_pause,controls:!1})});

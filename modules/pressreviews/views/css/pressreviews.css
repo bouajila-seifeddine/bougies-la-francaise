@@ -1,0 +1,43 @@
+#intro_text {
+	margin: 10px 0 15px 0;
+}
+
+ul#reviews {
+	float: left; 
+	list-style: none; 
+	margin: 0 auto; 
+	padding: 0; 
+	width: 757px; 
+	overflow: hidden;
+}
+
+ul#reviews li.review {
+	height: 250px;
+	float: left; 
+	margin: 0 25px 30px 0;
+	text-align: center;
+}
+
+ul#reviews li.review p.title {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+ul#reviews li.review span.date {
+	color: #999;
+}
+
+ul#reviews li.review a.rev_img,
+ul#reviews li.review a.rev_link {
+	float: left;
+}
+
+ul#reviews li.review a.rev_img span.thumb_img {
+	float: left; 
+	text-align: center; 
+}
+
+ul#reviews li.review span.span_txt {
+	font: normal 11px/14px Verdana, Arial, sans-serif;
+}
