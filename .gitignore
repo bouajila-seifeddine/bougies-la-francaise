@@ -1,5 +1,5 @@
-/config/setting.inc.php
-/cache/smarty/compile/*
-/cache/smarty/cache/*
-.htaccess
-/themes/blf/cache/*
+#/config/setting.inc.php
+#/cache/smarty/compile/*
+#/cache/smarty/cache/*
+#.htaccess
+#/themes/blf/cache/*
