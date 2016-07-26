@@ -4596,7 +4596,7 @@
         <api>https://wsdl.lengow.com/wsdl/fyndiq/#ID_FLUX#/#ORDER_ID#/#ACTION#.xml</api>
         <states>
             <state name="new">
-                <lengow>new</lengow>
+                <lengow>processing</lengow>
                 <actions>
                     <action type="shipped">ship</action>
                 </actions>
