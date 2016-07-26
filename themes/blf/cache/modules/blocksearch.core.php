@@ -122,7 +122,7 @@ public function hookDisplayMobileHeader($params)
 			'search_ssl' =>		Tools::usingSecureMode(),
 			'ajaxsearch' =>		Configuration::get('PS_SEARCH_AJAX'),
 			'instantsearch' =>	Configuration::get('PS_INSTANT_SEARCH'),
-			'self' =>			'/home/bougies-la-francaise/public_html/modules/blocksearch',
+			'self' =>			'/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/blocksearch',
 		));
 
 		return true;

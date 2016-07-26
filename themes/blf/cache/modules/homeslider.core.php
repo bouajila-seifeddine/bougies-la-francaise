@@ -580,7 +580,7 @@ class HomeSliderModule extends Module
 						$errors[] = $error;
 					elseif (!$temp_name || !move_uploaded_file($_FILES['image_'.$language['id_lang']]['tmp_name'], $temp_name))
 						return false;
-					elseif (!ImageManager::resize($temp_name, '/home/bougies-la-francaise/public_html/modules/homeslider'.'/images/'.Tools::encrypt($_FILES['image_'.$language['id_lang']]['name'].$salt).'.'.$type, null, null, $type))
+					elseif (!ImageManager::resize($temp_name, '/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/homeslider'.'/images/'.Tools::encrypt($_FILES['image_'.$language['id_lang']]['name'].$salt).'.'.$type, null, null, $type))
 						$errors[] = $this->displayError($this->l('An error occurred during the image upload process.'));
 					if (isset($temp_name))
 						@unlink($temp_name);

@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
-require ('/home/bougies-la-francaise/public_html/modules/blocktopmenu'.'/menutoplinks.class.php');
+require ('/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/blocktopmenu'.'/menutoplinks.class.php');
 
 class BlocktopmenuModule extends Module
 {

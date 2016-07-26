@@ -3,7 +3,7 @@
 if (!defined('_PS_VERSION_'))
   exit;
 //test here
-include('/home/bougies-la-francaise/public_html/modules/nq_360' . "/config/config.php");
+include('/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/nq_360' . "/config/config.php");
 class NQ_360Module extends Module
 {
     protected $gateway = NULL;
@@ -208,7 +208,7 @@ class NQ_360Module extends Module
             return;
         }
         $id_360 = Scancube360::getId360($id_product);
-        list($width, $height) = getimagesize('/home/bougies-la-francaise/public_html/modules/nq_360' . "/img_360/" . $t_img[0]);
+        list($width, $height) = getimagesize('/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/nq_360' . "/img_360/" . $t_img[0]);
         $presta_dir = __PS_BASE_URI__;
         if ($presta_dir[strlen($presta_dir) - 1] == '/')
         {
@@ -275,8 +275,8 @@ class NQ_360Module extends Module
         if (is_array($t_img) && count($t_img) > 1)
          {
                 $img0 = substr($t_img[1], 0, -8);
-                list($width, $height) = getimagesize('/home/bougies-la-francaise/public_html/modules/nq_360' . "/img_360/" . $t_img[0]);
-                list($Hdwidth, $Hdheight) = getimagesize('/home/bougies-la-francaise/public_html/modules/nq_360' . "/img_360/" . "hd-" . $t_img[1]);
+                list($width, $height) = getimagesize('/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/nq_360' . "/img_360/" . $t_img[0]);
+                list($Hdwidth, $Hdheight) = getimagesize('/home/bougies-la-francaise/domains/preprod.bougies-la-francaise.com/public_html/modules/nq_360' . "/img_360/" . "hd-" . $t_img[1]);
 		
 		$_PS_VERSION_ = _PS_VERSION_ ;
 		 $jzs .= "<script>

@@ -5,7 +5,7 @@
 // define('_DB_PASSWD_', 'Yt+2$D4e#zs5');
 
 define('_DB_SERVER_', 'localhost');
-define('_DB_NAME_', 'bougies_la_francaise');
+define('_DB_NAME_', 'preprod');
 define('_DB_USER_', 'root');
 define('_DB_PASSWD_', 'a8GReg1VXxqw');
 

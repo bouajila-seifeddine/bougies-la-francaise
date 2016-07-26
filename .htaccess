@@ -7,8 +7,8 @@ RewriteCond %{QUERY_STRING} !^controller=products-comparison [NC]
 RewriteRule ^pro/([a-z]{2})?/?s/([0-9]+)/([a-zA-Z0-9/_-]*) index.php?fc=module&module=pm_advancedsearch4&controller=advancedsearch4&isolang=$1&id_seo=$2&seo_url=$3 [QSA,L]
 </IfModule>
 #END AS4 RULES
-RewriteCond %{HTTP_HOST} !^www\. 
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^www\. 
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 Redirect 301 /plan-du-site.php http://www.bougies-la-francaise.com/plan-du-site
 Redirect 301 /flipbook/interfaceFiltres.swf http://www.bougies-la-francaise.com/revue-de-presse
