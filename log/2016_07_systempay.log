@@ -7111,3 +7111,165 @@
 *WARNING* 	2016/07/25 - 17:35:21: Cart is empty, redirect to home page. Cart ID: .
 *INFO* 	2016/07/25 - 17:35:21: User return to shop process starts for cart #.
 *WARNING* 	2016/07/25 - 17:35:21: Cart is empty, redirect to home page. Cart ID: .
+*INFO* 	2016/07/25 - 18:41:26: Form data generation for cart #14769 with standard payment.
+*INFO* 	2016/07/25 - 18:41:26: Data to be sent to payment platform : Array
+(
+    [signature] => f3791bc87d134b982111553552a8cd367284cf50
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5740
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 8 rue Henri Brisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => claire-g@neuf.fr
+    [vads_cust_id] => 4567
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => Le Mans
+    [vads_cust_zip] => 72000
+    [vads_language] => fr
+    [vads_order_id] => 14769
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 8 rue Henri Brisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Le Mans
+    [vads_ship_to_zip] => 72000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160725164126
+    [vads_trans_id] => 672863
+    [vads_url_return] => https://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => Manfred Ou Claire 
+    [vads_cust_last_name] => Gaudois
+    [vads_ship_to_first_name] => Manfred Ou Claire
+    [vads_ship_to_last_name] => Gaudois
+)
+
+*INFO* 	2016/07/25 - 18:42:08: Server call process starts for cart #14769.
+*INFO* 	2016/07/25 - 18:42:08: Payment accepted for cart #14769. New order status is 2.
+*INFO* 	2016/07/25 - 18:42:08: Create order for cart #14769.
+*INFO* 	2016/07/25 - 18:42:12: Order #4682 created successfully for cart #14769.
+*INFO* 	2016/07/25 - 18:42:12: Save payment information for cart #14769.
+*INFO* 	2016/07/25 - 18:42:12: Payment information with ID(s) 8828 saved successfully for cart #14769.
+*INFO* 	2016/07/25 - 18:42:13: User return to shop process starts for cart #14769.
+*INFO* 	2016/07/25 - 18:42:13: Order already registered for cart #14769.
+*INFO* 	2016/07/25 - 18:42:13: Payment success confirmed for cart #14769. Just redirect to success page.
+*INFO* 	2016/07/25 - 19:39:40: Form data generation for cart #14770 with standard payment.
+*INFO* 	2016/07/25 - 19:39:40: Data to be sent to payment platform : Array
+(
+    [signature] => efd46b489450cda47648c69b56fc5b4110ad65f0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 11450
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => LE CLOS DU MANOIR Prolongement rue de la Mairie
+    [vads_cust_country] => FR
+    [vads_cust_email] => contact@closdumanoir.fr
+    [vads_cust_id] => 4568
+    [vads_cust_phone] => +332 32 24 26 04
+    [vads_cust_title] => Mme
+    [vads_cust_city] => GAUCIEL
+    [vads_cust_zip] => 27930
+    [vads_language] => fr
+    [vads_order_id] => 14770
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => LE CLOS DU MANOIR
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GAUCIEL
+    [vads_ship_to_zip] => 27930
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160725173940
+    [vads_trans_id] => 707806
+    [vads_url_return] => https://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => Anne
+    [vads_cust_last_name] => MANSOURET
+    [vads_ship_to_first_name] => Anne
+    [vads_ship_to_last_name] => MANSOURET
+)
+
+*INFO* 	2016/07/25 - 19:40:58: Server call process starts for cart #14770.
+*INFO* 	2016/07/25 - 19:40:58: Payment accepted for cart #14770. New order status is 2.
+*INFO* 	2016/07/25 - 19:40:58: Create order for cart #14770.
+*INFO* 	2016/07/25 - 19:41:01: Order #4683 created successfully for cart #14770.
+*INFO* 	2016/07/25 - 19:41:01: Save payment information for cart #14770.
+*INFO* 	2016/07/25 - 19:41:01: Payment information with ID(s) 8830 saved successfully for cart #14770.
+*INFO* 	2016/07/25 - 19:41:05: User return to shop process starts for cart #14770.
+*INFO* 	2016/07/25 - 19:41:05: Order already registered for cart #14770.
+*INFO* 	2016/07/25 - 19:41:05: Payment success confirmed for cart #14770. Just redirect to success page.
+*INFO* 	2016/07/25 - 22:12:44: Form data generation for cart #14742 with standard payment.
+*INFO* 	2016/07/25 - 22:12:44: Data to be sent to payment platform : Array
+(
+    [signature] => ce4124705fe663d9394ab6e10abc63fcff6c10a0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 39060
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 20 place de la liberté 
+    [vads_cust_country] => FR
+    [vads_cust_email] => celine_mp@yahoo.fr
+    [vads_cust_id] => 4569
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Castelnaudary
+    [vads_cust_zip] => 11400
+    [vads_language] => fr
+    [vads_order_id] => 14742
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 20 place de la liberte
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Castelnaudary
+    [vads_ship_to_zip] => 11400
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160725201244
+    [vads_trans_id] => 799642
+    [vads_url_return] => https://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => Céline
+    [vads_cust_last_name] => Candelle
+    [vads_ship_to_first_name] => Celine
+    [vads_ship_to_last_name] => Candelle
+)
+
+*INFO* 	2016/07/25 - 22:13:44: Server call process starts for cart #14742.
+*INFO* 	2016/07/25 - 22:13:44: Payment accepted for cart #14742. New order status is 2.
+*INFO* 	2016/07/25 - 22:13:44: Create order for cart #14742.
+*INFO* 	2016/07/25 - 22:13:53: Order #4684 created successfully for cart #14742.
+*INFO* 	2016/07/25 - 22:13:53: Save payment information for cart #14742.
+*INFO* 	2016/07/25 - 22:13:53: Payment information with ID(s) 8832 saved successfully for cart #14742.
+*INFO* 	2016/07/25 - 22:13:54: User return to shop process starts for cart #14742.
+*INFO* 	2016/07/25 - 22:13:54: Order already registered for cart #14742.
+*INFO* 	2016/07/25 - 22:13:54: Payment success confirmed for cart #14742. Just redirect to success page.

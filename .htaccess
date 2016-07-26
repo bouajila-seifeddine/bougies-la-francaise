@@ -1,0 +1,300 @@
+#START AS4 RULES (Do not remove)
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{QUERY_STRING} !^controller=products-comparison [NC]
+RewriteRule ^([a-z]{2})?/?s/([0-9]+)/([a-zA-Z0-9/_-]*) index.php?fc=module&module=pm_advancedsearch4&controller=advancedsearch4&isolang=$1&id_seo=$2&seo_url=$3 [QSA,L]
+RewriteCond %{QUERY_STRING} !^controller=products-comparison [NC]
+RewriteRule ^pro/([a-z]{2})?/?s/([0-9]+)/([a-zA-Z0-9/_-]*) index.php?fc=module&module=pm_advancedsearch4&controller=advancedsearch4&isolang=$1&id_seo=$2&seo_url=$3 [QSA,L]
+</IfModule>
+#END AS4 RULES
+RewriteCond %{HTTP_HOST} !^www\. 
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+Redirect 301 /plan-du-site.php http://www.bougies-la-francaise.com/plan-du-site
+Redirect 301 /flipbook/interfaceFiltres.swf http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /flipbook/interfaceFiltres_uk.swf http://www.bougies-la-francaise.pro/flipbook/interfaceFiltres_uk.swf
+Redirect 301 /flipbook/blf_uk.xml http://www.bougies-la-francaise.pro/flipbook/blf_uk.xml
+Redirect 301 /fr/travail-a-facon/production-qualite.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/bougies-de-massage.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/references.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/offres-produits.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/nous-rencontrer.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/nos-prestations.php http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/travail-a-facon/ http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/savoir-faire/production.php http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/savoir-faire/parfums.php http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/savoir-faire/laboratoire.php http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/savoir-faire/environnement.php http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/savoir-faire/ http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/savoir-bougies/ http://www.bougies-la-francaise.com/content/8-tout-savoir-sur-les-bougies
+Redirect 301 /fr/revue-de-presse/index.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/points-vente/resultats-points-vente.php http://www.bougies-la-francaise.com/magasins
+Redirect 301 /fr/points-vente/ http://www.bougies-la-francaise.com/magasins
+Redirect 301 /fr/mentions-legales/ http://www.bougies-la-francaise.com/content/2-mentions-legales
+Redirect 301 /fr/liens-partenaires/ http://www.bougies-la-francaise.pro/fr/liens-partenaires/
+Redirect 301 /fr/entreprise/historique.php http://www.bougies-la-francaise.com/content/6-l-entreprise
+Redirect 301 /fr/entreprise/ http://www.bougies-la-francaise.com/content/6-l-entreprise
+Redirect 301 /fr/contact/ http://www.bougies-la-francaise.com/contactez-nous
+Redirect 301 /fr/collections/vitaminee.php http://www.bougies-la-francaise.com/65-bougies-couleurs
+Redirect 301 /fr/collections/urbain.php http://www.bougies-la-francaise.com/14-elegance
+Redirect 301 /fr/collections/printemps-ete.php http://www.bougies-la-francaise.com/
+Redirect 301 /fr/collections/printemps-ete-2014_2.php http://www.bougies-la-francaise.com/
+Redirect 301 /fr/collections/printemps-ete-2014_1.php http://www.bougies-la-francaise.com/
+Redirect 301 /fr/collections/parfumees.php http://www.bougies-la-francaise.com/41-bougies-parfumees
+Redirect 301 /fr/collections/noel.php http://www.bougies-la-francaise.com/78-toute-la-collection
+Redirect 301 /fr/collections/classique.php http://www.bougies-la-francaise.com/11-charme
+Redirect 301 /fr/collections/automne-2013_6.php http://www.bougies-la-francaise.com/80-noel-gourmand
+Redirect 301 /fr/collections/automne-2013_5.php http://www.bougies-la-francaise.com/82-parfums-d-hiver
+Redirect 301 /fr/collections/automne-2013_4.php http://www.bougies-la-francaise.com/content/45-noelscandinave
+Redirect 301 /fr/collections/automne-2013_3.php http://www.bougies-la-francaise.com/82-parfums-d-hiver
+Redirect 301 /fr/collections/automne-2013_2.php http://www.bougies-la-francaise.com/content/45-noelscandinave
+Redirect 301 /fr/collections/automne-2013_1.php http://www.bougies-la-francaise.com/content/45-noelscandinave
+Redirect 301 /fr/collections/ http://www.bougies-la-francaise.com
+Redirect 301 /fr/blf-bougie-video.php http://www.bougies-la-francaise.com/content/25-videos
+Redirect 301 /fr/agenda-salons/ http://www.bougies-la-francaise.pro/fr/agenda-salons/
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_tendance_65.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_support_bougie_37.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_style_shabby_kitsch_7.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_selection_83.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_scenographie_avec_des__bougies_43.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_quand_la_maille_inspire_la_deco_111.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_photophore_metal_et_verre_11.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_photophore_39.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_lumineuse_bougie_relief_lainage_101.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_lueur_des_bougies_13.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_les_bougies_stella_cadente_17.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_cristaux_et_bougies_103.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_coffret_musical_et_bougie_senteur_barbe_a_papa_55.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_cloche_avec_pampilles_59.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_theme_cirque_79.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_pommes_de_pin_rondelles_de_bois_81.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_parfumees_petit-beurre_et_speculos_91.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_parfumees_dans_un_gobelet_en_verre_rouge_87.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_parfumees_a_la_gaufre_5.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_et_bougeoirs_4.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_effets_biscuit_et_lainage_47.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_decoratives_21.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_23.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/bougies_la_francaise_bougie_scrulptee_tete_de_cheval_71.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_parfumee_tasse_ceramique_69.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_parfumee_lin_et_dentelle_1.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_la_vache_et_sa_marguerite_107.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_etoile_99.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_cloche_en_verre_93.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_buste_67.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougeoirs_blanc_rose_9.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_verre_serigraphie_rouge_90.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_une_tour_de_lumiere_72.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_The_little_fabric_3.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_style_decors_de_fete_74.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_photophores_et_bougies_14.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_photophore_en_verre_110.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_photophore_76.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_noel_au_naturel_64.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_lumiere_des_bougies_108.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_lumiere_d_hiver_62.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_lueur_des_cierges_80.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_idees_cadeaux_84.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_decor_bougies_charme_slave_82.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_cuisine_actuelle_6.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_conte_de_noel_bougie_lapin_98.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_stylisees_objets_de_decorations_44.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_rennes_et_trophee_26.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_plantes_grasses_sur_base_ceramique_34.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_parfumees_bebe_calin_68.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_parfumees_24.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_ours_polaires_104.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_et_bougeoirs_12.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_en_sapins_et_pommes_de_pin_52.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_ecureuil_10.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_boules_ciselees_vert-bleu_prune_et_orange_106.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_20.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougie_scrulptee_effet_maille_54.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougie_parfumee_dans_son_coffret_de_verre_60.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougie_oeuf_scrulpte_58.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougeoirs_en_verres_objets_decoratifs_bougies_88.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougeoir_tasse_en_ceramique_peinte_92.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /uk/savoir-bougies/images/ http://www.bougies-la-francaise.pro/uk/savoir-bougies/images/
+Redirect 301 /uk/entreprise/historique.php http://www.bougies-la-francaise.pro/uk/entreprise/historique.php
+Redirect 301 /uk/collections/urbain.php http://www.bougies-la-francaise.pro/uk/collections/urbain.php
+Redirect 301 /uk/collections/printemps-ete-2014_2.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2014_2.php
+Redirect 301 /uk/collections/printemps-ete-2014_1.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2014_1.php
+Redirect 301 /uk/collections/printemps-ete-2012_5.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2012_5.php
+Redirect 301 /uk/collections/printemps-ete-2012_4.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2012_4.php
+Redirect 301 /uk/collections/printemps-ete-2012_3.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2012_3.php
+Redirect 301 /uk/collections/printemps-ete-2012_2.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2012_2.php
+Redirect 301 /uk/collections/printemps-ete-2012_1.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete-2012_1.php
+Redirect 301 /uk/collections/printemps-2011_7.php http://www.bougies-la-francaise.pro/uk/collections/printemps-2011_7.php
+Redirect 301 /uk/collections/printemps-2011_4.php http://www.bougies-la-francaise.pro/uk/collections/printemps-2011_4.php
+Redirect 301 /uk/collections/printemps-2011_3.php http://www.bougies-la-francaise.pro/uk/collections/printemps-2011_3.php
+Redirect 301 /uk/collections/printemps-2011_2.php http://www.bougies-la-francaise.pro/uk/collections/printemps-2011_2.php
+Redirect 301 /uk/collections/printemps-2011_1.php http://www.bougies-la-francaise.pro/uk/collections/printemps-2011_1.php
+Redirect 301 /uk/collections/parfumees.php http://www.bougies-la-francaise.pro/uk/collections/parfumees.php
+Redirect 301 /uk/collections/noel.php http://www.bougies-la-francaise.pro/uk/collections/noel.php
+Redirect 301 /uk/collections/classique.php http://www.bougies-la-francaise.pro/uk/collections/classique.php
+Redirect 301 /uk/collections/automne-2013_1.php http://www.bougies-la-francaise.pro/uk/collections/automne-2013_1.php
+Redirect 301 /uk/collections/automne-2011_5.php http://www.bougies-la-francaise.pro/uk/collections/automne-2011_5.php
+Redirect 301 /uk/collections/automne-2011_3.php http://www.bougies-la-francaise.pro/uk/collections/automne-2011_3.php
+Redirect 301 /uk/collections/automne-2011_2.php http://www.bougies-la-francaise.pro/uk/collections/automne-2011_2.php
+Redirect 301 /uk/collections/automne-2011_1.php http://www.bougies-la-francaise.pro/uk/collections/automne-2011_1.php
+Redirect 301 /uk/savoir-faire/production.php http://www.bougies-la-francaise.pro/uk/savoir-faire/production.php
+Redirect 301 /uk/savoir-faire/parfums.php http://www.bougies-la-francaise.pro/uk/savoir-faire/parfums.php
+Redirect 301 /uk/savoir-faire/laboratoire.php http://www.bougies-la-francaise.pro/uk/savoir-faire/laboratoire.php
+Redirect 301 /uk/travail-a-facon/references.php http://www.bougies-la-francaise.pro/uk/travail-a-facon/references.php
+Redirect 301 /uk/travail-a-facon/ http://www.bougies-la-francaise.pro/uk/travail-a-facon/
+Redirect 301 /uk/savoir-faire/ http://www.bougies-la-francaise.pro/uk/savoir-faire/
+Redirect 301 /uk/savoir-bougies/ http://www.bougies-la-francaise.pro/uk/savoir-bougies/
+Redirect 301 /uk/revue-de-presse/index.php http://www.bougies-la-francaise.pro/uk/revue-de-presse/index.php
+Redirect 301 /uk/points-vente/ http://www.bougies-la-francaise.pro/uk/points-vente/
+Redirect 301 /uk/mentions-legales/ http://www.bougies-la-francaise.pro/uk/mentions-legales/
+Redirect 301 /uk/liens-partenaires/ http://www.bougies-la-francaise.pro/uk/liens-partenaires/
+Redirect 301 /uk/entreprise/ http://www.bougies-la-francaise.pro/uk/entreprise/
+Redirect 301 /uk/contact/ http://www.bougies-la-francaise.pro/uk/contact/
+Redirect 301 /uk/collections/printemps-ete.php http://www.bougies-la-francaise.pro/uk/collections/printemps-ete.php
+Redirect 301 /uk/collections/ http://www.bougies-la-francaise.pro/uk/collections/
+Redirect 301 /uk/blf-bougie-video.php http://www.bougies-la-francaise.pro/uk/blf-bougie-video.php
+Redirect 301 /uk/agenda-salons/ http://www.bougies-la-francaise.pro/uk/agenda-salons/
+Redirect 301 /uk/ http://www.bougies-la-francaise.pro/uk/
+
+
+Redirect 301 /fr/ http://www.bougies-la-francaise.com
+Redirect 301 /fr/index.php http://www.bougies-la-francaise.com
+Redirect 301 /blf-bougie-video.php http://www.bougies-la-francaise.com/content/25-videos
+Redirect 301 /page-non-trouvee http://www.bougies-la-francaise.com/
+Redirect 301 /magasinspoints-vente.php http://www.bougies-la-francaise.com/magasins
+Redirect 301 /fr/2510260-bougie-decorative-nain-21cm-blanc http://www.bougies-la-francaise.com/2510260-bougie-decorative-nain-21cm-blanc.html
+Redirect 301 /content/6-l-entreprisechiffres-cles.php http://www.bougies-la-francaise.com/content/6-l-entreprise-bougies-la-francaise
+Redirect 301 /magasinsresultats-points-vente.php%20(puntos%20de%20venta) http://www.bougies-la-francaise.com/magasins
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_et_photophores_13.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_idees_cadeaux_75.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_lanternes_avec_poignee_en_cuire_77.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_coffret_de_trois_verres_et_3_bougies_parfumees_49.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_conte_de_noel_bougie_lapin_89.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_Francaise_bougies_en_pots_42.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /collectionpeeng.htm http://www.bougies-la-francaise.com/
+Redirect 301 /%E2%80%9C/79-noel-scandinave%E2%80%9D http://www.bougies-la-francaise.com/79-deco-scandinave
+Redirect 301 /content/www.bougies-la-francaise.com http://www.bougies-la-francaise.com/
+Redirect 301 /uk http://www.bougies-la-francaise.com/
+Redirect 301 /fr/c http://www.bougies-la-francaise.com/
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougies_a_torsades_48.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/BLF_bougies_plantes_grasses_sur_base_ceramique_25.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr/revue-de-presse/revue-de-presse/Bougies_la_francaise_bougie_ange_86.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /fr http://www.bougies-la-francaise.com/
+Redirect 301 /fr/e http://www.bougies-la-francaise.com/
+Redirect 301 /content/17-bougies-a-faconindex.php http://www.bougies-la-francaise.com/
+Redirect 301 /?controller=404 http://www.bougies-la-francaise.com/
+Redirect 301 /content/7-le-savoir-fairecreation.php http://www.bougies-la-francaise.com/content/7-le-savoir-faire
+Redirect 301 /fr/revue-de-presse/revue-de-presse/bougies_la_francaise_le_classique_73.php http://www.bougies-la-francaise.com/revue-de-presse
+Redirect 301 /:bougies-la-francaise.com http://www.bougies-la-francaise.com/
+Redirect 301 /fr/travail-a-facon http://www.bougies-la-francaise.com/content/17-bougies-a-facon
+Redirect 301 /fr/s http://www.bougies-la-francaise.com/
+Redirect 301 /fr/ http://www.bougies-la-francaise.com/
+Redirect 301 /magasinspoints-vente.php http://www.bougies-la-francaise.com/magasins
+
+# ~~start~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again
+# .htaccess automaticaly generated by PrestaShop e-commerce open-source solution
+# http://www.prestashop.com - http://www.prestashop.com/forums
+
+<IfModule mod_rewrite.c>
+<IfModule mod_env.c>
+SetEnv HTTP_MOD_REWRITE On
+</IfModule>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule . - [E=REWRITEBASE:/]
+RewriteRule ^api/?(.*)$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
+
+# Images
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$1$2$3.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$1$2$3$4.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$1$2$3$4$5.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$1$2$3$4$5$6.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$1$2$3$4$5$6$7.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$1$2$3$4$5$6$7$8.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$7/$1$2$3$4$5$6$7$8$9.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$7/$8/$1$2$3$4$5$6$7$8$9$10.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^c/([0-9]+)(\-[\.*_a-zA-Z0-9-]*)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2$3.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^c/([a-zA-Z_-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg [L]
+# AlphaImageLoader for IE and fancybox
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/images/$1.$2 [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule . - [E=REWRITEBASE:/]
+RewriteRule ^api/?(.*)$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
+
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^pro$ /pro/ [L,R]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^pro/(.*) /$1 [L]
+
+# Images
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$1$2$3.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$1$2$3$4.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$1$2$3$4$5.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$1$2$3$4$5$6.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$1$2$3$4$5$6$7.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$1$2$3$4$5$6$7$8.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$7/$1$2$3$4$5$6$7$8$9.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])(\-[_a-zA-Z0-9-]*)?(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/p/$1/$2/$3/$4/$5/$6/$7/$8/$1$2$3$4$5$6$7$8$9$10.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^c/([0-9]+)(\-[\.*_a-zA-Z0-9-]*)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2$3.jpg [L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^c/([a-zA-Z_-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg [L]
+# AlphaImageLoader for IE and fancybox
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/images/$1.$2 [L]
+
+# Dispatcher
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^.*$ - [NC,L]
+RewriteCond %{HTTP_HOST} ^www.bougies-la-francaise.com$
+RewriteRule ^.*$ %{ENV:REWRITEBASE}index.php [NC,L]
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType text/css "access plus 1 week"
+	ExpiresByType text/javascript "access plus 1 week"
+	ExpiresByType application/javascript "access plus 1 week"
+	ExpiresByType application/x-javascript "access plus 1 week"
+	ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+FileETag INode MTime Size
+<IfModule mod_deflate.c>
+	<IfModule mod_filter.c>
+		AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/x-javascript
+	</IfModule>
+</IfModule>
+
+#If rewrite mod isn't enabled
+ErrorDocument 404 /index.php?controller=404
+
+# ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again
+
+
