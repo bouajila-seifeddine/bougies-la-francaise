@@ -21,6 +21,7 @@ config/xml/*.xml
 *sitemap.xml
 themes/*/cache/
 modules/*/config*.xml
+modules/spread/backward_compatibility
 
 # Site content
 # The following folders contain product images, virtual products, CSV's, etc.
