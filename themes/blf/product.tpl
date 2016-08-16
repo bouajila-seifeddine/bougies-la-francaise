@@ -235,7 +235,7 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
 		
 		<div id="prez_product">
 		
-    		<h3 class="collection_product">{if isset($features.feature7)}{$features.feature7.value}{/if}</h3>
+    		<p class="collection_product">{if isset($features.feature7)}{$features.feature7.value}{/if}</p>
     		
     		<h1 class="title_product">{$product->name|escape:'htmlall':'UTF-8'}</h1>
     		
