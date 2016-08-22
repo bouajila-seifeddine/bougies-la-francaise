@@ -321,7 +321,7 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
                                     </ul>
                                 {/if}
                                 </div>
-                            </fieldset>
+                            </fieldset> 
                         {/if}
                     {/foreach}
                     </div>
@@ -331,7 +331,7 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
                     <!-- prices -->
                     {if $product->show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE}
                     
-                    <p class="title_price">{l s='Price'}</p>
+                    <h2 class="title_price">{l s='Price'}</h2>
                     
                     {if $product->online_only}
                     <p class="online_only">{l s='Online only'}</p>
@@ -540,7 +540,7 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
 	{if isset($accessories) AND $accessories}
 		<!-- accessories -->
 		<div id="idTab4" class="bullet">
-		    <h2>{l s='You may also like'}</h2>
+		    <h3>{l s='You may also like'}</h3>
 			<div class="block_content">
 			    {include file="{$tpl_dir}/product-list.tpl" products=$accessories}
 			</div>

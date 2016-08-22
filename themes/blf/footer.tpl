@@ -40,7 +40,7 @@
                 <div id="footer-inner">
                     
                     <ul class="footer-link">
-                        <li class="header"><h3>{l s='Our company'}</h3></li>
+                        <li class="header"><h5>{l s='Our company'}</h5></li>
                         <li><a href="{$link->getCMSLink(6)|escape:'html'}">{l s='Company'}</a></li>
                         <li><a href="{$link->getCMSLink(7)|escape:'html'}">{l s='Expertise'}</a></li>
                         <li><a href="{$link->getCMSLink(8)|escape:'html'}">{l s='Learn all about the candles'}</a></li>
@@ -50,7 +50,7 @@
                     </ul>
                     
                     <ul class="footer-link">
-                        <li class="header"><h3>{l s='Customers service'}</h3></li>
+                        <li class="header"><h5>{l s='Customers service'}</h5></li>
                         <li><a href="{$link->getPageLink('contact', true)|escape:'html'}" rel="nofollow">{l s='Contact us'}</a></li>
                         <li><a href="{$link->getCMSLink(1)|escape:'html'}" rel="nofollow">{l s='Deliveries'}</a></li>
                         <li><a href="{$link->getCMSLink(11)|escape:'html'}" rel="nofollow">{l s='Money back '}</a></li>
@@ -60,7 +60,7 @@
                     </ul>
 
                     <ul class="footer-link">
-                        <li class="header"><h3>{l s='Informations'}</h3></li>
+                        <li class="header"><h5>{l s='Informations'}</h5></li>
                         {if !$PS_CATALOG_MODE}<li><a href="{$link->getCategoryLink(77)|escape:'html'}">{l s='Specials'}</a></li>{/if}
                         <li><a href="{$link->getPageLink('new-products')|escape:'html'}">{l s='New products'}</a></li>
                         {if !$PS_CATALOG_MODE}<li><a href="{$link->getPageLink('best-sales')|escape:'html'}">{l s='Top sellers'}</a></li>{/if}
@@ -72,7 +72,7 @@
                     {$HOOK_FOOTER}
                     
                     {*<div id="newsletter">
-                        <h3>{l s='Newsletter subscription'}</h3>
+                        <h5>{l s='Newsletter subscription'}</h5>
                         <p>{l s='Subscribe to our newsletter to receive news from Bougie la française'}</p>
                         <a href="{$link->getCMSLink(19)|escape:'html'}">{l s='Subscribe newsletter'}<span></span></a>
                     </div>*}
@@ -80,7 +80,7 @@
                     <div id="line"></div>
                     
                     <div id="payment-block">
-                        <h3>{l s='Payment'}</h3>
+                        <h5>{l s='Payment'}</h5>
                         <img id="paiement-logo" src="{$img_dir}paiement-logo.png" alt="{l s='Paiement by mastercard, visa'}" />
                     </div>
                     <p id="made">{l s='Family Business centennial'}</p>

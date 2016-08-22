@@ -44,13 +44,13 @@
                     {if $product.specific_prices.reduction_type == 'amount'}<span class="reduction">-{$product.specific_prices.reduction|string_format:"%.2f"} €</span>{/if}
                 {/if}
                 
-			    <h5>{if isset($collection)}{$collection}{/if}</h5>
+			    <p>{if isset($collection)}{$collection}{/if}</p>
 			    {if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
                     {if $product.reduction}<h6><strike class="original-price">{convertPrice price=$product.price_without_reduction}</strike></h6>{/if}
                 {/if}
-                <h3>{if isset($product.pack_quantity) && $product.pack_quantity}{$product.pack_quantity|intval|cat:' x '}{/if}<a class="big-link" href="{$product.link|escape:'htmlall':'UTF-8'}">{$product.name|truncate:100:'...'|escape:'htmlall':'UTF-8'}</a></h3>
+                <h4 id="upsale">{if isset($product.pack_quantity) && $product.pack_quantity}{$product.pack_quantity|intval|cat:' x '}{/if}<a class="big-link" href="{$product.link|escape:'htmlall':'UTF-8'}">{$product.name|truncate:100:'...'|escape:'htmlall':'UTF-8'}</a></h4>
                 {if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
-                    {if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}<h4 class="price">{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}</h4>{/if}
+                    {if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}<p id="upsale2" class="price">{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}</p>{/if}
                 {/if}
             </div>
 			{if isset($product.new) && $product.new == 1}<span class="new">{l s='New'}</span>{/if}

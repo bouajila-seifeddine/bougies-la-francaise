@@ -25,10 +25,11 @@
 *}
 
 <ul class="footer-link follow">
-    <li class="header"><h3>{l s='Follow' mod='blocksocial'} Bougies la Française</h3></li>
+    <li class="header"><h5>{l s='Follow' mod='blocksocial'} Bougies la Française</h5></li>
     <li><a class="facebook" href="https://www.facebook.com/bougies.la.francaise" target="_blank">{l s='Facebook' mod='blocksocial'}</a></li>
-    <li><a class="pinterest" href="http://www.pinterest.com/bougiesLF/" target="_blank">{l s='Pinterest' mod='blocksocial'}</a></li>
+    <li><a class="pinterest" href="https://www.pinterest.com/bougiesLF/" target="_blank">{l s='Pinterest' mod='blocksocial'}</a></li>
     <li><a class="youtube" href="https://www.youtube.com/channel/UCHYcBETqCKPm_qd391psc4g" target="_blank">{l s='Youtube' mod='blocksocial'}</a></li>
     <li><a class="google-plus" href="https://plus.google.com/+Bougieslafrancaise-blf/posts" target="_blank">{l s='Google+' mod='blocksocial'}</a></li>
+	<li><a class="instagram" href="https://www.instagram.com/bougieslafrancaise/" target="_blank">{l s='Instagram' mod='blocksocial'}</a></li>
 </ul>
 

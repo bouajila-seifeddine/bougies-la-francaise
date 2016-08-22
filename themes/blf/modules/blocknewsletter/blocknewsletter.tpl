@@ -25,7 +25,7 @@
 
 <!-- Block Newsletter module-->
 <div class="newsletter">
-    <h3>{l s='Newsletter subscription' mod='blocknewsletter'}</h3>
+    <h5>{l s='Newsletter subscription' mod='blocknewsletter'}</h5>
     <p class="subscribe">{l s='Subscribe to our newsletter to receive news from Bougie la française' mod='blocknewsletter'}</p>
     {if isset($msg) && $msg}
         <p class="{if $nw_error}warning_inline{else}success_inline{/if}">{$msg}</p>
