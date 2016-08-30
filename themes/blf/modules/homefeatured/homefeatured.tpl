@@ -24,7 +24,7 @@
 *}
 
 <div id="home-featured">
-	<h1>{l s='Our best sales' mod='homefeatured'}</h1>
+	<h3>{l s='Our best sales' mod='homefeatured'}</h3>
 	{if isset($products) AND $products}
         {include file="{$tpl_dir}/product-list.tpl" products=$products}
 	{else}
