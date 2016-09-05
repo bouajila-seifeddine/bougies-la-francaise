@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,8 +14,8 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -25,7 +25,9 @@ require_once '..'.$sep.'..'.$sep.'..'.$sep.'config'.$sep.'config.inc.php';
 require_once '..'.$sep.'..'.$sep.'..'.$sep.'init.php';
 require_once '..'.$sep.'lengow.php';
 require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.connector.class.php';
+require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.order.class.php';
 require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.import.class.php';
+require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.importv2.class.php';
 
 $action = Tools::getValue('action');
 
@@ -34,34 +36,37 @@ switch ($action)
 	case 'reimport_order':
 		$error = false;
 		$order_id = Tools::getValue('orderid');
-		$order = new LengowOrder($order_id);
-		$lengow_order_id = Tools::getValue('lengoworderid');
-		$feed_id = Tools::getValue('feed_id');
-		LengowCore::deleteProcessOrder($lengow_order_id);
-		$import = new LengowImport();
-		$new_lengow_order = $import->exec('commands', array('id_order_lengow' => $lengow_order_id, 'feed_id' => $feed_id));
-
-		if ($new_lengow_order != false)
+		if (LengowOrder::isFromLengow($order_id))
 		{
-			$id_state_cancel = Configuration::get('LENGOW_STATE_ERROR');
-			$order->setCurrentState($id_state_cancel, (int)Context::getContext()->employee->id);
-			$new_lengow_order_url = 'index.php?tab=AdminOrders&id_order='.$new_lengow_order.'&vieworder&token='.Tools::getAdminTokenLite('AdminOrders');
-			$reimport_message = sprintf('You can see the new order by clicking here : <a href=\'%s\'>View Order %s</a>', $new_lengow_order_url, $new_lengow_order);
+			$order = new LengowOrder($order_id);
+			$lengow_order_id = Tools::getValue('lengoworderid');
+			LengowOrder::disable($order->id);
+			if ($order->id_order_line != null)
+				LengowLog::deleteLogByOrderId($lengow_order_id, $order->id_order_line);
+			else
+				LengowLog::deleteLogByOrderIdV2($lengow_order_id);
+			$result = false;
+			if (Configuration::get('LENGOW_SWITCH_V3'))
+			{
+				if ($order->id_flux != null)
+					$order->checkAndChangeMarketplaceName();
+				$import = new LengowImport($lengow_order_id, $order->lengow_marketplace);
+				$result = $import->exec();
+			}
+			else
+			{
+				if ($order->id_flux != null)
+				{
+					$importV2 = new LengowImportV2($lengow_order_id, $order->id_flux);
+					$result = $importV2->exec();
+				}
+			}
+			if ($result != false)
+			{
+				$id_state_cancel = Configuration::get('LENGOW_STATE_ERROR');
+				$order->setCurrentState($id_state_cancel, (int)Context::getContext()->employee->id);
+			}
 		}
-		else
-		{
-			$error = true;
-			$reimport_message = 'Error during import';
-		}
-
-		$result = array(
-			'status' => ($error == false) ? 'success' : 'error',
-			'msg' => $reimport_message,
-			'new_order_url' => $new_lengow_order_url,
-			'new_order_id' => $new_lengow_order
-		);
-
-		echo Tools::jsonEncode($result);
 		break;
 	default:
 		$is_https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] ? 's' : '';

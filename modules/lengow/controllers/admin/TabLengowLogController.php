@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,33 +14,41 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
  * The AdminTab Lengow Class.
  *
- * @author Romain Le Polh <romain@lengow.com>
- * @copyright 2013 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
-class AdminLengowLog14 extends AdminTab {
+class AdminLengowLog14 extends AdminTab
+{
 
 	protected $_pagination = array(1, 20, 50, 100, 300);
 
 	public function __construct()
 	{
 		$this->table = 'lengow_logs_import';
-		$this->className = 'LengowLogs';
+		$this->className = 'LengowLog';
 		$this->lang = false;
 		$this->edit = false;
 		$this->delete = false;
 		$this->view = false;
 		$this->duplicate = false;
 		$this->noAdd = true;
+		$this->_defaultOrderBy = 'date';
 
 		$this->fieldsDisplay = array(
+			'id' => array(
+				'title' => $this->l('ID'),
+				'width' => 'auto',
+				'search' => false,
+				'orderby' => false
+			),
 			'lengow_order_id' => array(
 				'title' => $this->l('Lengow Order ID'),
 			),
@@ -52,7 +60,7 @@ class AdminLengowLog14 extends AdminTab {
 					1 => 'enabled.gif',
 					'default' => 'disabled.gif',
 				),
-				'search' => false,
+				'search' => false
 			),
 			'message' => array(
 				'title' => $this->l('Message'),
@@ -61,17 +69,11 @@ class AdminLengowLog14 extends AdminTab {
 			'date' => array(
 				'title' => $this->l('Date'),
 				'type' => 'datetime',
-				'orderby' => true
-			),
-			'is_processing' => array(
-				'title' => $this->l('Delete ?'),
-				'callback' => 'getDelete',
-				'align' => 'center',
-				'search' => false,
-			),
+				'orderby' => false
+			)
 		);
 
-		$this->identifier = 'lengow_order_id';
+		$this->identifier = 'id';
 
 		parent::__construct();
 
@@ -87,7 +89,7 @@ class AdminLengowLog14 extends AdminTab {
 	public function postProcess($token = null)
 	{
 		if (Tools::getValue('delete') != '')
-			LengowCore::deleteProcessOrder(Tools::getValue('delete'));
+			LengowLog::deleteLog(Tools::getValue('delete'));
 		if (Tools::getValue('delete'.$this->table))
 			$this->processBulkDelete();
 		parent::postProcess($token);
@@ -102,7 +104,7 @@ class AdminLengowLog14 extends AdminTab {
 	{
 		$echo = $echo;
 		$token = Tools::getAdminTokenLite('AdminLengowLog', Context::getContext());
-		return '<a href="index.php?controller=AdminLengowLog&delete='.$row['lengow_order_id'].'&token='.$token.'"><img src="'._PS_ADMIN_IMG_.'delete.gif" /></a>';
+		return '<a href="index.php?controller=AdminLengowLog&delete='.$row['id'].'&token='.$token.'"><img src="'._PS_ADMIN_IMG_.'delete.gif" /></a>';
 	}
 
 	/**
@@ -113,7 +115,7 @@ class AdminLengowLog14 extends AdminTab {
 		$logs = Tools::getValue($this->table.'Box');
 		if (is_array($logs) && (count($logs)))
 			foreach ($logs as $log)
-				LengowCore::deleteProcessOrder($log);
+				LengowLog::deleteLog($log);
 	}
 
 	/**

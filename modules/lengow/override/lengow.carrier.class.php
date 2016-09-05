@@ -14,7 +14,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com> Mathieu Sabourin <mathieu.sabourin@lengow.com>
+ *  @author    Team Connector <team-connector@lengow.com>
  *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
@@ -26,17 +26,10 @@ try
 	loadFile('carrier_abstract');
 } catch(Exception $e)
 {
-	try
-	{
-		loadFile('core');
-		LengowCore::log($e->getMessage(), null, 1);
-	} catch (Exception $ex)
-	{
-		echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
-	}
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
 }
 
 class LengowCarrier extends LengowCarrierAbstract
 {
-	
+
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,8 +14,8 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -34,154 +34,201 @@ try
 	loadFile('marketplace');
 	loadFile('import');
 } catch(Exception $e)
-{	
-	try
-	{
-		loadFile('core');
-		LengowCore::log($e->getMessage(), null, 1);
-	} catch (Exception $ex)
-	{
-		echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
-	}
-}
-
-class LengowCustomerAbstract extends Customer
 {
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
+}
+/**
+ * Lengow Customer class
+ *
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
+ */
+class LengowCustomerAbstract extends Customer implements LengowObject
+{
+	/**
+	 * Definition array for prestashop 1.4.*
+	 *
+	 * @var array
+	 */
+	public static $definition_lengow = array(
+											'lastname'	=> array('required' => true, 'size' => 32),
+											'firstname' => array('required' => true, 'size' => 32),
+											'email' 	=> array('required' => true, 'size' => 128),
+											'passwd' 	=> array('required' => true, 'size' => 32),
+										);
+
+	/* Interface methods */
 
 	/**
-	 * Fills the fields of the current customer
-	 * @param type $customerElements
+	 * @see LengowObject::getFieldDefinition()
 	 */
-	protected function _buildCustomer($customerElements)
+	public static function getFieldDefinition()
 	{
-		$this->company = LengowAddress::cleanName((string)$customerElements['society']);
-		$this->email = $customerElements['email'];
-		$this->firstname = $customerElements['firstname'];
-		$this->lastname = $customerElements['lastname'];
+		if (_PS_VERSION_ < 1.5)
+			return LengowCustomer::$definition_lengow;
+
+		return LengowCustomer::$definition['fields'];
+	}
+
+
+	/**
+	 * @see LengowObject::assign()
+	 */
+	public function assign($data = array())
+	{
+		$this->company = LengowAddress::cleanName((string)$data['company']);
+		$this->email = $data['email'];
+		$this->firstname = $data['first_name'];
+		$this->lastname = $data['last_name'];
 		$this->passwd = md5(rand());
 		if (_PS_VERSION_ >= '1.5')
-			$this->id_gender = LengowGender::getGender((string)$customerElements['civility']);
+			$this->id_gender = LengowGender::getGender((string)$data['civility']);
+		return $this;
 	}
 
 	/**
-	 * Retrieves the customer from the import
-	 * @param type $lengow_order
-	 * @param type $lengow_order_id
-	 * @return boolean
+	 * @see LengowObject::validateLengow()
 	 */
-	public function getCustomerImport($lengow_order, $lengow_order_id)
+	public function validateLengow()
 	{
-		$customer_elements = array(
-			'society' => null,
-			'civility' => null,
-			'email' => null,
-			'lastname' => null,
-			'firstname' => null,
-		);
-		$customer_elements = self::_getCustomerElements($lengow_order, $customer_elements);
-		$customer_elements['email'] = self::_checkEmailElement($customer_elements['email'], $lengow_order_id);
-		$this->getByEmail($customer_elements['email']);
-		if (!$this->id)
+		$definition = LengowCustomer::getFieldDefinition();
+		foreach ($definition as $field_name => $constraints)
 		{
-			$customer_elements = self::checkCustomerNames($customer_elements);
-			$this->_buildCustomer($customer_elements);
-			return $this->_validateCustomer($lengow_order_id);
+			if (isset($constraints['required']) && $constraints['required'])
+				if (!$this->{$field_name})
+					$this->validateFieldLengow($field_name, LengowObject::LENGOW_EMPTY_ERROR);
+
+			if (isset($constraints['size']))
+				if (Tools::strlen($this->{$field_name}) > $constraints['size'])
+					$this->validateFieldLengow($field_name, LengowObject::LENGOW_SIZE_ERROR);
 		}
+		// validateFields
+		$return = $this->validateFields(false, true);
+		if (is_string($return))
+			throw new InvalidLengowObjectException($return);
+
+		$this->add();
 		return true;
-
 	}
 
 	/**
-	 * Retrieves the customer elements from the import
-	 * @param type $lengow_order
-	 * @param type $elements
-	 * @return type
+	 * @see LengowObject::validateFieldLengow()
 	 */
-	protected static function _getCustomerElements($lengow_order, $elements)
+	public function validateFieldLengow($field, $error_type)
 	{
-		$type = 'billing_';
-		foreach ($elements as $key => $value)
+		switch ($error_type)
 		{
-			$value = $value; // Useless line for prestashop validator
-			$node = $type.$key;
-			$elements[$key] = (string)$lengow_order->billing_address->$node;
-
+			case LengowObject::LENGOW_EMPTY_ERROR:
+				$this->validateEmptyLengow($field);
+				break;
+			case LengowObject::LENGOW_SIZE_ERROR:
+				$this->validateSizeLengow($field);
+			default:
+				# code...
+				break;
 		}
-		return $elements;
-
 	}
 
 	/**
-	 * Checks and cleans the name elements
-	 * @param type $customerElements
-	 * @return string
+	 * @see LengowObject::validateEmptyLengow()
 	 */
-	public static function checkCustomerNames($customerElements)
+	public function validateEmptyLengow($field)
 	{
-		$firstname = LengowAddress::cleanName($customerElements['firstname']);
-		$lastname = LengowAddress::cleanName($customerElements['lastname']);
-		if (empty($firstname) || empty($lastname))
+		switch ($field)
 		{
-			if (empty($firstname))
-			{
-				$name = LengowAddress::extractName($lastname);
-				$firstname = $name['firstname'];
-				$lastname = $name['lastname'];
-			}
-			else
-			{
-				$name = LengowAddress::extractName($firstname);
-				$firstname = $name['firstname'];
-				$lastname = $name['lastname'];
-			}
+			case 'lastname':
+			case 'firstname':
+				if ($field == 'lastname')
+					$field = 'firstname';
+				else
+					$field = 'lastname';
+				$names = LengowAddress::extractNames($this->{$field});
+				$this->firstname = $names['firstname'];
+				$this->lastname = $names['lastname'];
+				if (empty($this->firstname))
+					$this->firstname = '--';
+				if (empty($this->lastname))
+					$this->lastname = '--';
+				break;
+			case '':
+				break;
+			default:
+				return;
 		}
-		if (empty($firstname))
-			$firstname = '--';
-		if (empty($lastname))
-			$lastname = '--';
-
-		$customerElements['firstname'] = $firstname;
-		$customerElements['lastname'] = $lastname;
-		return $customerElements;
 	}
 
 	/**
-	 * Checks if the customer's email exists
-	 * @param type $email_address
-	 * @param type $lengow_order_id
-	 * @return string
+	 * @see LengowObject::validateSizeLengow()
 	 */
-	protected static function _checkEmailElement($email_address, $lengow_order_id)
+	public function validateSizeLengow($field)
 	{
-		if (empty($email_address) || (bool)Configuration::get('LENGOW_IMPORT_FAKE_EMAIL'))
+		switch ($field)
 		{
-			$email_address = 'no-mail+'.$lengow_order_id.'@'.LengowCore::getHost();
-			if (empty($email_address))
-				LengowCore::log('no customer email, generate unique : '.$email_address, $lengow_order_id, LengowImport::$force_log_output);
+			case 'address1':
+			case 'address2':
+			case 'other':
+				$address_full_array = explode(' ', $this->address_full);
+				if (count($address_full_array) < 1)
+				{
+					$definition = LengowCustomer::getFieldDefinition();
+					$address1_maxlength = $definition['address1']['size'];
+					$address2_maxlength = $definition['address1']['size'];
+					$other_maxlength = $definition['other']['size'];
+					$this->address1 = '';
+					$this->address2 = '';
+					$this->other = '';
+					foreach ($address_full_array as $address_part)
+					{
+						if (Tools::strlen($this->address1) < $address1_maxlength)
+						{
+							if (!empty($this->address1))
+								$this->address1 .= ' ';
+							$this->address1 .= $address_part;
+							continue;
+						}
+						elseif (Tools::strlen($this->address2) < $address2_maxlength)
+						{
+							if (!empty($this->address2))
+								$this->address2 .= ' ';
+							$this->address2 .= $address_part;
+							continue;
+						}
+						elseif (Tools::strlen($this->other) < $other_maxlength)
+						{
+							if (!empty($this->other))
+								$this->other .= ' ';
+							$this->other .= $address_part;
+							continue;
+						}
+						// else
+						// 	throw new LengowValidatorException('Address is too long');
+					}
+				}
+				break;
+			case 'phone':
+				$this->phone = LengowCore::cleanPhone($this->phone);
+				break;
+			case 'phone_mobile':
+				$this->phone_mobile = LengowCore::cleanPhone($this->phone_mobile);
+				break;
+			default:
+				return;
 		}
-		if (LengowImport::$debug)
-			$email_address = '_'.$email_address;
-		return $email_address;
 	}
 
 	/**
-	 * Validates a customer
-	 * @param type $customer
-	 * @param type $lengow_order_id
-	 * @return boolean
-	 * @throws Exception
+	 * @see LengowObject::assign()
 	 */
-	protected function _validateCustomer($lengow_order_id)
+	public function assignV2($data = array())
 	{
-		try {
-			if (!$error = $this->validateFields(false, true))
-				throw new Exception($error);
-			$this->add();
-			return true;
-		} catch (Exception $e) {
-			LengowCore::log('customer creation failed : '.$e->getMessage(), $lengow_order_id, LengowImport::$force_log_output);
-			LengowCore::endProcessOrder($lengow_order_id, 1, 0, 'Customer creation failed : '.$e->getMessage());
-			return false;
-		}
+		$this->company = LengowAddress::cleanName((string)$data['society']);
+		$this->email = $data['email'];
+		$this->firstname = $data['firstname'];
+		$this->lastname = $data['lastname'];
+		$this->passwd = md5(rand());
+		if (_PS_VERSION_ >= '1.5')
+			$this->id_gender = LengowGender::getGender((string)$data['civility']);
+		return $this;
 	}
+
 }

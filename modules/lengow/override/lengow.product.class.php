@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,8 +14,8 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -25,36 +25,11 @@ try
 {
 	loadFile('product_abstract');
 } catch(Exception $e)
-{	
-	try
-	{
-		loadFile('core');
-		LengowCore::log($e->getMessage(), null, 1);
-	} catch (Exception $ex)
-	{
-		echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
-	}
+{
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
 }
 
 class LengowProduct extends LengowProductAbstract
 {
-	/**
-	* Get data of current product.
-	*
-	* @param string $name the data name
-	* @param integer $id_product_attribute the id product attribute
-	*
-	* @return varchar The data.
-	*/
-	public function getData($name, $id_product_attribute = null)
-	{
-		switch ($name) {
-		    case 'description' :
-                 return LengowCore::cleanHtml($this->description_lengow);
-             case 'description_html' :
-                 return $this->description_lengow;
-         }
 
-         return parent::getData($name, $id_product_attribute);
-     }
 }

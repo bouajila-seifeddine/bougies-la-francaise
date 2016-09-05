@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,314 +14,321 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
-class LengowCartAbstract extends Cart {
+class LengowCartAbstract extends Cart implements LengowObject
+{
+	/**
+	 * @var boolean add inactive & out of stock products to cart
+	 */
+	public $force_product = true;
 
-	public static $TOTAL_CART_GET = array(
-		'products' ,
-		'discounts' ,
-		'total' ,
-		'total_without_shipping' ,
-		'shipping' ,
-		'wrapping' ,
-		'products_without_shipping' ,
-	);
-
-	public $lengow_products = array();
-	public $lengow_shipping = 0;
-	public $lengow_channel = null;
-	public $lengow_fees = 0;
-	public $tax_calculation_method = PS_TAX_EXC;
+	public static $definition_lengow = array(
+										'id_currency' => 	array('required' => true),
+										'id_lang' => 		array('required' => true),
+									);
 
 	/**
-	* Current lengow order.
-	*/
-	public static $current_order;
-
-	public function getPackageList($flush = false)
+	 * Add product to cart
+	 *
+	 * @param array $products list of products to be added
+	 *
+	 * @return bool
+	 */
+	public function addProducts($products = array())
 	{
-		static $cache = array();
-		if (isset($cache[(int)$this->id]) && $cache[(int)$this->id] !== false && !$flush)
-			return $cache[(int)$this->id];
-
-		$product_list = $this->getProducts();
-		// Step 1 : Get product informations (warehouse_list and carrier_list), count warehouse
-		// Determine the best warehouse to determine the packages
-		// For that we count the number of time we can use a warehouse for a specific delivery address
-		$warehouse_count_by_address = array();
-		$warehouse_carrier_list = array();
-
-		$stock_management_active = Configuration::get('PS_ADVANCED_STOCK_MANAGEMENT');
-
-		foreach ($product_list as &$product)
+		if (!$products)
+			throw new Exception('no product to be added to cart');
+		foreach ($products as $id => $product)
 		{
-			if ((int)$product['id_address_delivery'] == 0)
-				$product['id_address_delivery'] = (int)$this->id_address_delivery;
+			$ids = explode('_', $id);
+			if (count($ids) > 2)
+				throw new Exception('cannot add product '.$id.' to cart (invalid ID format)');
 
-			if (!isset($warehouse_count_by_address[$product['id_address_delivery']]))
-				$warehouse_count_by_address[$product['id_address_delivery']] = array();
+			$id_product = $ids[0];
+			$id_product_attribute = isset($ids[1]) ? $ids[1] : null;
+			if (!$this->updateQty($product['quantity'], $id_product, $id_product_attribute))
+				throw new Exception('product '.$id.' could not be added to cart. Make sure it is available for order or has enough quantity.');
 
-			$product['warehouse_list'] = array();
+		}
+		return true;
+	}
 
-			if ($stock_management_active &&	((int)$product['advanced_stock_management'] == 1 || Pack::usesAdvancedStockManagement((int)$product['id_product'])))
+	/**
+	 * @see Cart::updateQty()
+	 *
+	 * @param integer $quantity Quantity to add (or substract)
+	 * @param integer $id_product Product ID
+	 * @param integer $id_product_attribute Attribute ID if needed
+	 * @param string $operator Indicate if quantity must be increased or decreased
+	 */
+	public function updateQty($quantity, $id_product, $id_product_attribute = null, $id_customization = false,
+		$operator = 'up', $id_address_delivery = 0, Shop $shop = null, $auto_add_cart_rule = true)
+	{
+		if (!$shop)
+			$shop = Context::getContext()->shop;
+		// if (Context::getContext()->customer->id)
+		// {
+		// 	if ($id_address_delivery == 0 && (int)$this->id_address_delivery) // The $id_address_delivery is null, use the cart delivery address
+		// 		$id_address_delivery = $this->id_address_delivery;
+		// 	elseif ($id_address_delivery == 0) // The $id_address_delivery is null, get the default customer address
+		// 		$id_address_delivery = (int)Address::getFirstCustomerAddressId((int)Context::getContext()->customer->id);
+		// 	elseif (!Customer::customerHasAddress(Context::getContext()->customer->id, $id_address_delivery)) // The $id_address_delivery must be linked with customer
+		// 		$id_address_delivery = 0;
+		// }
+
+		$quantity = (int)$quantity;
+		$id_product = (int)$id_product;
+		$id_product_attribute = (int)$id_product_attribute;
+		$product = new Product($id_product, false, Configuration::get('PS_LANG_DEFAULT'), $shop->id);
+		if ($id_product_attribute)
+		{
+			$combination = new Combination((int)$id_product_attribute);
+			if ($combination->id_product != $id_product)
+				return false;
+		}
+
+		/* If we have a product combination, the minimal quantity is set with the one of this combination */
+		if (!empty($id_product_attribute))
+			$minimal_quantity = (int)Attribute::getAttributeMinimalQty($id_product_attribute);
+		else
+			$minimal_quantity = (int)$product->minimal_quantity;
+		if (!Validate::isLoadedObject($product))
+			die(Tools::displayError());
+
+		if (isset(self::$_nbProducts[$this->id]))
+			unset(self::$_nbProducts[$this->id]);
+
+		if (isset(self::$_totalWeight[$this->id]))
+			unset(self::$_totalWeight[$this->id]);
+		// if ((int)$quantity <= 0)
+		// 	return $this->deleteProduct($id_product, $id_product_attribute, (int)$id_customization);
+		// else
+		if ((!$product->available_for_order && !$this->force_product) || (Configuration::get('PS_CATALOG_MODE') && !defined('_PS_ADMIN_DIR_')))
+			return false;
+		else
+		{
+			/* Check if the product is already in the cart */
+			$result = $this->containsProduct($id_product, $id_product_attribute, (int)$id_customization, (int)$id_address_delivery);
+
+			/* Update quantity if product already exist */
+			if ($result)
 			{
-				$warehouse_list = Warehouse::getProductWarehouseList($product['id_product'], $product['id_product_attribute'], $this->id_shop);
-				if (count($warehouse_list) == 0)
-					$warehouse_list = Warehouse::getProductWarehouseList($product['id_product'], $product['id_product_attribute']);
-				// Does the product is in stock ?
-				// If yes, get only warehouse where the product is in stock
+				// always add product to cart in import
+				if (_PS_VERSION_ < '1.5')
+					$sql = 'SELECT '.(!empty($id_product_attribute) ? 'pa' : 'p').'.`quantity`, p.`out_of_stock`
+							FROM `'._DB_PREFIX_.'product` p
+							'.(!empty($id_product_attribute) ? 'LEFT JOIN `'._DB_PREFIX_.'product_attribute` pa ON p.`id_product` = pa.`id_product`' : '').'
+							WHERE p.`id_product` = '.(int)($id_product).
+							(!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '');
+				else
+					$sql = 'SELECT stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity
+							FROM '._DB_PREFIX_.'product p
+							'.Product::sqlStock('p', (int)$id_product_attribute, true, $shop).'
+							WHERE p.id_product = '.(int)$id_product;
 
-				$warehouse_in_stock = array();
-				$manager = StockManagerFactory::getManager();
+				$result2 = Db::getInstance()->getRow($sql);
 
-				foreach ($warehouse_list as $key => $warehouse)
+				$product_qty = (int)$result2['quantity'];
+				// Quantity for product pack
+				if (Pack::isPack($id_product))
+					$product_qty = Pack::getQuantity($id_product, $id_product_attribute);
+				$new_qty = (int)$result['quantity'] + (int)$quantity;
+				$qty = '+ '.(int)$quantity;
+
+				// force here
+				if (!Product::isAvailableWhenOutOfStock((int)$result2['out_of_stock']) && !$this->force_product)
+					if ($new_qty > $product_qty)
+						return false;
+
+				/* Delete product from cart */
+				if ($new_qty <= 0)
+					return $this->deleteProduct((int)$id_product, (int)$id_product_attribute, (int)$id_customization);
+				elseif ((int)$new_qty < $minimal_quantity && !$this->force_product)
+					return false;
+				else
 				{
-					$product_real_quantities = $manager->getProductRealQuantities(
-						$product['id_product'],
-						$product['id_product_attribute'],
-						array($warehouse['id_warehouse']),
-						true
-					);
-
-					if ($product_real_quantities > 0 || Pack::isPack((int)$product['id_product']))
-						$warehouse_in_stock[] = $warehouse;
+					if (_PS_VERSION_ < '1.5')
+						Db::getInstance()->Execute('UPDATE `'._DB_PREFIX_.'cart_product`
+													SET `quantity` = `quantity` '.$qty.'
+													WHERE `id_product` = '.(int)$id_product.
+													(!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '').'
+													AND `id_cart` = '.(int)$this->id.'
+													LIMIT 1');
+					else
+						Db::getInstance()->execute('UPDATE `'._DB_PREFIX_.'cart_product`
+													SET `quantity` = `quantity` '.$qty.', `date_add` = NOW()
+													WHERE `id_product` = '.(int)$id_product.
+													(!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '').'
+													AND `id_cart` = '.(int)$this->id.(Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery() ? ' AND `id_address_delivery` = '.(int)$id_address_delivery : '').'
+													LIMIT 1'
+												);
 				}
 
-				if (!empty($warehouse_in_stock))
+			}
+			/* Add product to the cart */
+			else
+			{
+				if (_PS_VERSION_ < '1.5')
+					$sql = 'SELECT '.(!empty($id_product_attribute) ? 'pa' : 'p').'.`quantity`, p.`out_of_stock`
+							FROM `'._DB_PREFIX_.'product` p
+							'.(!empty($id_product_attribute) ? 'LEFT JOIN `'._DB_PREFIX_.'product_attribute` pa ON p.`id_product` = pa.`id_product`' : '').'
+							WHERE p.`id_product` = '.(int)$id_product.
+							(!empty($id_product_attribute) ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '');
+				else
+					$sql = 'SELECT stock.out_of_stock, IFNULL(stock.quantity, 0) as quantity
+							FROM '._DB_PREFIX_.'product p
+							'.Product::sqlStock('p', (int)$id_product_attribute, true, $shop).'
+							WHERE p.id_product = '.(int)$id_product;
+				$result2 = Db::getInstance()->getRow($sql);
+				// Quantity for product pack
+				if (_PS_VERSION_ > '1.4' && Pack::isPack($id_product))
+					$result2['quantity'] = Pack::getQuantity($id_product, $id_product_attribute);
+
+				if (!Product::isAvailableWhenOutOfStock((int)$result2['out_of_stock']) && !$this->force_product)
+					if ((int)$quantity > $result2['quantity'])
+						return false;
+				$new_qty = (int)$result2['quantity'] - $quantity;
+				if ($new_qty < $minimal_quantity && !$this->force_product)
+					return false;
+
+				if (_PS_VERSION_ < '1.5')
 				{
-					$warehouse_list = $warehouse_in_stock;
-					$product['in_stock'] = true;
+					$values = array(
+							'id_product' 			=>	(int)$id_product,
+							'id_product_attribute' 	=> 	(int)$id_product_attribute,
+							'id_cart'				=>	(int)$this->id,
+							'quantity' 				=>	(int)$quantity,
+							'date_add' 				=>	date('Y-m-d H:i:s'),
+							);
+					$result_add = DB::getInstance()->autoExecute(_DB_PREFIX_.'cart_product', $values, 'insert');
 				}
 				else
-					$product['in_stock'] = false;
-			}
-			else
-			{
-				//simulate default warehouse
-				$warehouse_list = array(0);
-				$product['in_stock'] = StockAvailable::getQuantityAvailableByProduct($product['id_product'], $product['id_product_attribute']) > 0;
-			}
-
-			foreach ($warehouse_list as $warehouse)
-			{
-				if (!isset($warehouse_carrier_list[$warehouse['id_warehouse']]))
 				{
-					$warehouse_object = new Warehouse($warehouse['id_warehouse']);
-					$warehouse_carrier_list[$warehouse['id_warehouse']] = $warehouse_object->getCarriers();
-				}
-
-				$product['warehouse_list'][] = $warehouse['id_warehouse'];
-				if (!isset($warehouse_count_by_address[$product['id_address_delivery']][$warehouse['id_warehouse']]))
-					$warehouse_count_by_address[$product['id_address_delivery']][$warehouse['id_warehouse']] = 0;
-
-				$warehouse_count_by_address[$product['id_address_delivery']][$warehouse['id_warehouse']]++;
-			}
-		}
-		unset($product);
-
-		arsort($warehouse_count_by_address);
-
-		// Step 2 : Group product by warehouse
-		$grouped_by_warehouse = array();
-		foreach ($product_list as &$product)
-		{
-			if (!isset($grouped_by_warehouse[$product['id_address_delivery']]))
-				$grouped_by_warehouse[$product['id_address_delivery']] = array(
-					'in_stock' => array(),
-					'out_of_stock' => array(),
-				);
-
-			$product['carrier_list'] = array();
-			$id_warehouse = 0;
-			foreach ($warehouse_count_by_address[$product['id_address_delivery']] as $id_war => $val)
-			{
-				if (in_array((int)$id_war, $product['warehouse_list']) && $val == $val)
-				{
-					$product['carrier_list'] = array_merge($product['carrier_list'], Carrier::getAvailableCarrierList(new Product($product['id_product']), $id_war, $product['id_address_delivery'], null, $this));
-					if (!$id_warehouse)
-						$id_warehouse = (int)$id_war;
-				}
-			}
-
-			if (!isset($grouped_by_warehouse[$product['id_address_delivery']]['in_stock'][$id_warehouse]))
-			{
-				$grouped_by_warehouse[$product['id_address_delivery']]['in_stock'][$id_warehouse] = array();
-				$grouped_by_warehouse[$product['id_address_delivery']]['out_of_stock'][$id_warehouse] = array();
-			}
-
-			if (!$this->allow_seperated_package)
-				$key = 'in_stock';
-			else
-				$key = $product['in_stock'] ? 'in_stock' : 'out_of_stock';
-
-			if (empty($product['carrier_list']))
-				$product['carrier_list'] = array(0);
-
-			$grouped_by_warehouse[$product['id_address_delivery']][$key][$id_warehouse][] = $product;
-		}
-		unset($product);
-
-		// Step 3 : grouped product from grouped_by_warehouse by available carriers
-		$grouped_by_carriers = array();
-		foreach ($grouped_by_warehouse as $id_address_delivery => $products_in_stock_list)
-		{
-			if (!isset($grouped_by_carriers[$id_address_delivery]))
-				$grouped_by_carriers[$id_address_delivery] = array(
-					'in_stock' => array(),
-					'out_of_stock' => array(),
-				);
-			foreach ($products_in_stock_list as $key => $warehouse_list)
-			{
-				if (!isset($grouped_by_carriers[$id_address_delivery][$key]))
-					$grouped_by_carriers[$id_address_delivery][$key] = array();
-				foreach ($warehouse_list as $id_warehouse => $product_list)
-				{
-					if (!isset($grouped_by_carriers[$id_address_delivery][$key][$id_warehouse]))
-						$grouped_by_carriers[$id_address_delivery][$key][$id_warehouse] = array();
-					foreach ($product_list as $product)
-					{
-						$package_carriers_key = implode(',', $product['carrier_list']);
-
-						if (!isset($grouped_by_carriers[$id_address_delivery][$key][$id_warehouse][$package_carriers_key]))
-							$grouped_by_carriers[$id_address_delivery][$key][$id_warehouse][$package_carriers_key] = array(
-								'product_list' => array(),
-								'carrier_list' => $product['carrier_list'],
-								'warehouse_list' => $product['warehouse_list']
+					$values = array(
+							'id_product' 			=>	(int)$id_product,
+							'id_product_attribute' 	=> 	(int)$id_product_attribute,
+							'id_cart'				=>	(int)$this->id,
+							'id_address_delivery'	=> 	(int)$id_address_delivery,
+							'id_shop' 				=>	(int)$shop->id,
+							'quantity' 				=>	(int)$quantity,
+							'date_add' 				=>	date('Y-m-d H:i:s'),
 							);
-
-						$grouped_by_carriers[$id_address_delivery][$key][$id_warehouse][$package_carriers_key]['product_list'][] = $product;
-					}
+					$result_add = Db::getInstance()->insert('cart_product', $values);
 				}
+				if (!$result_add)
+					return false;
 			}
 		}
 
-		$package_list = array();
-		// Step 4 : merge product from grouped_by_carriers into $package to minimize the number of package
-		foreach ($grouped_by_carriers as $id_address_delivery => $products_in_stock_list)
-		{
-			if (!isset($package_list[$id_address_delivery]))
-				$package_list[$id_address_delivery] = array(
-					'in_stock' => array(),
-					'out_of_stock' => array(),
-				);
-
-			foreach ($products_in_stock_list as $key => $warehouse_list)
-			{
-				if (!isset($package_list[$id_address_delivery][$key]))
-					$package_list[$id_address_delivery][$key] = array();
-				// Count occurance of each carriers to minimize the number of packages
-				$carrier_count = array();
-				foreach ($warehouse_list as $id_warehouse => $products_grouped_by_carriers)
-				{
-					foreach ($products_grouped_by_carriers as $data)
-					{
-						foreach ($data['carrier_list'] as $id_carrier)
-						{
-							if (!isset($carrier_count[$id_carrier]))
-								$carrier_count[$id_carrier] = 0;
-							$carrier_count[$id_carrier]++;
-						}				
-					}
-				}
-				arsort($carrier_count);
-				foreach ($warehouse_list as $id_warehouse => $products_grouped_by_carriers)
-				{
-					if (!isset($package_list[$id_address_delivery][$key][$id_warehouse]))
-						$package_list[$id_address_delivery][$key][$id_warehouse] = array();
-					foreach ($products_grouped_by_carriers as $data)
-					{
-						foreach ($carrier_count as $id_carrier => $rate)
-						{
-							$rate = $rate;
-							if (in_array($id_carrier, $data['carrier_list']))
-							{
-								if (!isset($package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier]))
-									$package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier] = array(
-										'carrier_list' => $data['carrier_list'],
-										'warehouse_list' => $data['warehouse_list'],
-										'product_list' => array(),
-									);
-										$package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier]['carrier_list'] = array_intersect(
-																																		$package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier]['carrier_list'], 
-																																		$data['carrier_list']
-																																		);
-										$package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier]['product_list'] = array_merge(
-																																		$package_list[$id_address_delivery][$key][$id_warehouse][$id_carrier]['product_list'], 
-																																		$data['product_list']
-																																		);
-								break;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// Step 5 : Reduce depth of $package_list
-		$final_package_list = array();
-		foreach ($package_list as $id_address_delivery => $products_in_stock_list)
-		{
-			if (!isset($final_package_list[$id_address_delivery]))
-					$final_package_list[$id_address_delivery] = array();
-
-			foreach ($products_in_stock_list as $key => $warehouse_list)
-				foreach ($warehouse_list as $id_warehouse => $products_grouped_by_carriers)
-					foreach ($products_grouped_by_carriers as $data)
-					{
-						$final_package_list[$id_address_delivery][] = array(
-							'product_list' => $data['product_list'],
-							'carrier_list' => $data['carrier_list'],
-							'warehouse_list' => $data['warehouse_list'],
-							'id_warehouse' => $id_warehouse,
-						);
-					}
-		}
-		$cache[(int)$this->id] = $final_package_list;
-		return $final_package_list;
-	}
-
-
-	/**
-	 * Fills the cart fields
-	 * @param type $id_billing_address
-	 * @param type $id_shipping_address
-	 * @param type $id_customer
-	 * @param type $id_lang
-	 * @param type $id_carrier
-	 * @param type $id_currency
-	 */
-	public function buildCart($id_billing_address, $id_shipping_address, $id_customer, $id_lang, $id_carrier, $id_currency)
-	{
-		$this->id_address_delivery = $id_shipping_address;
-		$this->id_address_invoice = $id_billing_address;
-		$this->id_carrier = $id_carrier;
-		$this->id_currency = $id_currency;
-		$this->id_customer = $id_customer;
-		$this->id_lang = $id_lang;
-	}
-
-	/**
-	 * Validate a cart
-	 * @param type $cart
-	 * @param type $lengow_order_id
-	 * @return boolean
-	 * @throws Exception
-	 */
-	public function validateCart($lengow_order_id)
-	{
-		try {
-			if (!$error = $this->validateFields(false, true))
-				throw new Exception($error);
-			$this->add();
-		} catch (Exception $e) {
-			LengowCore::log('Add Cart Exception : '.$e->getMessage(), $lengow_order_id, LengowImport::$force_log_output);
-			LengowCore::endProcessOrder($lengow_order_id, 1, 0, 'Add Cart Exception : '.$e->getMessage());
+		// refresh cache of self::_products
+		$this->_products = $this->getProducts(true);
+		$this->update();
+		$context = Context::getContext()->cloneContext();
+		$context->cart = $this;
+		if (_PS_VERSION_ >= '1.5')
+			Cache::clean('getContextualValue_*');
+		if (_PS_VERSION_ >= '1.5' && $auto_add_cart_rule)
+			CartRule::autoAddToCart($context);
+		if ($product->customizable)
+			return $this->_updateCustomizationQuantity((int)$quantity, (int)$id_customization, (int)$id_product, (int)$id_product_attribute, (int)$id_address_delivery, $operator);
+		else
 			return true;
+	}
+
+	/* LengowObject interface methods */
+
+	/**
+	 * @see LengowObject::getFieldDefinition()
+	 */
+	public static function getFieldDefinition()
+	{
+		if (_PS_VERSION_ < 1.5)
+			return LengowCart::$definition_lengow;
+
+		return LengowCart::$definition['fields'];
+	}
+
+	/**
+	 * @see LengowObject::assign()
+	 */
+	public function assign($data = array())
+	{
+		foreach ($data as $field => $value)
+			$this->{$field} = $value;
+	}
+
+	/**
+	 * @see LengowObject::validateLengow()
+	 */
+	public function validateLengow()
+	{
+		$definition = LengowCart::getFieldDefinition();
+
+		foreach ($definition as $field_name => $constraints)
+		{
+			if (isset($constraints['required']) && $constraints['required'])
+				if (!$this->{$field_name})
+					$this->validateFieldLengow($field_name, LengowObject::LENGOW_EMPTY_ERROR);
+
+			if (isset($constraints['size']))
+				if (Tools::strlen($this->{$field_name}) > $constraints['size'])
+					$this->validateFieldLengow($field_name, LengowObject::LENGOW_SIZE_ERROR);
+		}
+		// validateFields
+		$return = $this->validateFields(false, true);
+		if (is_string($return))
+			throw new InvalidLengowObjectException($return);
+		$this->add();
+		return true;
+	}
+
+	/**
+	 * @see LengowObject::validateFieldLengow()
+	 */
+	public function validateFieldLengow($field, $error_type)
+	{
+		switch ($error_type)
+		{
+			case LengowObject::LENGOW_EMPTY_ERROR:
+				$this->validateEmptyLengow($field);
+				break;
+			case LengowObject::LENGOW_SIZE_ERROR:
+				$this->validateSizeLengow($field);
+			default:
+				# code...
+				break;
 		}
 	}
+
+
+	/**
+	 * @see LengowObject::validateEmptyLengow()
+	 */
+	public function validateEmptyLengow($field)
+	{
+		switch ($field)
+		{
+			case 'id_lang':
+				$this->{$field} = Context::getContext()->language->id;
+				break;
+			default:
+				break;
+		}
+	}
+
+	/**
+	 * @see LengowObject::validateSizeLengow()
+	 */
+	public function validateSizeLengow($field)
+	{
+		// no size limitation for cart object
+		return $field;
+	}
+
+
 
 }

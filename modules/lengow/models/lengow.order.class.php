@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,18 +14,35 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
  * The Lengow Order Class.
  *
- * @author Ludovic Drin <ludovic@lengow.com>
- * @copyright 2013 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
-class LengowOrderAbstract extends Order {
+
+$sep = DIRECTORY_SEPARATOR;
+require_once dirname(__FILE__).$sep.'..'.$sep.'loader.php';
+require dirname(__FILE__).$sep.'..'.$sep.'interface'.$sep.'LengowObject.php';
+
+try
+{
+	loadFile('core');
+	loadFile('marketplace');
+	loadFile('marketplacev2');
+	loadFile('connector');
+	loadFile('check');
+} catch(Exception $e)
+{
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
+}
+class LengowOrderAbstract extends Order
+{
 
 	/**
 	* Version.
@@ -33,28 +50,18 @@ class LengowOrderAbstract extends Order {
 	const VERSION = '1.0.0';
 
 	/**
-	* Order ID from marketplace.
-	*/
-	public $lengow_id_order;
-
-	/**
-	* Flux ID from Lengow.
-	*/
-	public $lengow_id_flux;
-
-	/**
-	* Marketplace's name.
-	*/
+	 * Marketplace's name.
+	 */
 	public $lengow_marketplace;
 
 	/**
-	* Message.
-	*/
+	 * Message.
+	 */
 	public $lengow_message;
 
 	/**
-	* Total paid on marketplace.
-	*/
+	 * Total paid on marketplace.
+	 */
 	public $lengow_total_paid;
 
 	/**
@@ -63,9 +70,19 @@ class LengowOrderAbstract extends Order {
 	public $lengow_carrier;
 
 	/**
+	* Carrier Method from marketplace.
+	*/
+	public $lengow_method;
+
+	/**
 	* Tracking.
 	*/
 	public $lengow_tracking;
+
+	/**
+	* Shipped by markeplace
+	*/
+	public $lengow_sent_marketplace;
 
 	/**
 	* Extra information (json node form import).
@@ -78,126 +95,253 @@ class LengowOrderAbstract extends Order {
 	public $is_import;
 
 	/**
-	* Construc a Prestashop product with Lengow fields.
+	 * Lengow order id
+	 *
+	 * @var string
+	 */
+	public $id_lengow;
+
+	/**
+	 * Lengow flux id
+	 *
+	 * @var integer
+	 */
+	public $id_flux;
+
+	/**
+	 * ID of the delivery address
+	 *
+	 * @var integer
+	 */
+	public $lengow_delivery_address_id;
+
+	/**
+	 * Data of lengow order
+	 *
+	 * @var SimpleXmlElement
+	 */
+	public $data;
+
+	/**
+	 * Order is already fully imported
+	 *
+	 * @var bool
+	 */
+	public $is_finished = false;
+
+	/**
+	 * First time order is being processed
+	 *
+	 * @var bool
+	 */
+	public $first_import = true;
+
+	/**
+	 * Log message saved in DB
+	 *
+	 * @var string
+	 */
+	public $log_message = null;
+
+	/**
+	 * Order marketplace
+	 *
+	 * @var LengowMarketplace
+	 */
+	protected $marketplace;
+
+	/**
+	 * @var boolean order is disabled (ready to be reimported)
+	 */
+	public $is_disabled;
+
+	/**
+	* Construct a Lengow order based on Prestashop order.
 	*
-	* @param integer $id The ID of product
-	* @param integer $id_lang The lang of product
+	* @param integer $id 		Lengow order id
+	* @param integer $id_lang 	id lang
 	*/
 	public function __construct($id = null, $id_lang = null)
 	{
 		parent::__construct($id, $id_lang);
-		if ($id)
-			$this->_getLengowFields($id);
+		$this->loadLengowFields();
 	}
 
 	/**
-	* Check if order is already imported
-	*
-	* @param integer $id_order_lengow The marketplace ID
-	* @param integer $id_flux The flux ID
-	*
-	* @return boolean.
-	*/
-	public static function isAlreadyImported($id_order_lengow, $id_flux)
+	 * Get order id
+	 *
+	 * @param string    $lengow_id        		Lengow order id
+	 * @param integer   $delivery_address_id    devivery address id
+	 * @param string    $marketplace            marketplace name 
+	 *
+	 * @return mixed
+	 */
+	public static function getOrderIdFromLengowOrders($lengow_id, $delivery_address_id, $marketplace)
 	{
-		$select = 'SELECT COUNT(`id_order`) AS `count` FROM `'._DB_PREFIX_.'lengow_orders` '
-				.'WHERE `id_order_lengow` = \''.pSQL($id_order_lengow).'\' '
-				.'AND `id_flux` = \''.pSQL($id_flux).'\';';
-		$count = Db::getInstance()->ExecuteS($select);
-		if ($count[0]['count'] >= 1)
-			return true;
+		$query = 'SELECT `id_order`, `delivery_address_id`,`id_flux` 
+			FROM `'._DB_PREFIX_.'lengow_orders`
+			WHERE `id_order_lengow` = \''.pSQL($lengow_id).'\'
+			AND `marketplace` = \''.pSQL(Tools::strtolower($marketplace)).'\'
+			ORDER BY `id_order` DESC';
+
+		$results = Db::getInstance()->executeS($query);
+		if (count($results) == 0)
+			return false;
+
+		foreach ($results as $result)
+		{
+			if (is_null($result['delivery_address_id']) && !is_null($result['id_flux']))
+				return $result['id_order'];
+			elseif ($result['delivery_address_id'] == $delivery_address_id)
+				return $result['id_order'];
+		}
 		return false;
 	}
 
 	/**
-	* Get id of imported order
-	*
-	* @param integer $id_order_lengow The marketplace ID
-	* @param integer $id_flux The flux ID
-	*
-	* @return interger $order_id
-	*/
-	public static function getOrderId($id_order_lengow, $id_flux)
+	 * Get Lengow ID with order ID Prestashop and delivery address ID
+	 *
+	 * @param integer 	$id_order				prestashop order id
+	 * @param integer 	$delivery_address_id	delivery address id
+	 *
+	 * @return mixed
+	 */
+	public static function getLengowIdFromLengowDeliveryAddress($id_order, $delivery_address_id)
 	{
-		$select = 'SELECT `id_order` FROM `'._DB_PREFIX_.'lengow_orders` '
-				.'WHERE `id_order_lengow` = \''.pSQL($id_order_lengow).'\' '
-				.'AND `id_flux` = \''.pSQL($id_flux).'\';';
-		$order_id = Db::getInstance()->ExecuteS($select);
-		return $order_id[0]['id_order'];
+		$query = 'SELECT `id_order_lengow` FROM `'._DB_PREFIX_.'lengow_orders` '
+				.'WHERE `id_order` = \''.pSQL($id_order).'\' '
+				.'AND `delivery_address_id` = \''.pSQL($delivery_address_id).'\' ';
+		$r = Db::getInstance()->getRow($query);
+		if ($r)
+			return $r['id_order_lengow'];
+		return false;
 	}
 
 	/**
-	* Get Prestashop order with ID marketplace & ID flux
-	*
-	* @param integer $id_order_lengow The marketplace ID
-	* @param integer $id_flux The flux ID
-	*
-	* @return boolean.
-	*/
-	public static function getByOrderIDFlux($id_order_lengow, $id_flux)
+	 * Get order id from Lengow Order
+	 *
+	 * @param string  	$lengow_id  	Lengow order id
+	 * @param string  	$marketplace	marketplace name
+	 *
+	 * @return array
+	 */
+	public static function getOrderIdFromLengowOrder($lengow_id, $marketplace)
 	{
 		$query = 'SELECT `id_order` FROM `'._DB_PREFIX_.'lengow_orders` '
-				.'WHERE `id_order_lengow` = \''.pSQL($id_order_lengow).'\' '
-				.'AND `id_flux` = \''.pSQL($id_flux).'\' LIMIT 1;';
-		if ($result = Db::getInstance()->ExecuteS($query))
-			return new Order($result[0]['id_order']);
-		return null;
+				.'WHERE `id_order_lengow` = \''.pSQL($lengow_id).'\' '
+				.'AND `marketplace` = \''.pSQL(Tools::strtolower($marketplace)).'\' '
+				.'AND `is_disabled` = \'0\'';
+		return Db::getInstance()->executeS($query);
 	}
 
 	/**
-	* Save a Lengow's order on database
-	*
-	* @param integer $id_order The Prestashop order ID
-	* @param integer $id_order_lengow The marketplace ID
-	* @param integer $id_flux The flux ID
-	* @param string $marketplace The marketplace ID
-	* @param string $message Message from marketplace
-	* @param float $total_paid The total paid on marketplace
-	* @param string $carrier Carrier of order's marketplace
-	* @param string $tracking Trakcking from marketplace
-	* @param string $extra Extra value (node json) of order imported
-	* @param integer $id_lang Land ID
-	* @param integer $id_shop Shop ID
-	* @param integer $id_shop_group Shop group ID
-	*
-	* @return boolean.
-	*/
-	public static function addLengow($id_order, $id_order_lengow, $id_flux, $marketplace, $message, $total_paid, $carrier, $tracking, $extra, $id_lang = null, $id_shop = null, $id_shop_group = null)
+	 * Get order line from Lengow Order
+	 *
+	 * @param integer $order_id	prestashop order id
+	 *
+	 * @return array
+	 */
+	public static function getOrderLineFromLengowOrder($order_id)
 	{
-		$context = LengowCore::getContext();
-		if (empty($id_lang))
-			$id_lang = $context->language->id;
-		if (empty($id_shop))
-			$id_shop = $context->shop->id;
-		$id_shop_group = $context->shop->id_shop_group;
-		return Db::getInstance()->autoExecute(_DB_PREFIX_.'lengow_orders', array(
-											'id_order' =>	pSQL($id_order),
-											'id_order_lengow' => pSQL($id_order_lengow),
-											'id_shop' => $id_shop,
-											'id_shop_group' => $id_shop_group,
-											'id_lang' => $id_lang,
-											'id_flux' => $id_flux,
-											'marketplace' => pSQL($marketplace),
-											'message' => pSQL($message),
-											'total_paid' => $total_paid,
-											'carrier' => pSQL($carrier),
-											'tracking' =>	pSQL($tracking),
-											'extra' => pSQL($extra),
-											'date_add' => date('Y-m-d H:i:s'),
-											), 'INSERT');
+		$query = 'SELECT `id_order_line` FROM `'._DB_PREFIX_.'lengow_order_line` '
+				.'WHERE `id_order` = \''.pSQL($order_id).'\' ';
+		return Db::getInstance()->executeS($query);
 	}
 
 	/**
-	* Get the shipping price with current method
-	*
-	* @param float $total The total of order
-	*
-	* @return float The shipping price.
-	*/
+	 * Load information from lengow_orders table
+	 *
+	 * @return boolean.
+	 */
+	protected function loadLengowFields()
+	{
+		$query = 'SELECT lo.`id_order_lengow`, lo.`id_flux`, lo.`delivery_address_id`, lo.`marketplace`, lo.`message`, lo.`total_paid`, lo.`carrier`, lo.`method`, lo.`tracking`, lo.`sent_marketplace`, lo.`extra`, lo.`is_disabled` '
+				.'FROM `'._DB_PREFIX_.'lengow_orders` lo '
+				.'WHERE lo.id_order = \''.(int)$this->id.'\'';
+
+		if ($result = Db::getInstance()->getRow($query))
+		{
+			$this->id_lengow = $result['id_order_lengow'];
+			$this->id_flux = $result['id_flux'];
+			$this->lengow_delivery_address_id = $result['delivery_address_id'];
+			$this->lengow_marketplace = $result['marketplace'];
+			$this->lengow_message = $result['message'];
+			$this->lengow_total_paid = $result['total_paid'];
+			$this->lengow_carrier = $result['carrier'];
+			$this->lengow_method = $result['method'];
+			$this->lengow_tracking = $result['tracking'];
+			$this->lengow_sent_marketplace = $result['sent_marketplace'];
+			$this->lengow_extra = $result['extra'];
+			$this->is_disabled = (bool)$result['is_disabled'];
+			return true;
+		}
+		else
+			return false;
+	}
+
+	/**
+	 * Update order status
+	 *
+	 * @param LengowMarketplace $marketplace 	Lengow marketplace
+	 * @param string 			$api_state 		marketplace state
+	 * @param string 			$lengow_id 		tracking number
+	 *
+	 * @return bool true if order has been updated
+	 */
+	public function updateState(LengowMarketplace $marketplace, $api_state, $tracking_number)
+	{
+		// get prestashop equivalent state id to Lengow API state
+		$id_order_state = LengowCore::getOrderState($marketplace->getStateLengow($api_state));
+
+		// if state is different between API and Prestashop
+		if ($this->getCurrentState() != $id_order_state)
+		{
+			// Change state process to shipped
+			if ($this->getCurrentState() == LengowCore::getOrderState('accepted')
+					&&	($marketplace->getStateLengow($api_state) == 'shipped' || $marketplace->getStateLengow($api_state) == 'closed'))
+			{
+				$history = new OrderHistory();
+				$history->id_order = $this->id;
+				$history->changeIdOrderState(LengowCore::getOrderState('shipped'), $this, true);
+				$history->validateFields();
+				$history->add();
+
+				if (!empty($tracking_number))
+				{
+					$this->shipping_number = $tracking_number;
+					$this->validateFields();
+					$this->update();
+				}
+				LengowCore::getLogInstance()->write('state updated to shipped', true, $this->id_lengow);
+				return true;
+			}
+			// Change state process or shipped to cancel
+			elseif (($this->getCurrentState() == LengowCore::getOrderState('accepted') || $this->getCurrentState() == LengowCore::getOrderState('shipped'))
+					&& ($marketplace->getStateLengow($api_state) == 'canceled' || $marketplace->getStateLengow($api_state) == 'refused'))
+			{
+				$history = new OrderHistory();
+				$history->id_order = $this->id;
+				$history->changeIdOrderState(LengowCore::getOrderState('canceled'), $this, true);
+				$history->validateFields();
+				$history->add();
+				LengowCore::getLogInstance()->write('state updated to canceled', true, $this->id_lengow);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Get the shipping price with current method
+	 *
+	 * @param float $total The total of order
+	 *
+	 * @return float The shipping price.
+	 */
 	public static function getShippingPrice($total)
 	{
 		$context = Context::getContext();
-		$carrier = LengowCore::getInstanceCarrier();
+		$carrier = LengowCore::getExportCarrier();
 		$id_zone = $context->country->id_zone;
 		$id_currency = $context->cart->id_currency;
 		$shipping_method = $carrier->getShippingMethod();
@@ -212,188 +356,12 @@ class LengowOrderAbstract extends Order {
 	}
 
 	/**
-	* Init lengow fields from the order ID
-	*
-	* @param integer $id_order The order ID
-	*
-	* @return boolean.
-	*/
-	private function _getLengowFields($id)
-	{
-		$query = 'SELECT `id_order_lengow` , `id_flux` , `marketplace` , `message` , `total_paid` , `carrier` , `tracking` , `extra` '
-				.'FROM `'._DB_PREFIX_.'lengow_orders` '
-				.'WHERE `id_order` = \''.pSQL($id).'\' '
-				.'LIMIT 1;';
-		if ($result = Db::getInstance()->ExecuteS($query))
-		{
-			$result = array_shift($result);
-			$this->lengow_id_order = $result['id_order_lengow'];
-			$this->lengow_id_flux = $result['id_flux'];
-			$this->lengow_marketplace = $result['marketplace'];
-			$this->lengow_message = $result['message'];
-			$this->lengow_total_paid = $result['total_paid'];
-			$this->lengow_carrier = $result['carrier'];
-			$this->lengow_tracking = $result['tracking'];
-			$this->lengow_extra = $result['extra'];
-			return true;
-		}
-		else
-			return false;
-	}
-
-	/**
-	* Rebuild order with Lengow prices
-	*
-	* @param array $lengow_products Products with prices
-	* @param float $total_paid Total paid on marketplace
-	* @param float $shipping_price Total shipping price
-	* @param float $wrapping_price Total wrapping price
-	*/
-	public function rebuildOrder($lengow_products, $total_paid, $shipping_price, $wrapping_price)
-	{
-		if ($products = $this->getProducts())
-		{
-			$total_order = 0;
-			$total_order_tax_excl = 0;
-			foreach ($products as $product_line)
-			{
-				$order_detail = new LengowOrderDetail($product_line['id_order_detail']);
-				if ($order_detail->product_attribute_id > 0)
-					$product_sku = $order_detail->product_id.'_'.$order_detail->product_attribute_id;
-				else
-					$product_sku = $order_detail->product_id;
-				$order_detail->changePrice($lengow_products[$product_sku]['price'], $lengow_products[$product_sku]['tax_rate']);
-				$tax_product = 1 + (0.01 * $lengow_products[$product_sku]['tax_rate']);
-				$total_order += $lengow_products[$product_sku]['price'] * $lengow_products[$product_sku]['qty'];
-				$total_order_tax_excl += ($lengow_products[$product_sku]['price'] / $tax_product) * $lengow_products[$product_sku]['qty'];
-			}
-			// Total
-			$this->total_products = LengowCore::formatNumber($total_order_tax_excl);
-			$this->total_products_wt = $total_order;
-			// Discount
-			if (_PS_VERSION_ >= '1.5')
-			{
-				$this->total_discounts_tax_excl = 0;
-				$this->total_discounts_tax_incl = 0;
-			}
-			$this->total_discounts = 0;
-			// Shipping
-			$carrier_tax = 1 + (0.01 * $this->carrier_tax_rate);
-			$this->total_shipping_tax_excl = LengowCore::formatNumber($shipping_price / $carrier_tax);
-			$this->total_shipping_tax_incl = (float)$shipping_price;
-			$this->total_shipping = (float)$shipping_price;
-			// Wrapping
-			if (_PS_VERSION_ >= '1.5')
-			{
-				$id_address = (int)$this->{Configuration::get('PS_TAX_ADDRESS_TYPE')};
-				$address = LengowAddress::initializeLengow($id_address);
-				$tax_manager = TaxManagerFactory::getManager($address, (int)Configuration::get('PS_GIFT_WRAPPING_TAX_RULES_GROUP'));
-				$tax_calculator = $tax_manager->getTaxCalculator();
-				$this->total_wrapping_tax_excl = $tax_calculator->addTaxes($wrapping_price);
-				$this->total_wrapping_tax_incl = (float)$wrapping_price;
-			}
-			$this->total_wrapping = (float)$wrapping_price;
-			// Pay
-			if (_PS_VERSION_ >= '1.5')
-			{
-				$this->total_paid_tax_excl = LengowCore::formatNumber($total_order_tax_excl + $this->total_shipping_tax_excl + $this->total_wrapping_tax_excl);
-				$this->total_paid_tax_incl = $total_paid;
-			}
-			$this->total_paid = $total_paid;
-			$this->total_paid_real = $total_paid;
-			$this->update();
-			if (_PS_VERSION_ >= '1.5')
-			{
-				$this->rebuildOrderPayment();
-				$this->rebuildOrderInvoice();
-				$this->rebuildOrderCarrier();
-				$this->rebuildOrderDetailTax();
-			}
-		}
-	}
-
-	/**
-	* Rebuild order payment with Lengow prices
-	*
-	* @param float $total_paid Total paid on marketplace
-	*/
-	public function rebuildOrderPayment()
-	{
-		$update = 'UPDATE `'._DB_PREFIX_.'order_payment` SET `amount` = \''.pSQL($this->total_paid).'\' WHERE `order_reference` = \''.pSQL($this->reference).'\' LIMIT 1;';
-		Db::getInstance()->execute($update);
-	}
-
-	/**
-	* Rebuild order payment with Lengow prices
-	*/
-	public function rebuildOrderInvoice()
-	{
-		$invoices = $this->getInvoicesCollection();
-		if (isset($invoices[0]))
-		{
-			$invoice = $invoices[0];
-			$invoice->total_products = $this->total_products;
-			$invoice->total_products_wt = $this->total_products_wt;
-			// Discount
-			$invoice->total_discounts_tax_excl = 0;
-			$invoice->total_discounts_tax_incl = 0;
-			$invoice->total_discounts = 0;
-			// Shipping
-			$invoice->total_shipping_tax_excl = $this->total_shipping_tax_excl;
-			$invoice->total_shipping_tax_incl = $this->total_shipping_tax_incl;
-			$invoice->total_shipping = $this->total_shipping;
-			// Wrapping
-			$invoice->total_wrapping_tax_excl = $this->total_wrapping_tax_excl;
-			$invoice->total_wrapping_tax_incl = $this->total_wrapping_tax_incl;
-			$invoice->total_wrapping = $this->total_wrapping;
-			// Pay
-			$invoice->total_paid_tax_excl = $this->total_paid_tax_excl;
-			$invoice->total_paid_tax_incl = $this->total_paid_tax_incl;
-			$invoice->total_paid = $this->total_paid;
-			$invoice->total_paid_real = $this->total_paid_real;
-			$invoice->update();
-		}
-	}
-
-	/**
-	* Rebuild order carrier with Lengow prices
-	*/
-	public function rebuildOrderCarrier()
-	{
-		$id_order_carrier = Db::getInstance()->getValue(
-			'SELECT `id_order_carrier` '.
-			'FROM `'._DB_PREFIX_.'order_carrier` '.
-			'WHERE `id_order` = '.$this->id.';');
-		if ($id_order_carrier)
-		{
-			$order_carrier = new OrderCarrier($id_order_carrier);
-			$order_carrier->shipping_cost_tax_exc = $this->total_shipping_tax_excl;
-			$order_carrier->shipping_cost_tax_incl = $this->total_shipping_tax_incl;
-			$order_carrier->update();
-		}
-	}
-
-	/**
-	* Rebuild OrderDetailTax
-	*
-	* @return void
-	*/
-	public function rebuildOrderDetailTax()
-	{
-		$detail_list = OrderDetail::getList($this->id);
-		foreach ($detail_list as $detail)
-		{
-			$order_detail = new OrderDetail($detail['id_order_detail']);
-			$order_detail->updateTaxAmount($this);
-		}
-	}
-
-	/**
-	* Rebuild OrderCarrier after validateOrder
-	*
-	* @param int $id_carrier
-	* @return void
-	*/
+	 * Rebuild OrderCarrier after validateOrder
+	 *
+	 * @param int $id_carrier
+	 * 
+	 * @return void
+	 */
 	public function forceCarrier($id_carrier)
 	{
 		if ($id_carrier == '')
@@ -418,7 +386,7 @@ class LengowOrderAbstract extends Order {
 
 	public function getIdOrderCarrier()
 	{
-		if (_PS_VERSION_ < '1.5')
+		if (_PS_VERSION_ < '1.5.5')
 			return (int)Db::getInstance()->getValue('
 					SELECT `id_order_carrier`
 					FROM `'._DB_PREFIX_.'order_carrier`
@@ -428,46 +396,150 @@ class LengowOrderAbstract extends Order {
 	}
 
 	/**
-	* Add Relay Point in Mondial Relay table
-	*
-	* @param array $relay informations
-	* @return boolean true if success, false if not
-	*/
-	public function addRelayPoint($relay)
+	 * Check if a lengow order
+	 *
+	 * @param integer 	$id	prestashop order id
+	 *
+	 * @return boolean
+	 */
+	public static function isFromLengow($id)
 	{
-		if (!is_array($relay) || empty($relay))
-			return false;
-
-		$insert_values = array(
-			'id_customer' => (int)$this->id_customer,
-			'id_method' => (int)$this->id_carrier,
-			'id_cart' => (int)$this->id_cart,
-			'id_order' => (int)$this->id,
-			'MR_Selected_Num' => pSQL($relay['Num']),
-			'MR_Selected_LgAdr1' => pSQL($relay['LgAdr1']),
-			'MR_Selected_LgAdr2' => pSQL($relay['LgAdr2']),
-			'MR_Selected_LgAdr3' => pSQL($relay['LgAdr3']),
-			'MR_Selected_LgAdr4' => pSQL($relay['LgAdr4']),
-			'MR_Selected_CP' => pSQL($relay['CP']),
-			'MR_Selected_Ville' => pSQL($relay['Ville']),
-			'MR_Selected_Pays' => pSQL($relay['Pays'])
-		);
-
-		if (_PS_VERSION_ < '1.5')
-			return Db::getInstance()->autoExecute(_DB_PREFIX_.'mr_selected', $insert_values, 'INSERT');
-		else
-			return DB::getInstance()->insert('mr_selected', $insert_values);
-	}
-
-	public static function isOrderLengow($id)
-	{
-		$id_order_lengow = Db::getInstance()->getValue(
+		$r = Db::getInstance()->executeS(
 			'SELECT `id_order_lengow` '.
 			'FROM `'._DB_PREFIX_.'lengow_orders` '.
-			'WHERE `id_order` = '.$id.';');
-		if ($id_order_lengow == '')
+			'WHERE `id_order` = '.(int)$id);
+		if (empty($r) || $r[0]['id_order_lengow'] == '')
 			return false;
 		else
 			return true;
 	}
+
+	/**
+	 * Sets order state to Lengow technical error
+	 */
+	public function setStateToError()
+	{
+		$id_error_lengow_state = LengowCore::getLengowErrorStateId();
+		// update order to Lengow error state if not already updated
+		if ($this->getCurrentState() !== $id_error_lengow_state)
+			$this->setCurrentState($id_error_lengow_state, Context::getContext()->employee->id);
+	}
+
+	/**
+	 * Mark order as disabled in lengow_orders table
+	 *
+	 * @param integer 	$id	prestashop order id
+	 *
+	 * @return boolean
+	 */
+	public static function disable($id)
+	{
+		$update = 'UPDATE '._DB_PREFIX_.'lengow_orders '
+				.'SET `is_disabled` = 1 '
+				.'WHERE `id_order`= '.(int)$id;
+		return DB::getInstance()->execute($update);
+	}
+
+	/**
+	 * Check and change the name of the marketplace for v3 compatibility
+	 */
+	public function checkAndChangeMarketplaceName()
+	{
+		if (LengowCheck::isValidAuth())
+		{
+			$connector = new LengowConnector(LengowCore::getAccessToken(), LengowCore::getSecretCustomer());
+			$results = $connector->get(
+									'/v3.0/orders',
+									array(
+										'marketplace_order_id' 	=> $this->id_lengow,
+										'marketplace'			=> $this->lengow_marketplace,
+										'account_id' 			=> LengowCore::getIdAccount()
+									),
+									'stream'
+								);
+			if (is_null($results))
+				return;
+			$results = Tools::jsonDecode($results);
+			if (isset($results->error))
+				return;
+			foreach ($results->results as $order)
+			{
+				if ($this->lengow_marketplace != (string)$order->marketplace)
+				{
+					$update = 'UPDATE '._DB_PREFIX_.'lengow_orders '
+						.'SET `marketplace` = \''.pSQL(Tools::strtolower((string)$order->marketplace)).'\' '
+						.'WHERE `id_order` = \''.(int)$this->id.'\'';
+					DB::getInstance()->execute($update);
+					$this->loadLengowFields();
+				}
+			}
+		}
+	}
+
+	/**
+	 * Get order id
+	 *
+	 * @return mixed
+	 */
+	public static function getOrderIdFromLengowOrdersV2($lengow_id, $feed_id, $marketplace)
+	{
+		$query = 'SELECT `id_order` FROM '
+				._DB_PREFIX_.'lengow_orders '
+				.'WHERE `id_order_lengow` = \''.pSQL($lengow_id).'\' '
+				.'AND `id_flux` = \''.(int)$feed_id.'\' '
+				.'AND `marketplace` = \''.pSQL(Tools::strtolower($marketplace)).'\' '
+				.'ORDER BY `id_order` DESC';
+		$r = Db::getInstance()->getRow($query);
+		if ($r)
+			return $r['id_order'];
+		return false;
+	}
+
+	/**
+	 * Update order status
+	 *
+	 * @return bool true if order has been updated
+	 */
+	public function updateStateV2(LengowMarketplaceV2 $marketplace, $api_state, $tracking_number)
+	{
+		// get prestashop equivalent state id to Lengow API state
+		$id_order_state = LengowCore::getOrderStateV2($marketplace->getStateLengow($api_state));
+		// if state is different between API and Prestashop
+		if ($this->getCurrentState() != $id_order_state)
+		{
+			// Change state process to shipped
+			if ($this->getCurrentState() == LengowCore::getOrderStateV2('process') && $marketplace->getStateLengow($api_state) == 'shipped')
+			{
+				$history = new OrderHistory();
+				$history->id_order = $this->id;
+				$history->changeIdOrderState(LengowCore::getOrderStateV2('shipped'), $this, true);
+				$history->validateFields();
+				$history->add();
+
+				if (!empty($tracking_number))
+				{
+					$this->shipping_number = $tracking_number;
+					$this->validateFields();
+					$this->update();
+
+				}
+				LengowCore::getLogInstance()->write('state updated to shipped', true, $this->id_lengow);
+				return true;
+			}
+			// Change state process or shipped to cancel
+			elseif (($this->getCurrentState() == LengowCore::getOrderStateV2('process') || $this->getCurrentState() == LengowCore::getOrderStateV2('shipped'))
+						&& $marketplace->getStateLengow($api_state) == 'canceled')
+			{
+				$history = new OrderHistory();
+				$history->id_order = $this->id;
+				$history->changeIdOrderState(LengowCore::getOrderStateV2('cancel'), $this, true);
+				$history->validateFields();
+				$history->add();
+				LengowCore::getLogInstance()->write('state updated to cancel', true, $this->id_lengow);
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

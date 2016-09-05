@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,18 +14,19 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
  * The Lengow Webservice Class.
  *
- * @author Romain Le Polh <romain@lengow.com>
- * @copyright 2014 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
-class LengowWebservice {
+class LengowWebservice
+{
 
 	public static $webservice_url = '/modules/lengow/webservice/lengow.php?action=#ACTION';
 
@@ -42,7 +43,7 @@ class LengowWebservice {
 	* @param  string $action
 	* @return string
 	*/
-	private static function _getUrlWebservice($action)
+	private static function getUrlWebservice($action)
 	{
 		if (array_key_exists($action, self::$AVAILABLE_ACTION))
 			return str_replace('#ACTION', $action, self::$webservice_url);
@@ -63,7 +64,7 @@ class LengowWebservice {
 		$out .= '<div><ul>';
 		foreach (self::$AVAILABLE_ACTION as $action => $description)
 		{
-			$out .= '<li><a style="color: #222; font-size: 12px; text-decoration: none;" href="'.self::_getUrlWebservice($action).'">'.$description.'</a>';
+			$out .= '<li><a style="color: #222; font-size: 12px; text-decoration: none;" href="'.self::getUrlWebservice($action).'">'.$description.'</a>';
 			$out .= '</li>';
 		}
 		$out .= '</ul></div>';
@@ -149,7 +150,7 @@ class LengowWebservice {
 				$days = 10;
 				$show_extra = false;
 				if (Tools::getValue('delete') != '')
-					LengowCore::deleteProcessOrder(Tools::getValue('delete'));
+					LengowLog::deleteLog(Tools::getValue('delete'));
 				if (Tools::getValue('days') != '')
 					$days = Tools::getValue('days');
 				if (Tools::getValue('show_extra') == 1)
@@ -182,8 +183,8 @@ class LengowWebservice {
 
 						// Update Order Carrier
 						$sql = 'UPDATE `'._DB_PREFIX_.'order_carrier`
-								SET `shipping_cost_tax_excl` = `shipping_cost_tax_incl` / '.$rate.'
-								WHERE `id_order` = '.$id_order.'
+								SET `shipping_cost_tax_excl` = `shipping_cost_tax_incl` / '.pSQL($rate).'
+								WHERE `id_order` = '.(int)$id_order.'
 								LIMIT 1';
 						Db::getInstance()->execute($sql);
 					}
@@ -209,9 +210,9 @@ class LengowWebservice {
 							$total_amount = $detail->total_price_tax_incl - $detail->total_price_tax_excl;
 
 							$sql = 'UPDATE `'._DB_PREFIX_.'order_detail_tax`
-								SET `unit_amount` = '.$unit_amount.',
-									`total_amount` = '.$total_amount.'
-								WHERE `id_order_detail` = '.$detail->id.'
+								SET `unit_amount` = '.(float)$unit_amount.',
+									`total_amount` = '.(float)$total_amount.'
+								WHERE `id_order_detail` = '.(int)$detail->id.'
 								LIMIT 1';
 
 							Db::getInstance()->execute($sql);

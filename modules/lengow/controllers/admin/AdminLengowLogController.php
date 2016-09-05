@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,8 +14,8 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -24,8 +24,8 @@ require_once _PS_MODULE_DIR_.'lengow'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEP
 /**
  * The Lengow Log Admin Controller.
  *
- * @author Romain Le Polh <romain@lengow.com>
- * @copyright 2014 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
 class AdminLengowLogController extends ModuleAdminController {
 
@@ -36,7 +36,7 @@ class AdminLengowLogController extends ModuleAdminController {
 	{
 		$this->context = Context::getContext();
 		$this->table = 'lengow_logs_import';
-		$this->className = 'LengowLogs';
+		$this->className = 'LengowLog';
 		$this->lang = false;
 		$this->explicitSelect = true;
 		$this->list_no_link   = true;
@@ -54,20 +54,16 @@ class AdminLengowLogController extends ModuleAdminController {
 		);
 
 		$this->fields_list = array(
+			'id' => array(
+				'title' => $this->l('ID'),
+				'width' => 'auto',
+				'search' => false,
+				'orderby' => false
+			),
 			'lengow_order_id' => array(
 				'title' => $this->l('Lengow Order ID'),
 				'align' => 'center',
 				'width' => 'auto'
-			),
-			'is_finished' => array(
-				'title' => $this->l('Finished ?'),
-				'width' => 'auto',
-				'icon' => array(
-					0 => 'disabled.gif',
-					1 => 'enabled.gif',
-					'default' => 'disabled.gif',
-				),
-				'search' => false,
 			),
 			'message' => array(
 				'title' => $this->l('Message'),
@@ -79,9 +75,9 @@ class AdminLengowLogController extends ModuleAdminController {
 				'width' => 'auto',
 				'align' => 'center',
 				'type' => 'datetime',
-				'orderby' => true
+				'orderby' => false
 			),
-			'is_processing' => array(
+			'is_finished' => array(
 				'title' => $this->l('Delete ?'),
 				'callback' => 'getDelete',
 				'width' => 'auto',
@@ -91,7 +87,7 @@ class AdminLengowLogController extends ModuleAdminController {
 		);
 
 		parent::__construct();
-		$this->identifier = 'lengow_order_id';
+		$this->identifier = 'id';
 	}
 
 	/**
@@ -103,7 +99,7 @@ class AdminLengowLogController extends ModuleAdminController {
 	public function postProcess($token = null)
 	{
 		if (Tools::getValue('delete') != '')
-			LengowCore::deleteProcessOrder(Tools::getValue('delete'));
+			LengowLog::deleteLog(Tools::getValue('delete'));
 		parent::postProcess($token);
 	}
 
@@ -116,11 +112,11 @@ class AdminLengowLogController extends ModuleAdminController {
 	{
 		$echo = $echo;
 		$token = Tools::getAdminTokenLite('AdminLengowLog', Context::getContext());
-		return '<a href="index.php?controller=AdminLengowLog&delete='.$row['lengow_order_id'].'&token='.$token.'"><img src="'._PS_ADMIN_IMG_.'delete.gif" /></a>';
+		return '<a href="index.php?controller=AdminLengowLog&delete='.$row['id'].'&token='.$token.'"><img src="'._PS_ADMIN_IMG_.'delete.gif" /></a>';
 	}
 
 	/**
-	* Delete selecteded logs to Lengow
+	* Delete selected logs to Lengow
 	*/
 	protected function processBulkDelete()
 	{
@@ -128,7 +124,7 @@ class AdminLengowLogController extends ModuleAdminController {
 		if (is_array($logs) && (count($logs)))
 		{
 			foreach ($logs as $log)
-				LengowCore::deleteProcessOrder($log);
+				LengowLog::deleteLog($log);
 		}
 	}
 

@@ -1,0 +1,138 @@
+2016-09-02 : 09:28:05 - Connector https://solution.lengow.com/wsdl/connector/call.json?token=5889zgu4gwxxcaibfsc5889&idClient=5889&method=authentification&array=a%3A0%3A%7B%7D
+2016-09-02 : 09:28:49 - Connector http://api.lengow.com/v2/2016-08-23/2016-09-02/5889/12535/orders/commands/plugin/
+2016-09-02 : 09:28:53 - 17 order(s) found
+2016-09-02 : 09:28:54 - Order 106757400: rewrite amount without processing fee
+2016-09-02 : 09:28:54 - Order 106757400--1472801333: generate unique email : generated-email+106757400--1472801333@bougies-la-francaise.com
+2016-09-02 : 09:28:54 - Order 106757400--1472801333: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:28:54 - Order 106757400--1472801333: product id 2425660 found with field ID_PRODUCT (2425660)
+2016-09-02 : 09:28:56 - Order 106757400--1472801333: order saved in lengow orders table
+2016-09-02 : 09:28:56 - Order 106757400--1472801333: order successfully imported (ID 4681)
+2016-09-02 : 09:28:56 - Order 106757400--1472801333: carrier compatibility ensured with carrier 
+2016-09-02 : 09:28:56 - Order 106787550: rewrite amount without processing fee
+2016-09-02 : 09:28:56 - Order 106787550--1472801336: generate unique email : generated-email+106787550--1472801336@bougies-la-francaise.com
+2016-09-02 : 09:28:56 - Order 106787550--1472801336: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:28:56 - Order 106787550--1472801336: product id 2386974 found with field ID_PRODUCT (2386974)
+2016-09-02 : 09:28:58 - Order 106787550--1472801336: order saved in lengow orders table
+2016-09-02 : 09:28:58 - Order 106787550--1472801336: order successfully imported (ID 4682)
+2016-09-02 : 09:28:58 - Order 106787550--1472801336: carrier compatibility ensured with carrier 
+2016-09-02 : 09:28:58 - Order 106924130: rewrite amount without processing fee
+2016-09-02 : 09:28:58 - Order 106924130--1472801338: generate unique email : generated-email+106924130--1472801338@bougies-la-francaise.com
+2016-09-02 : 09:28:59 - Order 106924130--1472801338: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:28:59 - Order 106924130--1472801338: product id 2388995 found with field ID_PRODUCT (2388995)
+2016-09-02 : 09:29:01 - Order 106924130--1472801338: order saved in lengow orders table
+2016-09-02 : 09:29:01 - Order 106924130--1472801338: order successfully imported (ID 4683)
+2016-09-02 : 09:29:01 - Order 106924130--1472801338: carrier compatibility ensured with carrier 
+2016-09-02 : 09:29:01 - Order 106971910: rewrite amount without processing fee
+2016-09-02 : 09:29:01 - Order 106971910--1472801341: generate unique email : generated-email+106971910--1472801341@bougies-la-francaise.com
+2016-09-02 : 09:29:01 - Order 106971910--1472801341: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:01 - Order 106971910--1472801341: product id 2390180 found with field ID_PRODUCT (2390180)
+2016-09-02 : 09:29:03 - Order 106971910--1472801341: order saved in lengow orders table
+2016-09-02 : 09:29:03 - Order 106971910--1472801341: order successfully imported (ID 4684)
+2016-09-02 : 09:29:03 - Order 106971910--1472801341: carrier compatibility ensured with carrier 
+2016-09-02 : 09:29:03 - Order 1-2016.236.0602675: rewrite amount without processing fee
+2016-09-02 : 09:29:03 - Order 1-2016.236.0602675--1472801343: generate unique email : generated-email+1-2016.236.0602675--1472801343@bougies-la-francaise.com
+2016-09-02 : 09:29:03 - Order 1-2016.236.0602675--1472801343: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:03 - Order 1-2016.236.0602675--1472801343: product id 2452455 found with field ID_PRODUCT (2452455)
+2016-09-02 : 09:29:05 - Order 1-2016.236.0602675--1472801343: order saved in lengow orders table
+2016-09-02 : 09:29:05 - Order 1-2016.236.0602675--1472801343: order successfully imported (ID 4685)
+2016-09-02 : 09:29:05 - Order 1-2016.236.0602675--1472801343: carrier compatibility ensured with carrier colissimo
+2016-09-02 : 09:29:05 - Order 1-2016.242.0885299: rewrite amount without processing fee
+2016-09-02 : 09:29:05 - Order 1-2016.242.0885299--1472801345: generate unique email : generated-email+1-2016.242.0885299--1472801345@bougies-la-francaise.com
+2016-09-02 : 09:29:05 - Order 1-2016.242.0885299--1472801345: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:05 - Order 1-2016.242.0885299--1472801345: product id 2381685 found with field ID_PRODUCT (2381685)
+2016-09-02 : 09:29:05 - Order 1-2016.242.0885299--1472801345: product id 2230714_134 found with field ID_PRODUCT (2230714_134)
+2016-09-02 : 09:29:07 - Order 1-2016.242.0885299--1472801345: order saved in lengow orders table
+2016-09-02 : 09:29:07 - Order 1-2016.242.0885299--1472801345: order successfully imported (ID 4686)
+2016-09-02 : 09:29:07 - Order 1-2016.242.0885299--1472801345: carrier compatibility ensured with carrier Colissimo
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802: rewrite amount without processing fee
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802--1472801347: generate unique email : generated-email+1-2016.242.1086802--1472801347@bougies-la-francaise.com
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802--1472801347: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802--1472801347: product id 2391625 found with field ID_PRODUCT (2391625)
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802--1472801347: product id 2388995 found with field ID_PRODUCT (2388995)
+2016-09-02 : 09:29:07 - Order 1-2016.242.1086802--1472801347: product id 2388970 found with field ID_PRODUCT (2388970)
+2016-09-02 : 09:29:10 - Order 1-2016.242.1086802--1472801347: order saved in lengow orders table
+2016-09-02 : 09:29:10 - Order 1-2016.242.1086802--1472801347: order successfully imported (ID 4687)
+2016-09-02 : 09:29:10 - Order 1-2016.242.1086802--1472801347: carrier compatibility ensured with carrier Colissimo
+2016-09-02 : 09:29:10 - Order 1-2016.243.0605553: rewrite amount without processing fee
+2016-09-02 : 09:29:10 - Order 1-2016.243.0605553--1472801350: generate unique email : generated-email+1-2016.243.0605553--1472801350@bougies-la-francaise.com
+2016-09-02 : 09:29:10 - Order 1-2016.243.0605553--1472801350: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:10 - Order 1-2016.243.0605553--1472801350: product id 2600316 found with field ID_PRODUCT (2600316)
+2016-09-02 : 09:29:10 - Order 1-2016.243.0605553--1472801350: product id 2600317 found with field ID_PRODUCT (2600317)
+2016-09-02 : 09:29:13 - Order 1-2016.243.0605553--1472801350: order saved in lengow orders table
+2016-09-02 : 09:29:13 - Order 1-2016.243.0605553--1472801350: order successfully imported (ID 4688)
+2016-09-02 : 09:29:13 - Order 1-2016.243.0605553--1472801350: carrier compatibility ensured with carrier colissimo
+2016-09-02 : 09:29:13 - Order 1-2016.243.0709359: rewrite amount without processing fee
+2016-09-02 : 09:29:13 - Order 1-2016.243.0709359--1472801353: generate unique email : generated-email+1-2016.243.0709359--1472801353@bougies-la-francaise.com
+2016-09-02 : 09:29:13 - Order 1-2016.243.0709359--1472801353: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:13 - Order 1-2016.243.0709359--1472801353: product id 2600305 found with field ID_PRODUCT (2600305)
+2016-09-02 : 09:29:13 - Order 1-2016.243.0709359--1472801353: product id 2204044_3 found with field ID_PRODUCT (2204044_3)
+2016-09-02 : 09:29:15 - Order 1-2016.243.0709359--1472801353: order saved in lengow orders table
+2016-09-02 : 09:29:15 - Order 1-2016.243.0709359--1472801353: order successfully imported (ID 4689)
+2016-09-02 : 09:29:15 - Order 1-2016.243.0709359--1472801353: carrier compatibility ensured with carrier colissimo
+2016-09-02 : 09:29:15 - Order 1-2016.243.0751703: rewrite amount without processing fee
+2016-09-02 : 09:29:15 - Order 1-2016.243.0751703--1472801355: generate unique email : generated-email+1-2016.243.0751703--1472801355@bougies-la-francaise.com
+2016-09-02 : 09:29:15 - Order 1-2016.243.0751703--1472801355: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:15 - Order 1-2016.243.0751703--1472801355: product id 2391465 found with field ID_PRODUCT (2391465)
+2016-09-02 : 09:29:17 - Order 1-2016.243.0751703--1472801355: order saved in lengow orders table
+2016-09-02 : 09:29:17 - Order 1-2016.243.0751703--1472801355: order successfully imported (ID 4690)
+2016-09-02 : 09:29:17 - Order 1-2016.243.0751703--1472801355: carrier compatibility ensured with carrier colissimo
+2016-09-02 : 09:29:17 - Order 1-2016.245.0589430: rewrite amount without processing fee
+2016-09-02 : 09:29:17 - Order 1-2016.245.0589430--1472801357: generate unique email : generated-email+1-2016.245.0589430--1472801357@bougies-la-francaise.com
+2016-09-02 : 09:29:17 - Order 1-2016.245.0589430--1472801357: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:17 - Order 1-2016.245.0589430--1472801357: product id 2600305 found with field ID_PRODUCT (2600305)
+2016-09-02 : 09:29:17 - Order 1-2016.245.0589430--1472801357: product id 2391625 found with field ID_PRODUCT (2391625)
+2016-09-02 : 09:29:20 - Order 1-2016.245.0589430--1472801357: order saved in lengow orders table
+2016-09-02 : 09:29:20 - Order 1-2016.245.0589430--1472801357: order successfully imported (ID 4691)
+2016-09-02 : 09:29:20 - Order 1-2016.245.0589430--1472801357: carrier compatibility ensured with carrier Home / Regular
+2016-09-02 : 09:29:20 - Order 1-2016.245.0651969: rewrite amount without processing fee
+2016-09-02 : 09:29:20 - Order 1-2016.245.0651969--1472801360: generate unique email : generated-email+1-2016.245.0651969--1472801360@bougies-la-francaise.com
+2016-09-02 : 09:29:20 - Order 1-2016.245.0651969--1472801360: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:20 - Order 1-2016.245.0651969--1472801360: product id 2381605_228 found with field ID_PRODUCT (2381605_228)
+2016-09-02 : 09:29:21 - Connector https://solution.lengow.com/wsdl/connector/call.json?token=5889zgu4gwxxcaibfsc5889&idClient=5889&method=authentification&array=a%3A0%3A%7B%7D
+2016-09-02 : 09:29:22 - Order 1-2016.245.0651969--1472801360: order saved in lengow orders table
+2016-09-02 : 09:29:22 - Order 1-2016.245.0651969--1472801360: order successfully imported (ID 4692)
+2016-09-02 : 09:29:22 - Order 1-2016.245.0651969--1472801360: carrier compatibility ensured with carrier Home / Regular
+2016-09-02 : 09:29:22 - Order 1300436540127-A: rewrite amount without processing fee
+2016-09-02 : 09:29:22 - Order 1300436540127-A--1472801362: generate unique email : generated-email+1300436540127-A--1472801362@bougies-la-francaise.com
+2016-09-02 : 09:29:22 - Order 1300436540127-A--1472801362: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:22 - Order 1300436540127-A--1472801362: product id 2390190 found with field REFERENCE_PRODUCT (2390190)
+2016-09-02 : 09:29:22 - Order 1300436540127-A--1472801362: product id 2391655 found with field REFERENCE_PRODUCT (2391655)
+2016-09-02 : 09:29:25 - Order 1300436540127-A--1472801362: order saved in lengow orders table
+2016-09-02 : 09:29:25 - Order 1300436540127-A--1472801362: order successfully imported (ID 4693)
+2016-09-02 : 09:29:25 - Order 1300436540127-A--1472801362: carrier compatibility ensured with carrier Colissimo
+2016-09-02 : 09:29:25 - Order 1300436542510-A: rewrite amount without processing fee
+2016-09-02 : 09:29:25 - Order 1300436542510-A--1472801365: generate unique email : generated-email+1300436542510-A--1472801365@bougies-la-francaise.com
+2016-09-02 : 09:29:25 - Order 1300436542510-A--1472801365: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:25 - Order 1300436542510-A--1472801365: product id 2630250 found with field REFERENCE_PRODUCT (2630250)
+2016-09-02 : 09:29:25 - Order 1300436542510-A--1472801365: product id 2386820 found with field REFERENCE_PRODUCT (2386820)
+2016-09-02 : 09:29:25 - Order 1300436542510-A--1472801365: product id 2628050 found with field REFERENCE_PRODUCT (2628050)
+2016-09-02 : 09:29:28 - Order 1300436542510-A--1472801365: order saved in lengow orders table
+2016-09-02 : 09:29:28 - Order 1300436542510-A--1472801365: order successfully imported (ID 4694)
+2016-09-02 : 09:29:28 - Order 1300436542510-A--1472801365: carrier compatibility ensured with carrier Colissimo
+2016-09-02 : 09:29:28 - Order 1300436544477-A: rewrite amount without processing fee
+2016-09-02 : 09:29:28 - Order 1300436544477-A--1472801368: generate unique email : generated-email+1300436544477-A--1472801368@bougies-la-francaise.com
+2016-09-02 : 09:29:28 - Order 1300436544477-A--1472801368: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:28 - Order 1300436544477-A--1472801368: product id 2391425 found with field REFERENCE_PRODUCT (2391425)
+2016-09-02 : 09:29:28 - Order 1300436544477-A--1472801368: product id 2630250 found with field REFERENCE_PRODUCT (2630250)
+2016-09-02 : 09:29:30 - Order 1300436544477-A--1472801368: order saved in lengow orders table
+2016-09-02 : 09:29:30 - Order 1300436544477-A--1472801368: order successfully imported (ID 4695)
+2016-09-02 : 09:29:31 - Order 1300436544477-A--1472801368: carrier compatibility ensured with carrier Colissimo
+2016-09-02 : 09:29:31 - Order 1300436550155-A: rewrite amount without processing fee
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: generate unique email : generated-email+1300436550155-A--1472801371@bougies-la-francaise.com
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: product id 2391665 found with field REFERENCE_PRODUCT (2391665)
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: product id 2391655 found with field REFERENCE_PRODUCT (2391655)
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: product id 2391625 found with field REFERENCE_PRODUCT (2391625)
+2016-09-02 : 09:29:31 - Order 1300436550155-A--1472801371: product id 2230701_146 found with field REFERENCE_PRODUCT (2230701_146)
+2016-09-02 : 09:29:34 - Order 1300436550155-A--1472801371: order saved in lengow orders table
+2016-09-02 : 09:29:34 - Order 1300436550155-A--1472801371: order successfully imported (ID 4696)
+2016-09-02 : 09:29:34 - Order 1300436550155-A--1472801371: carrier compatibility ensured with carrier Livraison Suivi
+2016-09-02 : 09:29:34 - Order 1300436552832-A: rewrite amount without processing fee
+2016-09-02 : 09:29:34 - Order 1300436552832-A--1472801374: generate unique email : generated-email+1300436552832-A--1472801374@bougies-la-francaise.com
+2016-09-02 : 09:29:34 - Order 1300436552832-A--1472801374: no matching carrier found. Default carrier assigned.
+2016-09-02 : 09:29:34 - Order 1300436552832-A--1472801374: product id 2438700 found with field REFERENCE_PRODUCT (2438700)
+2016-09-02 : 09:29:36 - Order 1300436552832-A--1472801374: order saved in lengow orders table
+2016-09-02 : 09:29:36 - Order 1300436552832-A--1472801374: order successfully imported (ID 4697)
+2016-09-02 : 09:29:36 - Order 1300436552832-A--1472801374: carrier compatibility ensured with carrier Livraison Suivi
+2016-09-02 : 09:29:36 - 17 order(s) imported
+2016-09-02 : 09:29:36 - 0 order(s) updated
