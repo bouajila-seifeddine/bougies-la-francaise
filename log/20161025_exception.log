@@ -1,0 +1,12 @@
+*ERROR* 	2016/10/25 - 16:19:39: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUPBY c.`id_category` 
+				  ORDER BY `level_depth` ASC, cs.`position` ASC' at line 9<br /><br /><pre>
+				  SELECT DISTINCT c.*, cl.*
+				  FROM `ps_category` c
+				  LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category` AND `id_lang` = 1)
+				  LEFT JOIN `ps_category_group` cg ON (cg.`id_category` = c.`id_category`)
+				  LEFT JOIN `ps_category_shop` cs ON (cs.`id_category` = c.`id_category`)
+				  WHERE level_depth > 1 And level_depth < 3
+				  AND c.`active` = 1
+				  AND cg.`id_group` = 3
+				  GROUPBY c.`id_category` 
+				  ORDER BY `level_depth` ASC, cs.`position` ASC</pre> at line 791 in file classes/db/Db.php

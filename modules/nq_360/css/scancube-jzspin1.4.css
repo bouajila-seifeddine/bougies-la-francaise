@@ -1,0 +1,99 @@
+
+
+/* 
+ TODO customize this sample style
+ Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root
+{ 
+ display: block;
+}
+
+.scancube-main-spin-div
+{
+ display: block;
+ position: relative;
+ z-index:1;   
+}
+
+.scancube-main-spin-div img
+{
+    padding: 0;
+    margin: 0px ;
+    display: block ;
+    border: 0 ;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.scancube-magnifier-style1
+{
+  position:absolute;
+  z-index:2;
+  border:1px solid #777 ;
+  overflow:hidden ;
+  border-radius : 200px ;
+  background-repeat: no-repeat ;
+  -webkit-box-shadow: 0px 0px 10px #777;
+  -moz-box-shadow:0px 0px 10px #777;
+  box-shadow:0px 0px 10px #777;    
+}
+
+.scancube-magnifier-style2
+{
+ position:absolute;
+ z-index:2;
+ overflow:hidden ;
+ cursor:crosshair;
+ background-repeat: no-repeat ;
+ }
+
+.scancube-zoom-preloader
+{
+  background-image: url(loading.gif) ;
+  background-color: #ccc ;
+  background-repeat: no-repeat ; 
+  opacity:0.5 ;
+  filter:Alpha(opacity=50);
+  display:block;
+  position: absolute   ;
+  top:0px ;
+  left:0px ;
+  z-index: 8 ;
+}
+
+.scancube-control-buttons
+{
+    width: 64px ;
+    height:32px ;
+    background-image: url(ctlbuttons.png);
+    background-position: 0px 32px ;
+    z-index: 8 ;
+    position: absolute ;
+    
+}
+
+.scancube-main-preloader
+{
+  width :300px;
+  height:25px;
+  background-color: #333;
+  border: 1px solid #BBB;
+  position:absolute ;  
+}
+
+.scancube-inner-preloader
+{ 
+  width :10px;
+  height:25px;
+  background-color: #000;
+  position:absolute ;  
+}
+

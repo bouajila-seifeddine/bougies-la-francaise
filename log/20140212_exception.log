@@ -1,0 +1,37 @@
+*ERROR* 	2014/02/12 - 10:46:57: Unknown column 'id_shop' in 'where clause'<br /><br /><pre>SELECT SQL_NO_CACHE * FROM `ps_home_image_block_lang`
+								WHERE `id_home_image_block` = 16 AND `id_shop` = 1</pre> at line 613 in file classes/db/Db.php
+*ERROR* 	2014/02/12 - 15:47:42: Not unique table/alias: 'b'<br /><br /><pre>SELECT SQL_NO_CACHE SQL_CALC_FOUND_ROWS
+		b.*, a.*
+		, b.*
+		FROM `ps_home_image_block` a
+		LEFT JOIN `ps_home_image_block_lang` b ON (b.`id_home_image_block` = a.`id_home_image_block` AND b.`id_lang` = 1)
+		LEFT JOIN `ps_carrier_lang` b ON a.id_carrier = b.id_carrier AND b.id_shop = 2 
+							LEFT JOIN `ps_carrier_tax_rules_group_shop` ctrgs ON (a.`id_carrier` = ctrgs.`id_carrier`
+								AND ctrgs.id_shop=2) 
+		
+		WHERE 1 AND b.id_lang = 1 
+		
+		
+		ORDER BY a.`position` asc LIMIT 0,50</pre> at line 613 in file classes/db/Db.php
+*ERROR* 	2014/02/12 - 16:11:49: Unknown column 'b.id_shop' in 'on clause'<br /><br /><pre>SELECT SQL_NO_CACHE SQL_CALC_FOUND_ROWS
+		b.*, a.*
+		
+		FROM `ps_home_image_block` a
+		LEFT JOIN `ps_home_image_block_lang` b ON (b.`id_home_image_block` = a.`id_home_image_block` AND b.`id_lang` = 1 AND b.`id_shop` = 2)
+		
+		
+		WHERE 1 
+		
+		
+		ORDER BY a.`position` asc LIMIT 0,50</pre> at line 613 in file classes/db/Db.php
+*ERROR* 	2014/02/12 - 16:13:26: Unknown column 'b.id_shop' in 'on clause'<br /><br /><pre>SELECT SQL_NO_CACHE SQL_CALC_FOUND_ROWS
+		b.*, a.*
+		
+		FROM `ps_home_image_block` a
+		LEFT JOIN `ps_home_image_block_lang` b ON (b.`id_home_image_block` = a.`id_home_image_block` AND b.`id_lang` = 1 AND b.`id_shop` = 1)
+		
+		
+		WHERE 1 
+		
+		
+		ORDER BY a.`position` asc LIMIT 0,50</pre> at line 613 in file classes/db/Db.php

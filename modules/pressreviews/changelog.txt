@@ -1,0 +1,8 @@
+2014-02-15 -- v1.2
+* Correction du bug pour lié à la modification de la date de création d'un élément
+
+2013-09-13 -- v1.1 
+* Possibilité d'afficher les titres des éléments ainsi que leur date de création
+* Possibilité de modifier manuellement la date d'ajout
+
+2013-05-23 -- v1.0 - Initial release 

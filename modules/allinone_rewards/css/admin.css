@@ -1,0 +1,150 @@
+.nobootstrap {
+	min-width: 800px;
+}
+
+.center {
+	text-align: center;
+}
+
+.language_flags {
+	display: none;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #555555;
+    display: none;
+    float: left;
+    margin: 4px;
+    padding: 8px;
+    width: 90px;
+}
+
+.displayed_flag {
+	float: left;
+	margin-left: 4px;
+}
+
+.ui-multiselect-checkboxes li {
+	font-size: 11px;
+}
+
+.ui-multiselect-checkboxes label {
+	text-shadow: none;
+	text-align: left;
+	font-weight: normal;
+}
+
+.tabs table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	font-size: 11px;
+}
+
+.tabs table td.label {
+	width: 390px;
+}
+
+.tabs label {
+	padding-right: 0px;
+	font-size: 11px;
+	width: 420px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.tabs label.t {
+	font-size: 11px;
+	padding-left: 0px;
+}
+
+.tabs label.indent {
+	width: 390px;
+	padding-left: 30px;
+}
+
+.tabs .margin-form {
+	float: left;
+	padding-left: 0px;
+}
+
+.tabs fieldset {
+	margin-bottom: 20px;
+}
+
+#tabs-general p {
+	display: none;
+}
+
+.level_information {
+	margin-top: 5px;
+}
+
+.level_information label.level {
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.optional {
+	overflow: auto;
+}
+
+.optional label {
+	text-indent: 30px;
+}
+
+.multiselect {
+	width: 130px;
+}
+
+/* onglet statistiques */
+.statistics div.title {
+	border-bottom: 1px dotted #CCCCCC;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.statistics table {
+	width: 100%;
+	font-size: 11px;
+}
+
+.statistics tr.title {
+	background-color: #FFF6D3;
+	font-weight: bold;
+	height: 20px;
+	text-transform: uppercase;
+}
+
+.statistics td {
+	padding: 4px;
+	text-align: center;
+}
+
+.statistics table.general td {
+	width: 14%;
+}
+
+.statistics table.channels td {
+	width: 16%;
+}
+.statistics table.channels td.title {
+	text-align: left;
+}
+.statistics table.channels td.price {
+	text-align: right;
+}
+.statistics table.sponsors td {
+	/*width: 10%;*/
+}
+.statistics table.sponsors td.title {
+	text-align: left;
+	width: 20%;
+}
+.statistics table.sponsors td.price {
+	text-align: right;
+}
+.statistics table.sponsors td.reward {
+	/*width: 14%;*/
+}

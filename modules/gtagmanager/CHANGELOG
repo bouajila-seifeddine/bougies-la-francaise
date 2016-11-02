@@ -1,0 +1,7 @@
+## Version 1.0.1
+
++ Fixed : Added  {literal} tag  to JS <script> in config.tpl file to prevent the module from displaying a blank configuration page in some cases.
+
+## Version 1.0.0
+
+Release version

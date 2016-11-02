@@ -1,0 +1,158 @@
+
+#bigpic {
+    cursor: pointer;
+}
+
+#productzoomimage {
+    
+}
+
+    /* GALLERY FULL ***********************************************************/
+    #productzoomimage #gallery-full  {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+        #productzoomimage #gallery-full li {
+            list-style-type: none;
+        }
+
+            #productzoomimage #gallery-full li img {
+                height: auto;
+                position: absolute;
+                width: 100%;
+            }
+
+    /* GALLERY SMALL **********************************************************/
+    #productzoomimage #gallery-small {
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    #productzoomimage #gallery-small.bottom {
+        top: 10px;
+    }
+
+    #productzoomimage #gallery-small.top {
+        bottom: 10px;
+    }
+
+    #productzoomimage #gallery-small.right {
+        left: 0;
+    }
+
+    #productzoomimage #gallery-small.left {
+        right: 10px;
+        width: auto;
+    }
+
+        #productzoomimage #gallery-small li {
+            list-style-type: none;
+            margin: 0 0 0 10px;
+        }
+
+        #productzoomimage #gallery-small li {
+            float: right;
+        }
+
+        #productzoomimage #gallery-small li {
+            float: left;
+        }
+
+            #productzoomimage #gallery-small li img {
+                transition-duration: 400ms;
+                transition-property: border-color;
+                border-color: #ccc;
+                border-style: solid;
+                border-width: 1px;
+                cursor: pointer;
+                display: block;
+                height: 88px;
+                position: relative;
+                width: auto;
+                z-index: 2;
+            }
+
+            #productzoomimage #gallery-small li img:hover, #productzoomimage #gallery-small li img.active {
+                border-color: #272727 !important;
+                z-index: 3;
+            }
+    
+    /* GALLERY DETAIL *********************************************************/
+    #productzoomimage #gallery-detail {
+        display: none;
+        height: auto;
+        position: fixed;
+        width: 430px;
+        z-index: 2;
+        padding: 0 0 30px 0;
+    }
+    
+    #productzoomimage #gallery-detail.top {
+        top: 0;
+    }
+
+    #productzoomimage #gallery-detail.bottom {
+        bottom: 0;
+    }
+
+    #productzoomimage #gallery-detail.left {
+        left: 0;
+    }
+
+    #productzoomimage #gallery-detail.right {
+        right: 0;
+    }
+
+        #productzoomimage #gallery-detail h1 {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 40px;
+            line-height: 1em;
+            margin: 20px 60px 0 20px;
+            text-transform: uppercase;
+        }
+
+        #productzoomimage #gallery-detail .price {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 22px;
+            margin: 10px 0 0 20px;
+        }
+        
+        #productzoomimage #gallery-detail .price strong {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            display: block;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        #gallery-close {
+            background: transparent url(img/gallery-close.gif) 0 0 no-repeat;
+            top: 20px;
+            display: block;
+            height: 40px;
+            position: absolute;
+            right: 10px;
+            width: 40px;
+            z-index: 3;
+        }
+
+        #gallery-close:hover {
+            background-position: 0 -40px;
+        }
+
+
+    #productzoomimage #gallery-loader {
+        background: transparent url(img/loader.gif) 0 0 no-repeat;
+        display: none;
+        height: 64px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        width: 64px;
+        z-index: 100;
+    }

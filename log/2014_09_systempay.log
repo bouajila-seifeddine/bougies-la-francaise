@@ -1,0 +1,459 @@
+*INFO* 	2014/09/02 - 11:08:59: Form data generation for cart #66 with standard payment.
+*INFO* 	2014/09/02 - 11:08:59: Data to be sent to payment platform : Array
+(
+    [signature] => cf88c11be7136040d5259a0c8955883fe194c92a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5400
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 66
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 12345678
+    [vads_trans_date] => 20140902090858
+    [vads_trans_id] => 401384
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/15 - 20:26:58: Form data generation for cart #75 with standard payment.
+*INFO* 	2014/09/15 - 20:26:58: Data to be sent to payment platform : Array
+(
+    [signature] => 3b5984e5d88af4af05617db2e0e0d845c3b9b87c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => TEST 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => TEST
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 75
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => TEST
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => TEST
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 12345678
+    [vads_trans_date] => 20140915182658
+    [vads_trans_id] => 736187
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/09/22 - 15:02:54: Form data generation for cart #84 with standard payment.
+*INFO* 	2014/09/22 - 15:02:54: Data to be sent to payment platform : Array
+(
+    [signature] => f7093f1859f5c990c6f1a57efbfa9deeb58e3815
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pelisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => NAntes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 84
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NAntes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 12345678
+    [vads_trans_date] => 20140922130254
+    [vads_trans_id] => 541745
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/09/24 - 18:55:49: Form data generation for cart #87 with standard payment.
+*INFO* 	2014/09/24 - 18:55:49: Data to be sent to payment platform : Array
+(
+    [signature] => c64f071aa64e5b86616fdcd15440621c44ee9c41
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 87
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140924165549
+    [vads_trans_id] => 681495
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/24 - 18:56:50: Server call process starts for cart #87.
+*INFO* 	2014/09/24 - 18:56:50: Payment accepted for cart #87. New order status is 2.
+*INFO* 	2014/09/24 - 18:56:50: Create order for cart #87.
+*INFO* 	2014/09/24 - 18:56:57: Order #18 created successfully for cart #87.
+*INFO* 	2014/09/24 - 18:56:57: Save payment information for cart #87.
+*INFO* 	2014/09/24 - 18:56:57: Payment information with ID(s) 6 saved successfully for cart #87.
+*INFO* 	2014/09/24 - 19:01:38: User return to shop process starts for cart #87.
+*INFO* 	2014/09/24 - 19:01:38: Order already registered for cart #87.
+*INFO* 	2014/09/24 - 19:01:38: Payment success confirmed for cart #87. Just redirect to success page.
+*INFO* 	2014/09/24 - 19:03:29: Form data generation for cart #89 with standard payment.
+*INFO* 	2014/09/24 - 19:03:29: Data to be sent to payment platform : Array
+(
+    [signature] => e8961dc3a3ea326bb1913505da22b756e1a51c36
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 89
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140924170329
+    [vads_trans_id] => 686099
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/24 - 19:04:10: Server call process starts for cart #89.
+*INFO* 	2014/09/24 - 19:04:10: Payment accepted for cart #89. New order status is 2.
+*INFO* 	2014/09/24 - 19:04:10: Create order for cart #89.
+*INFO* 	2014/09/24 - 19:04:11: Order #19 created successfully for cart #89.
+*INFO* 	2014/09/24 - 19:04:11: Save payment information for cart #89.
+*INFO* 	2014/09/24 - 19:04:11: Payment information with ID(s) 8 saved successfully for cart #89.
+*INFO* 	2014/09/24 - 19:04:41: User return to shop process starts for cart #89.
+*INFO* 	2014/09/24 - 19:04:41: Order already registered for cart #89.
+*INFO* 	2014/09/24 - 19:04:41: Payment success confirmed for cart #89. Just redirect to success page.
+*INFO* 	2014/09/24 - 19:05:20: Form data generation for cart #90 with standard payment.
+*INFO* 	2014/09/24 - 19:05:20: Data to be sent to payment platform : Array
+(
+    [signature] => cb90ebf77b78285e373ff5e3510cfca28c0645b7
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 90
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140924170520
+    [vads_trans_id] => 687202
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/24 - 19:05:38: Server call process starts for cart #90.
+*INFO* 	2014/09/24 - 19:05:38: Payment accepted for cart #90. New order status is 2.
+*INFO* 	2014/09/24 - 19:05:38: Create order for cart #90.
+*INFO* 	2014/09/24 - 19:05:42: Order #20 created successfully for cart #90.
+*INFO* 	2014/09/24 - 19:05:42: Save payment information for cart #90.
+*INFO* 	2014/09/24 - 19:05:42: Payment information with ID(s) 10 saved successfully for cart #90.
+*INFO* 	2014/09/24 - 19:05:50: User return to shop process starts for cart #90.
+*INFO* 	2014/09/24 - 19:05:50: Order already registered for cart #90.
+*INFO* 	2014/09/24 - 19:05:50: Payment success confirmed for cart #90. Just redirect to success page.
+*INFO* 	2014/09/24 - 19:06:23: Form data generation for cart #91 with standard payment.
+*INFO* 	2014/09/24 - 19:06:23: Data to be sent to payment platform : Array
+(
+    [signature] => cfc4c80b4a6dd624da5f74f524e03870338e3822
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 91
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140924170623
+    [vads_trans_id] => 687833
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/24 - 19:06:44: Server call process starts for cart #91.
+*INFO* 	2014/09/24 - 19:06:44: Payment failed for cart #91.
+*INFO* 	2014/09/24 - 19:06:57: User return to shop process starts for cart #91.
+*INFO* 	2014/09/24 - 19:06:57: Payment failed, redirect to order checkout page, cart ID : #91.
+*INFO* 	2014/09/24 - 19:07:12: Form data generation for cart #91 with standard payment.
+*INFO* 	2014/09/24 - 19:07:12: Data to be sent to payment platform : Array
+(
+    [signature] => 3c06fc441fa4a93644eed3a4d534a81cbf7797c7
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 91
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140924170712
+    [vads_trans_id] => 688326
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/24 - 19:07:31: Server call process starts for cart #91.
+*INFO* 	2014/09/24 - 19:07:31: Payment failed for cart #91.
+*INFO* 	2014/09/29 - 15:58:49: Form data generation for cart #91 with standard payment.
+*INFO* 	2014/09/29 - 15:58:49: Data to be sent to payment platform : Array
+(
+    [signature] => aa4e115f801b31129c03815d7cf83634d2cc10b6
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 91
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140929135849
+    [vads_trans_id] => 575297
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/09/29 - 16:00:32: Server call process starts for cart #91.
+*INFO* 	2014/09/29 - 16:00:32: Payment accepted for cart #91. New order status is 2.
+*INFO* 	2014/09/29 - 16:00:32: Create order for cart #91.
+*INFO* 	2014/09/29 - 16:00:35: Order #21 created successfully for cart #91.
+*INFO* 	2014/09/29 - 16:00:35: Save payment information for cart #91.
+*INFO* 	2014/09/29 - 16:00:35: Payment information with ID(s) 12 saved successfully for cart #91.
+*INFO* 	2014/09/29 - 16:05:05: Form data generation for cart #93 with standard payment.
+*INFO* 	2014/09/29 - 16:05:05: Data to be sent to payment platform : Array
+(
+    [signature] => 5bb617c97e8d29af19b9a68b1107901f484b5913
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10200
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pelisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => NAntes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 93
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NAntes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20140929140505
+    [vads_trans_id] => 579059
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/09/29 - 16:05:53: Server call process starts for cart #93.
+*INFO* 	2014/09/29 - 16:05:53: Payment accepted for cart #93. New order status is 2.
+*INFO* 	2014/09/29 - 16:05:53: Create order for cart #93.
+*INFO* 	2014/09/29 - 16:06:01: Order #22 created successfully for cart #93.
+*INFO* 	2014/09/29 - 16:06:04: Save payment information for cart #93.
+*INFO* 	2014/09/29 - 16:06:12: Payment information with ID(s) 14 saved successfully for cart #93.
+*INFO* 	2014/09/29 - 16:06:26: User return to shop process starts for cart #91.
+*INFO* 	2014/09/29 - 16:06:26: Order already registered for cart #91.
+*INFO* 	2014/09/29 - 16:06:26: Payment success confirmed for cart #91. Just redirect to success page.
+*INFO* 	2014/09/29 - 16:06:27: User return to shop process starts for cart #93.
+*INFO* 	2014/09/29 - 16:06:27: Order already registered for cart #93.
+*INFO* 	2014/09/29 - 16:06:27: Payment success confirmed for cart #93. Just redirect to success page.

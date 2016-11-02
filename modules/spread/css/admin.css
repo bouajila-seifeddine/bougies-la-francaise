@@ -1,0 +1,86 @@
+#SpreadAdminHeader{
+    padding:20px;
+    float:left;
+    width:100%;
+    height:140px;
+    background:url('../img/SpreadAdminHeader.png') #3c3c3b no-repeat scroll 20px 20px;
+    margin-bottom:20px;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+#SpreadAdminContent{
+    background:#3c3c3b;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:30px;
+}
+#SpreadAdminContent label{
+    margin: 15px 15px 10px 15px;
+    width:100%;
+    text-align:left;
+    font-weight:normal;
+    font-size:14px;
+}
+#SpreadAdminContent .margin-form{
+    padding:15px 0 1em 15px;
+}
+#SpreadAdminContent table{
+    border-collapse:collapse;
+}
+#SpreadAdminContent table.table_grid{
+    width:50%;
+    margin:15px;
+}
+#SpreadAdminContent div.legend{
+    color: #333;
+    background: #ddd;
+    text-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 2px 2px 0 0;
+    box-shadow: none;
+    padding: 0px 15px 4px;
+    line-height: 32px;
+    min-height: 32px;
+    font-size:14px;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    border:1px solid #ddd;
+    font-weight:bold;
+    font-family:arial;
+}
+
+
+#SpreadAdminContent fieldset{
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+    border-radius: 2px;
+    background: #F1F1F1;
+    margin-bottom: 20px;
+    margin-top: 0!important;
+    padding:0;
+}
+#SpreadAdminContent button.button{
+    margin:15px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==) #1f7b1f;
+    background: linear-gradient(top,#2db42d,#1f7b1f) 0 0/100% #1f7b1f;
+    border: 1px solid #1a661a;
+    text-shadow: rgba(0,0,0,.5) 0 1px 1px;
+    color: #fff;
+}
+#SpreadAdminContent input[type=text]{
+    min-width:500px;
+    display: inline-block;
+    padding: 6px 8px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: .2s;
+}
+.margin-form span{
+    display:block;
+    width:100%;
+}

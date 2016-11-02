@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <recap_avis_0>
+        <membre>
+            <prenom>Thierry</prenom>
+            <nom>Peralta</nom>
+            <age>49 ans</age>
+        </membre>
+        <avis>
+            <titre>Une bougie qui sent fort</titre>
+            <note_global>3</note_global>
+            <commentaire>Nous avons trouvé que cette bougie était rudement efficace !!! Nous avons adoré le parfum même s'il peux déranger certaines personnes. Il faut l'utiliser dans un grand espace.
+            </commentaire>
+            <date>2015-04-08 21:03:10</date>
+        </avis>
+        <produit>
+            <ref_produit>2429810</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_0>
+    <recap_avis_1>
+        <membre>
+            <prenom>Jean-Claude</prenom>
+            <nom>Poux</nom>
+            <age>57 ans</age>
+        </membre>
+        <avis>
+            <titre>Un bien bel objet</titre>
+            <note_global>4</note_global>
+            <commentaire>Lorsque l'on prend la bougie en main on apprécie l'originalité de la présentation qui lui donne vraiment un air de déco plutôt que d'objet utilitaire. Le seul reproche que je pourrais personnellement faire est rapport au parfum, un peu trop présent pour moi. Mes amis ont partagé complétement mon avis, certains n'ont pas été génés par l'odeur et l'ont appréciée.
+            </commentaire>
+            <date>2015-01-07 15:30:35</date>
+        </avis>
+        <produit>
+            <ref_produit>2476210</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_1>
+    <recap_avis_2>
+        <membre>
+            <prenom>Stephane</prenom>
+            <nom>Canitrot</nom>
+            <age>43 ans</age>
+        </membre>
+        <avis>
+            <titre>Convaincu</titre>
+            <note_global>4</note_global>
+            <commentaire>Le design, l'odeur et la durée de consommation m'ont convenu. 
+            </commentaire>
+            <date>2015-05-26 19:16:53</date>
+        </avis>
+        <produit>
+            <ref_produit>2429810</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_2>
+    <recap_avis_4>
+        <membre>
+            <prenom>Benoit</prenom>
+            <nom>Bequet</nom>
+            <age>35 ans</age>
+        </membre>
+        <avis>
+            <titre>Une bougie originale</titre>
+            <note_global>4</note_global>
+            <commentaire>Le packaging a fait sensation, la bougie est vraiment très jolie. Si le parfum ne m'a pas vraiment convaincue, je ne vais pas m'arrêter à cela j'en essaierai un autre :)
+            </commentaire>
+            <date>2015-05-27 10:52:07</date>
+        </avis>
+        <produit>
+            <ref_produit>2476210</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_4>
+    <recap_avis_5>
+        <membre>
+            <prenom>Benoit</prenom>
+            <nom>De carville</nom>
+            <age>49 ans</age>
+        </membre>
+        <avis>
+            <titre>Super bougies de qualité</titre>
+            <note_global>5</note_global>
+            <commentaire>J'ai vraiment beaucoup apprécié cette bougie. Lorsque je l'ai reçue, mes filles ont aussi beaucoup appréciées, le seul problème était de savoir laquelle allait la mettre dans sa chambre. Je découvrais cette bougie, c'est maintenant une marque que je vais noter dans mas tablettes, et que je racheterais pour faire des cadeaux..
+            </commentaire>
+            <date>2015-06-30 21:50:56</date>
+        </avis>
+        <produit>
+            <ref_produit>2476210</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_5>
+    <recap_avis_7>
+        <membre>
+            <prenom>Nicolas</prenom>
+            <nom>Galinier</nom>
+            <age>43 ans</age>
+        </membre>
+        <avis>
+            <titre>Des bougies parfumées très efficaces...</titre>
+            <note_global>4</note_global>
+            <commentaire>Ce sont des produits au design simple mais qui sont solides vu leur poids. Même le couvercle en bois wengé est lourd et permet de stopper l'action de la bougie car le parfum de celle-ci est puissant même bougie éteinte. Mes connaissances comme moi avons trouvé le produit très efficace : il couvre facilement les mauvaises odeurs et le mélange des parfums (rhum tabac) est parfait. Nous l'avons utilisons dans notre lieu de travail (un bureau) pour apporter une odeur plaisante.
+            </commentaire>
+            <date>2015-08-13 19:45:06</date>
+        </avis>
+        <produit>
+            <ref_produit>2476210</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-rhum-tabac
+            </nom_produit>
+        </produit>
+    </recap_avis_7>
+    <recap_avis_8>
+        <membre>
+            <prenom>Mathieu</prenom>
+            <nom>Laget</nom>
+            <age>31 ans</age>
+        </membre>
+        <avis>
+            <titre>La bougie deco</titre>
+            <note_global>5</note_global>
+            <commentaire>Enfin une bougie qui peut servir de véritable élément de déco dans une déco moderne. Le petit cache intégré permet d'éviter le dépot de poussiere dans la bougie lorsque celle ci n'est pas utilisée. La senteur cedre cachemire est délicate, pas d'odeur ecoeurante comme avec d'autres bougies parfumées du commerce. A recommander!
+            </commentaire>
+            <date>2015-01-13 17:43:51</date>
+        </avis>
+        <produit>
+            <ref_produit>2476240</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_8>
+    <recap_avis_9>
+        <membre>
+            <prenom>Jean-Christophe</prenom>
+            <nom>Michon</nom>
+            <age>48 ans</age>
+        </membre>
+        <avis>
+            <titre>Je suis séduit !</titre>
+            <note_global>4</note_global>
+            <commentaire>Je suis séduit ! le parfum cèdre cachemire est très agréable même s'il n'est pas suffisamment perceptible à mon goût.
+            </commentaire>
+            <date>2015-03-08 08:17:39</date>
+        </avis>
+        <produit>
+            <ref_produit>2429840</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_9>
+    <recap_avis_10>
+        <membre>
+            <prenom>Farid</prenom>
+            <nom>Kouchit</nom>
+            <age>55 ans</age>
+        </membre>
+        <avis>
+            <titre>sous le charme de bougies la française</titre>
+            <note_global>5</note_global>
+            <commentaire>Tous mes amis sont tombés sous le charme du concept !
+            </commentaire>
+            <date>2015-06-15 18:37:20</date>
+        </avis>
+        <produit>
+            <ref_produit>2476240</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_10>
+    <recap_avis_11>
+        <membre>
+            <prenom>Xavier</prenom>
+            <nom>Goichon</nom>
+            <age>44 ans</age>
+        </membre>
+        <avis>
+            <titre>Elle est top cette bougie</titre>
+            <note_global>5</note_global>
+            <commentaire>Je trouve l'aspect extérieur très agréable à regarder, ça change des bougies habituelles. Le parfum est très discret et agréable à sentir, parfumant agréablement la pièce dans laquelle la bougien se consume. En deux mots, achat concluant.
+            </commentaire>
+            <date>2015-06-27 21:43:12</date>
+        </avis>
+        <produit>
+            <ref_produit>2476240</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_11>
+    <recap_avis_13>
+        <membre>
+            <prenom>Pascal</prenom>
+            <nom>Wieczorkiewicz</nom>
+            <age>49 ans</age>
+        </membre>
+        <avis>
+            <titre>très satisfaisait</titre>
+            <note_global>5</note_global>
+            <commentaire>ce produit est très satisfaisant, je le recommande bien sur et je pense en faire un cadeau dans une prochaine commande pour quelques membres de ma famille 
+            </commentaire>
+            <date>2015-07-16 10:03:33</date>
+        </avis>
+        <produit>
+            <ref_produit>2429840</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_13>
+    <recap_avis_14>
+        <membre>
+            <prenom>Jerome</prenom>
+            <nom>Hocquaux</nom>
+            <age>46 ans</age>
+        </membre>
+        <avis>
+            <titre>efficace et bien parfumé</titre>
+            <note_global>4</note_global>
+            <commentaire>efficace et bien parfumé
+            </commentaire>
+            <date>2015-08-06 23:02:45</date>
+        </avis>
+        <produit>
+            <ref_produit>2429840</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_14>
+    <recap_avis_15>
+        <membre>
+            <prenom>christophe</prenom>
+            <nom>poty</nom>
+            <age>46 ans</age>
+        </membre>
+        <avis>
+            <titre>Avis positif</titre>
+            <note_global>4</note_global>
+            <commentaire>Je ne connaissais pas cette marque de bougies mais maintenent je suis convaincu par le contenent et l'odeur de la bougie qu'il diffuse pendant et aprés l'utilisation. Mes amis et ma famille trouve également le concept original et plaisant à regarder. Quand à racheter cette bougie, il n'y a aucun soucis pour cela. Continuez dans ce sens.
+            </commentaire>
+            <date>2015-08-10 09:18:52</date>
+        </avis>
+        <produit>
+            <ref_produit>2476240</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cedre-cachemire
+            </nom_produit>
+        </produit>
+    </recap_avis_15>
+    <recap_avis_16>
+        <membre>
+            <prenom>Jean Pierre</prenom>
+            <nom>Boulin</nom>
+            <age>56 ans</age>
+        </membre>
+        <avis>
+            <titre>tres ravi de cette bougie</titre>
+            <note_global>4</note_global>
+            <commentaire>mes amis ont apprecie l'odeur du parfum de la bougie moka tonka , la bougie a tres beau support ,tres luxueux , longue duree de vie plus , merci !
+            </commentaire>
+            <date>2015-01-18 11:14:30</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_16>
+    <recap_avis_17>
+        <membre>
+            <prenom>Stéphane</prenom>
+            <nom>Godard</nom>
+            <age>35 ans</age>
+        </membre>
+        <avis>
+            <titre>Une bougie de qualité</titre>
+            <note_global>5</note_global>
+            <commentaire>Je ne connaissais pas la marque Bougie La Française et c'est une belle découverte! Une très bonne idée de cadeau à offrir et surtout à s'offrir! J'ai convaincu plusieurs de mes amis qui vont commandé leurs premières bougies.
+            </commentaire>
+            <date>2015-02-01 00:47:08</date>
+        </avis>
+        <produit>
+            <ref_produit>2429830</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_17>
+    <recap_avis_18>
+        <membre>
+            <prenom>Jerome</prenom>
+            <nom>Marquis</nom>
+            <age>40 ans</age>
+        </membre>
+        <avis>
+            <titre>Enfin une bougie parfumée pour les hommes !</titre>
+            <note_global>4</note_global>
+            <commentaire>BOUGIE MOKA TONKA&#13;
+            DESIGN :&#13;
+            Les couleurs, les formes, les matériaux (céramique mordorée, couvercle en wengé) évoquent le luxe et le raffinement au masculin avec brio. On pense aux malles de voyage en cuir au départ de destinations lointaines, de meubles aux bois précieux. L'étiquette du produit me fait instinctivement penser à une célèbre marque de sac de luxe !&#13;
+            ÉTIQUETTE :&#13;
+            Je n'ai pas choisi de laisser l'étiquette sur la céramique qui dénote par ses finitions sur le produit. Je pense que c'est une volonté du fabricant afin de pouvoir l’enlever facilement et utiliser le pot en céramique une fois la bougie consumée. C'est aussi l'une des qualités du produit : contrairement à d'autres bougies en verre, le contenant reste décoratif, on ne voit pas les traces noires de combustion sur les parois. Ainsi, je conserverais ce pot en céramique et son couvercle bois après utilisation, soit comme élément décoratif, soit comme contenant.&#13;
+            QUALITÉ DU CONTENANT :&#13;
+            La céramique est très raffinée, ce qui en fait un bel objet. Le couvercle pourrait cependant être amélioré : par exemple, s'il était plus large et plus plat, il serait possible de poser la bougie dessus lors de son utilisation (comme un socle : utile et pratique).&#13;
+            QUALITÉ DE LA BOUGIE :&#13;
+            Parfum de Grasse, aux saveurs gustatives et sauvages du moka, associé à la douceur florale du jasmin, su fond boisé. Un grand raffinement. Certes, les effluves restent discrètes dans la pièce, mais cela traduit des parfums de qualité, non entêtante et non agressives comme d'autres bougies concurrentes ! La cire brûle lentement et tient ses promesses de durée.&#13;
+            EN GUISE DE CONCLUSION :&#13;
+            Tous mes amis ont apprécié le design raffiné et chic. Les senteurs de cette bougie divisent selon les goûts de chacun. Cette bougie me donne envie de racheter toute la gamme "Lounge spirit" qui me parle plus que des senteurs féminines traditionnelles que l'on trouve dans les gammes de bougies parfumées. Enfin un produit qui cible les hommes !&#13;
+            </commentaire>
+            <date>2015-07-27 11:46:51</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_18>
+    <recap_avis_19>
+        <membre>
+            <prenom>CEDRIC</prenom>
+            <nom>ROUSSEAU GROS</nom>
+            <age>38 ans</age>
+        </membre>
+        <avis>
+            <titre>Un produit esthétiquement réussi</titre>
+            <note_global>4</note_global>
+            <commentaire>Cette bougie est un objet décoratif à part entière : on n'ose l'allumer de peur de l'abîmer! La combustion du modèle Moka - Tonka offre des senteurs originales et agréables à la fois.&#13;
+            Seuls (petits) bémols : le bandeau de papier entourant la bougie sur lequel est inscrit le parfum du produit n'était pas collé parfaitement aligné et affiche un code-barre à l'arrière. Le couvercle aussi est un peu "branlant" quand on le repose, j'aurais préféré un couvercle qui s'insère d'une manière plus jointive et plus ferme. Ce sont des axes d'amélioration qui n'altèrent en rien l'utilisation de la bougie !
+            </commentaire>
+            <date>2015-04-19 22:51:55</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_19>
+    <recap_avis_20>
+        <membre>
+            <prenom>Guillaume et Sabrina</prenom>
+            <nom>Prévost</nom>
+            <age>36 ans</age>
+        </membre>
+        <avis>
+            <titre>Une très belle surprise</titre>
+            <note_global>4</note_global>
+            <commentaire>Ma femme est une grande fan de bougies. Lorsqu'on a reçu cette bougie, toutes la famille a été conquis par ce produit, qui était très joli. Mes enfants et moi même avons trouvé que cela sentait très bon, ma femme a trouvé que cela sentait très fort. Mais elle a changer d'avis lorsqu'on l'a allumée. Le parfum diffusé était beaucoup plus doux. &#13;
+            Des amis sont venus, ils ont tous était intrigué et charmé par cette bougie. Sur 5, 3 m'ont demandé ou ils pouvaient trouver ce produit. &#13;
+            Je suis vraiment conquis !
+            </commentaire>
+            <date>2015-06-24 09:31:13</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_20>
+    <recap_avis_21>
+        <membre>
+            <prenom>Florent</prenom>
+            <nom>TRIGALLEZ</nom>
+            <age>35 ans</age>
+        </membre>
+        <avis>
+            <titre>Parfum enivrant</titre>
+            <note_global>5</note_global>
+            <commentaire>Depuis que j'ai reçu le produit, je ne m'en passe plus, je l'allume tous les soirs afin d'avoir une ambiance feutrée et parfumée. Le contenant de la bougie est très original et de bonne qualité.
+            </commentaire>
+            <date>2015-06-26 13:46:03</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_21>
+    <recap_avis_22>
+        <membre>
+            <prenom>Francis</prenom>
+            <nom>Mulin</nom>
+            <age>64 ans</age>
+        </membre>
+        <avis>
+            <titre>Produit "classe" à recommander</titre>
+            <note_global>4</note_global>
+            <commentaire>Tout le monde a été surpris de l'esthétique, de la présentation et de l'odeur dégagée. Belle aspect , très design reflets...
+            </commentaire>
+            <date>2015-08-09 12:00:16</date>
+        </avis>
+        <produit>
+            <ref_produit>2429830</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_22>
+    <recap_avis_23>
+        <membre>
+            <prenom>EDOUARD</prenom>
+            <nom>GIREL</nom>
+            <age>31 ans</age>
+        </membre>
+        <avis>
+            <titre>Bonne odeur et durée de vie</titre>
+            <note_global>4</note_global>
+            <commentaire>Je ne connaissais pas cette marque, quand j'en ai parlé à une amie avant d'acheter la bougie elle m'a dit qu'il s'agissait d'une marque de qualité. J'ai pu m'apercevoir que c'était le cas : il y a une bonne quantité de cire, l'odeur est très agréable et discrète. Après plusieurs heures d'utilisation, seule une petite quantité de cire avait été utilisée. C'est le point faible des bougies classiques : leur durée de vie, mais c'est le point fort de cette bougie La Française.
+            </commentaire>
+            <date>2015-08-05 14:54:56</date>
+        </avis>
+        <produit>
+            <ref_produit>2476230</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-moka-tonka
+            </nom_produit>
+        </produit>
+    </recap_avis_23>
+    <recap_avis_24>
+        <membre>
+            <prenom>Sébastien</prenom>
+            <nom>BEAUDLOT</nom>
+            <age>31 ans</age>
+        </membre>
+        <avis>
+            <titre>Une bougie parfaite sans être originale</titre>
+            <note_global>4</note_global>
+            <commentaire>J'ai de la bougie une image de lumière, de clarté, de couleur. Ce n'est pas ici de genre de bougies qu'il s'agit, puisque cette bougie "La Française" met l'accent sur le parfum qu'elle dégage. La vanille très épicée, ne conviendra pas à tout le monde car l'odeur est forte, sans être pour autant désagréable. Jolie, dotée d'un couvercle pratique, elle sait se faire oublier et dure longtemps.
+            </commentaire>
+            <date>2015-04-25 14:29:09</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_24>
+    <recap_avis_25>
+        <membre>
+            <prenom>MARCEL</prenom>
+            <nom>ROUSSON</nom>
+            <age>54 ans</age>
+        </membre>
+        <avis>
+            <titre>une belle découverte</titre>
+            <note_global>4</note_global>
+            <commentaire>J'ai apprécié le pot en verre, la couleur blanche de la cire, l'étiquette. Le packaging est très recherché, sympathique, un côté rétro qui a énormément plu à mon entourage. Le parfum se diffuse doucement et les effluves sont douces. Elle brûle longtemps donc très économique.
+            </commentaire>
+            <date>2015-02-07 11:28:52</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_25>
+    <recap_avis_26>
+        <membre>
+            <prenom>Guillaume</prenom>
+            <nom>BODIN</nom>
+            <age>38 ans</age>
+        </membre>
+        <avis>
+            <titre>belle bougie avec une bonne odeur</titre>
+            <note_global>4</note_global>
+            <commentaire>Une odeur très agréable, mais particulière (peut ne pas convenir à toutes les personnes). C'est une bonnes bougie qui embaume et parfume la pièce très rapidement mais pour une assez longue durée. Je recommande vivement, l'emballage est pratique et très esthétique.
+            </commentaire>
+            <date>2015-08-02 21:02:57</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_26>
+    <recap_avis_27>
+        <membre>
+            <prenom>Rémi</prenom>
+            <nom>DAVID</nom>
+            <age>42 ans</age>
+        </membre>
+        <avis>
+            <titre>Bougie Lounge Spirit</titre>
+            <note_global>4</note_global>
+            <commentaire>Ma grande surprise avec cette bougie c'est son odeur : quand on ouvre le couvercle, une odeur très forte vous assaille, mais, une fois allumée, l'odeur devient beaucoup plus légère et subtile. Un vrai délice !&#13;
+            Le gros point noir reste le packaging inexistant, on ouvre le carton de livraison et on tombe directement sur la bougie dans du papier bulle. Vraiment, à part le packaging, rien à redire ! &#13;
+            Une bougie d'une telle qualité, franchement, j'adopte ! Je fais maintenant totalement confiance aux "Bougies la Française" pour mes prochains achats !
+            </commentaire>
+            <date>2015-06-29 17:58:07</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_27>
+    <recap_avis_28>
+        <membre>
+            <prenom>Julien</prenom>
+            <nom>Oliva</nom>
+            <age>31 ans</age>
+        </membre>
+        <avis>
+            <titre>un parfum enivrant</titre>
+            <note_global>4</note_global>
+            <commentaire>Je viens de découvrir les bougies la française, j'ai adoré le parfum vanille epicé par contre je trouve dommage de n'avoir qu'un ruban en plastique autour. j'aurai préféré une gravure.
+            </commentaire>
+            <date>2015-07-01 14:32:26</date>
+        </avis>
+        <produit>
+            <ref_produit>2429820</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_28>
+    <recap_avis_29>
+        <membre>
+            <prenom>Adel</prenom>
+            <nom>Zenat</nom>
+            <age>33 ans</age>
+        </membre>
+        <avis>
+            <titre>Bougie class et tres belle</titre>
+            <note_global>4</note_global>
+            <commentaire>Cette bougie est une decouverte elle sent tres bon, le parfum est doux et authentique. Le boitier est tres beau il se mari bien avec l'interieur de la piece (le sejour pour ma part). Je l'ai allumé au moins 15 fois et elle est toujours intacte.
+            </commentaire>
+            <date>2015-07-22 21:47:07</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_29>
+    <recap_avis_30>
+        <membre>
+            <prenom>christian</prenom>
+            <nom>roussel</nom>
+            <age>39 ans</age>
+        </membre>
+        <avis>
+            <titre>Bougie parfumée - Bougies la Française</titre>
+            <note_global>4</note_global>
+            <commentaire>J'adore ce parfum vanille épicée.&#13;
+            </commentaire>
+            <date>2015-04-23 19:22:54</date>
+        </avis>
+        <produit>
+            <ref_produit>2429820</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_30>
+    <recap_avis_31>
+        <membre>
+            <prenom>Denis</prenom>
+            <nom>Gemond</nom>
+            <age>59 ans</age>
+        </membre>
+        <avis>
+            <titre>Une bougie "lounge"</titre>
+            <note_global>4</note_global>
+            <commentaire>La qualité du produit est indéniable.
+            </commentaire>
+            <date>2015-01-22 17:03:45</date>
+        </avis>
+        <produit>
+            <ref_produit>2476220</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-vanille-epicee
+            </nom_produit>
+        </produit>
+    </recap_avis_31>
+    <recap_avis_32>
+        <membre>
+            <prenom>Laurent</prenom>
+            <nom>Desroches</nom>
+            <age>40 ans</age>
+        </membre>
+        <avis>
+            <titre>une bougie qui est a notre salon ce qu'est la sauce a la viande !!!</titre>
+            <note_global>4</note_global>
+            <commentaire>d'un avis plus que général tout le monde la trouve superbe et avec une bonne odeur , se mariant tres bien avec le decor de notrre salon.&#13;
+            je pense que c'est une belle idee cadeau , que je racheterai pour offrir ou meme pour moi.
+            </commentaire>
+            <date>2015-01-24 11:42:34</date>
+        </avis>
+        <produit>
+            <ref_produit>2476260</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_32>
+    <recap_avis_33>
+        <membre>
+            <prenom>jerome</prenom>
+            <nom>perez</nom>
+            <age>43 ans</age>
+        </membre>
+        <avis>
+            <titre>Très agréable</titre>
+            <note_global>4</note_global>
+            <commentaire>Une fois le paquet ouvert, la bougie vraiment très jolie et on peut la laisser sans problème comme décoration. Une fois la bougie allumée les avis sont plutôt partagés, certaines personnes trouvent le parfum un peu trop léger mais pour ma part, je trouve qu'il est très agréable même si je m'attendais à un parfum plus épicé et moins sucré.
+            </commentaire>
+            <date>2015-03-14 16:06:04</date>
+        </avis>
+        <produit>
+            <ref_produit>2429860</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_33>
+    <recap_avis_34>
+        <membre>
+            <prenom>Alain</prenom>
+            <nom>Chamarande</nom>
+            <age>47 ans</age>
+        </membre>
+        <avis>
+            <titre>super produit et top qualité</titre>
+            <note_global>4</note_global>
+            <commentaire>son parfum super agréable . design original. 
+            </commentaire>
+            <date>2015-05-04 18:37:16</date>
+        </avis>
+        <produit>
+            <ref_produit>2476260</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_34>
+    <recap_avis_35>
+        <membre>
+            <prenom>Jacques</prenom>
+            <nom>Palisse</nom>
+            <age>54 ans</age>
+        </membre>
+        <avis>
+            <titre>Bougie Lounge spirit</titre>
+            <note_global>4</note_global>
+            <commentaire>Cette bougie parfumée est présentée dans un élégant pot, elle diffuse une odeur agréable qui pourrait être plus intense sans désagrément . Je suis satisfait d'avoir découvert cette marque .&#13;
+            Je choisirais maintenant cette marque pour ses produits de qualité.
+            </commentaire>
+            <date>2015-05-18 22:44:40</date>
+        </avis>
+        <produit>
+            <ref_produit>2429860</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_35>
+    <recap_avis_36>
+        <membre>
+            <prenom>Pierre</prenom>
+            <nom>JOBARD</nom>
+            <age>56 ans</age>
+        </membre>
+        <avis>
+            <titre>une petite danseuse qui fleur bon et qui ravit le regard</titre>
+            <note_global>4</note_global>
+            <commentaire>Cette jolie bougie est un produit intéressant tant par son originalité que son parfum et surtout ce qui m'a amusé , c'est cette petite flamme qui danse en permanence , mes amis ont eus le même commentaire que moi pendant la soirée passée ensemble .
+            </commentaire>
+            <date>2015-06-22 20:31:23</date>
+        </avis>
+        <produit>
+            <ref_produit>2476260</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_36>
+    <recap_avis_37>
+        <membre>
+            <prenom>Patrice</prenom>
+            <nom>Mayette</nom>
+            <age>49 ans</age>
+        </membre>
+        <avis>
+            <titre>Surpris pas sa beauté</titre>
+            <note_global>5</note_global>
+            <commentaire>J'avais hâte de recevoir cette bougie et je m'attendais à quelle que chose de classique mais agréable surprise en ouvrant le colis ,vraiment trés belle bougie avec une bonne odeur même sans ^étre allumé . Merci pour cette bougie réellement originale !
+            </commentaire>
+            <date>2015-07-15 08:51:45</date>
+        </avis>
+        <produit>
+            <ref_produit>2476260</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_37>
+    <recap_avis_38>
+        <membre>
+            <prenom>Olivier</prenom>
+            <nom>LHOMME</nom>
+            <age>39 ans</age>
+        </membre>
+        <avis>
+            <titre>Beau produit, très classe et parfum très bien adapté</titre>
+            <note_global>4</note_global>
+            <commentaire>Beau produit, à la senteur douce. La flagrance est suffisamment "dosée " afin d'apporter un beau et bon Parfums dans mon salon.&#13;
+            Le packaging est classé et donne in impression de qualité au produit. Posé dans mon salon, il attire l'oeil tout de suite aux invités de passage.
+            </commentaire>
+            <date>2015-08-15 07:33:16</date>
+        </avis>
+        <produit>
+            <ref_produit>2476260</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-cuir-wenge
+            </nom_produit>
+        </produit>
+    </recap_avis_38>
+    <recap_avis_39>
+        <membre>
+            <prenom>Cedric</prenom>
+            <nom>Beauchamps</nom>
+            <age>40 ans</age>
+        </membre>
+        <avis>
+            <titre>LA bougie qu'il nous faut</titre>
+            <note_global>4</note_global>
+            <commentaire>Bonjour,&#13;
+            je viens de recevoir la bougie a la française aujourd'hui. Une odeur douce et agréable se dégage des l'ouverture du sachet. On trouve une bougie de qualité dans son écrin doré de très bonne facture. Je ne connaissais pas cette marque de bougie et c'est une agréable surprise, tous mes amis l'ayant vu et senti sont envieux de cet objet qui même éteint est très décoratif. La senteur exotique teck tanaka embaume ma maison et me donne vraiment envie d'acheter d'autre produits . Voila un produit made in France, beau, décoratif et qui plus est donne une odeur agréable a notre maison. Une belle découverte.
+            </commentaire>
+            <date>2015-07-31 20:46:04</date>
+        </avis>
+        <produit>
+            <ref_produit>2476250</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-teck-tanaka
+            </nom_produit>
+        </produit>
+    </recap_avis_39>
+    <recap_avis_41>
+        <membre>
+            <prenom>Benjamin</prenom>
+            <nom>DALICHAMP</nom>
+            <age>33 ans</age>
+        </membre>
+        <avis>
+            <titre>bougie la française</titre>
+            <note_global>5</note_global>
+            <commentaire>j'ai eu l'occasion de la présenter à mes amis, &#13;
+            ils sont tous unanimes pour dire, que la bougie est très jolie et que l'odeur change par rapport aux autres bougies, trouvées dans le commerce&#13;
+            je ne connaissais pas du tout "bougies la française mais cet achat  me donne très envie de tester les autres odeurs présentées pour cette bougie
+            </commentaire>
+            <date>2015-05-10 12:31:08</date>
+        </avis>
+        <produit>
+            <ref_produit>2476250</ref_produit>
+            <nom_produit>bougie-parfumee-ceramique-mordoree-60h-teck-tanaka
+            </nom_produit>
+        </produit>
+    </recap_avis_41>
+    <recap_avis_43>
+        <membre>
+            <prenom>MICHAEL</prenom>
+            <nom>JASICKI MICHAEL</nom>
+            <age>39 ans</age>
+        </membre>
+        <avis>
+            <titre>LES BOUGIES DE CLASSE FRANCAISE!!!!</titre>
+            <note_global>4</note_global>
+            <commentaire>TRES BON PRODUIT.... PRODUIT TRES QUALITATIF. 
+            </commentaire>
+            <date>2015-06-15 16:52:31</date>
+        </avis>
+        <produit>
+            <ref_produit>2429855</ref_produit>
+            <nom_produit>bougie-parfumee-xl-verre-argente-100h-teck-tanaka
+            </nom_produit>
+        </produit>
+    </recap_avis_43>
+</root>

@@ -1,0 +1,4110 @@
+*INFO* 	2014/10/03 - 16:21:32: Form data generation for cart #97 with standard payment.
+*INFO* 	2014/10/03 - 16:21:32: Data to be sent to payment platform : Array
+(
+    [signature] => 3705760c25da42cfa11a2c4501df8b6fc7efcb92
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pelisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => NAntes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 97
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NAntes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141003142132
+    [vads_trans_id] => 588926
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/03 - 16:22:34: Server call process starts for cart #97.
+*INFO* 	2014/10/03 - 16:22:34: Payment accepted for cart #97. New order status is 2.
+*INFO* 	2014/10/03 - 16:22:34: Create order for cart #97.
+*INFO* 	2014/10/03 - 16:22:37: Order #23 created successfully for cart #97.
+*INFO* 	2014/10/03 - 16:22:37: Save payment information for cart #97.
+*INFO* 	2014/10/03 - 16:22:37: Payment information with ID(s) 16 saved successfully for cart #97.
+*INFO* 	2014/10/03 - 16:22:49: User return to shop process starts for cart #97.
+*INFO* 	2014/10/03 - 16:22:49: Order already registered for cart #97.
+*INFO* 	2014/10/03 - 16:22:49: Payment success confirmed for cart #97. Just redirect to success page.
+*INFO* 	2014/10/03 - 16:23:48: User return to shop process starts for cart #97.
+*INFO* 	2014/10/03 - 16:23:48: Order already registered for cart #97.
+*INFO* 	2014/10/03 - 16:23:48: Payment success confirmed for cart #97. Just redirect to success page.
+*INFO* 	2014/10/03 - 16:24:16: User return to shop process starts for cart #97.
+*INFO* 	2014/10/03 - 16:24:16: Order already registered for cart #97.
+*INFO* 	2014/10/03 - 16:24:16: Payment success confirmed for cart #97. Just redirect to success page.
+*INFO* 	2014/10/03 - 16:31:36: Form data generation for cart #98 with standard payment.
+*INFO* 	2014/10/03 - 16:31:36: Data to be sent to payment platform : Array
+(
+    [signature] => d2c85d30f8f6495646647deaf251de5deedf52f4
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pelisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => NAntes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 98
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NAntes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141003143136
+    [vads_trans_id] => 594968
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/03 - 16:31:53: Server call process starts for cart #98.
+*INFO* 	2014/10/03 - 16:31:53: Payment accepted for cart #98. New order status is 2.
+*INFO* 	2014/10/03 - 16:31:53: Create order for cart #98.
+*INFO* 	2014/10/03 - 16:31:54: Order #24 created successfully for cart #98.
+*INFO* 	2014/10/03 - 16:31:54: Save payment information for cart #98.
+*INFO* 	2014/10/03 - 16:31:54: Payment information with ID(s) 18 saved successfully for cart #98.
+*INFO* 	2014/10/03 - 16:32:06: User return to shop process starts for cart #98.
+*INFO* 	2014/10/03 - 16:32:06: Order already registered for cart #98.
+*INFO* 	2014/10/03 - 16:32:06: Payment success confirmed for cart #98. Just redirect to success page.
+*INFO* 	2014/10/06 - 14:21:46: Form data generation for cart #101 with standard payment.
+*INFO* 	2014/10/06 - 14:21:46: Data to be sent to payment platform : Array
+(
+    [signature] => 6abe3e536e2af92c35aefb4fe3d23589e4c19f05
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2988
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pelisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => NAntes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 101
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NAntes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141006122146
+    [vads_trans_id] => 517064
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/06 - 14:22:01: Server call process starts for cart #101.
+*INFO* 	2014/10/06 - 14:22:01: Payment accepted for cart #101. New order status is 2.
+*INFO* 	2014/10/06 - 14:22:01: Create order for cart #101.
+*INFO* 	2014/10/06 - 14:22:08: Order #25 created successfully for cart #101.
+*INFO* 	2014/10/06 - 14:22:08: Save payment information for cart #101.
+*INFO* 	2014/10/06 - 14:22:08: Payment information with ID(s) 20 saved successfully for cart #101.
+*INFO* 	2014/10/06 - 14:23:16: User return to shop process starts for cart #101.
+*INFO* 	2014/10/06 - 14:23:16: Order already registered for cart #101.
+*INFO* 	2014/10/06 - 14:23:16: Payment success confirmed for cart #101. Just redirect to success page.
+*INFO* 	2014/10/06 - 15:18:00: Form data generation for cart #102 with standard payment.
+*INFO* 	2014/10/06 - 15:18:00: Data to be sent to payment platform : Array
+(
+    [signature] => 9d231863cb2bcca10a6e21165e3f4d3f60a4d917
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2100
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 102
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141006131759
+    [vads_trans_id] => 550793
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/06 - 15:18:09: Server call process starts for cart #102.
+*INFO* 	2014/10/06 - 15:18:09: Payment accepted for cart #102. New order status is 2.
+*INFO* 	2014/10/06 - 15:18:09: Create order for cart #102.
+*INFO* 	2014/10/06 - 15:18:14: Order #26 created successfully for cart #102.
+*INFO* 	2014/10/06 - 15:18:14: Save payment information for cart #102.
+*INFO* 	2014/10/06 - 15:18:16: Payment information with ID(s) 22 saved successfully for cart #102.
+*INFO* 	2014/10/06 - 15:18:35: User return to shop process starts for cart #102.
+*INFO* 	2014/10/06 - 15:18:35: Order already registered for cart #102.
+*INFO* 	2014/10/06 - 15:18:35: Payment success confirmed for cart #102. Just redirect to success page.
+*INFO* 	2014/10/06 - 15:40:29: Form data generation for cart #103 with standard payment.
+*INFO* 	2014/10/06 - 15:40:29: Data to be sent to payment platform : Array
+(
+    [signature] => ddffe806e99fbaaf826d54640e36bf93993c53ab
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2100
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 103
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141006134029
+    [vads_trans_id] => 564297
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/06 - 15:41:50: Form data generation for cart #103 with standard payment.
+*INFO* 	2014/10/06 - 15:41:50: Data to be sent to payment platform : Array
+(
+    [signature] => c3b27050d2b974fd735e31ef0ebfc8be50f0c3a5
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2100
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 103
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141006134150
+    [vads_trans_id] => 565100
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/06 - 15:41:58: Server call process starts for cart #103.
+*INFO* 	2014/10/06 - 15:41:58: Payment accepted for cart #103. New order status is 2.
+*INFO* 	2014/10/06 - 15:41:58: Create order for cart #103.
+*INFO* 	2014/10/06 - 15:42:00: Order #27 created successfully for cart #103.
+*INFO* 	2014/10/06 - 15:42:00: Save payment information for cart #103.
+*INFO* 	2014/10/06 - 15:42:00: Payment information with ID(s) 24 saved successfully for cart #103.
+*INFO* 	2014/10/06 - 15:42:06: User return to shop process starts for cart #103.
+*INFO* 	2014/10/06 - 15:42:06: Order already registered for cart #103.
+*INFO* 	2014/10/06 - 15:42:06: Payment success confirmed for cart #103. Just redirect to success page.
+*INFO* 	2014/10/06 - 15:56:36: Form data generation for cart #104 with standard payment.
+*INFO* 	2014/10/06 - 15:56:36: Data to be sent to payment platform : Array
+(
+    [signature] => bd57c9e8448f0f966f91b1daf709fd3f2df8eb3c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2100
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 104
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0202020202
+    [vads_ship_to_street] => 11 rue paul pélisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141006135636
+    [vads_trans_id] => 573961
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/06 - 15:56:43: Server call process starts for cart #104.
+*INFO* 	2014/10/06 - 15:56:43: Payment accepted for cart #104. New order status is 2.
+*INFO* 	2014/10/06 - 15:56:43: Create order for cart #104.
+*INFO* 	2014/10/06 - 15:56:46: Order #28 created successfully for cart #104.
+*INFO* 	2014/10/06 - 15:56:47: Save payment information for cart #104.
+*INFO* 	2014/10/06 - 15:56:47: Payment information with ID(s) 26 saved successfully for cart #104.
+*INFO* 	2014/10/06 - 15:56:53: User return to shop process starts for cart #104.
+*INFO* 	2014/10/06 - 15:56:53: Order already registered for cart #104.
+*INFO* 	2014/10/06 - 15:56:53: Payment success confirmed for cart #104. Just redirect to success page.
+*INFO* 	2014/10/07 - 14:33:42: Form data generation for cart #105 with standard payment.
+*INFO* 	2014/10/07 - 14:33:42: Data to be sent to payment platform : Array
+(
+    [signature] => 551476e5131f119d0ecd373b32bc7c46a0634b73
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 105
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue paul pelisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141007123342
+    [vads_trans_id] => 524221
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/07 - 14:34:04: Server call process starts for cart #105.
+*INFO* 	2014/10/07 - 14:34:04: Payment accepted for cart #105. New order status is 2.
+*INFO* 	2014/10/07 - 14:34:04: Create order for cart #105.
+*INFO* 	2014/10/07 - 14:34:08: Order #29 created successfully for cart #105.
+*INFO* 	2014/10/07 - 14:34:08: Save payment information for cart #105.
+*INFO* 	2014/10/07 - 14:34:08: Payment information with ID(s) 28 saved successfully for cart #105.
+*INFO* 	2014/10/07 - 14:34:13: User return to shop process starts for cart #105.
+*INFO* 	2014/10/07 - 14:34:13: Order already registered for cart #105.
+*INFO* 	2014/10/07 - 14:34:13: Payment success confirmed for cart #105. Just redirect to success page.
+*INFO* 	2014/10/07 - 16:55:59: Form data generation for cart #107 with standard payment.
+*INFO* 	2014/10/07 - 16:55:59: Data to be sent to payment platform : Array
+(
+    [signature] => 5e3ee18d18adc1ec69b52e9bca34b6f953878d42
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6000
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 107
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => DYNAMITE GAMES 3 RUE STE CATHERINE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141007145559
+    [vads_trans_id] => 609591
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/07 - 16:56:07: Server call process starts for cart #107.
+*INFO* 	2014/10/07 - 16:56:07: Payment accepted for cart #107. New order status is 2.
+*INFO* 	2014/10/07 - 16:56:07: Create order for cart #107.
+*INFO* 	2014/10/07 - 16:56:08: Order #30 created successfully for cart #107.
+*INFO* 	2014/10/07 - 16:56:08: Save payment information for cart #107.
+*INFO* 	2014/10/07 - 16:56:08: Payment information with ID(s) 30 saved successfully for cart #107.
+*INFO* 	2014/10/07 - 16:56:14: User return to shop process starts for cart #107.
+*INFO* 	2014/10/07 - 16:56:14: Order already registered for cart #107.
+*INFO* 	2014/10/07 - 16:56:14: Payment success confirmed for cart #107. Just redirect to success page.
+*INFO* 	2014/10/08 - 19:41:14: Form data generation for cart #111 with standard payment.
+*INFO* 	2014/10/08 - 19:41:14: Data to be sent to payment platform : Array
+(
+    [signature] => 9fc24f88e468f90ec1a87f948ef04024670f64c2
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10000
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44100
+    [vads_language] => fr
+    [vads_order_id] => 111
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 45 rue de la montagne
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44100
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141008174114
+    [vads_trans_id] => 708745
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/08 - 19:41:44: Server call process starts for cart #111.
+*INFO* 	2014/10/08 - 19:41:44: Payment accepted for cart #111. New order status is 2.
+*INFO* 	2014/10/08 - 19:41:44: Create order for cart #111.
+*INFO* 	2014/10/08 - 19:41:47: Order #31 created successfully for cart #111.
+*INFO* 	2014/10/08 - 19:41:47: Save payment information for cart #111.
+*INFO* 	2014/10/08 - 19:41:47: Payment information with ID(s) 32 saved successfully for cart #111.
+*INFO* 	2014/10/08 - 19:41:53: User return to shop process starts for cart #111.
+*INFO* 	2014/10/08 - 19:41:53: Order already registered for cart #111.
+*INFO* 	2014/10/08 - 19:41:53: Payment success confirmed for cart #111. Just redirect to success page.
+*INFO* 	2014/10/09 - 09:15:49: Form data generation for cart #112 with standard payment.
+*INFO* 	2014/10/09 - 09:15:49: Data to be sent to payment platform : Array
+(
+    [signature] => 7edf5bd9d1e2baf1d57a54ef753d7be8e63221fe
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1800
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 12 RUE DES CARMELITES 
+    [vads_cust_country] => FR
+    [vads_cust_email] => jesshihn@gmail.com
+    [vads_cust_id] => 11
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => NANTES
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 112
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 12 RUE DES CARMELITES
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141009071549
+    [vads_trans_id] => 333496
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Jessy
+    [vads_cust_last_name] => HIHN
+    [vads_ship_to_first_name] => Jessy
+    [vads_ship_to_last_name] => HIHN
+)
+
+*INFO* 	2014/10/09 - 10:33:21: Form data generation for cart #109 with standard payment.
+*INFO* 	2014/10/09 - 10:33:21: Data to be sent to payment platform : Array
+(
+    [signature] => a5c2222d119bfc47816d8ab5e6da1fba8c95178e
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3500
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 109
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue paul pelisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141009083321
+    [vads_trans_id] => 380017
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/09 - 10:33:34: Server call process starts for cart #109.
+*INFO* 	2014/10/09 - 10:33:34: Payment accepted for cart #109. New order status is 2.
+*INFO* 	2014/10/09 - 10:33:34: Create order for cart #109.
+*INFO* 	2014/10/09 - 10:33:37: Order #32 created successfully for cart #109.
+*INFO* 	2014/10/09 - 10:33:37: Save payment information for cart #109.
+*INFO* 	2014/10/09 - 10:33:37: Payment information with ID(s) 34 saved successfully for cart #109.
+*INFO* 	2014/10/09 - 10:33:43: User return to shop process starts for cart #109.
+*INFO* 	2014/10/09 - 10:33:43: Order already registered for cart #109.
+*INFO* 	2014/10/09 - 10:33:43: Payment success confirmed for cart #109. Just redirect to success page.
+*INFO* 	2014/10/10 - 11:09:37: Form data generation for cart #115 with standard payment.
+*INFO* 	2014/10/10 - 11:09:37: Data to be sent to payment platform : Array
+(
+    [signature] => a3ed9219fbc680c5db58614654ab51b9325e91cf
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 9600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 115
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => CAFE DES SPORTS 17 PLACE MAURICE RENOUL  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GORGES
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141010090937
+    [vads_trans_id] => 401774
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/10 - 11:10:09: Server call process starts for cart #115.
+*INFO* 	2014/10/10 - 11:10:09: Payment accepted for cart #115. New order status is 2.
+*INFO* 	2014/10/10 - 11:10:09: Create order for cart #115.
+*INFO* 	2014/10/10 - 11:10:11: Order #33 created successfully for cart #115.
+*INFO* 	2014/10/10 - 11:10:11: Save payment information for cart #115.
+*INFO* 	2014/10/10 - 11:10:11: Payment information with ID(s) 36 saved successfully for cart #115.
+*INFO* 	2014/10/10 - 11:10:18: User return to shop process starts for cart #115.
+*INFO* 	2014/10/10 - 11:10:18: Order already registered for cart #115.
+*INFO* 	2014/10/10 - 11:10:18: Payment success confirmed for cart #115. Just redirect to success page.
+*INFO* 	2014/10/14 - 15:47:16: Form data generation for cart #119 with standard payment.
+*INFO* 	2014/10/14 - 15:47:17: Data to be sent to payment platform : Array
+(
+    [signature] => 452ad600800935ba2a7f9bec6935d1538cb3324d
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 119
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014134716
+    [vads_trans_id] => 568369
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2014/10/14 - 15:47:50: Server call process starts for cart #119.
+*INFO* 	2014/10/14 - 15:47:50: Payment accepted for cart #119. New order status is 2.
+*INFO* 	2014/10/14 - 15:47:50: Create order for cart #119.
+*INFO* 	2014/10/14 - 15:47:52: Order #34 created successfully for cart #119.
+*INFO* 	2014/10/14 - 15:47:52: Save payment information for cart #119.
+*INFO* 	2014/10/14 - 15:47:52: Payment information with ID(s) 38 saved successfully for cart #119.
+*INFO* 	2014/10/14 - 15:47:58: User return to shop process starts for cart #119.
+*INFO* 	2014/10/14 - 15:47:58: Order already registered for cart #119.
+*INFO* 	2014/10/14 - 15:47:58: Payment success confirmed for cart #119. Just redirect to success page.
+*INFO* 	2014/10/14 - 15:53:52: Form data generation for cart #120 with standard payment.
+*INFO* 	2014/10/14 - 15:53:52: Data to be sent to payment platform : Array
+(
+    [signature] => 49d4685312397ae00885fb571fd56193b47b7843
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3590
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 120
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014135352
+    [vads_trans_id] => 572327
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2014/10/14 - 15:54:30: Server call process starts for cart #120.
+*INFO* 	2014/10/14 - 15:54:30: Payment accepted for cart #120. New order status is 2.
+*INFO* 	2014/10/14 - 15:54:30: Create order for cart #120.
+*INFO* 	2014/10/14 - 15:54:31: Order #35 created successfully for cart #120.
+*INFO* 	2014/10/14 - 15:54:31: Save payment information for cart #120.
+*INFO* 	2014/10/14 - 15:54:31: Payment information with ID(s) 40 saved successfully for cart #120.
+*INFO* 	2014/10/14 - 15:54:38: User return to shop process starts for cart #120.
+*INFO* 	2014/10/14 - 15:54:38: Order already registered for cart #120.
+*INFO* 	2014/10/14 - 15:54:38: Payment success confirmed for cart #120. Just redirect to success page.
+*INFO* 	2014/10/14 - 16:00:58: Form data generation for cart #112 with standard payment.
+*INFO* 	2014/10/14 - 16:00:58: Data to be sent to payment platform : Array
+(
+    [signature] => 7dcbed88d27c09244364163dd08acc09b975951a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6280
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 12 RUE DES CARMELITES 
+    [vads_cust_country] => FR
+    [vads_cust_email] => jesshihn@gmail.com
+    [vads_cust_id] => 11
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => NANTES
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 112
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 12 RUE DES CARMELITES
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014140058
+    [vads_trans_id] => 576584
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Jessy
+    [vads_cust_last_name] => HIHN
+    [vads_ship_to_first_name] => Jessy
+    [vads_ship_to_last_name] => HIHN
+)
+
+*INFO* 	2014/10/14 - 16:09:31: Form data generation for cart #121 with standard payment.
+*INFO* 	2014/10/14 - 16:09:31: Data to be sent to payment platform : Array
+(
+    [signature] => 922212240edabf7ab6e72fa675873e009e19c5fa
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1790
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 121
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014140931
+    [vads_trans_id] => 581717
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2014/10/14 - 16:29:11: Form data generation for cart #122 with standard payment.
+*INFO* 	2014/10/14 - 16:29:11: Data to be sent to payment platform : Array
+(
+    [signature] => 31d83b7b869a1211804e3ce4e8c521a04fe0cfd2
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44100
+    [vads_language] => fr
+    [vads_order_id] => 122
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014142911
+    [vads_trans_id] => 593511
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2014/10/14 - 17:14:07: Form data generation for cart #118 with standard payment.
+*INFO* 	2014/10/14 - 17:14:07: Data to be sent to payment platform : Array
+(
+    [signature] => f4db5b717a2bdf30b8a8fdae20d7d95093642fbd
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3690
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => cvdvwc 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 118
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => cvdvwc
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141014151407
+    [vads_trans_id] => 620474
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/14 - 17:14:16: Server call process starts for cart #118.
+*INFO* 	2014/10/14 - 17:14:16: Payment accepted for cart #118. New order status is 2.
+*INFO* 	2014/10/14 - 17:14:16: Create order for cart #118.
+*INFO* 	2014/10/14 - 17:14:17: Order #36 created successfully for cart #118.
+*INFO* 	2014/10/14 - 17:14:17: Save payment information for cart #118.
+*INFO* 	2014/10/14 - 17:14:17: Payment information with ID(s) 42 saved successfully for cart #118.
+*INFO* 	2014/10/14 - 17:14:23: User return to shop process starts for cart #118.
+*INFO* 	2014/10/14 - 17:14:23: Order already registered for cart #118.
+*INFO* 	2014/10/14 - 17:14:23: Payment success confirmed for cart #118. Just redirect to success page.
+*INFO* 	2014/10/15 - 10:14:19: Form data generation for cart #121 with standard payment.
+*INFO* 	2014/10/15 - 10:14:20: Data to be sent to payment platform : Array
+(
+    [signature] => 6b46785450a9a9c2376ea0715006b08e9d244132
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4280
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 121
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => Lieu dit
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141015081419
+    [vads_trans_id] => 368599
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/15 - 10:14:37: Server call process starts for cart #121.
+*INFO* 	2014/10/15 - 10:14:37: Payment accepted for cart #121. New order status is 2.
+*INFO* 	2014/10/15 - 10:14:37: Create order for cart #121.
+*INFO* 	2014/10/15 - 10:14:40: Order #37 created successfully for cart #121.
+*INFO* 	2014/10/15 - 10:14:40: Save payment information for cart #121.
+*INFO* 	2014/10/15 - 10:14:40: Payment information with ID(s) 44 saved successfully for cart #121.
+*INFO* 	2014/10/15 - 10:14:46: User return to shop process starts for cart #121.
+*INFO* 	2014/10/15 - 10:14:46: Order already registered for cart #121.
+*INFO* 	2014/10/15 - 10:14:46: Payment success confirmed for cart #121. Just redirect to success page.
+*INFO* 	2014/10/15 - 10:19:14: Form data generation for cart #123 with standard payment.
+*INFO* 	2014/10/15 - 10:19:14: Data to be sent to payment platform : Array
+(
+    [signature] => 2509486a02c28d3d4f8353dddbd37040534c11f2
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 123
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141015081914
+    [vads_trans_id] => 371545
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/15 - 10:19:47: Server call process starts for cart #123.
+*INFO* 	2014/10/15 - 10:19:47: Payment accepted for cart #123. New order status is 2.
+*INFO* 	2014/10/15 - 10:19:47: Create order for cart #123.
+*INFO* 	2014/10/15 - 10:19:48: Order #38 created successfully for cart #123.
+*INFO* 	2014/10/15 - 10:19:48: Save payment information for cart #123.
+*INFO* 	2014/10/15 - 10:19:48: Payment information with ID(s) 46 saved successfully for cart #123.
+*INFO* 	2014/10/15 - 10:19:58: User return to shop process starts for cart #123.
+*INFO* 	2014/10/15 - 10:19:58: Order already registered for cart #123.
+*INFO* 	2014/10/15 - 10:19:58: Payment success confirmed for cart #123. Just redirect to success page.
+*INFO* 	2014/10/15 - 10:46:42: Form data generation for cart #124 with standard payment.
+*INFO* 	2014/10/15 - 10:46:42: Data to be sent to payment platform : Array
+(
+    [signature] => 50df5a00f130f0fcf9f3468a2d3f9100f505de00
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1980
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 124
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => STATION TOTAL 25 RECOUVRANCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GETIGNE
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141015084642
+    [vads_trans_id] => 388029
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/15 - 10:46:57: Server call process starts for cart #124.
+*INFO* 	2014/10/15 - 10:46:57: Payment accepted for cart #124. New order status is 2.
+*INFO* 	2014/10/15 - 10:46:57: Create order for cart #124.
+*INFO* 	2014/10/15 - 10:46:59: Order #39 created successfully for cart #124.
+*INFO* 	2014/10/15 - 10:46:59: Save payment information for cart #124.
+*INFO* 	2014/10/15 - 10:46:59: Payment information with ID(s) 48 saved successfully for cart #124.
+*INFO* 	2014/10/15 - 10:47:06: User return to shop process starts for cart #124.
+*INFO* 	2014/10/15 - 10:47:06: Order already registered for cart #124.
+*INFO* 	2014/10/15 - 10:47:06: Payment success confirmed for cart #124. Just redirect to success page.
+*INFO* 	2014/10/15 - 10:49:11: Form data generation for cart #125 with standard payment.
+*INFO* 	2014/10/15 - 10:49:11: Data to be sent to payment platform : Array
+(
+    [signature] => 6690045da58458c5c57f63303b1f8fd4d8d445e5
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3480
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 125
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => STATION TOTAL 25 RECOUVRANCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GETIGNE
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141015084911
+    [vads_trans_id] => 389512
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/15 - 11:17:11: Form data generation for cart #125 with standard payment.
+*INFO* 	2014/10/15 - 11:17:11: Data to be sent to payment platform : Array
+(
+    [signature] => 1b1e4b4fc59dfe5354a61255140f9d6054cde482
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6580
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 125
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 25 RECOUVRANCE 25 RECOUVRANCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GETIGNE
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141015091711
+    [vads_trans_id] => 406318
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Livraison Commerce de proximité
+    [vads_ship_to_last_name] => STATION TOTAL
+)
+
+*INFO* 	2014/10/16 - 12:22:14: Form data generation for cart #125 with standard payment.
+*INFO* 	2014/10/16 - 12:22:14: Data to be sent to payment platform : Array
+(
+    [signature] => c367f4a73d278714e84aedeedf0d103cb9c3848f
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6580
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du président Auguste Durand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 125
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 12 RUE JEAN MOULIN 25 RECOUVRANCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 85610
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141016102214
+    [vads_trans_id] => 445349
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Livraison en Bureau de Poste
+    [vads_ship_to_last_name] => BUREAU DE POSTE CUGAND BP
+)
+
+*INFO* 	2014/10/16 - 12:22:42: Server call process starts for cart #125.
+*INFO* 	2014/10/16 - 12:22:42: Payment accepted for cart #125. New order status is 2.
+*INFO* 	2014/10/16 - 12:22:42: Create order for cart #125.
+*INFO* 	2014/10/16 - 12:22:46: Order #40 created successfully for cart #125.
+*INFO* 	2014/10/16 - 12:22:46: Save payment information for cart #125.
+*INFO* 	2014/10/16 - 12:22:46: Payment information with ID(s) 50 saved successfully for cart #125.
+*INFO* 	2014/10/16 - 12:22:55: User return to shop process starts for cart #125.
+*INFO* 	2014/10/16 - 12:22:55: Order already registered for cart #125.
+*INFO* 	2014/10/16 - 12:22:55: Payment success confirmed for cart #125. Just redirect to success page.
+*INFO* 	2014/10/16 - 13:59:47: Form data generation for cart #127 with standard payment.
+*INFO* 	2014/10/16 - 13:59:47: Data to be sent to payment platform : Array
+(
+    [signature] => cc31737a832e167c4c4f59944339951c7c84eab7
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5090
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => TEST 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => TEST
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 127
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => TEST
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => TEST
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141016115947
+    [vads_trans_id] => 503870
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/16 - 14:00:12: Server call process starts for cart #127.
+*INFO* 	2014/10/16 - 14:00:12: Payment accepted for cart #127. New order status is 2.
+*INFO* 	2014/10/16 - 14:00:12: Create order for cart #127.
+*INFO* 	2014/10/16 - 14:00:13: Order #41 created successfully for cart #127.
+*INFO* 	2014/10/16 - 14:00:13: Save payment information for cart #127.
+*INFO* 	2014/10/16 - 14:00:13: Payment information with ID(s) 52 saved successfully for cart #127.
+*INFO* 	2014/10/16 - 14:00:47: User return to shop process starts for cart #127.
+*INFO* 	2014/10/16 - 14:00:47: Order already registered for cart #127.
+*INFO* 	2014/10/16 - 14:00:47: Payment success confirmed for cart #127. Just redirect to success page.
+*INFO* 	2014/10/16 - 16:40:19: Form data generation for cart #126 with standard payment.
+*INFO* 	2014/10/16 - 16:40:19: Data to be sent to payment platform : Array
+(
+    [signature] => e242a1355850c985587b64d27b3f3f40f172d431
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5090
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 126
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue paul pelisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141016144019
+    [vads_trans_id] => 600195
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/16 - 16:40:27: Server call process starts for cart #126.
+*INFO* 	2014/10/16 - 16:40:27: Payment accepted for cart #126. New order status is 2.
+*INFO* 	2014/10/16 - 16:40:27: Create order for cart #126.
+*INFO* 	2014/10/16 - 16:40:28: Order #42 created successfully for cart #126.
+*INFO* 	2014/10/16 - 16:40:28: Save payment information for cart #126.
+*INFO* 	2014/10/16 - 16:40:28: Payment information with ID(s) 54 saved successfully for cart #126.
+*INFO* 	2014/10/16 - 16:40:34: User return to shop process starts for cart #126.
+*INFO* 	2014/10/16 - 16:40:34: Order already registered for cart #126.
+*INFO* 	2014/10/16 - 16:40:34: Payment success confirmed for cart #126. Just redirect to success page.
+*INFO* 	2014/10/16 - 16:43:23: Form data generation for cart #129 with standard payment.
+*INFO* 	2014/10/16 - 16:43:23: Data to be sent to payment platform : Array
+(
+    [signature] => 0ac8140f1e29c694d4c7389e63bc9feba867755c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue paul pélisson Batiment C
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 2
+    [vads_cust_phone] => 0202020202
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 129
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue paul pelisson
+    [vads_ship_to_street2] => Batiment C
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141016144323
+    [vads_trans_id] => 602032
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/16 - 16:43:37: Server call process starts for cart #129.
+*INFO* 	2014/10/16 - 16:43:37: Payment accepted for cart #129. New order status is 2.
+*INFO* 	2014/10/16 - 16:43:37: Create order for cart #129.
+*INFO* 	2014/10/16 - 16:43:38: Order #43 created successfully for cart #129.
+*INFO* 	2014/10/16 - 16:43:38: Save payment information for cart #129.
+*INFO* 	2014/10/16 - 16:43:38: Payment information with ID(s) 56 saved successfully for cart #129.
+*INFO* 	2014/10/16 - 16:43:40: User return to shop process starts for cart #129.
+*INFO* 	2014/10/16 - 16:43:40: Order already registered for cart #129.
+*INFO* 	2014/10/16 - 16:43:40: Payment success confirmed for cart #129. Just redirect to success page.
+*INFO* 	2014/10/16 - 17:07:18: Form data generation for cart #112 with standard payment.
+*INFO* 	2014/10/16 - 17:07:18: Data to be sent to payment platform : Array
+(
+    [signature] => 17c1596148400efb8d22d78b5937175bfb78f086
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6650
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 12 RUE DES CARMELITES 
+    [vads_cust_country] => FR
+    [vads_cust_email] => jesshihn@gmail.com
+    [vads_cust_id] => 11
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => NANTES
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 112
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 12 RUE DES CARMELITES
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141016150718
+    [vads_trans_id] => 616388
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Jessy
+    [vads_cust_last_name] => HIHN
+    [vads_ship_to_first_name] => Jessy
+    [vads_ship_to_last_name] => HIHN
+)
+
+*INFO* 	2014/10/17 - 12:01:22: Form data generation for cart #135 with standard payment.
+*INFO* 	2014/10/17 - 12:01:22: Data to be sent to payment platform : Array
+(
+    [signature] => 8a4a7779df188e858c4a32662bda215a2db6f0a3
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 26 rue de la haussière 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 14
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => Les sorinères
+    [vads_cust_zip] => 44840
+    [vads_language] => fr
+    [vads_order_id] => 135
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 26 rue de la haussiere
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Les sorineres
+    [vads_ship_to_zip] => 44840
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017100122
+    [vads_trans_id] => 432829
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/17 - 12:01:32: Server call process starts for cart #135.
+*INFO* 	2014/10/17 - 12:01:32: Payment accepted for cart #135. New order status is 2.
+*INFO* 	2014/10/17 - 12:01:32: Create order for cart #135.
+*INFO* 	2014/10/17 - 12:01:35: Order #44 created successfully for cart #135.
+*INFO* 	2014/10/17 - 12:01:35: Save payment information for cart #135.
+*INFO* 	2014/10/17 - 12:01:35: Payment information with ID(s) 58 saved successfully for cart #135.
+*INFO* 	2014/10/17 - 12:01:39: User return to shop process starts for cart #135.
+*INFO* 	2014/10/17 - 12:01:39: Order already registered for cart #135.
+*INFO* 	2014/10/17 - 12:01:39: Payment success confirmed for cart #135. Just redirect to success page.
+*INFO* 	2014/10/17 - 14:24:31: Form data generation for cart #128 with standard payment.
+*INFO* 	2014/10/17 - 14:24:31: Data to be sent to payment platform : Array
+(
+    [signature] => f60445f29ddd495d98f4d6a1e021a65951a68bbf
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 45 rue de la montagne 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44100
+    [vads_language] => fr
+    [vads_order_id] => 128
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 45 rue de la montagne
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44100
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017122431
+    [vads_trans_id] => 518717
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/17 - 14:25:00: Server call process starts for cart #128.
+*INFO* 	2014/10/17 - 14:25:00: Payment accepted for cart #128. New order status is 2.
+*INFO* 	2014/10/17 - 14:25:00: Create order for cart #128.
+*INFO* 	2014/10/17 - 14:25:01: Order #45 created successfully for cart #128.
+*INFO* 	2014/10/17 - 14:25:01: Save payment information for cart #128.
+*INFO* 	2014/10/17 - 14:25:01: Payment information with ID(s) 60 saved successfully for cart #128.
+*INFO* 	2014/10/17 - 14:25:05: User return to shop process starts for cart #128.
+*INFO* 	2014/10/17 - 14:25:05: Order already registered for cart #128.
+*INFO* 	2014/10/17 - 14:25:05: Payment success confirmed for cart #128. Just redirect to success page.
+*INFO* 	2014/10/17 - 14:56:43: Form data generation for cart #137 with standard payment.
+*INFO* 	2014/10/17 - 14:56:43: Data to be sent to payment platform : Array
+(
+    [signature] => 276152d4091024e2ba90c57e352b070c76a19f44
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 20850
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 45 rue de la montagne 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 137
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11, rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017125643
+    [vads_trans_id] => 538036
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/17 - 14:57:08: Server call process starts for cart #137.
+*INFO* 	2014/10/17 - 14:57:08: Payment accepted for cart #137. New order status is 2.
+*INFO* 	2014/10/17 - 14:57:08: Create order for cart #137.
+*INFO* 	2014/10/17 - 14:57:09: Order #46 created successfully for cart #137.
+*INFO* 	2014/10/17 - 14:57:09: Save payment information for cart #137.
+*INFO* 	2014/10/17 - 14:57:09: Payment information with ID(s) 62 saved successfully for cart #137.
+*INFO* 	2014/10/17 - 14:57:13: User return to shop process starts for cart #137.
+*INFO* 	2014/10/17 - 14:57:13: Order already registered for cart #137.
+*INFO* 	2014/10/17 - 14:57:13: Payment success confirmed for cart #137. Just redirect to success page.
+*INFO* 	2014/10/17 - 16:41:11: Form data generation for cart #139 with standard payment.
+*INFO* 	2014/10/17 - 16:41:11: Data to be sent to payment platform : Array
+(
+    [signature] => 4ae2fe77442527d92fffb735c667b18b0243c9f0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4440
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 45 rue de la montagne 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fabrice@vupar.fr
+    [vads_cust_id] => 9
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 139
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11, rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017144111
+    [vads_trans_id] => 600711
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/17 - 16:41:23: Server call process starts for cart #139.
+*INFO* 	2014/10/17 - 16:41:23: Payment accepted for cart #139. New order status is 2.
+*INFO* 	2014/10/17 - 16:41:23: Create order for cart #139.
+*INFO* 	2014/10/17 - 16:41:26: Order #47 created successfully for cart #139.
+*INFO* 	2014/10/17 - 16:41:26: Save payment information for cart #139.
+*INFO* 	2014/10/17 - 16:41:26: Payment information with ID(s) 64 saved successfully for cart #139.
+*INFO* 	2014/10/17 - 16:41:30: User return to shop process starts for cart #139.
+*INFO* 	2014/10/17 - 16:41:30: Order already registered for cart #139.
+*INFO* 	2014/10/17 - 16:41:30: Payment success confirmed for cart #139. Just redirect to success page.
+*INFO* 	2014/10/17 - 18:51:09: Form data generation for cart #140 with standard payment.
+*INFO* 	2014/10/17 - 18:51:09: Data to be sent to payment platform : Array
+(
+    [signature] => 1a3a52448449232e63347ddf03e5a896b8c79483
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4690
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => TEST 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => TEST
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 140
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => TEST
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => TEST
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017165109
+    [vads_trans_id] => 678695
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/17 - 18:51:25: Server call process starts for cart #140.
+*INFO* 	2014/10/17 - 18:51:25: Payment accepted for cart #140. New order status is 2.
+*INFO* 	2014/10/17 - 18:51:25: Create order for cart #140.
+*INFO* 	2014/10/17 - 18:51:28: Order #48 created successfully for cart #140.
+*INFO* 	2014/10/17 - 18:51:28: Save payment information for cart #140.
+*INFO* 	2014/10/17 - 18:51:28: Payment information with ID(s) 66 saved successfully for cart #140.
+*INFO* 	2014/10/17 - 18:51:32: User return to shop process starts for cart #140.
+*INFO* 	2014/10/17 - 18:51:32: Order already registered for cart #140.
+*INFO* 	2014/10/17 - 18:51:32: Payment success confirmed for cart #140. Just redirect to success page.
+*INFO* 	2014/10/17 - 18:52:19: Form data generation for cart #141 with standard payment.
+*INFO* 	2014/10/17 - 18:52:19: Data to be sent to payment platform : Array
+(
+    [signature] => 9b2e5b503e3a6c23d1b740ff630d5f6a7fef8693
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1790
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Batiment 1
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 141
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => Batiment 1
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141017165219
+    [vads_trans_id] => 679395
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/17 - 18:52:29: Server call process starts for cart #141.
+*INFO* 	2014/10/17 - 18:52:29: Payment accepted for cart #141. New order status is 2.
+*INFO* 	2014/10/17 - 18:52:29: Create order for cart #141.
+*INFO* 	2014/10/17 - 18:52:30: Order #49 created successfully for cart #141.
+*INFO* 	2014/10/17 - 18:52:30: Save payment information for cart #141.
+*INFO* 	2014/10/17 - 18:52:30: Payment information with ID(s) 68 saved successfully for cart #141.
+*INFO* 	2014/10/17 - 18:52:34: User return to shop process starts for cart #141.
+*INFO* 	2014/10/17 - 18:52:34: Order already registered for cart #141.
+*INFO* 	2014/10/17 - 18:52:34: Payment success confirmed for cart #141. Just redirect to success page.
+*INFO* 	2014/10/19 - 22:58:17: Form data generation for cart #143 with standard payment.
+*INFO* 	2014/10/19 - 22:58:17: Data to be sent to payment platform : Array
+(
+    [signature] => c86901f0d801870ee698ab4a56528a1aff68c487
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Batiment 1
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 143
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => Batiment 1
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 85000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141019205817
+    [vads_trans_id] => 826977
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/19 - 22:58:53: Server call process starts for cart #143.
+*INFO* 	2014/10/19 - 22:58:53: Payment accepted for cart #143. New order status is 2.
+*INFO* 	2014/10/19 - 22:58:53: Create order for cart #143.
+*INFO* 	2014/10/19 - 22:58:57: Order #50 created successfully for cart #143.
+*INFO* 	2014/10/19 - 22:58:57: Save payment information for cart #143.
+*INFO* 	2014/10/19 - 22:58:57: Payment information with ID(s) 70 saved successfully for cart #143.
+*INFO* 	2014/10/19 - 22:59:03: User return to shop process starts for cart #143.
+*INFO* 	2014/10/19 - 22:59:03: Order already registered for cart #143.
+*INFO* 	2014/10/19 - 22:59:03: Payment success confirmed for cart #143. Just redirect to success page.
+*INFO* 	2014/10/20 - 09:54:38: Form data generation for cart #142 with standard payment.
+*INFO* 	2014/10/20 - 09:54:38: Data to be sent to payment platform : Array
+(
+    [signature] => 1548bd3c680517a1da34ee4b649ba73f8d7244e1
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3680
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Batiment 1
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 142
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => Batiment 1
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141020075438
+    [vads_trans_id] => 356787
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/20 - 09:54:49: Server call process starts for cart #142.
+*INFO* 	2014/10/20 - 09:54:49: Payment accepted for cart #142. New order status is 2.
+*INFO* 	2014/10/20 - 09:54:49: Create order for cart #142.
+*INFO* 	2014/10/20 - 09:54:54: Order #51 created successfully for cart #142.
+*INFO* 	2014/10/20 - 09:54:55: Save payment information for cart #142.
+*INFO* 	2014/10/20 - 09:54:55: Payment information with ID(s) 72 saved successfully for cart #142.
+*INFO* 	2014/10/20 - 09:54:59: User return to shop process starts for cart #142.
+*INFO* 	2014/10/20 - 09:54:59: Order already registered for cart #142.
+*INFO* 	2014/10/20 - 09:54:59: Payment success confirmed for cart #142. Just redirect to success page.
+*INFO* 	2014/10/20 - 12:15:59: Server call process starts for cart #120.
+*INFO* 	2014/10/20 - 12:15:59: Order already registered for cart #120.
+*INFO* 	2014/10/20 - 12:15:59: Payment success confirmed for cart #120.
+*INFO* 	2014/10/20 - 15:35:02: Form data generation for cart #147 with standard payment.
+*INFO* 	2014/10/20 - 15:35:02: Data to be sent to payment platform : Array
+(
+    [signature] => e19e9f5599901aa92672523c5383b1e463eeadef
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3590
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 26 rue de la haussière 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 14
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => Les sorinères
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 147
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 26 rue de la haussiere
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Les sorineres
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141020133502
+    [vads_trans_id] => 561024
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/20 - 15:35:10: Server call process starts for cart #147.
+*INFO* 	2014/10/20 - 15:35:10: Payment accepted for cart #147. New order status is 2.
+*INFO* 	2014/10/20 - 15:35:10: Create order for cart #147.
+*INFO* 	2014/10/20 - 15:35:11: Order #52 created successfully for cart #147.
+*INFO* 	2014/10/20 - 15:35:11: Save payment information for cart #147.
+*INFO* 	2014/10/20 - 15:35:11: Payment information with ID(s) 74 saved successfully for cart #147.
+*INFO* 	2014/10/20 - 15:35:14: User return to shop process starts for cart #147.
+*INFO* 	2014/10/20 - 15:35:14: Order already registered for cart #147.
+*INFO* 	2014/10/20 - 15:35:14: Payment success confirmed for cart #147. Just redirect to success page.
+*INFO* 	2014/10/20 - 15:59:33: Form data generation for cart #148 with standard payment.
+*INFO* 	2014/10/20 - 15:59:33: Data to be sent to payment platform : Array
+(
+    [signature] => ffaf3d42a10603dab3e792c5fa67f815c919204b
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Batiment 1
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 148
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => Rue du president Auguste Durand
+    [vads_ship_to_street2] => Batiment 1
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141020135933
+    [vads_trans_id] => 575733
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/20 - 15:59:44: Server call process starts for cart #148.
+*INFO* 	2014/10/20 - 15:59:44: Payment accepted for cart #148. New order status is 2.
+*INFO* 	2014/10/20 - 15:59:44: Create order for cart #148.
+*INFO* 	2014/10/20 - 15:59:46: Order #53 created successfully for cart #148.
+*INFO* 	2014/10/20 - 15:59:46: Save payment information for cart #148.
+*INFO* 	2014/10/20 - 15:59:46: Payment information with ID(s) 76 saved successfully for cart #148.
+*INFO* 	2014/10/20 - 15:59:50: User return to shop process starts for cart #148.
+*INFO* 	2014/10/20 - 15:59:50: Order already registered for cart #148.
+*INFO* 	2014/10/20 - 15:59:50: Payment success confirmed for cart #148. Just redirect to success page.
+*INFO* 	2014/10/20 - 16:18:00: Form data generation for cart #149 with standard payment.
+*INFO* 	2014/10/20 - 16:18:00: Data to be sent to payment platform : Array
+(
+    [signature] => afc4d1e05dd88dcb18984aa92c44cf7b88b682f2
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 33060
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 102 avenue des lilas 
+    [vads_cust_country] => FR
+    [vads_cust_email] => fsaupin@bougies-la-francaise.com
+    [vads_cust_id] => 16
+    [vads_cust_phone] => 02.40.23.45.66
+    [vads_cust_title] => Mme
+    [vads_cust_city] => boussay
+    [vads_cust_zip] => 44190
+    [vads_language] => fr
+    [vads_order_id] => 149
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => BUREAU DE POSTE CLISSON 4 PLACE DE LA TRINITE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CLISSON
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141020141800
+    [vads_trans_id] => 586805
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Francoise
+    [vads_cust_last_name] => saupin
+    [vads_ship_to_first_name] => Francoise
+    [vads_ship_to_last_name] => saupin
+)
+
+*INFO* 	2014/10/20 - 16:18:21: Server call process starts for cart #149.
+*INFO* 	2014/10/20 - 16:18:21: Payment accepted for cart #149. New order status is 2.
+*INFO* 	2014/10/20 - 16:18:21: Create order for cart #149.
+*INFO* 	2014/10/20 - 16:18:23: Order #54 created successfully for cart #149.
+*INFO* 	2014/10/20 - 16:18:23: Save payment information for cart #149.
+*INFO* 	2014/10/20 - 16:18:23: Payment information with ID(s) 78 saved successfully for cart #149.
+*INFO* 	2014/10/20 - 16:18:27: User return to shop process starts for cart #149.
+*INFO* 	2014/10/20 - 16:18:27: Order already registered for cart #149.
+*INFO* 	2014/10/20 - 16:18:27: Payment success confirmed for cart #149. Just redirect to success page.
+*INFO* 	2014/10/20 - 17:54:20: User return to shop process starts for cart #148.
+*INFO* 	2014/10/20 - 17:54:20: Order already registered for cart #148.
+*ERROR* 	2014/10/20 - 17:54:20: Order saved with success status while payment failed, cart ID : #148.
+*INFO* 	2014/10/20 - 17:57:20: Form data generation for cart #151 with standard payment.
+*INFO* 	2014/10/20 - 17:57:20: Data to be sent to payment platform : Array
+(
+    [signature] => 35d316579442889e0d4d5ccfe01c965f0102b247
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 18
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 151
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141020155720
+    [vads_trans_id] => 646407
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/20 - 17:57:31: Server call process starts for cart #151.
+*INFO* 	2014/10/20 - 17:57:31: Payment accepted for cart #151. New order status is 2.
+*INFO* 	2014/10/20 - 17:57:31: Create order for cart #151.
+*INFO* 	2014/10/20 - 17:57:32: Order #55 created successfully for cart #151.
+*INFO* 	2014/10/20 - 17:57:32: Save payment information for cart #151.
+*INFO* 	2014/10/20 - 17:57:32: Payment information with ID(s) 80 saved successfully for cart #151.
+*INFO* 	2014/10/20 - 17:57:36: User return to shop process starts for cart #151.
+*INFO* 	2014/10/20 - 17:57:36: Order already registered for cart #151.
+*INFO* 	2014/10/20 - 17:57:36: Payment success confirmed for cart #151. Just redirect to success page.
+*INFO* 	2014/10/21 - 09:56:17: Form data generation for cart #152 with standard payment.
+*INFO* 	2014/10/21 - 09:56:17: Data to be sent to payment platform : Array
+(
+    [signature] => 2c0280e94281587f611823cdb27527dcd6a48a07
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Rue du président Auguste Durand
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 85610
+    [vads_language] => fr
+    [vads_order_id] => 152
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => BUREAU DE POSTE CUGAND BP 12 RUE JEAN MOULIN  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CUGAND
+    [vads_ship_to_zip] => 85610
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021075617
+    [vads_trans_id] => 357771
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/21 - 09:56:26: Server call process starts for cart #152.
+*INFO* 	2014/10/21 - 09:56:26: Payment accepted for cart #152. New order status is 2.
+*INFO* 	2014/10/21 - 09:56:26: Create order for cart #152.
+*INFO* 	2014/10/21 - 09:56:30: Order #56 created successfully for cart #152.
+*INFO* 	2014/10/21 - 09:56:30: Save payment information for cart #152.
+*INFO* 	2014/10/21 - 09:56:30: Payment information with ID(s) 82 saved successfully for cart #152.
+*INFO* 	2014/10/21 - 09:56:34: User return to shop process starts for cart #152.
+*INFO* 	2014/10/21 - 09:56:34: Order already registered for cart #152.
+*INFO* 	2014/10/21 - 09:56:34: Payment success confirmed for cart #152. Just redirect to success page.
+*INFO* 	2014/10/21 - 09:58:16: Form data generation for cart #153 with standard payment.
+*INFO* 	2014/10/21 - 09:58:16: Data to be sent to payment platform : Array
+(
+    [signature] => 9666486df3be19916ce044ccfbc582da5ab7b707
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3390
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => Rue du president Auguste Durand Rue du président Auguste Durand
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => +33251421534
+    [vads_cust_title] => Mme
+    [vads_cust_city] => CUGAND
+    [vads_cust_zip] => 85610
+    [vads_language] => fr
+    [vads_order_id] => 153
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => STATION TOTAL 25 RECOUVRANCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GETIGNE
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021075816
+    [vads_trans_id] => 358969
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/21 - 09:59:50: Server call process starts for cart #153.
+*INFO* 	2014/10/21 - 09:59:50: Payment accepted for cart #153. New order status is 2.
+*INFO* 	2014/10/21 - 09:59:50: Create order for cart #153.
+*INFO* 	2014/10/21 - 09:59:51: Order #57 created successfully for cart #153.
+*INFO* 	2014/10/21 - 09:59:51: Save payment information for cart #153.
+*INFO* 	2014/10/21 - 09:59:51: Payment information with ID(s) 84 saved successfully for cart #153.
+*INFO* 	2014/10/21 - 09:59:55: User return to shop process starts for cart #153.
+*INFO* 	2014/10/21 - 09:59:55: Order already registered for cart #153.
+*INFO* 	2014/10/21 - 09:59:55: Payment success confirmed for cart #153. Just redirect to success page.
+*INFO* 	2014/10/21 - 11:11:52: Form data generation for cart #154 with standard payment.
+*INFO* 	2014/10/21 - 11:11:52: Data to be sent to payment platform : Array
+(
+    [signature] => d4389dc4d4e1b9128723c00421622e975427345a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 31500
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 18
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 154
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021091152
+    [vads_trans_id] => 403121
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/21 - 11:12:03: Server call process starts for cart #154.
+*INFO* 	2014/10/21 - 11:12:03: Payment accepted for cart #154. New order status is 2.
+*INFO* 	2014/10/21 - 11:12:03: Create order for cart #154.
+*INFO* 	2014/10/21 - 11:12:04: Order #58 created successfully for cart #154.
+*INFO* 	2014/10/21 - 11:12:04: Save payment information for cart #154.
+*INFO* 	2014/10/21 - 11:12:04: Payment information with ID(s) 86 saved successfully for cart #154.
+*INFO* 	2014/10/21 - 11:12:08: User return to shop process starts for cart #154.
+*INFO* 	2014/10/21 - 11:12:08: Order already registered for cart #154.
+*INFO* 	2014/10/21 - 11:12:08: Payment success confirmed for cart #154. Just redirect to success page.
+*INFO* 	2014/10/21 - 11:23:34: Form data generation for cart #156 with standard payment.
+*INFO* 	2014/10/21 - 11:23:34: Data to be sent to payment platform : Array
+(
+    [signature] => 5b7e68052f4c5e8538de3650fdbfe0bf8a89830f
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2802
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => avenue Charles de gaulle 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 156
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => avenue Charles de gaulle
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021092334
+    [vads_trans_id] => 410149
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/21 - 11:23:45: Server call process starts for cart #156.
+*INFO* 	2014/10/21 - 11:23:45: Payment accepted for cart #156. New order status is 2.
+*INFO* 	2014/10/21 - 11:23:45: Create order for cart #156.
+*INFO* 	2014/10/21 - 11:23:46: Order #59 created successfully for cart #156.
+*INFO* 	2014/10/21 - 11:23:47: Save payment information for cart #156.
+*INFO* 	2014/10/21 - 11:23:47: Payment information with ID(s) 88 saved successfully for cart #156.
+*INFO* 	2014/10/21 - 11:23:52: User return to shop process starts for cart #156.
+*INFO* 	2014/10/21 - 11:23:52: Order already registered for cart #156.
+*INFO* 	2014/10/21 - 11:23:52: Payment success confirmed for cart #156. Just redirect to success page.
+*INFO* 	2014/10/21 - 14:23:07: Form data generation for cart #157 with standard payment.
+*INFO* 	2014/10/21 - 14:23:07: Data to be sent to payment platform : Array
+(
+    [signature] => 3394c428a62a91e5d36fe57d6c662bfbaf378338
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3680
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 18
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 157
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021122307
+    [vads_trans_id] => 517877
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/21 - 14:23:17: Server call process starts for cart #157.
+*INFO* 	2014/10/21 - 14:23:17: Payment accepted for cart #157. New order status is 2.
+*INFO* 	2014/10/21 - 14:23:17: Create order for cart #157.
+*INFO* 	2014/10/21 - 14:23:18: Order #60 created successfully for cart #157.
+*INFO* 	2014/10/21 - 14:23:18: Save payment information for cart #157.
+*INFO* 	2014/10/21 - 14:23:18: Payment information with ID(s) 90 saved successfully for cart #157.
+*INFO* 	2014/10/21 - 14:23:22: User return to shop process starts for cart #157.
+*INFO* 	2014/10/21 - 14:23:22: Order already registered for cart #157.
+*INFO* 	2014/10/21 - 14:23:22: Payment success confirmed for cart #157. Just redirect to success page.
+*INFO* 	2014/10/21 - 15:32:17: Form data generation for cart #158 with standard payment.
+*INFO* 	2014/10/21 - 15:32:17: Data to be sent to payment platform : Array
+(
+    [signature] => dff60976e33d016ad46546bf0351f4a39b41eefb
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3990
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => avenue Charles de gaulle 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 158
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => avenue Charles de gaulle
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021133217
+    [vads_trans_id] => 559374
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/21 - 15:32:26: Server call process starts for cart #158.
+*INFO* 	2014/10/21 - 15:32:26: Payment accepted for cart #158. New order status is 2.
+*INFO* 	2014/10/21 - 15:32:26: Create order for cart #158.
+*INFO* 	2014/10/21 - 15:32:27: Order #61 created successfully for cart #158.
+*INFO* 	2014/10/21 - 15:32:27: Save payment information for cart #158.
+*INFO* 	2014/10/21 - 15:32:28: Payment information with ID(s) 92 saved successfully for cart #158.
+*INFO* 	2014/10/21 - 15:32:32: User return to shop process starts for cart #158.
+*INFO* 	2014/10/21 - 15:32:32: Order already registered for cart #158.
+*INFO* 	2014/10/21 - 15:32:32: Payment success confirmed for cart #158. Just redirect to success page.
+*INFO* 	2014/10/21 - 16:48:19: Form data generation for cart #159 with standard payment.
+*INFO* 	2014/10/21 - 16:48:19: Data to be sent to payment platform : Array
+(
+    [signature] => e7de58f8b84ea2ac54fdf335de0f109e845cecf1
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 8352
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => avenue Charles de gaulle 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 159
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => avenue Charles de gaulle
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021144819
+    [vads_trans_id] => 604993
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/21 - 16:48:34: Server call process starts for cart #159.
+*INFO* 	2014/10/21 - 16:48:34: Payment accepted for cart #159. New order status is 2.
+*INFO* 	2014/10/21 - 16:48:34: Create order for cart #159.
+*INFO* 	2014/10/21 - 16:48:37: Order #62 created successfully for cart #159.
+*INFO* 	2014/10/21 - 16:48:37: Save payment information for cart #159.
+*INFO* 	2014/10/21 - 16:48:37: Payment information with ID(s) 94 saved successfully for cart #159.
+*INFO* 	2014/10/21 - 16:48:41: User return to shop process starts for cart #159.
+*INFO* 	2014/10/21 - 16:48:41: Order already registered for cart #159.
+*INFO* 	2014/10/21 - 16:48:41: Payment success confirmed for cart #159. Just redirect to success page.
+*INFO* 	2014/10/21 - 17:02:04: Form data generation for cart #160 with standard payment.
+*INFO* 	2014/10/21 - 17:02:04: Data to be sent to payment platform : Array
+(
+    [signature] => 28c094599a4356ce926acbc3998ad1c60a666420
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6592
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => avenue Charles de gaulle 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 4
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 160
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => avenue Charles de gaulle
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141021150204
+    [vads_trans_id] => 613246
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => TEST
+    [vads_cust_last_name] => TEST
+    [vads_ship_to_first_name] => TEST
+    [vads_ship_to_last_name] => TEST
+)
+
+*INFO* 	2014/10/21 - 17:02:12: Server call process starts for cart #160.
+*INFO* 	2014/10/21 - 17:02:12: Payment accepted for cart #160. New order status is 2.
+*INFO* 	2014/10/21 - 17:02:12: Create order for cart #160.
+*INFO* 	2014/10/21 - 17:02:14: Order #63 created successfully for cart #160.
+*INFO* 	2014/10/21 - 17:02:14: Save payment information for cart #160.
+*INFO* 	2014/10/21 - 17:02:14: Payment information with ID(s) 96 saved successfully for cart #160.
+*INFO* 	2014/10/21 - 17:02:18: User return to shop process starts for cart #160.
+*INFO* 	2014/10/21 - 17:02:18: Order already registered for cart #160.
+*INFO* 	2014/10/21 - 17:02:18: Payment success confirmed for cart #160. Just redirect to success page.
+*INFO* 	2014/10/22 - 09:11:26: Form data generation for cart #161 with standard payment.
+*INFO* 	2014/10/22 - 09:11:26: Data to be sent to payment platform : Array
+(
+    [signature] => e967de6460b63b48d7d01e2a0e841055b5795851
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3690
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 18
+    [vads_cust_phone] => 0606060606
+    [vads_cust_title] => M.
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75001
+    [vads_language] => fr
+    [vads_order_id] => 161
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => paris
+    [vads_ship_to_zip] => 75001
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141022071126
+    [vads_trans_id] => 330866
+    [vads_url_return] => http://blfecommerce.preprod.vupar.fr/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Olivier
+    [vads_cust_last_name] => Michaud
+    [vads_ship_to_first_name] => Olivier
+    [vads_ship_to_last_name] => Michaud
+)
+
+*INFO* 	2014/10/22 - 12:09:20: Form data generation for cart #1 with standard payment.
+*INFO* 	2014/10/22 - 12:09:20: Data to be sent to payment platform : Array
+(
+    [signature] => ab7f94eea65524a3d8de1218259dcb16abcd000a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2190
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 11 rue Paul Pélisson 
+    [vads_cust_country] => FR
+    [vads_cust_email] => olivier@vupar.fr
+    [vads_cust_id] => 1
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 1
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 11 rue Paul Pelisson
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141022100920
+    [vads_trans_id] => 437605
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabrice
+    [vads_cust_last_name] => Talmant
+    [vads_ship_to_first_name] => Fabrice
+    [vads_ship_to_last_name] => Talmant
+)
+
+*INFO* 	2014/10/22 - 12:10:47: Server call process starts for cart #1.
+*INFO* 	2014/10/22 - 12:10:47: Payment accepted for cart #1. New order status is 2.
+*INFO* 	2014/10/22 - 12:10:47: Create order for cart #1.
+*INFO* 	2014/10/22 - 12:10:48: Order #1 created successfully for cart #1.
+*INFO* 	2014/10/22 - 12:10:48: Save payment information for cart #1.
+*INFO* 	2014/10/22 - 12:10:48: Payment information with ID(s) 2 saved successfully for cart #1.
+*INFO* 	2014/10/22 - 12:10:53: User return to shop process starts for cart #1.
+*INFO* 	2014/10/22 - 12:10:53: Order already registered for cart #1.
+*INFO* 	2014/10/22 - 12:10:53: Payment success confirmed for cart #1. Just redirect to success page.
+*INFO* 	2014/10/23 - 10:41:37: Form data generation for cart #16 with standard payment.
+*INFO* 	2014/10/23 - 10:41:37: Data to be sent to payment platform : Array
+(
+    [signature] => b5d5671491b9de041ee81537db29299caeb136ef
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6200
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 109 rue des agenêts 
+    [vads_cust_country] => FR
+    [vads_cust_email] => lp2c@orange.fr
+    [vads_cust_id] => 6
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 16
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 109 rue des agenets
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141023084137
+    [vads_trans_id] => 384977
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Philippe
+    [vads_cust_last_name] => camescasse
+    [vads_ship_to_first_name] => Philippe
+    [vads_ship_to_last_name] => Camescasse
+)
+
+*INFO* 	2014/10/23 - 10:43:07: Server call process starts for cart #16.
+*INFO* 	2014/10/23 - 10:43:07: Payment accepted for cart #16. New order status is 2.
+*INFO* 	2014/10/23 - 10:43:07: Create order for cart #16.
+*INFO* 	2014/10/23 - 10:43:09: Order #2 created successfully for cart #16.
+*INFO* 	2014/10/23 - 10:43:09: Save payment information for cart #16.
+*INFO* 	2014/10/23 - 10:43:09: Payment information with ID(s) 4 saved successfully for cart #16.
+*INFO* 	2014/10/23 - 10:43:13: User return to shop process starts for cart #16.
+*INFO* 	2014/10/23 - 10:43:13: Order already registered for cart #16.
+*INFO* 	2014/10/23 - 10:43:13: Payment success confirmed for cart #16. Just redirect to success page.
+*INFO* 	2014/10/24 - 19:48:09: Form data generation for cart #38 with standard payment.
+*INFO* 	2014/10/24 - 19:48:09: Data to be sent to payment platform : Array
+(
+    [signature] => 8cc113413c5298067bbd080b26130f22f6a3050d
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 8700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 2 bis rue des aveneaux 
+    [vads_cust_country] => FR
+    [vads_cust_email] => Fclement@devineau.fr
+    [vads_cust_id] => 11
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44100
+    [vads_language] => fr
+    [vads_order_id] => 38
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 2 bis rue des aveneaux
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Nantes
+    [vads_ship_to_zip] => 44100
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141024174809
+    [vads_trans_id] => 712897
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Francis
+    [vads_cust_last_name] => Clement devineau
+    [vads_ship_to_first_name] => Francis
+    [vads_ship_to_last_name] => Clement devineau
+)
+
+*INFO* 	2014/10/24 - 19:52:03: Server call process starts for cart #38.
+*INFO* 	2014/10/24 - 19:52:03: Payment accepted for cart #38. New order status is 2.
+*INFO* 	2014/10/24 - 19:52:03: Create order for cart #38.
+*INFO* 	2014/10/24 - 19:52:05: Order #3 created successfully for cart #38.
+*INFO* 	2014/10/24 - 19:52:05: Save payment information for cart #38.
+*INFO* 	2014/10/24 - 19:52:05: Payment information with ID(s) 6 saved successfully for cart #38.
+*INFO* 	2014/10/24 - 19:52:10: User return to shop process starts for cart #38.
+*INFO* 	2014/10/24 - 19:52:10: Order already registered for cart #38.
+*INFO* 	2014/10/24 - 19:52:10: Payment success confirmed for cart #38. Just redirect to success page.
+*INFO* 	2014/10/25 - 13:31:28: Form data generation for cart #43 with standard payment.
+*INFO* 	2014/10/25 - 13:31:28: Data to be sent to payment platform : Array
+(
+    [signature] => 9c483c4b5fc85559ee630dc8450f0e05c9305fa0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5900
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 2 bis rue des aveneaux 
+    [vads_cust_country] => FR
+    [vads_cust_email] => Fclement@devineau.fr
+    [vads_cust_id] => 11
+    [vads_cust_phone] => 
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44100
+    [vads_language] => fr
+    [vads_order_id] => 43
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => BAR TABAC DU CHAFFAULT 46 RUE AMIRAL DU CHAFFAULT  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44100
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141025113128
+    [vads_trans_id] => 486881
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Francis
+    [vads_cust_last_name] => Clement devineau
+    [vads_ship_to_first_name] => Francis
+    [vads_ship_to_last_name] => Clement devineau
+)
+
+*INFO* 	2014/10/25 - 13:33:36: Server call process starts for cart #43.
+*INFO* 	2014/10/25 - 13:33:36: Payment accepted for cart #43. New order status is 2.
+*INFO* 	2014/10/25 - 13:33:36: Create order for cart #43.
+*INFO* 	2014/10/25 - 13:33:41: Order #4 created successfully for cart #43.
+*INFO* 	2014/10/25 - 13:33:41: Save payment information for cart #43.
+*INFO* 	2014/10/25 - 13:33:41: Payment information with ID(s) 8 saved successfully for cart #43.
+*INFO* 	2014/10/25 - 13:33:45: User return to shop process starts for cart #43.
+*INFO* 	2014/10/25 - 13:33:45: Order already registered for cart #43.
+*INFO* 	2014/10/25 - 13:33:45: Payment success confirmed for cart #43. Just redirect to success page.
+*INFO* 	2014/10/25 - 19:10:30: Form data generation for cart #47 with standard payment.
+*INFO* 	2014/10/25 - 19:10:30: Data to be sent to payment platform : Array
+(
+    [signature] => 21e05f1b2656e6c7346348812b7e4cdb905642f7
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2480
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 4 rue Cacault 
+    [vads_cust_country] => FR
+    [vads_cust_email] => solivan@bougies-la-francaise.com
+    [vads_cust_id] => 7
+    [vads_cust_phone] => 
+    [vads_cust_city] => Clisson
+    [vads_cust_zip] => 44230
+    [vads_language] => fr
+    [vads_order_id] => 47
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => CAPRICE DE FLEURS 3 PLACE DES DOUVES  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => CLISSON
+    [vads_ship_to_zip] => 44190
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141025171030
+    [vads_trans_id] => 690302
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Solivan
+    [vads_cust_last_name] => Ang
+    [vads_ship_to_first_name] => Solivan
+    [vads_ship_to_last_name] => Ang
+)
+
+*INFO* 	2014/10/25 - 20:07:56: Form data generation for cart #48 with standard payment.
+*INFO* 	2014/10/25 - 20:07:56: Data to be sent to payment platform : Array
+(
+    [signature] => 5bdf53f2c0c20ed1a05c3561eacdfe0be7c7b0a0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5280
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 44 av Franklin Roosevelt Jardins de l&#039;étoile B
+    [vads_cust_country] => FR
+    [vads_cust_email] => pat.duperier@gmail.com
+    [vads_cust_id] => 15
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Le Cannet
+    [vads_cust_zip] => 06110
+    [vads_language] => fr
+    [vads_order_id] => 48
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 44 av Franklin Roosevelt
+    [vads_ship_to_street2] => Jardins de l&#039;etoile B
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Le Cannet
+    [vads_ship_to_zip] => 06110
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141025180756
+    [vads_trans_id] => 724769
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Patricia 
+    [vads_cust_last_name] => Duperier
+    [vads_ship_to_first_name] => Patricia 
+    [vads_ship_to_last_name] => Duperier
+)
+
+*INFO* 	2014/10/25 - 20:09:20: Server call process starts for cart #48.
+*INFO* 	2014/10/25 - 20:09:20: Payment accepted for cart #48. New order status is 2.
+*INFO* 	2014/10/25 - 20:09:20: Create order for cart #48.
+*INFO* 	2014/10/25 - 20:09:22: Order #5 created successfully for cart #48.
+*INFO* 	2014/10/25 - 20:09:22: Save payment information for cart #48.
+*INFO* 	2014/10/25 - 20:09:22: Payment information with ID(s) 10 saved successfully for cart #48.
+*INFO* 	2014/10/25 - 20:09:28: User return to shop process starts for cart #48.
+*INFO* 	2014/10/25 - 20:09:28: Order already registered for cart #48.
+*INFO* 	2014/10/25 - 20:09:28: Payment success confirmed for cart #48. Just redirect to success page.
+*INFO* 	2014/10/26 - 15:44:53: Form data generation for cart #53 with standard payment.
+*INFO* 	2014/10/26 - 15:44:53: Data to be sent to payment platform : Array
+(
+    [signature] => 2725342a92ccf7917f925993b5d2ec24868de70a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1290
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 332 cours de la liberation Apt B106 rés Pastel
+    [vads_cust_country] => FR
+    [vads_cust_email] => florencecatus@free.fr
+    [vads_cust_id] => 16
+    [vads_cust_phone] => 0535407451
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Talence
+    [vads_cust_zip] => 33400
+    [vads_language] => fr
+    [vads_order_id] => 53
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => STATION TOTAL ACCESS 62 COURS DU GENERAL DE GAULLE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GRADIGNAN
+    [vads_ship_to_zip] => 33170
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141026144453
+    [vads_trans_id] => 602932
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Florence
+    [vads_cust_last_name] => CATUS
+    [vads_ship_to_first_name] => Florence
+    [vads_ship_to_last_name] => CATUS
+)
+
+*INFO* 	2014/10/26 - 16:06:53: Form data generation for cart #53 with standard payment.
+*INFO* 	2014/10/26 - 16:06:53: Data to be sent to payment platform : Array
+(
+    [signature] => 3e8da13b7ee7f1a927a64cc7b952e52bda376bef
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1290
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 332 cours de la liberation Apt B106 rés Pastel
+    [vads_cust_country] => FR
+    [vads_cust_email] => florencecatus@free.fr
+    [vads_cust_id] => 16
+    [vads_cust_phone] => 0535407451
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Talence
+    [vads_cust_zip] => 33400
+    [vads_language] => fr
+    [vads_order_id] => 53
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => STATION TOTAL ACCESS 62 COURS DU GENERAL DE GAULLE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => GRADIGNAN
+    [vads_ship_to_zip] => 33170
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141026150653
+    [vads_trans_id] => 616139
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Florence
+    [vads_cust_last_name] => CATUS
+    [vads_ship_to_first_name] => Florence
+    [vads_ship_to_last_name] => CATUS
+)
+
+*INFO* 	2014/10/26 - 16:08:00: Server call process starts for cart #53.
+*INFO* 	2014/10/26 - 16:08:00: Payment accepted for cart #53. New order status is 2.
+*INFO* 	2014/10/26 - 16:08:00: Create order for cart #53.
+*INFO* 	2014/10/26 - 16:08:07: Order #6 created successfully for cart #53.
+*INFO* 	2014/10/26 - 16:08:07: Save payment information for cart #53.
+*INFO* 	2014/10/26 - 16:08:07: Payment information with ID(s) 12 saved successfully for cart #53.
+*INFO* 	2014/10/26 - 16:08:12: User return to shop process starts for cart #53.
+*INFO* 	2014/10/26 - 16:08:12: Order already registered for cart #53.
+*INFO* 	2014/10/26 - 16:08:12: Payment success confirmed for cart #53. Just redirect to success page.
+*INFO* 	2014/10/27 - 06:12:23: Form data generation for cart #58 with standard payment.
+*INFO* 	2014/10/27 - 06:12:23: Data to be sent to payment platform : Array
+(
+    [signature] => 9342e24f3cfb3c4f66d6f3f75d793e8517c04048
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 6650
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 11 bis avenue Aristide Briand 
+    [vads_cust_country] => FR
+    [vads_cust_email] => sophiepoulos@free.fr
+    [vads_cust_id] => 18
+    [vads_cust_phone] => 0954307775
+    [vads_cust_title] => Mme
+    [vads_cust_city] => PESSAC
+    [vads_cust_zip] => 33600
+    [vads_language] => fr
+    [vads_order_id] => 58
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => BUREAU DE POSTE PESSAC PRINCIPAL 25 AVENUE ROGER CHAUMET  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => PESSAC
+    [vads_ship_to_zip] => 33600
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141027051223
+    [vads_trans_id] => 223437
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Sophie
+    [vads_cust_last_name] => MARCOPOULOS
+    [vads_ship_to_first_name] => Sophie
+    [vads_ship_to_last_name] => MARCOPOULOS
+)
+
+*INFO* 	2014/10/27 - 06:14:14: Server call process starts for cart #58.
+*INFO* 	2014/10/27 - 06:14:14: Payment accepted for cart #58. New order status is 2.
+*INFO* 	2014/10/27 - 06:14:14: Create order for cart #58.
+*INFO* 	2014/10/27 - 06:14:16: Order #7 created successfully for cart #58.
+*INFO* 	2014/10/27 - 06:14:16: Save payment information for cart #58.
+*INFO* 	2014/10/27 - 06:14:16: Payment information with ID(s) 14 saved successfully for cart #58.
+*INFO* 	2014/10/27 - 06:14:20: User return to shop process starts for cart #58.
+*INFO* 	2014/10/27 - 06:14:20: Order already registered for cart #58.
+*INFO* 	2014/10/27 - 06:14:20: Payment success confirmed for cart #58. Just redirect to success page.
+*INFO* 	2014/10/27 - 19:18:10: Form data generation for cart #64 with standard payment.
+*INFO* 	2014/10/27 - 19:18:11: Data to be sent to payment platform : Array
+(
+    [signature] => 60eceaeb22b81bb796985231dc7c8e55e50ee5be
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5040
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 5 Place de la Liberté 
+    [vads_cust_country] => FR
+    [vads_cust_email] => f_jadault@hotmail.fr
+    [vads_cust_id] => 22
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => Mortagne sur Sèvre
+    [vads_cust_zip] => 85290
+    [vads_language] => fr
+    [vads_order_id] => 64
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 5 Place de la Liberte
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Mortagne sur Sevre
+    [vads_ship_to_zip] => 85290
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141027181810
+    [vads_trans_id] => 694909
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fabien
+    [vads_cust_last_name] => JADAULT
+    [vads_ship_to_first_name] => Fabien
+    [vads_ship_to_last_name] => JADAULT
+)
+
+*INFO* 	2014/10/27 - 19:20:48: Server call process starts for cart #64.
+*INFO* 	2014/10/27 - 19:20:48: Payment accepted for cart #64. New order status is 2.
+*INFO* 	2014/10/27 - 19:20:48: Create order for cart #64.
+*INFO* 	2014/10/27 - 19:20:49: Order #8 created successfully for cart #64.
+*INFO* 	2014/10/27 - 19:20:49: Save payment information for cart #64.
+*INFO* 	2014/10/27 - 19:20:49: Payment information with ID(s) 16 saved successfully for cart #64.
+*INFO* 	2014/10/27 - 19:20:55: User return to shop process starts for cart #64.
+*INFO* 	2014/10/27 - 19:20:55: Order already registered for cart #64.
+*INFO* 	2014/10/27 - 19:20:55: Payment success confirmed for cart #64. Just redirect to success page.
+*INFO* 	2014/10/27 - 22:53:35: Form data generation for cart #65 with standard payment.
+*INFO* 	2014/10/27 - 22:53:35: Data to be sent to payment platform : Array
+(
+    [signature] => b27a891976242912a7d5e1f53fda286a21a4791c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4600
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 15,rue du colonel taylor 
+    [vads_cust_country] => FR
+    [vads_cust_email] => thierry.barbeau@sfr.fr
+    [vads_cust_id] => 23
+    [vads_cust_phone] => 0251407680
+    [vads_cust_title] => M.
+    [vads_cust_city] => MONTAIGU
+    [vads_cust_zip] => 85600
+    [vads_language] => fr
+    [vads_order_id] => 65
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0251407680
+    [vads_ship_to_street] => 15,rue du colonel taylor
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => MONTAIGU
+    [vads_ship_to_zip] => 85600
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141027215335
+    [vads_trans_id] => 824158
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Thierry
+    [vads_cust_last_name] => barbeau
+    [vads_ship_to_first_name] => Thierry
+    [vads_ship_to_last_name] => barbeau
+)
+
+*INFO* 	2014/10/27 - 22:56:27: Server call process starts for cart #65.
+*INFO* 	2014/10/27 - 22:56:27: Payment accepted for cart #65. New order status is 2.
+*INFO* 	2014/10/27 - 22:56:27: Create order for cart #65.
+*INFO* 	2014/10/27 - 22:56:28: Order #9 created successfully for cart #65.
+*INFO* 	2014/10/27 - 22:56:28: Save payment information for cart #65.
+*INFO* 	2014/10/27 - 22:56:28: Payment information with ID(s) 18 saved successfully for cart #65.
+*INFO* 	2014/10/27 - 22:56:32: User return to shop process starts for cart #65.
+*INFO* 	2014/10/27 - 22:56:32: Order already registered for cart #65.
+*INFO* 	2014/10/27 - 22:56:32: Payment success confirmed for cart #65. Just redirect to success page.
+*INFO* 	2014/10/28 - 14:46:17: Form data generation for cart #71 with standard payment.
+*INFO* 	2014/10/28 - 14:46:18: Data to be sent to payment platform : Array
+(
+    [signature] => ce3bd31c375bf8d77827fea27c101d634b32c8ba
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3590
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 14 rue de C 
+    [vads_cust_country] => FR
+    [vads_cust_email] => ccc@ccc.com
+    [vads_cust_id] => 25
+    [vads_cust_phone] => 0134545678
+    [vads_cust_title] => M.
+    [vads_cust_city] => Paris
+    [vads_cust_zip] => 75009
+    [vads_language] => fr
+    [vads_order_id] => 71
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0134545678
+    [vads_ship_to_street] => 14 rue de C
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Paris
+    [vads_ship_to_zip] => 75009
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141028134617
+    [vads_trans_id] => 531778
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Ccc
+    [vads_cust_last_name] => ccc
+    [vads_ship_to_first_name] => Ccc
+    [vads_ship_to_last_name] => ccc
+)
+
+*INFO* 	2014/10/28 - 15:44:52: Form data generation for cart #68 with standard payment.
+*INFO* 	2014/10/28 - 15:44:52: Data to be sent to payment platform : Array
+(
+    [signature] => 7c68ccba8f900fc61406394d5ba8c161f064fea8
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 12990
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 109 rue des agenêts 
+    [vads_cust_country] => FR
+    [vads_cust_email] => lp2c@orange.fr
+    [vads_cust_id] => 6
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 68
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 109 rue des agenets
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => nantes
+    [vads_ship_to_zip] => 44000
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141028144452
+    [vads_trans_id] => 566922
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Philippe
+    [vads_cust_last_name] => camescasse
+    [vads_ship_to_first_name] => Philippe
+    [vads_ship_to_last_name] => Camescasse
+)
+
+*INFO* 	2014/10/28 - 15:46:12: Server call process starts for cart #68.
+*INFO* 	2014/10/28 - 15:46:12: Payment accepted for cart #68. New order status is 2.
+*INFO* 	2014/10/28 - 15:46:12: Create order for cart #68.
+*INFO* 	2014/10/28 - 15:46:15: Order #10 created successfully for cart #68.
+*INFO* 	2014/10/28 - 15:46:15: Save payment information for cart #68.
+*INFO* 	2014/10/28 - 15:46:15: Payment information with ID(s) 20 saved successfully for cart #68.
+*INFO* 	2014/10/28 - 15:46:20: User return to shop process starts for cart #68.
+*INFO* 	2014/10/28 - 15:46:20: Order already registered for cart #68.
+*INFO* 	2014/10/28 - 15:46:20: Payment success confirmed for cart #68. Just redirect to success page.
+*INFO* 	2014/10/28 - 17:10:59: Form data generation for cart #72 with standard payment.
+*INFO* 	2014/10/28 - 17:10:59: Data to be sent to payment platform : Array
+(
+    [signature] => 8b9af53dabb6547944dfd634b81baa074347ed80
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 7800
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 309 chemin du glacis 
+    [vads_cust_country] => FR
+    [vads_cust_email] => vammpirella@aol.com
+    [vads_cust_id] => 26
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => montluel
+    [vads_cust_zip] => 01120
+    [vads_language] => fr
+    [vads_order_id] => 72
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 309 chemin du glacis
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => montluel
+    [vads_ship_to_zip] => 01120
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141028161059
+    [vads_trans_id] => 618598
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Sandra
+    [vads_cust_last_name] => lebrun
+    [vads_ship_to_first_name] => Sandra
+    [vads_ship_to_last_name] => lebrun
+)
+
+*INFO* 	2014/10/28 - 18:42:51: Form data generation for cart #75 with standard payment.
+*INFO* 	2014/10/28 - 18:42:51: Data to be sent to payment platform : Array
+(
+    [signature] => 8c837bf6af308d5429adfa2674b9d59b5f4338ac
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 3180
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 8, Rue du Gohler 
+    [vads_cust_country] => FR
+    [vads_cust_email] => mikael.fauconnier@gmail.com
+    [vads_cust_id] => 27
+    [vads_cust_phone] => 0681140830
+    [vads_cust_city] => Auray
+    [vads_cust_zip] => 56400
+    [vads_language] => fr
+    [vads_order_id] => 75
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0681140830
+    [vads_ship_to_street] => 26, Cours de Chazelles
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Lorient
+    [vads_ship_to_zip] => 56100
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141028174251
+    [vads_trans_id] => 673710
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Mikael
+    [vads_cust_last_name] => Fauconnier
+    [vads_ship_to_first_name] => Mikael
+    [vads_ship_to_last_name] => Fauconnier
+)
+
+*INFO* 	2014/10/28 - 18:43:50: Server call process starts for cart #75.
+*INFO* 	2014/10/28 - 18:43:50: Payment accepted for cart #75. New order status is 2.
+*INFO* 	2014/10/28 - 18:43:50: Create order for cart #75.
+*INFO* 	2014/10/28 - 18:43:59: Order #11 created successfully for cart #75.
+*INFO* 	2014/10/28 - 18:43:59: Save payment information for cart #75.
+*INFO* 	2014/10/28 - 18:43:59: Payment information with ID(s) 22 saved successfully for cart #75.
+*INFO* 	2014/10/28 - 18:44:05: User return to shop process starts for cart #75.
+*INFO* 	2014/10/28 - 18:44:05: Order already registered for cart #75.
+*INFO* 	2014/10/28 - 18:44:05: Payment success confirmed for cart #75. Just redirect to success page.
+*INFO* 	2014/10/28 - 18:44:05: User return to shop process starts for cart #75.
+*INFO* 	2014/10/28 - 18:44:05: Order already registered for cart #75.
+*INFO* 	2014/10/28 - 18:44:05: Payment success confirmed for cart #75. Just redirect to success page.
+*INFO* 	2014/10/28 - 19:22:01: Form data generation for cart #74 with standard payment.
+*INFO* 	2014/10/28 - 19:22:01: Data to be sent to payment platform : Array
+(
+    [signature] => 7501fc8fd546660249f66ad13946ec44e2b7970e
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => place de l&#039;école 
+    [vads_cust_country] => FR
+    [vads_cust_email] => mjldumont@hotmail.fr
+    [vads_cust_id] => 28
+    [vads_cust_phone] => 0561672347
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Pailhes
+    [vads_cust_zip] => 09130
+    [vads_language] => fr
+    [vads_order_id] => 74
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => place de l&#039;ecole
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Pailhes
+    [vads_ship_to_zip] => 09130
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141028182201
+    [vads_trans_id] => 697217
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Martine
+    [vads_cust_last_name] => dumont
+    [vads_ship_to_first_name] => Martine
+    [vads_ship_to_last_name] => Dumont
+)
+
+*INFO* 	2014/10/28 - 19:25:49: Server call process starts for cart #74.
+*INFO* 	2014/10/28 - 19:25:49: Payment accepted for cart #74. New order status is 2.
+*INFO* 	2014/10/28 - 19:25:49: Create order for cart #74.
+*INFO* 	2014/10/28 - 19:25:51: Order #12 created successfully for cart #74.
+*INFO* 	2014/10/28 - 19:25:51: Save payment information for cart #74.
+*INFO* 	2014/10/28 - 19:25:51: Payment information with ID(s) 24 saved successfully for cart #74.
+*INFO* 	2014/10/28 - 19:25:55: User return to shop process starts for cart #74.
+*INFO* 	2014/10/28 - 19:25:55: Order already registered for cart #74.
+*INFO* 	2014/10/28 - 19:25:55: Payment success confirmed for cart #74. Just redirect to success page.
+*INFO* 	2014/10/29 - 10:13:24: Form data generation for cart #81 with standard payment.
+*INFO* 	2014/10/29 - 10:13:25: Data to be sent to payment platform : Array
+(
+    [signature] => a79703fff0c8e888a01a361b60b8cc8fea217124
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10400
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 60, route de Mt-de-Marsan Les Erilles
+    [vads_cust_country] => FR
+    [vads_cust_email] => manosaje@gmail.com
+    [vads_cust_id] => 29
+    [vads_cust_phone] => 0556656845
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Captieux
+    [vads_cust_zip] => 33840
+    [vads_language] => fr
+    [vads_order_id] => 81
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 60, route de Mt-de-Marsan
+    [vads_ship_to_street2] => Les Erilles
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Captieux
+    [vads_ship_to_zip] => 33840
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029091324
+    [vads_trans_id] => 368048
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Marie-Pierre
+    [vads_cust_last_name] => GLEYZE
+    [vads_ship_to_first_name] => Marie-Pierre
+    [vads_ship_to_last_name] => GLEYZE
+)
+
+*INFO* 	2014/10/29 - 10:14:42: Form data generation for cart #81 with standard payment.
+*INFO* 	2014/10/29 - 10:14:42: Data to be sent to payment platform : Array
+(
+    [signature] => 66be120a738cc462ac6a25c9dfba905acb0f70ce
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10400
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 60, route de Mt-de-Marsan Les Erilles
+    [vads_cust_country] => FR
+    [vads_cust_email] => manosaje@gmail.com
+    [vads_cust_id] => 29
+    [vads_cust_phone] => 0556656845
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Captieux
+    [vads_cust_zip] => 33840
+    [vads_language] => fr
+    [vads_order_id] => 81
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 60, route de Mt-de-Marsan
+    [vads_ship_to_street2] => Les Erilles
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Captieux
+    [vads_ship_to_zip] => 33840
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029091442
+    [vads_trans_id] => 368826
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Marie-Pierre
+    [vads_cust_last_name] => GLEYZE
+    [vads_ship_to_first_name] => Marie-Pierre
+    [vads_ship_to_last_name] => GLEYZE
+)
+
+*INFO* 	2014/10/29 - 10:15:21: User return to shop process starts for cart #81.
+*INFO* 	2014/10/29 - 10:15:21: Payment failed, redirect to order checkout page, cart ID : #81.
+*INFO* 	2014/10/29 - 10:16:58: Form data generation for cart #81 with standard payment.
+*INFO* 	2014/10/29 - 10:16:58: Data to be sent to payment platform : Array
+(
+    [signature] => 6fb5f44f2cc3fcb728bdd464214a796b3576b06c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5200
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 60, route de Mt-de-Marsan Les Erilles
+    [vads_cust_country] => FR
+    [vads_cust_email] => manosaje@gmail.com
+    [vads_cust_id] => 29
+    [vads_cust_phone] => 0556656845
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Captieux
+    [vads_cust_zip] => 33840
+    [vads_language] => fr
+    [vads_order_id] => 81
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 60, route de Mt-de-Marsan
+    [vads_ship_to_street2] => Les Erilles
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Captieux
+    [vads_ship_to_zip] => 33840
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029091658
+    [vads_trans_id] => 370185
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Marie-Pierre
+    [vads_cust_last_name] => GLEYZE
+    [vads_ship_to_first_name] => Marie-Pierre
+    [vads_ship_to_last_name] => GLEYZE
+)
+
+*INFO* 	2014/10/29 - 10:21:56: Server call process starts for cart #81.
+*INFO* 	2014/10/29 - 10:21:56: Payment failed for cart #81.
+*INFO* 	2014/10/29 - 10:22:03: User return to shop process starts for cart #81.
+*INFO* 	2014/10/29 - 10:22:03: Payment failed, redirect to order checkout page, cart ID : #81.
+*INFO* 	2014/10/29 - 10:22:12: Form data generation for cart #81 with standard payment.
+*INFO* 	2014/10/29 - 10:22:12: Data to be sent to payment platform : Array
+(
+    [signature] => 0d6daa6f5af3dc0a9d005d252a354160d1d78e8a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5200
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 60, route de Mt-de-Marsan Les Erilles
+    [vads_cust_country] => FR
+    [vads_cust_email] => manosaje@gmail.com
+    [vads_cust_id] => 29
+    [vads_cust_phone] => 0556656845
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Captieux
+    [vads_cust_zip] => 33840
+    [vads_language] => fr
+    [vads_order_id] => 81
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 60, route de Mt-de-Marsan
+    [vads_ship_to_street2] => Les Erilles
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Captieux
+    [vads_ship_to_zip] => 33840
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029092212
+    [vads_trans_id] => 373320
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Marie-Pierre
+    [vads_cust_last_name] => GLEYZE
+    [vads_ship_to_first_name] => Marie-Pierre
+    [vads_ship_to_last_name] => GLEYZE
+)
+
+*INFO* 	2014/10/29 - 10:23:27: Server call process starts for cart #81.
+*INFO* 	2014/10/29 - 10:23:27: Payment accepted for cart #81. New order status is 2.
+*INFO* 	2014/10/29 - 10:23:27: Create order for cart #81.
+*INFO* 	2014/10/29 - 10:23:29: Order #13 created successfully for cart #81.
+*INFO* 	2014/10/29 - 10:23:29: Save payment information for cart #81.
+*INFO* 	2014/10/29 - 10:23:29: Payment information with ID(s) 26 saved successfully for cart #81.
+*INFO* 	2014/10/29 - 10:23:34: User return to shop process starts for cart #81.
+*INFO* 	2014/10/29 - 10:23:34: Order already registered for cart #81.
+*INFO* 	2014/10/29 - 10:23:34: Payment success confirmed for cart #81. Just redirect to success page.
+*INFO* 	2014/10/29 - 13:49:59: Form data generation for cart #82 with standard payment.
+*INFO* 	2014/10/29 - 13:49:59: Data to be sent to payment platform : Array
+(
+    [signature] => 727d11de1362712fc8922e118cfe1a7e955608fa
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 39 ave jean jaures Bat H
+    [vads_cust_country] => FR
+    [vads_cust_email] => dominik85@live.fr
+    [vads_cust_id] => 30
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => suresnes
+    [vads_cust_zip] => 92150
+    [vads_language] => fr
+    [vads_order_id] => 82
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 39 ave jean jaures
+    [vads_ship_to_street2] => Bat H
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => suresnes
+    [vads_ship_to_zip] => 92150
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029124959
+    [vads_trans_id] => 497997
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fritel
+    [vads_cust_last_name] => dominique
+    [vads_ship_to_first_name] => Fritel
+    [vads_ship_to_last_name] => Dominique
+)
+
+*INFO* 	2014/10/29 - 13:51:07: Server call process starts for cart #82.
+*INFO* 	2014/10/29 - 13:51:07: Payment failed for cart #82.
+*INFO* 	2014/10/29 - 13:51:13: User return to shop process starts for cart #82.
+*INFO* 	2014/10/29 - 13:51:13: Payment failed, redirect to order checkout page, cart ID : #82.
+*INFO* 	2014/10/29 - 13:51:25: Form data generation for cart #82 with standard payment.
+*INFO* 	2014/10/29 - 13:51:25: Data to be sent to payment platform : Array
+(
+    [signature] => 4939dc6981dabbed39cb918d48d036da486200d1
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 39 ave jean jaures Bat H
+    [vads_cust_country] => FR
+    [vads_cust_email] => dominik85@live.fr
+    [vads_cust_id] => 30
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => suresnes
+    [vads_cust_zip] => 92150
+    [vads_language] => fr
+    [vads_order_id] => 82
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 39 ave jean jaures
+    [vads_ship_to_street2] => Bat H
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => suresnes
+    [vads_ship_to_zip] => 92150
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029125125
+    [vads_trans_id] => 498859
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fritel
+    [vads_cust_last_name] => dominique
+    [vads_ship_to_first_name] => Fritel
+    [vads_ship_to_last_name] => Dominique
+)
+
+*INFO* 	2014/10/29 - 13:52:21: Server call process starts for cart #82.
+*INFO* 	2014/10/29 - 13:52:21: Payment failed for cart #82.
+*INFO* 	2014/10/29 - 13:52:28: User return to shop process starts for cart #82.
+*INFO* 	2014/10/29 - 13:52:28: Payment failed, redirect to order checkout page, cart ID : #82.
+*INFO* 	2014/10/29 - 13:52:42: Form data generation for cart #82 with standard payment.
+*INFO* 	2014/10/29 - 13:52:42: Data to be sent to payment platform : Array
+(
+    [signature] => 3f8d045f1fe0fddc17ec348713332cd1f5c5c9ff
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 5700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 39 ave jean jaures Bat H
+    [vads_cust_country] => FR
+    [vads_cust_email] => dominik85@live.fr
+    [vads_cust_id] => 30
+    [vads_cust_phone] => 
+    [vads_cust_title] => Mme
+    [vads_cust_city] => suresnes
+    [vads_cust_zip] => 92150
+    [vads_language] => fr
+    [vads_order_id] => 82
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 39 ave jean jaures
+    [vads_ship_to_street2] => Bat H
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => suresnes
+    [vads_ship_to_zip] => 92150
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029125242
+    [vads_trans_id] => 499626
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Fritel
+    [vads_cust_last_name] => dominique
+    [vads_ship_to_first_name] => Fritel
+    [vads_ship_to_last_name] => Dominique
+)
+
+*INFO* 	2014/10/29 - 13:55:33: Server call process starts for cart #82.
+*INFO* 	2014/10/29 - 13:55:33: Payment accepted for cart #82. New order status is 2.
+*INFO* 	2014/10/29 - 13:55:33: Create order for cart #82.
+*INFO* 	2014/10/29 - 13:55:34: Order #14 created successfully for cart #82.
+*INFO* 	2014/10/29 - 13:55:34: Save payment information for cart #82.
+*INFO* 	2014/10/29 - 13:55:34: Payment information with ID(s) 28 saved successfully for cart #82.
+*INFO* 	2014/10/29 - 13:55:39: User return to shop process starts for cart #82.
+*INFO* 	2014/10/29 - 13:55:39: Order already registered for cart #82.
+*INFO* 	2014/10/29 - 13:55:39: Payment success confirmed for cart #82. Just redirect to success page.
+*INFO* 	2014/10/29 - 15:01:05: Form data generation for cart #83 with standard payment.
+*INFO* 	2014/10/29 - 15:01:05: Data to be sent to payment platform : Array
+(
+    [signature] => 12b70e5e0e06f09c6f665b9ec9ba95a1c274e638
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4670
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 12 rue Lamotte Picquet 
+    [vads_cust_country] => FR
+    [vads_cust_email] => laurence@ameetsens.com
+    [vads_cust_id] => 31
+    [vads_cust_phone] => 
+    [vads_cust_city] => Quimperle
+    [vads_cust_zip] => 29300
+    [vads_language] => fr
+    [vads_order_id] => 83
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => 12 rue Lamotte Picquet
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Quimperle
+    [vads_ship_to_zip] => 29300
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029140105
+    [vads_trans_id] => 540653
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Laurence
+    [vads_cust_last_name] => Legagneur
+    [vads_ship_to_first_name] => Laurence
+    [vads_ship_to_last_name] => Legagneur
+)
+
+*INFO* 	2014/10/29 - 15:03:48: Server call process starts for cart #83.
+*INFO* 	2014/10/29 - 15:03:48: Payment accepted for cart #83. New order status is 2.
+*INFO* 	2014/10/29 - 15:03:48: Create order for cart #83.
+*INFO* 	2014/10/29 - 15:03:49: Order #15 created successfully for cart #83.
+*INFO* 	2014/10/29 - 15:03:49: Save payment information for cart #83.
+*INFO* 	2014/10/29 - 15:03:49: Payment information with ID(s) 30 saved successfully for cart #83.
+*INFO* 	2014/10/29 - 15:03:54: User return to shop process starts for cart #83.
+*INFO* 	2014/10/29 - 15:03:54: Order already registered for cart #83.
+*INFO* 	2014/10/29 - 15:03:54: Payment success confirmed for cart #83. Just redirect to success page.
+*INFO* 	2014/10/29 - 18:10:11: Form data generation for cart #84 with standard payment.
+*INFO* 	2014/10/29 - 18:10:11: Data to be sent to payment platform : Array
+(
+    [signature] => 055a91a5b6260d9be03430ab5f4add90662d9c52
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2090
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 86, rue des agenets 
+    [vads_cust_country] => FR
+    [vads_cust_email] => emmanueldevys@gmail.com
+    [vads_cust_id] => 32
+    [vads_cust_phone] => 3251842756
+    [vads_cust_title] => M.
+    [vads_cust_city] => Nantes
+    [vads_cust_zip] => 44000
+    [vads_language] => fr
+    [vads_order_id] => 84
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => DIT LA FLEUR 42 ROUTE DE SAINTE LUCE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => NANTES
+    [vads_ship_to_zip] => 44300
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141029171011
+    [vads_trans_id] => 654110
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Emmanuel
+    [vads_cust_last_name] => Devys
+    [vads_ship_to_first_name] => Emmanuel
+    [vads_ship_to_last_name] => Devys
+)
+
+*INFO* 	2014/10/29 - 18:10:25: User return to shop process starts for cart #84.
+*INFO* 	2014/10/29 - 18:10:25: Payment failed, redirect to order checkout page, cart ID : #84.
+*INFO* 	2014/10/30 - 11:14:14: Form data generation for cart #89 with standard payment.
+*INFO* 	2014/10/30 - 11:14:14: Data to be sent to payment platform : Array
+(
+    [signature] => a62b2f7beca87f9adba8e382ec3f34065a57796a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10800
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 16 allée de madrolle 
+    [vads_cust_country] => FR
+    [vads_cust_email] => dokovacs@hotmail.fr
+    [vads_cust_id] => 34
+    [vads_cust_phone] => +33248754740
+    [vads_cust_title] => Mme
+    [vads_cust_city] => Mereau
+    [vads_cust_zip] => 18120
+    [vads_language] => fr
+    [vads_order_id] => 89
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 16 allee de madrolle
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Mereau
+    [vads_ship_to_zip] => 18120
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141030101413
+    [vads_trans_id] => 404530
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Dominique
+    [vads_cust_last_name] => kovacs
+    [vads_ship_to_first_name] => Dominique
+    [vads_ship_to_last_name] => Kovacs
+)
+
+*INFO* 	2014/10/30 - 11:15:40: Server call process starts for cart #89.
+*INFO* 	2014/10/30 - 11:15:40: Payment accepted for cart #89. New order status is 2.
+*INFO* 	2014/10/30 - 11:15:40: Create order for cart #89.
+*INFO* 	2014/10/30 - 11:15:59: Order #16 created successfully for cart #89.
+*INFO* 	2014/10/30 - 11:15:59: Save payment information for cart #89.
+*INFO* 	2014/10/30 - 11:16:00: Payment information with ID(s) 32 saved successfully for cart #89.
+*INFO* 	2014/10/30 - 11:16:05: User return to shop process starts for cart #89.
+*INFO* 	2014/10/30 - 11:16:05: Order already registered for cart #89.
+*INFO* 	2014/10/30 - 11:16:05: Payment success confirmed for cart #89. Just redirect to success page.
+*INFO* 	2014/10/30 - 12:00:19: Form data generation for cart #90 with standard payment.
+*INFO* 	2014/10/30 - 12:00:19: Data to be sent to payment platform : Array
+(
+    [signature] => 9c3cd09241e245a7473e4515d3d7bc52af051bc9
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4900
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 17 Avenue Delphine Monte-Carlo Terrasse
+    [vads_cust_country] => FR
+    [vads_cust_email] => jc.veysset@yahoo.fr
+    [vads_cust_id] => 35
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => Beausoleil
+    [vads_cust_zip] => 06240
+    [vads_language] => fr
+    [vads_order_id] => 90
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 17 Avenue Delphine
+    [vads_ship_to_street2] => Monte-Carlo Terrasse
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => Beausoleil
+    [vads_ship_to_zip] => 06240
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141030110019
+    [vads_trans_id] => 432192
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Jean-Charles
+    [vads_cust_last_name] => Veysset
+    [vads_ship_to_first_name] => Jean-Charles
+    [vads_ship_to_last_name] => Veysset
+)
+
+*INFO* 	2014/10/30 - 12:01:18: Server call process starts for cart #90.
+*INFO* 	2014/10/30 - 12:01:18: Payment accepted for cart #90. New order status is 2.
+*INFO* 	2014/10/30 - 12:01:18: Create order for cart #90.
+*INFO* 	2014/10/30 - 12:01:20: Order #17 created successfully for cart #90.
+*INFO* 	2014/10/30 - 12:01:20: Save payment information for cart #90.
+*INFO* 	2014/10/30 - 12:01:20: Payment information with ID(s) 34 saved successfully for cart #90.
+*INFO* 	2014/10/30 - 12:01:25: User return to shop process starts for cart #90.
+*INFO* 	2014/10/30 - 12:01:25: Order already registered for cart #90.
+*INFO* 	2014/10/30 - 12:01:25: Payment success confirmed for cart #90. Just redirect to success page.
+*INFO* 	2014/10/30 - 15:52:12: Form data generation for cart #93 with standard payment.
+*INFO* 	2014/10/30 - 15:52:12: Data to be sent to payment platform : Array
+(
+    [signature] => 941ef5b593dbcdb7ff12be3eaf4ebef868a1f62a
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 2670
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 4 bis rue Alexandre Thorin 
+    [vads_cust_country] => FR
+    [vads_cust_email] => gerard.martin693@orange.fr
+    [vads_cust_id] => 36
+    [vads_cust_phone] => 0160823612
+    [vads_cust_title] => Mme
+    [vads_cust_city] => janville sur juine
+    [vads_cust_zip] => 91510
+    [vads_language] => fr
+    [vads_order_id] => 93
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 1 rue paul grangier
+    [vads_ship_to_street2] => residence guernica
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => biarritz
+    [vads_ship_to_zip] => 64200
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141030145212
+    [vads_trans_id] => 571328
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Josette
+    [vads_cust_last_name] => martin
+    [vads_ship_to_first_name] => Marie rose
+    [vads_ship_to_last_name] => Munck
+)
+
+*INFO* 	2014/10/30 - 15:54:50: Server call process starts for cart #93.
+*INFO* 	2014/10/30 - 15:54:50: Payment accepted for cart #93. New order status is 2.
+*INFO* 	2014/10/30 - 15:54:50: Create order for cart #93.
+*INFO* 	2014/10/30 - 15:54:51: Order #18 created successfully for cart #93.
+*INFO* 	2014/10/30 - 15:54:52: Save payment information for cart #93.
+*INFO* 	2014/10/30 - 15:54:52: Payment information with ID(s) 36 saved successfully for cart #93.
+*INFO* 	2014/10/30 - 15:54:56: User return to shop process starts for cart #93.
+*INFO* 	2014/10/30 - 15:54:56: Order already registered for cart #93.
+*INFO* 	2014/10/30 - 15:54:56: Payment success confirmed for cart #93. Just redirect to success page.
+*INFO* 	2014/10/31 - 10:09:09: Form data generation for cart #96 with standard payment.
+*INFO* 	2014/10/31 - 10:09:09: Data to be sent to payment platform : Array
+(
+    [signature] => c654fabbdf875157139d69b2245d01eda6eec9b0
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 8090
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 9 rue de boisvinet 
+    [vads_cust_country] => FR
+    [vads_cust_email] => lesgoelettes@wanadoo.fr
+    [vads_cust_id] => 37
+    [vads_cust_phone] => 0251550329
+    [vads_cust_title] => Mme
+    [vads_cust_city] => saint gilles croix de vie 
+    [vads_cust_zip] => 85800
+    [vads_language] => fr
+    [vads_order_id] => 96
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 0251550329
+    [vads_ship_to_street] => 9 rue de boisvinet
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => saint gilles croix de vie 
+    [vads_ship_to_zip] => 85800
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141031090909
+    [vads_trans_id] => 365492
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Marie Claude
+    [vads_cust_last_name] => jeandot bordage
+    [vads_ship_to_first_name] => Marie Claude
+    [vads_ship_to_last_name] => jeandot bordage
+)
+
+*INFO* 	2014/10/31 - 10:10:38: Server call process starts for cart #96.
+*INFO* 	2014/10/31 - 10:10:38: Payment accepted for cart #96. New order status is 2.
+*INFO* 	2014/10/31 - 10:10:38: Create order for cart #96.
+*INFO* 	2014/10/31 - 10:10:40: Order #19 created successfully for cart #96.
+*INFO* 	2014/10/31 - 10:10:40: Save payment information for cart #96.
+*INFO* 	2014/10/31 - 10:10:40: Payment information with ID(s) 38 saved successfully for cart #96.
+*INFO* 	2014/10/31 - 10:10:45: User return to shop process starts for cart #96.
+*INFO* 	2014/10/31 - 10:10:45: Order already registered for cart #96.
+*INFO* 	2014/10/31 - 10:10:45: Payment success confirmed for cart #96. Just redirect to success page.
+*INFO* 	2014/10/31 - 18:38:39: Form data generation for cart #99 with standard payment.
+*INFO* 	2014/10/31 - 18:38:39: Form data generation for cart #99 with standard payment.
+*INFO* 	2014/10/31 - 18:38:39: Data to be sent to payment platform : Array
+(
+    [signature] => 54b916eee826346c536b0164b80b7985d59eb35f
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 13 RUE MARECHAL FOCH 13 RUE MARECHAL FOCH
+    [vads_cust_country] => FR
+    [vads_cust_email] => lesptitsmorel@aol.fr
+    [vads_cust_id] => 39
+    [vads_cust_phone] => 33329571911
+    [vads_cust_title] => Mme
+    [vads_cust_city] => SENONES
+    [vads_cust_zip] => 88210
+    [vads_language] => fr
+    [vads_order_id] => 99
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 13 RUE MARECHAL FOCH
+    [vads_ship_to_street2] => 13 RUE MARECHAL FOCH
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => SENONES
+    [vads_ship_to_zip] => 88210
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141031173839
+    [vads_trans_id] => 671196
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Monique
+    [vads_cust_last_name] => MOREL
+    [vads_ship_to_first_name] => Monique
+    [vads_ship_to_last_name] => MOREL
+)
+
+*INFO* 	2014/10/31 - 18:38:39: Data to be sent to payment platform : Array
+(
+    [signature] => 54b916eee826346c536b0164b80b7985d59eb35f
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4700
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.5.6.2
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 13 RUE MARECHAL FOCH 13 RUE MARECHAL FOCH
+    [vads_cust_country] => FR
+    [vads_cust_email] => lesptitsmorel@aol.fr
+    [vads_cust_id] => 39
+    [vads_cust_phone] => 33329571911
+    [vads_cust_title] => Mme
+    [vads_cust_city] => SENONES
+    [vads_cust_zip] => 88210
+    [vads_language] => fr
+    [vads_order_id] => 99
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 3
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 13 RUE MARECHAL FOCH
+    [vads_ship_to_street2] => 13 RUE MARECHAL FOCH
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => SENONES
+    [vads_ship_to_zip] => 88210
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20141031173839
+    [vads_trans_id] => 671196
+    [vads_url_return] => http://www.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_cust_first_name] => Monique
+    [vads_cust_last_name] => MOREL
+    [vads_ship_to_first_name] => Monique
+    [vads_ship_to_last_name] => MOREL
+)
+
+*INFO* 	2014/10/31 - 18:41:00: Server call process starts for cart #99.
+*INFO* 	2014/10/31 - 18:41:00: Payment accepted for cart #99. New order status is 2.
+*INFO* 	2014/10/31 - 18:41:00: Create order for cart #99.
+*INFO* 	2014/10/31 - 18:41:05: Order #20 created successfully for cart #99.
+*INFO* 	2014/10/31 - 18:41:05: Save payment information for cart #99.
+*INFO* 	2014/10/31 - 18:41:05: Payment information with ID(s) 40 saved successfully for cart #99.
+*INFO* 	2014/10/31 - 18:41:10: User return to shop process starts for cart #99.
+*INFO* 	2014/10/31 - 18:41:10: Order already registered for cart #99.
+*INFO* 	2014/10/31 - 18:41:10: Payment success confirmed for cart #99. Just redirect to success page.

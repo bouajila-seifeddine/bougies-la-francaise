@@ -1,0 +1,5 @@
+*ERROR* 	2016/08/18 - 18:12:11: Unknown column 'n.birthday' in 'field list'<br /><br /><pre>SELECT CONCAT('N', n.`id`) AS `id`, s.`name` AS `shop_name`, NULL AS `gender`, n.`lastname`, n.`firstname`, n.`birthday`, n.`email`, n.`active` AS `subscribed`, n.`newsletter_date_add`
+FROM `ps_newsletter` n
+LEFT JOIN `ps_shop` `s` ON s.id_shop = n.id_shop
+WHERE (n.`active` = 1)
+</pre> at line 791 in file classes/db/Db.php

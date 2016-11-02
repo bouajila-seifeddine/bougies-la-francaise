@@ -1,0 +1,83 @@
+body{text-align:left!important;}
+
+.ui-state-pm-separator { border: 1px dotted #5fea83!important; font-weight: normal!important; color: #4F4F4F!important;background: #FFF!important; padding-top:0!important;padding-bottom:4px!important;}
+abbr{border-bottom: 1px dotted #999999;cursor:help;}
+.info_screen {
+background: #F4E6C9;
+border-bottom:1px solid #CCCCCC;
+clear:left;
+color:#cc0000;
+margin:0;
+padding:0;
+display:none;width:100%;font-size:1.4em!important;font-weight:bold!important;position:fixed;z-index:200000;bottom:0;height:40px;line-height:40px;text-align:center;}
+* html .info_screen {position:absolute;top:expression(body.scrollTop + document.body.clientHeight - 40 + "px");}
+
+.slideshowSort {background:#eee;border:1px solid #ccc;padding:10px;margin:15px 0;position:relative;}
+.column_action, .menu_action {position:absolute;top:5px;right:5px;}
+.add_element select { width:200px;margin:10px 0;}
+.tabContent {position:relative;}
+.dragIcon {cursor:move;}
+.dynamicTextarea {background:#f3f3f3;border:1px solid #ccc;padding:5px;}
+.pm_separator {margin:10px 0;background-color:transparent;color:transparent;}
+.childOptions {padding:10px 0 10px 25px;margin-bottom:10px;border:1px solid #DFD5C3!important;border-bottom:2px solid #DFD5C3!important;background-color:#fff;}
+
+.connectedSortableDiv { float: right; width:45%;border:1px dashed #ccc;margin-right: 10px;padding:10px;}
+.connectedSortable { list-style-type: none; margin: 0; padding: 0;min-height:300px; }
+.connectedSortable .ui-icon {float:left;}
+.connectedSortableDiv h2 {margin-top:15px;}
+.sortableCriterion {list-style-type: none; margin: 15px 0; padding: 0;}
+.sortableCriterion li {width:730px !important;font-weight:normal!important;font-size:0.8em!important; float: left;height:30px;line-height:19px;margin-bottom:5px;}
+
+* html .connectedSortable {height:300px;}
+.connectedSortable li, .connectedSortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 350px; }
+.loadingOnConnectList, .getCriterionGroupActions {float:right;font-size:10px;}
+.blocCriterionGroupActions {clear:both;display:none;}
+
+.imgActiveCrit{float:right;}
+
+.blocCriterionGroupActions .margin-form {padding-left:140px!important;}
+.blocCriterionGroupActions label {padding-left:0!important;width:130px;}
+
+.inlineFlags{float:right; margin-right:200px;}
+.pm_preview_upload_2{position:absolute;margin-left:250px;text-align:center;padding-top:0!important;margin-top:0!important;}
+
+.pm_preview_upload_2 img{max-height:30px; max-width:100px;}
+
+.imgActiveCrit{float:right;}
+.critName{float:left; width:150px;margin-right:10px;}
+.criterionForm {float:left; height:30px; width:550px;}
+.criterionForm .margin-form {padding-left:0!important;float:left;}
+.criterionForm label {width:auto!important;}
+.criterionForm .ui_select_menu_lang {float:left;}
+.dynamicTextarea {background:#f3f3f3;border:1px solid #ccc;padding:5px;}
+.pm_separator {margin:10px 0;background-color:transparent;color:transparent;}
+.childOptions {padding:10px 0 10px 25px;margin-bottom:10px;border:1px solid #DFD5C3!important;border-bottom:2px solid #DFD5C3!important;background-color:#fff;}
+.fill_next_size {background:url(../img/arrow-curve-000-double.png) top left no-repeat;cursor:pointer;}
+.radio_position { float:left;width:25px;height:25px;margin-right:5px; }
+.colorpicker, #ui-datepicker-div {z-index:5!important;}
+.icon{display:inline-block;width:16px;height:16px;}
+.back {text-decoration:none!important;}
+a.button, a.button:hover {text-decoration:none!important;color:#268CCD!important;}
+#DesindexCriterionsGroup {height:332px; overflow:auto;}
+#DesindexCriterionsGroup, #IndexCriterionsGroup {margin-top:10px;}
+.activeCriterion {float:right;}
+
+.progressbar_wrapper {width:200px;height:25px;}
+.progressbarReindexSpecificSearch {width:200px;display:inline-block;}
+.progressbarpercent {text-align:center;color:#999;font-size:10px;}
+.seo_search_panel {margin-top:10px;}
+#seoSearchPanelCriteriaTabs, #seoSearchPanelCriteriaSelected {margin-bottom:15px;width:98%;}
+.seoSearchCriterionSortable {float:left;width:200px;height:35px;}
+.massSeoSearchCriterion {text-align:left;height:20px;padding:3px;}
+
+.ui-widget-content { display:block; }
+.ui-button {margin-right:10px;}
+
+.ui-sortable li {margin: 3px 3px 3px 3px;padding: 3px; }
+label.ui-button {width:auto!important;}
+.ui-tabs {display:block;}
+
+#custom_content_results {background:#fff;border:1px solid #D9BB73;margin:5px;padding:5px;}
+
+/*indexed citerion group placeholder*/
+#IndexCriterionsGroup .ui-state-highlight, #DesindexCriterionsGroup  .ui-state-highlight {height:27px;}

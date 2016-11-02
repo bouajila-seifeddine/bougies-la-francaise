@@ -1,0 +1,38 @@
+#tabsheets input[type=text], #tabsheets select { color: #1E6CA2 !important; background-color: #D3E9F8; }
+ul#gtstabs { float: left; width: 200px; list-style-type: none; background-color: none; }
+ul.ui-tabs-nav li.ui-tabs-nav-item { background:url("../views/img/admin/ui_bg.png") center center no-repeat; height: 20px; color: #fff !important; padding: 5px 3px 3px 3px; border-radius: 3px; margin-bottom: 5px; text-align: center; font-size: 12px !important; }
+ul.ui-tabs-nav li.ui-tabs-nav-item-green { background:url("../views/img/admin/ui_bg_green.png") center center no-repeat !important; }
+ul.ui-tabs-nav li.ui-tabs-nav-item a { color: #fff !important; font-weight: bold; font-size: 12px !important; }
+ul.ui-tabs-nav li.ui-tabs-selected { background:url("../views/img/admin/ui_bg_on.png") center center no-repeat !important; }
+div.ui-tabs-panel { }
+div.ui-tabs-hide { display: none; }
+table.GTSTable th, input.GTSbutton { background:url("../views/img/admin/ui_bg.png") center center no-repeat; color: #fff !important; padding: 5px; border-radius: 3px; }
+table.GTSTable td { background-color: #D3E9F8; color: #000; padding: 5px; }
+table.GTSTable td a { color: #1E6CA2; text-decoration: none; }
+table.GTSTable td a:hover { text-decoration: underline; }
+#loaderbar { width: 200px; height: 16px; padding: 2px; border: 1px solid #E0D0B1; background-color: #fff; }
+#loadingDiv {position: absolute; top: 50%; left: 46%; padding: 50px; width: auto; height: auto; border: 5px solid #1E6CA2; background: #fff; z-index: 999999; text-align: center; vertical-align: middle;}
+.form-error {border: 1px solid red !important;}
+#reportingDiv { }
+
+
+.bootstrap .nav-tabs
+{
+	border-bottom: 1px solid #dddddd;
+}
+.fbpscClearAdmin {
+	height: 0;
+	margin: 15px 0;
+	padding: 0;
+	clear: both;
+	width: 100%;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #FFF;
+}
+.nobootstrap label
+{
+	text-shadow: 0 0px 0 white;
+}
+
+.clr_600 {height:600px !important}
+.clr_800 {height:800px !important}

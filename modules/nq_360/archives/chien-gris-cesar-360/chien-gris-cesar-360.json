@@ -1,0 +1,17 @@
+{
+"version":14,
+"numImages":72,
+"isZoomable":true,
+"ldImageWidth":400,
+"ldImageHeight":495,
+"hdImageWidth":1395,
+"hdImageHeight":1725,
+"addedHeight" :0,
+"style" :0,
+"magnifierSize" :300,
+"direction":0 ,
+"autoSpinAfter":5 ,
+"rotationSpeed":20,
+"ldImageBaseName": "chien-gris-cesar-360-ld-",
+"hdImageBaseName":"chien-gris-cesar-360-hd-"
+} 
