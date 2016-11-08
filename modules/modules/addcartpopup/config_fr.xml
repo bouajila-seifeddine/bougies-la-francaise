@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>addcartpopup</name>
+	<displayName><![CDATA[Popup Cart]]></displayName>
+	<version><![CDATA[1.0]]></version>
+	<description><![CDATA[Permit add a popup when add a product to cart]]></description>
+	<author><![CDATA[Vupar]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[Êtes vous sur de vouloir désinstalaller Popup Cart Module?]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

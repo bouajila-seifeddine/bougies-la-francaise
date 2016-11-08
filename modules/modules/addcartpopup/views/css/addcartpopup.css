@@ -1,0 +1,76 @@
+
+
+#popup-cart {
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition-duration: 400ms;
+    transition-property: top;
+}
+
+    #popup-cart #popup-cart-inner {
+        border: 2px solid #d8d8d8;
+        box-shadow: 4px 4px 10px #4a4a45;
+        padding: 10px 30px;
+        position: relative;
+        margin: 0 auto;
+        width: 440px;
+    }
+
+        #popup-cart #popup-cart-inner #result {
+            border-bottom: 1px solid #adaeae;
+            border-top: 1px solid #adaeae;
+            font-size: 12px;
+            margin: 5px 0 15px 0;
+            padding: 7px 0 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        #popup-cart #popup-cart-inner img {
+            float: left;
+            height: auto;
+            margin: 0 10px;
+            width: 160px;
+        }
+        
+        #popup-cart #popup-cart-inner #link {
+            float: left;
+            text-align: center;
+            width: 260px;
+        }
+        
+            #popup-cart #popup-cart-inner #link a {
+                display: inline-block;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition-duration: 400ms;
+                transition-property: all;
+            }
+            
+            #popup-cart #popup-cart-inner #link a#order {
+                font-size: 16px;
+                margin: 80px 0 15px 0;
+                padding: 10px 10px 8px;
+            }
+            
+            #popup-cart #popup-cart-inner #link a#continu {
+                font-size: 14px;
+                padding: 10px 10px 8px;
+            }
+            
+            #popup-cart #popup-cart-inner h1 {
+                clear: left;
+                font-size: 12px;
+                margin: 5px 0 2px 0;
+                padding-bottom: 0;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            
+            #popup-cart #popup-cart-inner #price {
+                font-size: 14px;
+            }

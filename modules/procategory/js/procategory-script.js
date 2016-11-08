@@ -479,8 +479,7 @@ if (typeof Object.create !== "function") {
         checkPagination : function () {
             var base = this;
 
-            console.log(base);
-
+          
             if (base.options.pagination === false) {
                 return false;
             }

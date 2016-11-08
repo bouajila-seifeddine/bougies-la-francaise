@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>innovativemenu</name>
+	<displayName><![CDATA[Rich menu]]></displayName>
+	<version><![CDATA[2.0.14]]></version>
+	<description><![CDATA[Fully customize your front office menu]]></description>
+	<author><![CDATA[]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

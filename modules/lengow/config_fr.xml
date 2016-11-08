@@ -2,8 +2,8 @@
 <module>
 	<name>lengow</name>
 	<displayName><![CDATA[Lengow]]></displayName>
-	<version><![CDATA[2.0.9]]></version>
-	<description><![CDATA[Nouveau module Lengow]]></description>
+	<version><![CDATA[2.2.0]]></version>
+	<description><![CDATA[Avec votre module Lengow pour PrestaShop vendez rapidement vos produits sur Amazon, Ebay, Facebook, Google Shopping et d&rsquo;autres et touchez facilement de nouveaux clients partout dans le monde. Plus de 1 800 canaux marketing vous attendent sur la plateforme Lengow !]]></description>
 	<author><![CDATA[Lengow]]></author>
 	<tab><![CDATA[export]]></tab>
 	<confirmUninstall><![CDATA[Etes-vous de vouloir désinstaller le module Lengow ?]]></confirmUninstall>

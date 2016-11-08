@@ -870,6 +870,10 @@ Product list(Index page) Styles
 	.content_scene_cat span.category-name {
 		min-width:0;
 	}
+	.content_scene_cat span.category-name h1{
+	   font-size:20px;
+	   padding:10px;
+	}
 }
 
 

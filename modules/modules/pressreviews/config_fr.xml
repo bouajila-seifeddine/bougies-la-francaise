@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>pressreviews</name>
+	<displayName><![CDATA[Revues de presse]]></displayName>
+	<version><![CDATA[1.3]]></version>
+	<description><![CDATA[Cr&eacute;ez une gallerie d&#039;images pour votre revue de presse. Module pour Prestashop 1.5.x]]></description>
+	<author><![CDATA[Mehdi BOUZIDI]]></author>
+	<tab><![CDATA[content_management]]></tab>
+	<confirmUninstall><![CDATA[Voulez-vous supprimer ce module ?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

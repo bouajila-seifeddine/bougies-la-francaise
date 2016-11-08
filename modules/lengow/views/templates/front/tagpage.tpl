@@ -1,5 +1,5 @@
 {*
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -13,11 +13,11 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author	   Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author	   Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  *}
 <!-- Tag_Lengow -->
-<img src="https://tracking.lengow.com/lead.php?idClient={$id_customer|escape:'intval'}&idGroup={$id_group|escape:'intval'}&price={$order_total|escape:'intval'}&idCommande={$id_order|escape:'intval'}&modePaiement={$mode_payment|escape:'htmlall'}&listingProduit={$ids_products|escape:'str'}" alt="" style="width: 1px; height: 1px; border: none;" />
-<img src="https://tracking.lengow.com/leadValidation.php?idClient={$id_customer|escape:'intval'}&idGroup={$id_group|escape:'intval'}&idCommande={$id_order|escape:'intval'}" alt="" style="width: 1px; height: 1px; border: none;" />
-<!-- /Tag_Lengow -->';
+<img src="https://trk.lgw.io/lead?account_id={$account_id|escape:'htmlall':'UTF-8'}&order_ref={$order_ref|escape:'htmlall':'UTF-8'}&amount={$amount|escape:'htmlall':'UTF-8'}&currency={$currency_order|escape:'htmlall':'UTF-8'}&payment_method={$payment_method|escape:'htmlall':'UTF-8'}&cart={$cart|escape:'htmlall':'UTF-8'}&newbiz={$newbiz|escape:'htmlall':'UTF-8'}&secure={$secure|escape:'htmlall':'UTF-8'}" alt="" style="width: 1px; height: 1px; border: none;" />
+<img src="https://trk.lgw.io/validation?account_id={$account_id|escape:'htmlall':'UTF-8'}&order_ref={$order_ref|escape:'htmlall':'UTF-8'}&payment_method={$payment_method|escape:'htmlall':'UTF-8'}&valid={$valid|escape:'htmlall':'UTF-8'}" alt="" style="width: 1px; height: 1px; border: none;" />
+<!-- /Tag_Lengow -->

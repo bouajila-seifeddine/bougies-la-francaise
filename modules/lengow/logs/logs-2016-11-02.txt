@@ -1,0 +1,604 @@
+2016-11-02 : 17:24:20 export : init
+2016-11-02 : 17:24:20 Export : find 464 products
+2016-11-02 : 17:24:21 export : 10 products
+2016-11-02 : 17:24:21 export : 20 products
+2016-11-02 : 17:24:21 export : 30 products
+2016-11-02 : 17:24:22 export : 40 products
+2016-11-02 : 17:24:22 export : 50 products
+2016-11-02 : 17:24:22 export : 60 products
+2016-11-02 : 17:24:22 export : 70 products
+2016-11-02 : 17:24:22 export : 80 products
+2016-11-02 : 17:24:23 export : 90 products
+2016-11-02 : 17:24:23 export : 100 products
+2016-11-02 : 17:24:23 export : 110 products
+2016-11-02 : 17:24:24 export : 120 products
+2016-11-02 : 17:24:24 export : 130 products
+2016-11-02 : 17:24:24 export : 140 products
+2016-11-02 : 17:24:25 export : 150 products
+2016-11-02 : 17:24:25 export : 160 products
+2016-11-02 : 17:24:25 export : 170 products
+2016-11-02 : 17:24:25 export : 180 products
+2016-11-02 : 17:24:26 export : 190 products
+2016-11-02 : 17:24:26 export : 200 products
+2016-11-02 : 17:24:26 export : 210 products
+2016-11-02 : 17:24:26 export : 220 products
+2016-11-02 : 17:24:26 export : 230 products
+2016-11-02 : 17:24:27 export : 240 products
+2016-11-02 : 17:24:27 export : 250 products
+2016-11-02 : 17:24:27 export : 260 products
+2016-11-02 : 17:24:27 export : 270 products
+2016-11-02 : 17:24:27 export : 280 products
+2016-11-02 : 17:24:28 export : 290 products
+2016-11-02 : 17:24:28 export : 300 products
+2016-11-02 : 17:24:28 export : 310 products
+2016-11-02 : 17:24:28 export : 320 products
+2016-11-02 : 17:24:29 export : 330 products
+2016-11-02 : 17:24:29 export : 340 products
+2016-11-02 : 17:24:29 export : 350 products
+2016-11-02 : 17:24:29 export : 360 products
+2016-11-02 : 17:24:29 export : 370 products
+2016-11-02 : 17:24:30 export : 380 products
+2016-11-02 : 17:24:30 export : 390 products
+2016-11-02 : 17:24:30 export : 400 products
+2016-11-02 : 17:24:30 export : 410 products
+2016-11-02 : 17:24:31 export : 420 products
+2016-11-02 : 17:24:31 export : 430 products
+2016-11-02 : 17:24:31 export : 440 products
+2016-11-02 : 17:24:31 export : 450 products
+2016-11-02 : 17:24:31 export : 460 products
+2016-11-02 : 17:24:31 export : end
+2016-11-02 : 17:44:21 export : init
+2016-11-02 : 17:44:21 Export : find 464 products
+2016-11-02 : 17:44:21 export : 10 products
+2016-11-02 : 17:44:21 export : init
+2016-11-02 : 17:44:21 Export : find 464 products
+2016-11-02 : 17:44:21 export : 20 products
+2016-11-02 : 17:44:21 export : 10 products
+2016-11-02 : 17:44:22 export : 30 products
+2016-11-02 : 17:44:22 export : 20 products
+2016-11-02 : 17:44:22 export : 40 products
+2016-11-02 : 17:44:22 export : 30 products
+2016-11-02 : 17:44:22 export : 50 products
+2016-11-02 : 17:44:22 export : 40 products
+2016-11-02 : 17:44:22 export : 60 products
+2016-11-02 : 17:44:22 export : 50 products
+2016-11-02 : 17:44:22 export : 70 products
+2016-11-02 : 17:44:22 export : 60 products
+2016-11-02 : 17:44:22 export : 80 products
+2016-11-02 : 17:44:23 export : 70 products
+2016-11-02 : 17:44:23 export : 90 products
+2016-11-02 : 17:44:23 export : 80 products
+2016-11-02 : 17:44:23 export : 100 products
+2016-11-02 : 17:44:23 export : 90 products
+2016-11-02 : 17:44:23 export : 110 products
+2016-11-02 : 17:44:23 export : 100 products
+2016-11-02 : 17:44:23 export : 120 products
+2016-11-02 : 17:44:23 export : 110 products
+2016-11-02 : 17:44:23 export : 130 products
+2016-11-02 : 17:44:24 export : 120 products
+2016-11-02 : 17:44:24 export : 140 products
+2016-11-02 : 17:44:24 export : 130 products
+2016-11-02 : 17:44:24 export : 150 products
+2016-11-02 : 17:44:24 export : 140 products
+2016-11-02 : 17:44:24 export : 160 products
+2016-11-02 : 17:44:24 export : 150 products
+2016-11-02 : 17:44:24 export : 170 products
+2016-11-02 : 17:44:24 export : 180 products
+2016-11-02 : 17:44:24 export : 160 products
+2016-11-02 : 17:44:25 export : 190 products
+2016-11-02 : 17:44:25 export : 170 products
+2016-11-02 : 17:44:25 export : 200 products
+2016-11-02 : 17:44:25 export : 180 products
+2016-11-02 : 17:44:25 export : 210 products
+2016-11-02 : 17:44:25 export : 190 products
+2016-11-02 : 17:44:25 export : 220 products
+2016-11-02 : 17:44:25 export : 200 products
+2016-11-02 : 17:44:25 export : 230 products
+2016-11-02 : 17:44:25 export : 210 products
+2016-11-02 : 17:44:25 export : 240 products
+2016-11-02 : 17:44:25 export : 220 products
+2016-11-02 : 17:44:25 export : 250 products
+2016-11-02 : 17:44:25 export : 260 products
+2016-11-02 : 17:44:26 export : 230 products
+2016-11-02 : 17:44:26 export : 270 products
+2016-11-02 : 17:44:26 export : 240 products
+2016-11-02 : 17:44:26 export : 280 products
+2016-11-02 : 17:44:26 export : 250 products
+2016-11-02 : 17:44:26 export : 260 products
+2016-11-02 : 17:44:26 export : 290 products
+2016-11-02 : 17:44:26 export : 270 products
+2016-11-02 : 17:44:26 export : 300 products
+2016-11-02 : 17:44:26 export : 280 products
+2016-11-02 : 17:44:26 export : 310 products
+2016-11-02 : 17:44:26 export : 320 products
+2016-11-02 : 17:44:26 export : 290 products
+2016-11-02 : 17:44:26 export : 330 products
+2016-11-02 : 17:44:26 export : 300 products
+2016-11-02 : 17:44:27 export : 340 products
+2016-11-02 : 17:44:27 export : 310 products
+2016-11-02 : 17:44:27 export : 350 products
+2016-11-02 : 17:44:27 export : 320 products
+2016-11-02 : 17:44:27 export : 360 products
+2016-11-02 : 17:44:27 export : 330 products
+2016-11-02 : 17:44:27 export : 370 products
+2016-11-02 : 17:44:27 export : 340 products
+2016-11-02 : 17:44:27 export : 380 products
+2016-11-02 : 17:44:27 export : 350 products
+2016-11-02 : 17:44:27 export : 390 products
+2016-11-02 : 17:44:27 export : 360 products
+2016-11-02 : 17:44:27 export : 400 products
+2016-11-02 : 17:44:27 export : 370 products
+2016-11-02 : 17:44:27 export : 410 products
+2016-11-02 : 17:44:27 export : 380 products
+2016-11-02 : 17:44:28 export : 420 products
+2016-11-02 : 17:44:28 export : 390 products
+2016-11-02 : 17:44:28 export : 430 products
+2016-11-02 : 17:44:28 export : 400 products
+2016-11-02 : 17:44:28 export : 440 products
+2016-11-02 : 17:44:28 export : 410 products
+2016-11-02 : 17:44:28 export : 450 products
+2016-11-02 : 17:44:28 export : 420 products
+2016-11-02 : 17:44:28 export : 460 products
+2016-11-02 : 17:44:28 export : 430 products
+2016-11-02 : 17:44:28 export : end
+2016-11-02 : 17:44:28 export : 440 products
+2016-11-02 : 17:44:28 export : 450 products
+2016-11-02 : 17:44:28 export : 460 products
+2016-11-02 : 17:44:28 export : end
+2016-11-02 : 18:00:06 Report email sent to cvanhoove@bougies-la-francaise.com
+2016-11-02 : 18:00:06 Connector http://api.lengow.com/v2/2016-10-23/2016-11-02/5889/12535/orders/commands/plugin/
+2016-11-02 : 18:00:37 Find 29 orders
+2016-11-02 : 18:00:37 - Order 108564001 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108564001 : already imported in Prestashop with order ID 5317
+2016-11-02 : 18:00:37 - Order 108597530 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108597530 : already imported in Prestashop with order ID 5329
+2016-11-02 : 18:00:37 - Order 108677000 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108677000 : already imported in Prestashop with order ID 5358
+2016-11-02 : 18:00:37 - Order 108687700 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108687700 : already imported in Prestashop with order ID 5362
+2016-11-02 : 18:00:37 - Order 108690350 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108690350 : already imported in Prestashop with order ID 5363
+2016-11-02 : 18:00:37 - Order 108709270 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108709270 : already imported in Prestashop with order ID 5367
+2016-11-02 : 18:00:37 - Order 108729780 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108729780 : already imported in Prestashop with order ID 5374
+2016-11-02 : 18:00:37 - Order 108783090 : rewrite amount without processing fee
+2016-11-02 : 18:00:37 - Order 108783090 : product sku 2202008 found
+2016-11-02 : 18:00:37 - Order 108783090 : product 2202008 is a parent product : variation needed
+2016-11-02 : 18:00:37 - Order 108806080 : rewrite amount without processing fee
+2016-11-02 : 18:00:38 - Order 108806080 : product sku 2600317 found
+2016-11-02 : 18:00:38 - Order 108806080 : product sku 2392046 found
+2016-11-02 : 18:00:41 Connector https://solution.lengow.com/wsdl/connector/call.json?token=5889zgu4gwxxcaibfsc5889&idClient=5889&method=updatePrestaInternalOrderId&array=a%3A5%3A%7Bs%3A8%3A%22idClient%22%3Bs%3A4%3A%225889%22%3Bs%3A6%3A%22idFlux%22%3Bi%3A122771%3Bs%3A7%3A%22idGroup%22%3Bs%3A5%3A%2212535%22%3Bs%3A12%3A%22idCommandeMP%22%3Bs%3A9%3A%22108806080%22%3Bs%3A16%3A%22idCommandePresta%22%3Bi%3A14285%3B%7D
+2016-11-02 : 18:00:42 - Order 108806080 : success import on presta (ORDER 14285)
+2016-11-02 : 18:00:42 - Order 2016.298.1461650 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.298.1461650 : already imported in Prestashop with order ID 5318
+2016-11-02 : 18:00:42 - Order 2016.299.0732771 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.299.0732771 : already imported in Prestashop with order ID 5330
+2016-11-02 : 18:00:42 - Order 2016.299.0726895 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.299.0726895 : already imported in Prestashop with order ID 5331
+2016-11-02 : 18:00:42 - Order 2016.300.0660433 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.300.0660433 : already imported in Prestashop with order ID 5336
+2016-11-02 : 18:00:42 - Order 2016.302.0632096 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.302.0632096 : already imported in Prestashop with order ID 5356
+2016-11-02 : 18:00:42 - Order 2016.302.0676158 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.302.0676158 : already imported in Prestashop with order ID 5359
+2016-11-02 : 18:00:42 - Order 2016.305.0672122 : rewrite amount without processing fee
+2016-11-02 : 18:00:42 - Order 2016.305.0672122 : already imported in Prestashop with order ID 5368
+2016-11-02 : 18:00:43 - Order 2016.305.0767042 : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 2016.305.0767042 : already imported in Prestashop with order ID 5369
+2016-11-02 : 18:00:43 - Order 2016.305.1010646 : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 2016.305.1010646 : already imported in Prestashop with order ID 5375
+2016-11-02 : 18:00:43 - Order 2016.305.1031554 : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 2016.305.1031554 : already imported in Prestashop with order ID 5376
+2016-11-02 : 18:00:43 - Order 2016.307.0744626 : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 2016.307.0744626 : already imported in Prestashop with order ID 5395
+2016-11-02 : 18:00:43 - Order 2016.307.0759186 : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 2016.307.0759186 : already imported in Prestashop with order ID 5396
+2016-11-02 : 18:00:43 - Order 1300436667784-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436667784-A : already imported in Prestashop with order ID 5308
+2016-11-02 : 18:00:43 - Order 1300436669197-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436669197-A : already imported in Prestashop with order ID 5319
+2016-11-02 : 18:00:43 - Order 1300436675210-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436675210-A : already imported in Prestashop with order ID 5320
+2016-11-02 : 18:00:43 - Order 1300436678471-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436678471-A : already imported in Prestashop with order ID 5341
+2016-11-02 : 18:00:43 - Order 1300436683343-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436683343-A : already imported in Prestashop with order ID 5352
+2016-11-02 : 18:00:43 - Order 1300436695946-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436695946-A : already imported in Prestashop with order ID 5386
+2016-11-02 : 18:00:43 - Order 1300436701521-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436701521-A : order's status not available to import
+2016-11-02 : 18:00:43 - Order 1300436704055-A : rewrite amount without processing fee
+2016-11-02 : 18:00:43 - Order 1300436704055-A : order's status not available to import
+2016-11-02 : 18:05:21 export : init
+2016-11-02 : 18:05:21 Export : find 464 products
+2016-11-02 : 18:05:21 export : 10 products
+2016-11-02 : 18:05:21 export : 20 products
+2016-11-02 : 18:05:22 export : 30 products
+2016-11-02 : 18:05:22 export : 40 products
+2016-11-02 : 18:05:22 export : 50 products
+2016-11-02 : 18:05:22 export : 60 products
+2016-11-02 : 18:05:23 export : 70 products
+2016-11-02 : 18:05:23 export : 80 products
+2016-11-02 : 18:05:23 export : 90 products
+2016-11-02 : 18:05:23 export : 100 products
+2016-11-02 : 18:05:24 export : 110 products
+2016-11-02 : 18:05:24 export : 120 products
+2016-11-02 : 18:05:24 export : 130 products
+2016-11-02 : 18:05:24 export : 140 products
+2016-11-02 : 18:05:24 export : 150 products
+2016-11-02 : 18:05:25 export : 160 products
+2016-11-02 : 18:05:25 export : 170 products
+2016-11-02 : 18:05:25 export : 180 products
+2016-11-02 : 18:05:25 export : 190 products
+2016-11-02 : 18:05:25 export : 200 products
+2016-11-02 : 18:05:26 export : 210 products
+2016-11-02 : 18:05:26 export : 220 products
+2016-11-02 : 18:05:26 export : 230 products
+2016-11-02 : 18:05:26 export : 240 products
+2016-11-02 : 18:05:26 export : 250 products
+2016-11-02 : 18:05:26 export : 260 products
+2016-11-02 : 18:05:27 export : 270 products
+2016-11-02 : 18:05:27 export : 280 products
+2016-11-02 : 18:05:27 export : 290 products
+2016-11-02 : 18:05:27 export : 300 products
+2016-11-02 : 18:05:27 export : 310 products
+2016-11-02 : 18:05:27 export : 320 products
+2016-11-02 : 18:05:27 export : 330 products
+2016-11-02 : 18:05:28 export : 340 products
+2016-11-02 : 18:05:28 export : 350 products
+2016-11-02 : 18:05:28 export : 360 products
+2016-11-02 : 18:05:28 export : 370 products
+2016-11-02 : 18:05:28 export : 380 products
+2016-11-02 : 18:05:28 export : 390 products
+2016-11-02 : 18:05:28 export : 400 products
+2016-11-02 : 18:05:29 export : 410 products
+2016-11-02 : 18:05:29 export : 420 products
+2016-11-02 : 18:05:29 export : 430 products
+2016-11-02 : 18:05:29 export : 440 products
+2016-11-02 : 18:05:29 export : 450 products
+2016-11-02 : 18:05:29 export : 460 products
+2016-11-02 : 18:05:29 export : end
+2016-11-02 : 18:24:21 export : init
+2016-11-02 : 18:24:21 Export : find 464 products
+2016-11-02 : 18:24:22 export : 10 products
+2016-11-02 : 18:24:22 export : 20 products
+2016-11-02 : 18:24:22 export : 30 products
+2016-11-02 : 18:24:22 export : 40 products
+2016-11-02 : 18:24:22 export : 50 products
+2016-11-02 : 18:24:23 export : 60 products
+2016-11-02 : 18:24:23 export : 70 products
+2016-11-02 : 18:24:23 export : 80 products
+2016-11-02 : 18:24:23 export : 90 products
+2016-11-02 : 18:24:23 export : 100 products
+2016-11-02 : 18:24:23 export : 110 products
+2016-11-02 : 18:24:24 export : 120 products
+2016-11-02 : 18:24:24 export : 130 products
+2016-11-02 : 18:24:24 export : 140 products
+2016-11-02 : 18:24:24 export : 150 products
+2016-11-02 : 18:24:24 export : 160 products
+2016-11-02 : 18:24:25 export : 170 products
+2016-11-02 : 18:24:25 export : 180 products
+2016-11-02 : 18:24:25 export : 190 products
+2016-11-02 : 18:24:25 export : 200 products
+2016-11-02 : 18:24:25 export : 210 products
+2016-11-02 : 18:24:25 export : 220 products
+2016-11-02 : 18:24:26 export : 230 products
+2016-11-02 : 18:24:26 export : 240 products
+2016-11-02 : 18:24:26 export : 250 products
+2016-11-02 : 18:24:26 export : 260 products
+2016-11-02 : 18:24:26 export : 270 products
+2016-11-02 : 18:24:26 export : 280 products
+2016-11-02 : 18:24:26 export : 290 products
+2016-11-02 : 18:24:26 export : 300 products
+2016-11-02 : 18:24:27 export : 310 products
+2016-11-02 : 18:24:27 export : 320 products
+2016-11-02 : 18:24:27 export : 330 products
+2016-11-02 : 18:24:27 export : 340 products
+2016-11-02 : 18:24:27 export : 350 products
+2016-11-02 : 18:24:27 export : 360 products
+2016-11-02 : 18:24:28 export : 370 products
+2016-11-02 : 18:24:28 export : 380 products
+2016-11-02 : 18:24:28 export : 390 products
+2016-11-02 : 18:24:28 export : 400 products
+2016-11-02 : 18:24:28 export : 410 products
+2016-11-02 : 18:24:28 export : 420 products
+2016-11-02 : 18:24:28 export : 430 products
+2016-11-02 : 18:24:28 export : 440 products
+2016-11-02 : 18:24:28 export : 450 products
+2016-11-02 : 18:24:29 export : 460 products
+2016-11-02 : 18:24:29 export : end
+2016-11-02 : 18:44:22 export : init
+2016-11-02 : 18:44:22 Export : find 464 products
+2016-11-02 : 18:44:23 export : 10 products
+2016-11-02 : 18:44:23 export : 20 products
+2016-11-02 : 18:44:23 export : 30 products
+2016-11-02 : 18:44:23 export : 40 products
+2016-11-02 : 18:44:23 export : 50 products
+2016-11-02 : 18:44:24 export : 60 products
+2016-11-02 : 18:44:24 export : 70 products
+2016-11-02 : 18:44:24 export : 80 products
+2016-11-02 : 18:44:24 export : 90 products
+2016-11-02 : 18:44:24 export : 100 products
+2016-11-02 : 18:44:25 export : 110 products
+2016-11-02 : 18:44:25 export : 120 products
+2016-11-02 : 18:44:25 export : 130 products
+2016-11-02 : 18:44:25 export : 140 products
+2016-11-02 : 18:44:25 export : 150 products
+2016-11-02 : 18:44:26 export : 160 products
+2016-11-02 : 18:44:26 export : 170 products
+2016-11-02 : 18:44:26 export : 180 products
+2016-11-02 : 18:44:26 export : 190 products
+2016-11-02 : 18:44:26 export : 200 products
+2016-11-02 : 18:44:27 export : 210 products
+2016-11-02 : 18:44:27 export : 220 products
+2016-11-02 : 18:44:27 export : 230 products
+2016-11-02 : 18:44:27 export : 240 products
+2016-11-02 : 18:44:27 export : 250 products
+2016-11-02 : 18:44:27 export : 260 products
+2016-11-02 : 18:44:27 export : 270 products
+2016-11-02 : 18:44:28 export : 280 products
+2016-11-02 : 18:44:28 export : 290 products
+2016-11-02 : 18:44:28 export : 300 products
+2016-11-02 : 18:44:28 export : 310 products
+2016-11-02 : 18:44:28 export : 320 products
+2016-11-02 : 18:44:28 export : 330 products
+2016-11-02 : 18:44:29 export : 340 products
+2016-11-02 : 18:44:29 export : 350 products
+2016-11-02 : 18:44:29 export : 360 products
+2016-11-02 : 18:44:29 export : 370 products
+2016-11-02 : 18:44:29 export : 380 products
+2016-11-02 : 18:44:29 export : 390 products
+2016-11-02 : 18:44:29 export : 400 products
+2016-11-02 : 18:44:29 export : 410 products
+2016-11-02 : 18:44:30 export : 420 products
+2016-11-02 : 18:44:30 export : 430 products
+2016-11-02 : 18:44:30 export : 440 products
+2016-11-02 : 18:44:30 export : 450 products
+2016-11-02 : 18:44:30 export : 460 products
+2016-11-02 : 18:44:30 export : end
+2016-11-02 : 18:45:23 export : init
+2016-11-02 : 18:45:23 Export : find 464 products
+2016-11-02 : 18:45:23 export : 10 products
+2016-11-02 : 18:45:23 export : 20 products
+2016-11-02 : 18:45:24 export : 30 products
+2016-11-02 : 18:45:24 export : 40 products
+2016-11-02 : 18:45:24 export : 50 products
+2016-11-02 : 18:45:24 export : 60 products
+2016-11-02 : 18:45:24 export : 70 products
+2016-11-02 : 18:45:25 export : 80 products
+2016-11-02 : 18:45:25 export : 90 products
+2016-11-02 : 18:45:25 export : 100 products
+2016-11-02 : 18:45:25 export : 110 products
+2016-11-02 : 18:45:25 export : 120 products
+2016-11-02 : 18:45:26 export : 130 products
+2016-11-02 : 18:45:26 export : 140 products
+2016-11-02 : 18:45:26 export : 150 products
+2016-11-02 : 18:45:26 export : 160 products
+2016-11-02 : 18:45:26 export : 170 products
+2016-11-02 : 18:45:27 export : 180 products
+2016-11-02 : 18:45:27 export : 190 products
+2016-11-02 : 18:45:27 export : 200 products
+2016-11-02 : 18:45:27 export : 210 products
+2016-11-02 : 18:45:27 export : 220 products
+2016-11-02 : 18:45:27 export : 230 products
+2016-11-02 : 18:45:28 export : 240 products
+2016-11-02 : 18:45:28 export : 250 products
+2016-11-02 : 18:45:28 export : 260 products
+2016-11-02 : 18:45:28 export : 270 products
+2016-11-02 : 18:45:28 export : 280 products
+2016-11-02 : 18:45:28 export : 290 products
+2016-11-02 : 18:45:28 export : 300 products
+2016-11-02 : 18:45:29 export : 310 products
+2016-11-02 : 18:45:29 export : 320 products
+2016-11-02 : 18:45:29 export : 330 products
+2016-11-02 : 18:45:29 export : 340 products
+2016-11-02 : 18:45:29 export : 350 products
+2016-11-02 : 18:45:29 export : 360 products
+2016-11-02 : 18:45:29 export : 370 products
+2016-11-02 : 18:45:29 export : 380 products
+2016-11-02 : 18:45:30 export : 390 products
+2016-11-02 : 18:45:30 export : 400 products
+2016-11-02 : 18:45:30 export : 410 products
+2016-11-02 : 18:45:30 export : 420 products
+2016-11-02 : 18:45:30 export : 430 products
+2016-11-02 : 18:45:30 export : 440 products
+2016-11-02 : 18:45:30 export : 450 products
+2016-11-02 : 18:45:30 export : 460 products
+2016-11-02 : 18:45:30 export : end
+2016-11-02 : 19:44:21 export : init
+2016-11-02 : 19:44:21 Export : find 464 products
+2016-11-02 : 19:44:22 export : 10 products
+2016-11-02 : 19:44:22 export : 20 products
+2016-11-02 : 19:44:22 export : 30 products
+2016-11-02 : 19:44:22 export : 40 products
+2016-11-02 : 19:44:22 export : 50 products
+2016-11-02 : 19:44:22 export : 60 products
+2016-11-02 : 19:44:23 export : 70 products
+2016-11-02 : 19:44:23 export : 80 products
+2016-11-02 : 19:44:23 export : 90 products
+2016-11-02 : 19:44:23 export : 100 products
+2016-11-02 : 19:44:23 export : 110 products
+2016-11-02 : 19:44:24 export : 120 products
+2016-11-02 : 19:44:24 export : 130 products
+2016-11-02 : 19:44:24 export : 140 products
+2016-11-02 : 19:44:24 export : 150 products
+2016-11-02 : 19:44:24 export : 160 products
+2016-11-02 : 19:44:25 export : 170 products
+2016-11-02 : 19:44:25 export : 180 products
+2016-11-02 : 19:44:25 export : 190 products
+2016-11-02 : 19:44:25 export : 200 products
+2016-11-02 : 19:44:25 export : 210 products
+2016-11-02 : 19:44:25 export : 220 products
+2016-11-02 : 19:44:25 export : 230 products
+2016-11-02 : 19:44:26 export : 240 products
+2016-11-02 : 19:44:26 export : 250 products
+2016-11-02 : 19:44:26 export : 260 products
+2016-11-02 : 19:44:26 export : 270 products
+2016-11-02 : 19:44:26 export : 280 products
+2016-11-02 : 19:44:26 export : 290 products
+2016-11-02 : 19:44:26 export : 300 products
+2016-11-02 : 19:44:26 export : 310 products
+2016-11-02 : 19:44:27 export : 320 products
+2016-11-02 : 19:44:27 export : 330 products
+2016-11-02 : 19:44:27 export : 340 products
+2016-11-02 : 19:44:27 export : 350 products
+2016-11-02 : 19:44:27 export : 360 products
+2016-11-02 : 19:44:27 export : 370 products
+2016-11-02 : 19:44:27 export : 380 products
+2016-11-02 : 19:44:28 export : 390 products
+2016-11-02 : 19:44:28 export : 400 products
+2016-11-02 : 19:44:28 export : 410 products
+2016-11-02 : 19:44:28 export : 420 products
+2016-11-02 : 19:44:28 export : 430 products
+2016-11-02 : 19:44:28 export : 440 products
+2016-11-02 : 19:44:28 export : 450 products
+2016-11-02 : 19:44:28 export : 460 products
+2016-11-02 : 19:44:28 export : end
+2016-11-02 : 20:44:21 export : init
+2016-11-02 : 20:44:21 Export : find 464 products
+2016-11-02 : 20:44:21 export : 10 products
+2016-11-02 : 20:44:21 export : init
+2016-11-02 : 20:44:21 Export : find 464 products
+2016-11-02 : 20:44:21 export : 20 products
+2016-11-02 : 20:44:21 export : 30 products
+2016-11-02 : 20:44:21 export : 10 products
+2016-11-02 : 20:44:22 export : 40 products
+2016-11-02 : 20:44:22 export : 20 products
+2016-11-02 : 20:44:22 export : 50 products
+2016-11-02 : 20:44:22 export : 30 products
+2016-11-02 : 20:44:22 export : 60 products
+2016-11-02 : 20:44:22 export : 40 products
+2016-11-02 : 20:44:22 export : 70 products
+2016-11-02 : 20:44:22 export : 50 products
+2016-11-02 : 20:44:22 export : 80 products
+2016-11-02 : 20:44:22 export : 60 products
+2016-11-02 : 20:44:23 export : 90 products
+2016-11-02 : 20:44:23 export : 70 products
+2016-11-02 : 20:44:23 export : 100 products
+2016-11-02 : 20:44:23 export : 80 products
+2016-11-02 : 20:44:23 export : 110 products
+2016-11-02 : 20:44:23 export : 90 products
+2016-11-02 : 20:44:23 export : 120 products
+2016-11-02 : 20:44:23 export : 100 products
+2016-11-02 : 20:44:23 export : 130 products
+2016-11-02 : 20:44:23 export : 110 products
+2016-11-02 : 20:44:24 export : 140 products
+2016-11-02 : 20:44:24 export : 120 products
+2016-11-02 : 20:44:24 export : 150 products
+2016-11-02 : 20:44:24 export : 130 products
+2016-11-02 : 20:44:24 export : 160 products
+2016-11-02 : 20:44:24 export : 140 products
+2016-11-02 : 20:44:24 export : 170 products
+2016-11-02 : 20:44:24 export : 180 products
+2016-11-02 : 20:44:24 export : 150 products
+2016-11-02 : 20:44:24 export : 190 products
+2016-11-02 : 20:44:24 export : 160 products
+2016-11-02 : 20:44:25 export : 200 products
+2016-11-02 : 20:44:25 export : 170 products
+2016-11-02 : 20:44:25 export : 210 products
+2016-11-02 : 20:44:25 export : 180 products
+2016-11-02 : 20:44:25 export : 220 products
+2016-11-02 : 20:44:25 export : 190 products
+2016-11-02 : 20:44:25 export : 230 products
+2016-11-02 : 20:44:25 export : 200 products
+2016-11-02 : 20:44:25 export : 240 products
+2016-11-02 : 20:44:25 export : 250 products
+2016-11-02 : 20:44:25 export : 210 products
+2016-11-02 : 20:44:25 export : 260 products
+2016-11-02 : 20:44:26 export : 220 products
+2016-11-02 : 20:44:26 export : 270 products
+2016-11-02 : 20:44:26 export : 280 products
+2016-11-02 : 20:44:26 export : 230 products
+2016-11-02 : 20:44:26 export : 240 products
+2016-11-02 : 20:44:26 export : 250 products
+2016-11-02 : 20:44:26 export : 290 products
+2016-11-02 : 20:44:26 export : 260 products
+2016-11-02 : 20:44:26 export : 300 products
+2016-11-02 : 20:44:26 export : 270 products
+2016-11-02 : 20:44:26 export : 310 products
+2016-11-02 : 20:44:26 export : 280 products
+2016-11-02 : 20:44:26 export : 320 products
+2016-11-02 : 20:44:27 export : 290 products
+2016-11-02 : 20:44:27 export : 330 products
+2016-11-02 : 20:44:27 export : 300 products
+2016-11-02 : 20:44:27 export : 340 products
+2016-11-02 : 20:44:27 export : 310 products
+2016-11-02 : 20:44:27 export : 350 products
+2016-11-02 : 20:44:27 export : 320 products
+2016-11-02 : 20:44:27 export : 360 products
+2016-11-02 : 20:44:27 export : 330 products
+2016-11-02 : 20:44:27 export : 370 products
+2016-11-02 : 20:44:27 export : 340 products
+2016-11-02 : 20:44:27 export : 380 products
+2016-11-02 : 20:44:27 export : 350 products
+2016-11-02 : 20:44:27 export : 390 products
+2016-11-02 : 20:44:27 export : 360 products
+2016-11-02 : 20:44:28 export : 400 products
+2016-11-02 : 20:44:28 export : 370 products
+2016-11-02 : 20:44:28 export : 410 products
+2016-11-02 : 20:44:28 export : 380 products
+2016-11-02 : 20:44:28 export : 420 products
+2016-11-02 : 20:44:28 export : 390 products
+2016-11-02 : 20:44:28 export : 430 products
+2016-11-02 : 20:44:28 export : 440 products
+2016-11-02 : 20:44:28 export : 400 products
+2016-11-02 : 20:44:28 export : 450 products
+2016-11-02 : 20:44:28 export : 410 products
+2016-11-02 : 20:44:28 export : 460 products
+2016-11-02 : 20:44:28 export : 420 products
+2016-11-02 : 20:44:28 export : end
+2016-11-02 : 20:44:28 export : 430 products
+2016-11-02 : 20:44:29 export : 440 products
+2016-11-02 : 20:44:29 export : 450 products
+2016-11-02 : 20:44:29 export : 460 products
+2016-11-02 : 20:44:29 export : end
+2016-11-02 : 22:24:20 export : init
+2016-11-02 : 22:24:20 Export : find 464 products
+2016-11-02 : 22:24:21 export : 10 products
+2016-11-02 : 22:24:21 export : 20 products
+2016-11-02 : 22:24:21 export : 30 products
+2016-11-02 : 22:24:21 export : 40 products
+2016-11-02 : 22:24:22 export : 50 products
+2016-11-02 : 22:24:22 export : 60 products
+2016-11-02 : 22:24:22 export : 70 products
+2016-11-02 : 22:24:22 export : 80 products
+2016-11-02 : 22:24:22 export : 90 products
+2016-11-02 : 22:24:23 export : 100 products
+2016-11-02 : 22:24:23 export : 110 products
+2016-11-02 : 22:24:23 export : 120 products
+2016-11-02 : 22:24:23 export : 130 products
+2016-11-02 : 22:24:24 export : 140 products
+2016-11-02 : 22:24:24 export : 150 products
+2016-11-02 : 22:24:24 export : 160 products
+2016-11-02 : 22:24:24 export : 170 products
+2016-11-02 : 22:24:25 export : 180 products
+2016-11-02 : 22:24:25 export : 190 products
+2016-11-02 : 22:24:25 export : 200 products
+2016-11-02 : 22:24:25 export : 210 products
+2016-11-02 : 22:24:25 export : 220 products
+2016-11-02 : 22:24:25 export : 230 products
+2016-11-02 : 22:24:26 export : 240 products
+2016-11-02 : 22:24:26 export : 250 products
+2016-11-02 : 22:24:26 export : 260 products
+2016-11-02 : 22:24:26 export : 270 products
+2016-11-02 : 22:24:26 export : 280 products
+2016-11-02 : 22:24:26 export : 290 products
+2016-11-02 : 22:24:27 export : 300 products
+2016-11-02 : 22:24:27 export : 310 products
+2016-11-02 : 22:24:27 export : 320 products
+2016-11-02 : 22:24:27 export : 330 products
+2016-11-02 : 22:24:27 export : 340 products
+2016-11-02 : 22:24:27 export : 350 products
+2016-11-02 : 22:24:28 export : 360 products
+2016-11-02 : 22:24:28 export : 370 products
+2016-11-02 : 22:24:28 export : 380 products
+2016-11-02 : 22:24:28 export : 390 products
+2016-11-02 : 22:24:28 export : 400 products
+2016-11-02 : 22:24:28 export : 410 products
+2016-11-02 : 22:24:29 export : 420 products
+2016-11-02 : 22:24:29 export : 430 products
+2016-11-02 : 22:24:29 export : 440 products
+2016-11-02 : 22:24:29 export : 450 products
+2016-11-02 : 22:24:29 export : 460 products
+2016-11-02 : 22:24:29 export : end

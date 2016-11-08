@@ -1,0 +1,127 @@
+.PM_ASResetGroup{float:right; margin-top:5px;};
+.PM_ASBlockOutput { position:relative;}
+.PM_ASBlockOutputHorizontal {border-style:solid;}
+ul.PM_ASCriterionGroupImage, ul.PM_ASCriterionGroupCheckbox {list-style-type:none;}
+.PM_ASCriterionsGroup {text-align:left;}
+.PM_ASCriterionsSEOGroupDisabled, .PM_ASCriterionsSEOGroupDisabled a, .PM_ASCriterionsSEOGroupDisabled input {cursor: default;}
+/*criteria group display*/
+ul.PM_ASCriterionGroupImage, .PM_ASCriterionGroupColor {clear:both;}
+ul.PM_ASCriterionGroupImage li, .PM_ASCriterionGroupColor li {display:block;float:left;}
+ul.PM_ASCriterionGroupImage li a, .PM_ASCriterionGroupColor li a {display:block;}
+
+.PM_ASCriterionsGroupTitle {margin:10px 0;font-size:1.2em;padding-bottom:5px;}
+
+/* criteriaGroup collapse */
+.PM_ASCriterionsGroupCollapsed{display:none;}
+
+/*criteria display*/
+.PM_ASCriterionHide, li.PM_ASCriterionHide {display:none;}
+/*.PM_ASCriterionHideToogleHover, .PM_ASCriterionHideToogleClick {}*/
+.PM_ASHide {display:none;}
+
+/*Selections display*/
+.PM_ASSelectionsBlock {padding-top:10px;}
+.PM_ASSelections ul {list-style-type:none;}
+.PM_ASSelections ul li {display:inline;}
+.PM_ASBlockOutputVertical .PM_ASSelections ul li {display:block!important;}
+.PM_ASBlockOutputHorizontal .PM_ASSelectionsBlock {min-height:25px;}
+* html .PM_ASBlockOutputHorizontal .PM_ASSelectionsBlock {height:25px;}
+
+
+.PM_ASCriterionsGroup {position:relative;}
+.PM_ASBlockOutputVertical .PM_ASCriterionsGroup {padding:1%;}
+.PM_ASBlockOutputHorizontal .PM_ASCriterionsGroup {float:left;width:150px;padding:1%;}
+.PM_ASBlockOutputHorizontal .PM_ASCriterionsGroup select, .PM_ASBlockOutputVertical .PM_ASCriterionsGroup select {width:96%;}
+
+.PM_ASResetSearch {display:none;}
+
+.PM_ASSelectionsDropDown {position:relative;height:25px;z-index:2;}
+.PM_ASSelectionsDropDownMenu {display:none;position:absolute;top:20px;left:0;width:96%;padding:2%;z-index:2;}
+
+
+.PM_ASearchLayerBlock {background:#fff url(../../../img/loader.gif) center center no-repeat;display:none;}
+.PM_ASearchLayerResult {background:#fff url(../../../img/loader.gif) center center no-repeat;display:none;}
+
+
+#PM_ASearchSeoCrossLinks {clear:both;}
+
+/*Share block*/
+.asShareBlock {margin-top:20px;border:1px solid #dddddd;padding:2%;display:none;}
+.asShareBlock input {margin-left:0!important;width:250px;height:30px;font-size:17px;line-height:17px;color:#666;}
+
+.asShareLeft {margin-right:2%;float:left;width:48%;}
+.asShareRight {float:right;width:48%;}
+.PM_ASBlockOutputHorizontal .PM_ASCriterionsOutput {width:90%;}
+
+/*Hidden criterion group*/
+.PM_ASShowCriterionsGroupHidden {text-align:center;font-weight:bold;}
+.PM_ASCriterionsGroupHidden {display:none;}
+
+/*Range value for slider*/
+.PM_ASCritRangeValue {display:block;text-align:center;margin-top:5px;}
+
+.clear { clear:both; }
+
+
+/*Link for showing Dropdown selection reminder on vertical block*/
+.PM_ASBlockOutputVertical a.PM_ASSelectionsDropDownShowLink {background: transparent url(../img/005_50.gif) 0 3px no-repeat;padding-left:12px;text-decoration:none;}
+
+/*Dropdown selection reminder on vertical block*/
+.PM_ASBlockOutputVertical .PM_ASSelectionsDropDownMenu {background:#ffffff;border:1px dashed #9E9E9E;}
+
+/*Link for removing criterion of selection*/
+a.PM_ASSelectionsRemoveLink {background: transparent url(../img/005_15.gif) 0 3px no-repeat;padding-left:12px;text-decoration:none;}
+a.PM_ASSelectionsRemoveLink:hover, .PM_ASCriterionLinkSelected:hover {text-decoration: line-through!important;}
+
+/*Link for reset search*/
+a.PM_ASResetSearch {background: transparent url(../img/005_17.gif) 0 6px no-repeat;padding-left:12px;text-decoration:none;padding-top:3px;}
+
+/*Separation of criterion block on vertical block*/
+.PM_ASBlockOutputVertical .PM_ASCriterions .PM_ASCriterionsGroupOuter {margin-top:10px;}
+
+.PM_ASBlockOutputVertical .PM_ASCriterions .PM_ASCriterionsGroupTitle{ border-bottom:1px dotted #ccc;}
+
+/*Number products on vertical block*/
+.PM_ASBlockOutputVertical .PM_ASBlockNbProduct {padding-top:10px;text-align:center;}
+
+/*Submit search on vertical block*/
+.PM_ASBlockOutputVertical .PM_ASSubmitSearch {margin:10px auto;margin-bottom:0;}
+
+/*Horizontal search padding*/
+.PM_ASBlockOutputHorizontal {
+  padding:15px;
+  margin-bottom:10px;
+}
+
+/*Color square size*/
+.PM_ASCriterionGroupColor li a {width:15px;height:15px;}
+
+/*Selected classe for display image and square color*/
+.PM_ASCriterionGroupImage .PM_ASCriterionLink, .PM_ASCriterionGroupColor .PM_ASCriterionLink {margin:4px!important;}
+.PM_ASCriterionGroupImage .PM_ASCriterionLinkSelected, .PM_ASCriterionGroupColor .PM_ASCriterionLinkSelected {border:2px solid #999;margin:2px!important;}
+
+/*Selected classe for display link*/
+.PM_ASCriterionGroupLink .PM_ASCriterionLinkSelected, .PM_ASCriterionGroupLink .PM_ASCriterionLink:hover {font-weight:bold;}
+
+/*Hidded criterion block on horizontal block*/
+.PM_ASBlockOutputHorizontal .PM_ASCriterionGroupToogleHover {background-color:#ECECEC;}
+
+/*Lateral space for price range*/
+.PM_ASPriceRange {margin:0 10px!important;}
+
+/*Remove checkbox border from IE*/
+.PM_ASCriterionCheckbox {border:0;vertical-align: middle;}
+
+/*Style for hidden criteria*/
+.PM_ASCriterionDisable {-khtml-opacity:.50; -moz-opacity:.50; -ms-filter:"alpha(opacity=50)"; filter:alpha(opacity=50); opacity:.50;zoom: 1 }
+
+/*Hide toogle link*/
+.PM_ASCriterionHideToogleLink {background:url(../img/arrow-down2.gif) 0 0 no-repeat;padding-left:20px;font-size:10px;margin-top:10px;display:block;}
+
+/* criteriaGroup collapse */
+.PM_ASCriterionsGroupCollapsable {padding-right:20px;}
+.PM_ASCriterionsArrowleft{background:url(../img/arrow-left.png) no-repeat right center;}
+.PM_ASCriterionsArrowDown{background:url(../img/arrow-down.png) no-repeat right center;}
+
+/*Reset group link*/
+.PM_ASResetGroup {font-size:10px;}

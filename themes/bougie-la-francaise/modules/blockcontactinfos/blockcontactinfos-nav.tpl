@@ -26,6 +26,9 @@
 
 <!-- MODULE Block contact infos -->
 {if $blockcontactinfos_phone != ''}
+<div class="bloc-top-nav">
+	<a href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}" title="{l s='Our stores'}"><i class="ycon-boutiques"></i></a>
+</div>
 <div id="block_contact_infos" class="bloc-contact-infos-nav bloc-top-nav">
 	<i class="ycon-phone"></i>{*l s='Call us now:' mod='blockcontactinfos'*} 
     <span>{l s='Customer service' mod='blockcontactinfos'} {$blockcontactinfos_phone|escape:'html':'UTF-8'}</span>

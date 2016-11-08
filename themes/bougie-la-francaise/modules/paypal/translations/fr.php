@@ -25,8 +25,8 @@ $_MODULE['<{paypal}bougie-la-francaise>paypal_ee9dc1e678d54c517f481583c3fb2db8']
 $_MODULE['<{paypal}bougie-la-francaise>paypal_eec39bf42bd135971fb2d838c67d1449'] = 'Opération de remboursement :';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_2ab62d1a578713d0862b56819295630e'] = 'Remboursement PayPal confirmé !';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_a64db959966ba8d07c8b5d9493fcc21f'] = 'Erreur de transaction !';
-$_MODULE['<{paypal}bougie-la-francaise>paypal_67962779da962e3d4225055afc05e7bd'] = 'Résultat de la capture :';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_8778ee03f6592d5fec9a1f2ee851e476'] = 'Commande terminée avec PayPal !';
+$_MODULE['<{paypal}bougie-la-francaise>paypal_67962779da962e3d4225055afc05e7bd'] = 'Résultat de la capture :';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_672d40feac6437e49f771019bc330790'] = 'Statu de la vérification :';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_1828820cc60e36b6f9fdf60cab103ed7'] = 'Vous utilisez actuellement l\'adresse PayPal par défaut, veuillez entrer votre propre adresse.';
 $_MODULE['<{paypal}bougie-la-francaise>paypal_11582f323e3cac72252135e07b353c1c'] = 'Merci d\'activer cURL (extension PHP) afin d\'utiliser le module';
@@ -151,7 +151,6 @@ $_MODULE['<{paypal}bougie-la-francaise>back_office_ff0d39d63c036426d6833917d512e
 $_MODULE['<{paypal}bougie-la-francaise>back_office_980d7b730b063eabd43e8954e4e072ad'] = 'Bravo !';
 $_MODULE['<{paypal}bougie-la-francaise>back_office_bb945e9f42acb423adb3d7535d491444'] = 'Vous pouvez maintenant commencer à accepter les paiements avec PayPal.';
 $_MODULE['<{paypal}bougie-la-francaise>back_office_2d801c24938b12e4ca9a2cf9b980c759'] = 'Erreur !';
-$_MODULE['<{paypal}bougie-la-francaise>back_office_261fa91388f4f40fe010e174aba10c36'] = '*Source: Étude Forrester réalisée en mars 2011';
 $_MODULE['<{paypal}bougie-la-francaise>capture_81e826adb70e2e6b189c2eef739d52d4'] = 'Capture PayPal';
 $_MODULE['<{paypal}bougie-la-francaise>capture_e8fdd4382b75b42bfbd96eb7b032cf47'] = 'Informations :';
 $_MODULE['<{paypal}bougie-la-francaise>capture_ce64b2ea82cf4fa861a6512e2c32b84b'] = 'Les fonds sont prêts à être capturés avant expédition';
@@ -225,9 +224,9 @@ $_MODULE['<{paypal}bougie-la-francaise>confirmation_15b0f8e55c6bdfc3d5fd0b6b3b6c
 $_MODULE['<{paypal}bougie-la-francaise>confirmation_e6dc7945b557a1cd949bea92dd58963e'] = 'Votre commande vous sera envoyée très prochainement.';
 $_MODULE['<{paypal}bougie-la-francaise>confirmation_0db71da7150c27142eef9d22b843b4a9'] = 'Pour toute question ou information complémentaire merci de contacter notre';
 $_MODULE['<{paypal}bougie-la-francaise>confirmation_64430ad2835be8ad60c59e7d44e4b0b1'] = 'support client';
-$_MODULE['<{paypal}bougie-la-francaise>express_checkout_payment_eu_dac2693baa5c5c9a5318609ed81c4f2a'] = 'Payer avec Paypal';
 $_MODULE['<{paypal}bougie-la-francaise>express_checkout_payment_dac2693baa5c5c9a5318609ed81c4f2a'] = 'Payez avec PayPal';
 $_MODULE['<{paypal}bougie-la-francaise>express_checkout_payment_83a1a5a403aed4b7ead866d253aef998'] = 'Payez par carte ou par compte PayPal';
+$_MODULE['<{paypal}bougie-la-francaise>express_checkout_payment_eu_dac2693baa5c5c9a5318609ed81c4f2a'] = 'Payer avec Paypal';
 $_MODULE['<{paypal}bougie-la-francaise>express_checkout_shortcut_form_dac2693baa5c5c9a5318609ed81c4f2a'] = 'Payez avec PayPal';
 $_MODULE['<{paypal}bougie-la-francaise>integral_evolution_payment_83a1a5a403aed4b7ead866d253aef998'] = 'Payez par carte ou par compte PayPal';
 $_MODULE['<{paypal}bougie-la-francaise>integral_evolution_payment_ecab922bc1f9b5726e2a6deb4acaec4e'] = 'Retour au site du marchant.';

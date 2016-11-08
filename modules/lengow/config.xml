@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <module>
-            <name>lengow</name>
-            <displayName><![CDATA[Lengow]]></displayName>
-            <version><![CDATA[2.0.9]]></version>
-            <description><![CDATA[Nouveau module Lengow]]></description>
-            <author><![CDATA[Lengow]]></author>
-            <tab><![CDATA[export]]></tab>
-	<confirmUninstall>Etes-vous de vouloir désinstaller le module Lengow ?</confirmUninstall>
-            <is_configurable>1</is_configurable>
-            <need_instance>0</need_instance>
+<module>
+	<name>lengow</name>
+	<displayName><![CDATA[Lengow]]></displayName>
+	<version><![CDATA[2.2.0]]></version>
+	<description><![CDATA[With your Lengow plugin to Prestashop, quickly sell your products on Amazon, Ebay, Facebook, Google Shopping and more to reach new clients worldwide.  Choose amongst 1 800 marketing channels available !]]></description>
+	<author><![CDATA[Lengow]]></author>
+	<tab><![CDATA[export]]></tab>
+	<confirmUninstall>Are you sure you want to uninstall the Lengow module ?</confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
 	<limited_countries></limited_countries>
-        </module>
+</module>

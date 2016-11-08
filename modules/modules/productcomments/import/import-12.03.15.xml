@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+<recap_avis_0>
+    <membre>
+        <prenom>Pascaline</prenom>
+        <nom>Demnard</nom>
+        <age>55 ans</age>
+    </membre>
+    <avis>
+        <titre>A essayer de toute urgence !</titre>
+        <note_global>5</note_global>
+        <commentaire>J'adore quand j'ai le temps prendre un bain et me relaxer avec une bougie. Celle là est très agréable et donne une jolie lumière avec le verre dépoli blanc. L'odeur est juste merveilleuse, pas entêtante du tout. En plus, elle se consume bien sans faire de coulées sur le côté.</commentaire>
+        <date>2015-01-19 14:39:29</date>
+    </avis>
+    <produit>
+        <ref_produit>2432150</ref_produit>
+        <nom_produit>the-love-story</nom_produit>
+    </produit>
+</recap_avis_0>
+
+<recap_avis_1><membre><prenom>Christine</prenom><nom>Petey</nom><age>58 ans</age></membre>
+<avis><titre>Super produit</titre>
+<note_global>5</note_global>
+<commentaire>Le produit est super bien présenter , la senteur agréable pas entétante</commentaire>
+<date>2015-02-14 22:28:21</date></avis>
+<produit><ref_produit>2387465</ref_produit><nom_produit>coffret-bougie-parfumee-45h-fleur-d-oranger</nom_produit></produit></recap_avis_1>
+
+<recap_avis_2><membre><prenom>Odile</prenom><nom>Mercier</nom><age>57 ans</age></membre>
+<avis><titre>très bel objet décoratif</titre>
+<note_global>5</note_global>
+<commentaire>c est vraiment une belle bougie avec un décor original. le parfum qu elle dégage en se consumant très lentement est tout simplement divin..&#13;
+je trouve que ces bougies sont de veritables objet de décorations...&#13;
+je pense que je vais racheter quelques bougies pour offrir et aussi pour moi</commentaire>
+<date>2015-03-03 21:52:44</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_2>
+
+<recap_avis_3><membre><prenom>Sandrine</prenom><nom>Coudray</nom><age>35 ans</age></membre>
+<avis><titre>Esthétique et très chic</titre>
+<note_global>5</note_global>
+<commentaire>j'aime beaucoup mettre des bougies dans ma maison pour l'ambiance, de plus certaines fois quand je fais des plats qui sentent fort les bougies parfumées permettent de "rafraichir" mon intérieur.&#13;
+Mes amies partage ce gout de l'esthétique et de la modernité et adorent ce produit tres chic&#13; </commentaire>
+<date>2015-02-18 22:04:57</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_3>
+
+<recap_avis_4><membre><prenom>Martine</prenom><nom>Mouroux</nom><age>55 ans</age></membre>
+<avis><titre>emballée!Superbe bougie!</titre>
+<note_global>4.5</note_global>
+<commentaire>senteur discrète mais efficace,laisse un doux parfum dans la pièce,mème une fois éteinte,de plus(ce qui ne gache rien bien au contraire)joli look,très originale.</commentaire>
+<date>2015-02-24 19:44:54</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_4>
+
+<recap_avis_6><membre><prenom>Christiane</prenom><nom>Datour</nom><age>54 ans</age></membre>
+<avis><titre>conquise</titre>
+<note_global>5</note_global>
+<commentaire>j'ai été conquise par l'emballage qui m'a plu et que je ne vais pas jeté car c'est trop joli, j'ai intégré la bougie parmi mes petits bibelots avec facilité, son parfum oriental, son design et sa contenance a fait l'unanimité de tous, la pièce est divinement parfumée après que la bougie soit éteinte</commentaire>
+<date>2015-02-19 13:54:10</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_6>
+
+<recap_avis_7><membre><prenom>Monique</prenom><nom>Colombet</nom><age>64 ans</age></membre>
+<avis><titre>une véritable surprise qualité</titre>
+<note_global>5</note_global>
+<commentaire>une véritable surprise qualité en ouvrant la boite de la bougie : son poids, important, sa jolie couleur blanche bien uniforme, le graphisme "très parisien" de son verre sobre et chic, le parfum qu'elle exhale dès l'ouverture. Un très bel article, luxueux qui rend son intérieur plus feutré, plus élégant... Son doux parfum envahit la pièce d'une odeur suave et apaisante, sa jolie flamme qui brûle sans fumée est très reposante... le fait que ce soit un article de qualité française, bien conçu, que le parfum soit issu de la ville de Grasse, tout cela valait la peine d'être précisé...</commentaire>
+<date>2015-03-10 15:30:06</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_7>
+
+<recap_avis_9><membre><prenom>Magali</prenom><nom>Martin</nom><age>39 ans</age></membre>
+<avis><titre>Un plaisir à voir et à sentir</titre>
+<note_global>4</note_global><commentaire>Un plaisir à voir et à sentir. Moment agréable quand la bougie est allumée et odeur invitant à se poser. Le design s’intègre bien dans umon intérieur.</commentaire>
+<date>2015-02-02 13:46:47</date></avis>
+<produit><ref_produit>2432150</ref_produit><nom_produit>the-love-story</nom_produit></produit></recap_avis_9>
+
+<recap_avis_10><membre><prenom>Madeleine</prenom><nom>Le masson</nom><age>62 ans</age></membre>
+<avis><titre>fan de Bougies à la française</titre>
+<note_global>5</note_global>
+<commentaire>je ne connaissais pas "Bougies à la française, mais je pense que je vais devenir une fan. Le contenant est très joli, et le mélange floral de la "girly  flower" me plait énormément.</commentaire>
+<date>2015-02-20 02:22:49</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_10>
+
+<recap_avis_11><membre><prenom>Djemila</prenom><nom>Malek</nom><age>50 ans</age></membre>
+<avis><titre>un  avis plus que favorable</titre>
+<note_global>4.5</note_global>
+<commentaire>je l'ai posé sur ma table de salon et son parfum est envoutant, mes amis et familles ont été plus que séduits et je pense que l'on est tous convaincu du résultat et on en rachètera avec plaisir</commentaire>
+<date>2015-02-24 18:12:45</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_11>
+
+<recap_avis_12><membre><prenom>Stephanie</prenom><nom>luciowicz</nom><age>35 ans</age></membre>
+<avis><titre>Senteur délicate et élégante</titre>
+<note_global>4.5</note_global>
+<commentaire>J'ai été agréablement surprise par le packaging de la bougie. Il est solide, élégant, le carton est satiné. Avant de l'ouvrir, on se dit déjà que l'on a affaire à un produit de qualité. Une fois ouverte, on peut déjà sentir le parfum délicat. Je lui ai tout de suite cherché une place dans mon salon; elle est parfaite sur mon petit meuble "shabby"! Une fois allumée, l'odeur ne se fait pas sentir tout de suite, mais ma pièce est grande (23 m2) la flamme est belle, la bougie brûle bien. Avec le côté "mat" du photophore et la flamme, la lumière est belle. Au bout de 20 minutes, le parfum a emplit la pièce, et en rentrant, mon mari a trouvé que cela sentait bon! L'année dernière j'ai acheté un bougie parfumée dans un magasin ikéa, j'ai été affreusement déçue; certes elle n'était pas chère, mais j'ai vite compris pourquoi: si la bougie sentait bon éteinte, une fois allumée, le parfum entêtant faisait penser à un désodorisant pour toilettes, et comble du comble, au bout de 10 minutes, j'ai dû l'éteindre car elle me piquait le nez et me faisait éternuer. Au final elle était chère pour ce que c'était puisque, insupportable à l'intérieur, son usage s'est finalement cantonné à "photophore dans mon jardin". Maintenant que j'ai testée cette bougie "La française", je me rends compte que le prix est justifié et je suis réconciliée avec les bougies d'intérieur. J'ai parlé de cette bougies à quelques amies et collègues, je l'ai amenée au bureau pour la montrer à deux collègues que je savais intéressées et je pense qu'elles vont  en acheter une. Un collègue masculin qui était là à ce moment a dit que ça lui ferait une idée de cadeau. Je suis donc très satisfaite du produit!</commentaire>
+<date>2015-03-03 19:36:44</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_12>
+
+<recap_avis_13><membre><prenom>Jessica</prenom><nom>Boos</nom><age>35 ans</age></membre>
+<avis><titre>tres belle bougie</titre>
+<note_global>5</note_global>
+<commentaire>c'est une bougie dans un verre colores, tres beau, une bonne contenance au niveau de la bougie, l'odeur parfait.&#13;
+L'emballage tres bien.&#13;
+J'en racheterais pour offrir.</commentaire>
+<date>2015-02-14 09:32:15</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_13>
+
+<recap_avis_14><membre><prenom>séverine</prenom><nom>lafaye</nom><age>42 ans</age></membre>
+<avis><titre>Bougie parfumée violette</titre>
+<note_global>5</note_global>
+<commentaire>J'aime beaucoup l'odeur et le packaging.</commentaire>
+<date>2015-02-15 18:13:28</date></avis>
+<produit><ref_produit>2387345</ref_produit><nom_produit>coffret-bougie-parfumee-45h-violette-de-toulouse</nom_produit></produit></recap_avis_14>
+
+<recap_avis_15><membre><prenom>Carole</prenom><nom>Vernier</nom><age>39 ans</age></membre>
+<avis><titre>Super bougie, cadeau original</titre>
+<note_global>5</note_global>
+<commentaire>Mes amies et moi avons trouvées cette bougie super jolie.Je ne connaissais pas cette marque de bougie,je suis contente de l'avoir découverte.Je trouve que ce genre de bougie est un cadeau originale à offrir,je pense en racheter pour quelques cadeaux pour mes amies.</commentaire>
+<date>2015-01-15 08:33:03</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_15>
+
+<recap_avis_16><membre><prenom>Ines</prenom><nom>Ibanez</nom><age>36 ans</age></membre>
+<avis><titre>Tres agreablement surprise</titre>
+<note_global>4.5</note_global>
+<commentaire>Je ne connaissais pas du tout "Bougies La Francaise" j en est etait agreablement surprise. Le produit est de tres bonne qualite cela se vois a la facon de bruler et a l'odeur tres agreable qui subsite apres l'arret de la bougie . Je recommanderai tres certainement sur le site pour un voyage plus long :)...</commentaire>
+<date>2015-03-07 08:06:04</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_16>
+
+<recap_avis_17><membre><prenom>Josette</prenom><nom>Journiac</nom><age>52 ans</age></membre>
+<avis><titre>Une bougie avec une odeur envoûtante et un packaging actuel</titre>
+<note_global>5</note_global>
+<commentaire>Une agréable découverte avec cette bougie que j'ai placé dans mon institut de beauté afin de la partager avec ma clientèle.&#13;
+Girly flower plait pour son délicat parfum et sa sobriété.</commentaire>
+<date>2015-01-22 21:36:18</date></avis>
+<produit><ref_produit>2432140</ref_produit><nom_produit>girly-flower</nom_produit></produit></recap_avis_17>
+
+<recap_avis_21><membre><prenom>Josette</prenom><nom>Borg</nom><age>62 ans</age></membre>
+<avis><titre>A propos d'une flamme</titre>
+<note_global>5</note_global><commentaire>Faire brûler une bougie n'est pas seulement craquer une allumette c'est plus qu'un geste, c'est un rituel, ou bien pour un parfum, pour personnaliser son intérieur, pour une lumière dans la nuit, pour une lueur d'espoir, pour ne pas se sentir seule, pour accompagner une soirée entre amis et faire partager en l’occurrence une découverte qui
+devrait déboucher sur l'envie d'acquérir quelque chose que vous avez apprécié et aimeriez bien ramener chez vous, c'est comme cela que je l'ai perçu, chez mes amis qui ne connaissaient pas le produit !</commentaire>
+<date>2015-02-25 09:48:48</date></avis>
+<produit><ref_produit>2391210</ref_produit><nom_produit>bougie-parfumee-40h-ambre-rare</nom_produit></produit></recap_avis_21>
+
+<recap_avis_23><membre><prenom>Vanessa</prenom><nom>Durand</nom><age>30 ans</age></membre>
+<avis><titre>Bougie de qualité</titre>
+<note_global>4</note_global>
+<commentaire>Le produit est plutôt bien apprécié par moi et mon entourage. Le design est très sympa et il s'intègre facilement dans mon salon. Le bémol étant l'odeur qui ne plaît pas à tout le monde (mais au moins c'est une VRAIE bougie parfumée).&#13;
+Je racheterai d'autres produits car ce sont vraiment des produits de qualité.</commentaire><date>2015-02-13 08:12:03</date></avis><produit><ref_produit>2432120</ref_produit><nom_produit>think-pink</nom_produit></produit></recap_avis_23>
+
+<recap_avis_24><membre><prenom>Alice</prenom><nom>Crosier</nom><age>28 ans</age></membre>
+<avis><titre>Bougie de grande qualité</titre>
+<note_global>5</note_global>
+<commentaire>Je ne connaissais pas la marque mais dorénavant je n'hésiterai pas à la recommander autour de moi, et à m'approvisionner chez Bougies La Française. J'ai été très surprise du parfum qu'on pouvait sentir avant même d'avoir la bougie en main. Une fois allumée, c'est un véritable plaisir : senteur gourmande, bougie au dessin girly, sobre et élégant. De A à Z, ce produit est de grande qualité.</commentaire>
+<date>2015-03-09 17:23:36</date></avis>
+<produit><ref_produit>2432120</ref_produit><nom_produit>think-pink</nom_produit></produit></recap_avis_24>
+
+<recap_avis_25><membre><prenom>Michelle</prenom><nom>Rigot</nom><age>58 ans</age></membre>
+<avis><titre>Agréablement surprise par la bougie Think pink</titre>
+<note_global>4,5</note_global>
+<commentaire>Ne connaissant pas "bougies la française" je suis agréablement surprise par le joli décor original dessiné sur support. Le parfum est bien présent mais pas trop entêtant. Une très bonne idée cadeau a offrir ou à s'offrir. Je l'ai montré à mes collègues qui vont aller voir le site sans tarder. En mettre dans chaque pièce de la maison.</commentaire><date>2015-02-18 08:40:30</date></avis>
+<produit><ref_produit>2432120</ref_produit><nom_produit>think-pink</nom_produit></produit></recap_avis_25>
+
+<recap_avis_26><membre><prenom>Fanny</prenom><nom>Artilheiro</nom><age>35 ans</age></membre>
+<avis><titre>Une jolie bougie</titre>
+<note_global>4</note_global>
+<commentaire>C est  un bon présent a faire pour son entourage &#13;
+Objet distingué&#13;
+Je pense en racheter pour faire un cadeau parfumé</commentaire>
+<date>2015-02-17 22:21:26</date></avis>
+<produit><ref_produit>2387316</ref_produit><nom_produit>bougie-parfumee-sous-cloche-poudre-de-riz</nom_produit></produit></recap_avis_26>
+
+<recap_avis_27><membre><prenom>Priscilla</prenom><nom>Orion</nom><age>27 ans</age></membre>
+<avis><titre>Voyage enivrant à Paris</titre>
+<note_global>5</note_global>
+<commentaire>Je ne connaissais pas cette marque et je suis agréablement surprise. Moi qui n'achète que très rarement des bougies car l'odeur ne dure pas là je dois avouer avoir eu un coup de coeur.&#13;
+la packaging donne vraiment envie de découvrir plus le produit et dès que l'on ouvre l'emballage le parfum est bien là, bien présent.&#13;
+le parfum reste quand on allume la bougie et dès qu'on l’éteins le parfum est encore présent. &#13;
+je recommande vivement ce produit et n'hésiterais pas à en racheter pour offrir ainsi que pour ma maison.</commentaire>
+<date>2015-01-23 11:14:24</date></avis>
+<produit><ref_produit>2432120</ref_produit><nom_produit>think-pink</nom_produit></produit></recap_avis_27>
+
+<recap_avis_28><membre><prenom>Nathalie</prenom><nom>Leclercq</nom><age>47 ans</age></membre>
+<avis><titre>La madeleine de Proust</titre>
+<note_global>5</note_global>
+<commentaire>j'ai présenté la bougie à des copines et elle aime son côté épurée et surtout son parfum. l'odeur c'est la madeleine de Proust. les produits sont emprunts de finesse. J'ai aussi craqué pour la collection boudoir.</commentaire>
+<date>2015-02-14 09:00:27</date></avis>
+<produit><ref_produit>2386800</ref_produit><nom_produit>coffret-bougie-parfumee-50h-petite-madeleine</nom_produit></produit></recap_avis_28>
+
+<recap_avis_29><membre><prenom>Christine</prenom><nom>Jourdan</nom><age>65 ans</age></membre>
+<avis><titre>séduite par l'originalité de la bougie</titre>
+<note_global>5</note_global>
+<commentaire>je ne connaissais pas auparavant mais je suis séduite. personnellement je l'ai trouvé sublime élégante et originale&#13;
+sur une table pour un repas l'idéal&#13;
+mes amies ont été conquises et surprise en plus lorsque j'ai montré l'élégant emballage</commentaire>
+<date>2015-02-11 12:37:13</date></avis>
+<produit><ref_produit>2432110</ref_produit><nom_produit>book-addict</nom_produit></produit></recap_avis_29>
+
+<recap_avis_31><membre><prenom>Laetitia</prenom><nom>Xercavins</nom><age>27 ans</age></membre>
+<avis><titre>Belle bougie, joli parfum</titre>
+<note_global>5</note_global>
+<commentaire>Le produit m'a beaucoup plus et leur qualité me donne envie d'en racheté. Lorsque j'ai parler et montrer cette bougie a mes amis, ils l'on trouver belle,  agréable avec un très joli parfum.</commentaire>
+<date>2015-02-13 14:34:34</date></avis>
+<produit><ref_produit>2387336</ref_produit><nom_produit>bougie-parfumee-sous-cloche-rose-ancienne</nom_produit></produit></recap_avis_31>
+
+<recap_avis_33><membre><prenom>Denise</prenom><nom>Baudin</nom><age>59 ans</age></membre>
+<avis><titre>Bougie parfumée de très bonne qualité</titre>
+<note_global>5</note_global>
+<commentaire>Je trouve ce produit intéressant,de très bonne qualité,l'odeur est agréable.&#13;
+Je ne connaissais pas cette marque de bougie moi qui adore ces produits&#13;
+Désormais , je serais une cliente fidèle&#13;
+Mes amies ont également adoré et sont prêtes à en acheter&#13;
+</commentaire>
+<date>2015-02-24 11:51:25</date>
+</avis><produit><ref_produit>2391325</ref_produit><nom_produit>bougie-naturelle-parfumee-40h-fleur-d-oranger-jasmin</nom_produit></produit></recap_avis_33>
+
+<recap_avis_34><membre><prenom>Odile</prenom><nom>Duarte</nom><age>33 ans</age></membre>
+<avis><titre>Packaging très agréable</titre>
+<note_global>5</note_global>
+<commentaire>Le packaging est soft et agréable. On peut disposer la bougie partout sans que le regard se pose dessus (va dans tous les décors) &#13;
+Je vais racheter ce produit et tester les autres parfums de cette gamme!</commentaire>
+<date>2015-02-24 19:00:03</date></avis>
+<produit><ref_produit>2432110</ref_produit><nom_produit>book-addict</nom_produit></produit></recap_avis_34>
+
+<recap_avis_36><membre><prenom>Laure</prenom><nom>Gascon</nom><age>53 ans</age></membre>
+<avis><titre>Bougie d'excellente qualité</titre>
+<note_global>5</note_global>
+<commentaire>La bougie est d'excellente qualité se consume de façon uniforme pas de perte, mes amis ont trouvé le packaging très réussi; très actuel. Une fois la bougie terminée je la garderai comme objet de déco et la réutiliserai en mettent une bougie chauffe plat à l'intérieur. La gamme de produits est très complète et chacun peut trouver l'univers olfactif qui lui convient pour ma part je vais tester d'autre parfum comme la fleur d'oranger ou bien l'univers régressif . Je suis une nouvelle book addict. Merci pour  cette belle découverte !</commentaire>
+<date>2015-03-08 12:15:58</date></avis>
+<produit><ref_produit>2432110</ref_produit><nom_produit>book-addict</nom_produit></produit></recap_avis_36>
+
+<recap_avis_37><membre><prenom>Agnes</prenom><nom>Blanquier</nom><age>47 ans</age></membre>
+<avis><titre>Une bougie qui rappelle la vie parisienne</titre>
+<note_global>5</note_global>
+<commentaire>Une bougie qui rappelle la vie parisienne.... Son emballage coloré renferme une bougie présentée dans un très classe verre blanc orné d un joli dessin des parisiennes. La bougie Book addict nous transporte  le long des quais de la seine avec des senteurs de bergamote, de baies de roses, de feuilles de violettes avec des notes de cuir cèdre et patchouli.</commentaire>
+<date>2015-02-14 19:31:13</date></avis>
+<produit><ref_produit>2432110</ref_produit><nom_produit>book-addict</nom_produit></produit></recap_avis_37>
+
+<recap_avis_39><membre><prenom>Patricia</prenom><nom>Nicard</nom><age>49 ans</age></membre>
+<avis><titre>Une bougie sublime, originale au parfum varié</titre>
+<note_global>4.5</note_global>
+<commentaire>Toute nouvelle addict au bougie j'ai trouvé cette petite merveille de "bougie la Française" vraiment originale tant par le design du support que par les fragrances délivrées. Une bougie qui fait sensation et qui décore magnifiquement diverses pièces de la maison. 100% française, c'est une raison de plus pour l'adopter. J'ai découvert la marque avec grand enthousiasme et dorénavant je compte bien recommander sur le site pour mes futurs cadeaux. Seul bémol le parfum s'il est très prononcé et très agréable lorsque la bougie est éteinte il ne se diffuse pas assez et n'est pas assez prononcé lors de la combustion.</commentaire>
+<date>2015-02-14 11:22:13</date></avis>
+<produit><ref_produit>2432130</ref_produit><nom_produit>hype-nail-bar</nom_produit></produit></recap_avis_39>
+
+<recap_avis_40><membre><prenom>Genevieve</prenom><nom>Quennehen</nom><age>55 ans</age></membre>
+<avis><titre>Conquise par le parfum de cette bougie</titre>
+<note_global>5</note_global>
+<commentaire>Lorsque j'ai ouvert le colis, je fus surprise par l'emballage de la bougie, quelle jolie boîte! On peut l'offrir en cadeau! ensuite, j'ai découvert la bougie et de suite le parfum m'a conquise. Je l'ai approchée de mon mari qui a trouvé ce parfum "classe". J'en ai profité pour partager ma découverte auprès de mes collègues de travail, ainsi que ma famille et quelques voisins! tous furent conquis! Le doux parfum embaume la pièce et n'est pas entêtant, c'est vraiment super! Aucune personne de mon entourage connaissait ces bougies bien de chez nous dans le joli verre! Et franchement je recommande et j'en racheterai!</commentaire>
+<date>2015-03-02 18:39:10</date></avis>
+<produit><ref_produit>2432130</ref_produit><nom_produit>hype-nail-bar</nom_produit></produit></recap_avis_40>
+
+<recap_avis_41><membre><prenom>Stephanie</prenom><nom>Cleret</nom><age>42 ans</age></membre>
+<avis><titre>Bougie de très bonne qualité</titre>
+<note_global>5</note_global>
+<commentaire>Produit de très bonne qualité que j'ai présenté à mes amis , tout le monde la trouve très bien, pour l'odeur qu'elle dégage et pour le design .&#13;
+Je ne connaissais pas la marque Bougies la Française... je suis conquise ! Mettant des bougies parfumées dans mon intèrieur, je vais en racheter tellement j'ai été séduite par cette marque .&#13;
+C'est un produit de bonne qualité de plus c'est français que demander de plus .&#13;
+Mes amis compte en acheter aussi .</commentaire>
+<date>2015-01-04 20:57:30</date></avis>
+<produit><ref_produit>2432130</ref_produit><nom_produit>hype-nail-bar</nom_produit></produit></recap_avis_41>
+
+<recap_avis_42><membre><prenom>Amel</prenom><nom>Zrann</nom><age>37 ans</age></membre>
+<avis><titre>Bougie raffinée et élégante</titre>
+<note_global>5</note_global>
+<commentaire>C'est un produit raffiné et élégant. J'ai fais la connaissance de ce produit et je suis ravie! La présentation est romantique et rêveuse. L'atmosphère est doux et zen. Le parfum fin et agréable. La bougie s'insère facilement dans le décor. Pour des moments amoureux, j'y penserai!et les copines aussi!!</commentaire>
+<date>2015-01-19 11:59:57</date></avis>
+<produit><ref_produit>2432130</ref_produit><nom_produit>hype-nail-bar</nom_produit></produit></recap_avis_42>
+
+<recap_avis_47><membre><prenom>Assa</prenom><nom>Fofana</nom><age>33 ans</age></membre>
+<avis><titre>Bougie de qualité supérieure</titre>
+<note_global>5</note_global>
+<commentaire>J'étais avec des amies quand j'ai reçu mon colis, donc quand je l'ai ouvert, là surprise.... Que contenait ce gros colis...? La Bougie Rendez vous à Paris... De suite je l'ai déballée et faites sentir à mes amies ainsi qu'à ma mère et là ont été toutes d'accord que c'est une bougie de qualité supérieure, faite par un artiste dont le sillage enivre et que l'on est pas prête de retrouver au supermarché du coin. D'ailleurs ça m'a donné quelques idées la Saint Valentin approche ;-). Je rachèterai des produits de cette marque Bougies la Française!</commentaire>
+<date>2015-02-11 17:59:27</date></avis>
+<produit><ref_produit>2432130</ref_produit><nom_produit>hype-nail-bar</nom_produit></produit></recap_avis_47>
+
+<recap_avis_48><membre><prenom>Sylvie</prenom><nom>Storchi</nom><age>54 ans</age></membre>
+<avis><titre>Bougie parfumée de qualité</titre>
+<note_global>4.5</note_global>
+<commentaire>j'ai apprécié cette bougie et son packaging de qualité&#13;
+elle est idéale pour faire un cadeau qui fera plaisir&#13;</commentaire>
+<date>2015-02-14 10:26:03</date></avis>
+<produit><ref_produit>2387455</ref_produit><nom_produit>coffret-bougie-parfumee-45h-jasmin-antique</nom_produit></produit></recap_avis_48>
+
+<recap_avis_49><membre><prenom>Celine</prenom><nom>Lichti</nom><age>36 ans</age></membre>
+<avis><titre>L odeur est à tomber</titre>
+<note_global>5</note_global>
+<commentaire>Déjà à l ouverture du colis waw super packaging et l odeur est à tomber vraiment humm. Je ne suis vraiment pas déçu.</commentaire>
+<date>2015-02-14 18:37:19</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_49>
+
+<recap_avis_50><membre><prenom>Sylvie</prenom><nom>Mendy</nom><age>28 ans</age></membre>
+<avis><titre>Douce odeur</titre>
+<note_global>5</note_global>
+<commentaire>Rien qu'en ouvrant la boîte, l'odeur m'a tout de suite attirer.&#13;
+J'ai allumée ma bougie juste après le sport, à la sortie de ma douche et une douce odeur m'a accueilli.&#13;
+Mes amis ont adorés le packaging ainsi que la bougie en elle même.&#13;
+Surtout les filles!&#13;
+Je rachèterai cette bougie et les autres senteurs.</commentaire>
+<date>2015-03-05 18:39:21</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_50>
+
+<recap_avis_51><membre><prenom>Roselyne</prenom><nom>Boehler</nom><age>61 ans</age></membre>
+<avis><titre>Un très beau verre</titre>
+<note_global>4.5</note_global>
+<commentaire>La bougie est très joliment  présenté dans un beau verre,les illustrations sur celui-ci sont très bien faites mais je n'ai pas pu encore l'utiliser mais certainement cela va se faire prochainement. Avec mon mari qui a également apprécié la présentation de cette bougie nous attendons les chaudes soirées d'été pour pouvoir sentir ce parfum qui à l'air bien parfumé. &#13;
+Cela m'a donné envie d'acheter les autres modèles.</commentaire>
+<date>2015-02-18 11:55:20</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_51>
+
+<recap_avis_52><membre><prenom>Kelly</prenom><nom>Faucherand</nom><age>27 ans</age></membre>
+<avis><titre>Bougie super jolie</titre>
+<note_global>4.5</note_global>
+<commentaire>Super jolie, j'en rachèterais.&#13;
+Mes amies ont complètement craquer sur le packaging est d'ailleurs elle compte même s'en procurer une</commentaire>
+<date>2015-01-16 21:51:52</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_52>
+
+<recap_avis_53><membre><prenom>Corinne</prenom><nom>De cock</nom><age>49 ans</age></membre>
+<avis><titre>la bougie la Française</titre>
+<note_global>5</note_global>
+<commentaire>j'aime trop cette bougie qui est original,il dégage une bonne odeur.Mes amies on toute dit qu'elles vont en commander une .Je suis très contente de l'avoir acheté... Et je vais même en recommander.</commentaire>
+<date>2015-01-04 21:04:03</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_53>
+
+<recap_avis_54><membre><prenom>Aurelie</prenom><nom>Demai</nom><age>31 ans</age></membre>
+<avis><titre>agréablement surpris</titre>
+<note_global>5</note_global>
+<commentaire>moi je les de suite aimer pour la déco elle sur un meuble bas avec deux autre copine bougie j'aime beaucoup je les allumer une fois pour enfin la testé et j'ai étais conquis les copine l'on vite remarquer "et sympas ta bougie tu la acheter ou ? " .&#13;
+une belle découverte :) </commentaire>
+<date>2015-02-26 21:52:36</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_54>
+
+<recap_avis_55><membre><prenom>Beatrice</prenom><nom>Berthaud</nom><age>52 ans</age></membre>
+<avis><titre>Bluffée par l'emballage tres joli et la senteur</titre>
+<note_global>5</note_global>
+<commentaire>Bluffée par l'emballage tres joli et la senteur&#13;
+Bougie de bonne qualité et originale</commentaire>
+<date>2015-02-11 10:59:12</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_55>
+
+<recap_avis_56><membre><prenom>Virginie</prenom><nom>Lopez</nom><age>34 ans</age></membre>
+<avis><titre>Bougie extra</titre>
+<note_global>5</note_global><commentaire>j'adore la deco de la bougie ainsi que l'odeur ! son parfum est extra, je suis très satisfaire du produits et elles sont une bonne idée cadeau !&#13;
+merci !</commentaire>
+<date>2015-03-10 16:06:23</date></avis>
+<produit><ref_produit>2432160</ref_produit><nom_produit>bobo-brunch</nom_produit></produit></recap_avis_56></root>

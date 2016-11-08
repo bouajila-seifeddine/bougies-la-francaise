@@ -125,7 +125,9 @@
 /* Template 1 (Collections, universe) */
 
 #template_1 {}
-#template_1 h3.secondary-title{
+#template_1 h3.secondary-title,
+#template_2 h3.secondary-title,
+#template_3 h3.secondary-title{
 	color: #baa58d;
     font-size: 30px;
     font-weight: 200;
@@ -133,11 +135,7 @@
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
-}
-#template_1 h3.secondary-title,
-#template_2 h3.secondary-title {
-  /*font-size: 24px !important;*/
-  margin-bottom:50px;
+	margin-bottom:50px;
 }
 #template_1 .template-1-block,
 #template_2 .template-2-block {
@@ -338,6 +336,7 @@
 	position:relative;
 	margin-top:-50px;
 	text-align:center;
+	margin-bottom:2px;
 	/*height:470px;*/
 }
 #cms #center_column .ambiance-head img{
@@ -411,7 +410,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1200px) {
 	#template_1 .template-1-block .template-1-block-content .template-1-block-container {
 		margin:0 0 15px;
 	}
@@ -429,7 +428,8 @@
     font-size: 76px;
     line-height:1;
   }
-}@media only screen and (max-width : 480px) {
+}
+@media only screen and (max-width : 480px) {
 	#template_3 #first_section .slug {
     width: auto;
   }
@@ -438,7 +438,7 @@
   #template_3 #fourth_section h3.dragoniscoming-title span { font-size: 30px; }
 
   #template_1 .template-1-block, #template_2 .template-2-block { padding: 20px; }
-  #template_1 .template-1-block .template-1-block-content .template-1-block-pics { margin-top: 20px; }
+  #template_1 .template-1-block .template-1-block-content .template-1-block-pics { margin-top: 20px; padding:0; }
   #template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description { padding: 15px; }
   #template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description h4, 
   #template_2 .template-2-block .template-2-block-content .template-2-block-title h4 {font-size: 20px;}
@@ -450,4 +450,9 @@
   
 }
 
+@media only screen and (max-width : 480px) {
+	#template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description h4, 
+	#template_2 .template-2-block .template-2-block-content .template-2-block-title h4 {font-size: 18px;}
+	
+}
 /*# sourceMappingURL=cms.css.map */

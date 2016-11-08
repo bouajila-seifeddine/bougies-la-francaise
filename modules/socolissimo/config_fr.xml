@@ -2,11 +2,12 @@
 <module>
 	<name>socolissimo</name>
 	<displayName><![CDATA[Colissimo Simplicit&eacute;]]></displayName>
-	<version><![CDATA[2.10.1]]></version>
+	<version><![CDATA[3.0.1]]></version>
 	<description><![CDATA[Proposez &agrave; vos clients 5 modes de livraison via La Poste.]]></description>
 	<author><![CDATA[Quadra Informatique]]></author>
 	<tab><![CDATA[shipping_logistics]]></tab>
+	<confirmUninstall><![CDATA[La suppression du module entrainera également la suppression des transpoteurs assocés]]></confirmUninstall>
 	<is_configurable>1</is_configurable>
-	<need_instance>1</need_instance>
+	<need_instance>0</need_instance>
 	<limited_countries></limited_countries>
 </module>

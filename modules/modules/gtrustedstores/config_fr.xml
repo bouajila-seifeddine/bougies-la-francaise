@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>gtrustedstores</name>
+	<displayName><![CDATA[Google Marchands de Confiance]]></displayName>
+	<version><![CDATA[1.1.8]]></version>
+	<description><![CDATA[Profitez du programme Google Marchands de Confiance et augmentez vos ventes]]></description>
+	<author><![CDATA[Business Tech]]></author>
+	<tab><![CDATA[smart_shopping]]></tab>
+	<confirmUninstall><![CDATA[Voulez-vous vraiment supprimer le module Google Marchands de Confiance ?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

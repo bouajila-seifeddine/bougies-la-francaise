@@ -1,0 +1,1 @@
+<div id="scancube_jzspin"></div>{$js}

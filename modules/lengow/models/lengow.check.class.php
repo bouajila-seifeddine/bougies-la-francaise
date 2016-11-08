@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,8 +14,8 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -25,20 +25,14 @@ try
 {
 	loadFile('option');
 	loadFile('connector');
+	loadFile('connectorv2');
 } catch(Exception $e)
 {
-
-	try
-	{
-		loadFile('core');
-		LengowCore::log($e->getMessage(), null, 1);
-	} catch (Exception $ex)
-	{
-		echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
-	}
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
 }
 
-class LengowCheck {
+class LengowCheck
+{
 
 	static private $_module = '';
 
@@ -47,13 +41,16 @@ class LengowCheck {
 
 	private static $_FILES_TO_CHECK = array (
 									'lengow.customer.class.php',
+									'lengow.carrier.class.php',
+									'lengow.feed.class.php',
+									'lengow.file.class.php',
 									);
 	/**
 	* Get header table
 	*
 	* @return string
 	*/
-	private static function _getAdminHeader()
+	private static function getAdminHeader()
 	{
 		return '<table class="table" cellpadding="0" cellspacing="0"><tbody>';
 	}
@@ -64,7 +61,7 @@ class LengowCheck {
 	* @param array $checklist
 	* @return string|null PS_MAIL_METHOD
 	*/
-	private static function _getAdminContent($checklist = array())
+	private static function getAdminContent($checklist = array())
 	{
 		if (empty($checklist))
 			return null;
@@ -106,7 +103,7 @@ class LengowCheck {
 	*
 	* @return string
 	*/
-	private static function _getAdminFooter()
+	private static function getAdminFooter()
 	{
 		return '</tbody></table>';
 	}
@@ -180,45 +177,20 @@ class LengowCheck {
 	{
 		if (!self::isCurlActivated())
 			return false;
-
-		$id_customer = (int)Configuration::get('LENGOW_ID_CUSTOMER');
-		$token = Configuration::get('LENGOW_TOKEN');
-		$connector = new LengowConnector($id_customer, $token);
-		$result = $connector->api('authentification');
-		if ($result['return'] == 'Ok')
+		$account_id = (integer)LengowCore::getIdAccount();
+		$connector  = new LengowConnector(LengowCore::getAccessToken(), LengowCore::getSecretCustomer());
+		$result = $connector->connect();
+		if (isset($result['token']) && $account_id != 0 && is_integer($account_id))
 			return true;
 		else
-			return $result['ip'];
-	}
-
-	/**
-	* Get website IP
-	*
-	* @return string IP Address
-	*/
-	public static function getWebsiteAddress()
-	{
-		if (!self::isCurlActivated())
 			return false;
-
-		// Fake customer id to force API to return IP
-		$id_customer = 0;
-		$token = Configuration::get('LENGOW_TOKEN');
-
-		$connector = new LengowConnector((int)$id_customer, $token);
-		$result = $connector->api('authentification');
-
-		if (is_array($result) && array_key_exists('ip', $result))
-			return $result['ip'];
-		else
-			return 'IP not found';
 	}
 
 	/**
-	* Check if config folder is writable
-	*
-	* @return boolean
-	*/
+	 * Check if config folder is writable
+	 *
+	 * @return boolean
+	 */
 	public static function isConfigWritable()
 	{
 		$config_folder = dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'config';
@@ -226,10 +198,10 @@ class LengowCheck {
 	}
 
 	/**
-	* Check disabled product option
-	*
-	* @return boolean
-	*/
+	 * Check disabled product option
+	 *
+	 * @return boolean
+	 */
 	public static function isDisabledProduct()
 	{
 		return (Configuration::get('LENGOW_EXPORT_DISABLED') == true) ? false : true;
@@ -240,41 +212,30 @@ class LengowCheck {
 	*
 	* @return array
 	*/
-	private static function _getCheckListArray()
+	private static function getCheckListArray()
 	{
 		$checklist = array();
 
 		self::$_module = new Lengow();
+		
+		$ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
+		if (Configuration::get('LENGOW_SWITCH_V3'))
+			$is_valid = (int)self::isValidAuth() == 1 ? 1 : 0;
+		else
+			$is_valid = (int)self::isValidAuthV2() == 1 ? 1 : 0;
+		$checklist[] = array(
+			'message' 	=> self::$_module->l('Lengow authentification', 'lengow.check.class'),
+			'help' 		=> '',
+			'state' 	=> $is_valid,
+			'additional_infos' => self::$_module->l('For this step, you need to have a Lengow account to get your Client ID, Group ID and API key.', 'lengow.check.class').'<br/>'
+						.self::$_module->l('Contact us if you don\'t have a Lengow account :', 'lengow.check.class').'<br/>'
+						.self::$_module->l('By email :', 'lengow.check.class').' <a href="mailto:'.self::$_module->l('contact@lengow.com', 'lengow.check.class').'" target="_blank">'.self::$_module->l('contact@lengow.com', 'lengow.check.class').'</a><br/>'
+						.self::$_module->l('By phone : +44 2033182631', 'lengow.check.class').'<br/>'
+						.self::$_module->l('Already a client :', 'lengow.check.class').' <a href="https://solution.lengow.com/api/" target="_blank">'
+						.self::$_module->l('go to Lengow dashboard', 'lengow.check.class').'</a><br/>'
+						.sprintf(self::$_module->l('Make sure your website IP (%s) address is filled in your Lengow Dashboard.', 'lengow.check.class'), $ip),
+		);
 
-		$checklist[] = array(
-			'message' => self::$_module->l('Lengow needs the CURL PHP extension', 'lengow.check.class'),
-			'help' => self::$_module->l('The CURL extension is not installed or enabled in your PHP installation. Check the manual for information on how to install or enable CURL on your system.', 'lengow.check.class'),
-			'help_link' => 'http://www.php.net/manual/en/curl.setup.php',
-			'help_label' => self::$_module->l('Go to Curl PHP extension manual', 'lengow.check.class'),
-			'state' => (int)self::isCurlActivated()
-		);
-		$checklist[] = array(
-			'message' => self::$_module->l('Lengow needs the SimpleXML PHP extension', 'lengow.check.class'),
-			'help' => self::$_module->l('The SimpleXML extension is not installed or enabled in your PHP installation. Check the manual for information on how to install or enable SimpleXML on your system.', 'lengow.check.class'),
-			'help_link' => 'http://www.php.net/manual/en/book.simplexml.php',
-			'help_label' => self::$_module->l('Go to SimpleXML PHP extension manual', 'lengow.check.class'),
-			'state' => (int)self::isSimpleXMLActivated()
-		);
-		$checklist[] = array(
-			'message' => self::$_module->l('Lengow needs the JSON PHP extension', 'lengow.check.class'),
-			'help' => self::$_module->l('The JSON extension is not installed or enabled in your PHP installation. Check the manual for information on how to install or enable JSON on your system.', 'lengow.check.class'),
-			'help_link' => 'http://www.php.net/manual/fr/book.json.php',
-			'help_label' => self::$_module->l('Go to JSON PHP extension manual', 'lengow.check.class'),
-			'state' => (int)self::isJsonActivated()
-		);
-		$checklist[] = array(
-			'message' => self::$_module->l('Lengow authentification', 'lengow.check.class'),
-			'help' => self::$_module->l('Please check your Client ID, Group ID and Token API.', 'lengow.check.class'),
-			'help_link' => 'https://solution.lengow.com/api/',
-			'help_label' => self::$_module->l('Go to Lengow dashboard', 'lengow.check.class'),
-			'state' => (int)self::isValidAuth() == 1 ? 1 : 0,
-			'additional_infos' => sprintf(self::$_module->l('Make sure your website IP (%s) address is filled in your Lengow Dashboard.', 'lengow.check.class'), self::getWebsiteAddress())
-		);
 		$checklist[] = array(
 			'message' => self::$_module->l('Shop functionality', 'lengow.check.class'),
 			'help' => self::$_module->l('Shop functionality are disabled, order import will be impossible, please enable them in your products settings.', 'lengow.check.class'),
@@ -287,8 +248,8 @@ class LengowCheck {
 		);
 		$checklist[] = array(
 			'message' => self::$_module->l('Export disabled products', 'lengow.check.class'),
-			'help' => self::$_module->l('Disabled product are enabled in export, Marketplace order import will not work with this configuration.', 'lengow.check.class'),
-			'state' => (int)self::isDisabledProduct()
+			'help' => self::$_module->l('Disabled products are included in your feed : orders may not be imported. Make sure the "Force products" option is active.', 'lengow.check.class'),
+			'state' => self::isDisabledProduct() ? 1 : 0,
 		);
 		$checklist[] = array(
 			'message' => self::$_module->l('Prestashop plugin version', 'lengow.check.class'),
@@ -306,7 +267,7 @@ class LengowCheck {
 		if (Configuration::get('LENGOW_DEBUG'))
 		{
 			$checklist[] = array(
-				'message' => self::$_module->l('Mail configuration (Be carefull, debug mode is activated)', 'lengow.check.class'),
+				'message' => self::$_module->l('Mail configuration (Be careful, debug mode is activated)', 'lengow.check.class'),
 				'help' => self::getMailConfiguration(),
 				'state' => 2
 			);
@@ -323,9 +284,9 @@ class LengowCheck {
 	public static function getHtmlCheckList()
 	{
 		$out = '';
-		$out .= self::_getAdminHeader();
-		$out .= self::_getAdminContent(self::_getCheckListArray());
-		$out .= self::_getAdminFooter();
+		$out .= self::getAdminHeader();
+		$out .= self::getAdminContent(self::getCheckListArray());
+		$out .= self::getAdminFooter();
 		return $out;
 	}
 
@@ -378,14 +339,14 @@ class LengowCheck {
 	}
 
 	/**
-	* Show import logs
-	*
-	* @return string Html Content
-	*/
+	 * Show import logs
+	 *
+	 * @return string Html Content
+	 */
 	public static function getHtmlLogs($days = 10, $show_extra = false)
 	{
 		if (Tools::getValue('delete') != '')
-			LengowCore::deleteProcessOrder(Tools::getValue('delete'));
+			LengowLog::deleteLog(Tools::getValue('delete'), Tools::getValue('orderLine'));
 
 		$db = Db::getInstance();
 
@@ -424,8 +385,9 @@ class LengowCheck {
 		{
 			echo '<table class="gridtable">';
 			echo '<tr>';
+			echo '<th>ID</th>';
 			echo '<th>Lengow Order ID</th>';
-			echo '<th>Is processing</th>';
+			echo '<th>Lengow Order Line</th>';
 			echo '<th>Is finished</th>';
 			echo '<th>Message</th>';
 			echo '<th>Date</th>';
@@ -436,14 +398,15 @@ class LengowCheck {
 			foreach ($results as $row)
 			{
 				echo '<tr>';
+				echo '<td>'.$row['id'].'</td>';
 				echo '<td>'.$row['lengow_order_id'].'</td>';
-				echo '<td>'.($row['is_processing'] == 1 ? 'Yes' : 'No').'</td>';
+				echo '<td>'.$row['lengow_order_line'].'</td>';
 				echo '<td>'.($row['is_finished'] == 1 ? 'Yes' : 'No').'</td>';
 				echo '<td>'.$row['message'].'</td>';
 				echo '<td>'.$row['date'].'</td>';
 				if ($show_extra == true)
 					echo '<td>'.$row['extra'].'</td>';
-				echo '<td><a href="?action=logs&delete='.$row['lengow_order_id'].'">Supprimer</a></td>';
+				echo '<td><a href="?action=logs&delete='.$row['id'].'">Supprimer</a></td>';
 				echo '</tr>';
 			}
 			echo '</table>';
@@ -460,6 +423,32 @@ class LengowCheck {
 				$files_install[] = $file;
 		}
 		return $files_install;
+	}
+
+	/**
+	* Check API Authentification
+	*
+	* @return boolean
+	*/
+	public static function isValidAuthV2()
+	{
+		if (!self::isCurlActivated())
+			return false;
+		$id_customer = (int)Configuration::get('LENGOW_ID_CUSTOMER');
+		$token = Configuration::get('LENGOW_TOKEN');
+		$connector = new LengowConnectorV2($id_customer, $token);
+		try
+		{
+			$result = $connector->api('authentification');
+			if ($result['return'] == 'Ok')
+				return true;
+			else
+				return $result['ip'];
+		} catch (LengowApiExceptionV2 $lae)
+		{
+			return false;
+		}
+
 	}
 
 }

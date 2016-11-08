@@ -87,7 +87,7 @@ Disallow: /*fr/suivi-commande-invite
 Disallow: /*fr/confirmation-commande
 Disallow: /*fr/confirmation-commande
 # Sitemap
-Sitemap: http://www.bougies-la-francaise.com/sitemap.xml
+Sitemap: https://www.bougies-la-francaise.com/1_fr_0_sitemap.xml
 User-agent: Googlebot
 Disallow:
 

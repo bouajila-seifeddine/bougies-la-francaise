@@ -29,6 +29,13 @@
 <!--[if gt IE 8]> <html class="no-js ie9"{if isset($language_code) && $language_code} lang="{$language_code|escape:'html':'UTF-8'}"{/if}><![endif]-->
 <html{if isset($language_code) && $language_code} lang="{$language_code|escape:'html':'UTF-8'}"{/if}>
 	<head>
+	<!-- Google Tag Manager -->
+<script>{literal}(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJ9895');{/literal}</script>
+<!-- End Google Tag Manager -->
 		<meta charset="utf-8" />
 		<title>{$meta_title|escape:'html':'UTF-8'}</title>
 		{if isset($meta_description) AND $meta_description}
@@ -121,6 +128,53 @@
 		<![endif]-->
 	</head>
 	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} show-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso}">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ9895"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- 
+	<input name="tfh" type="hidden" value="{$page_name}"> -->
+	{if $GTM_DATAS != ''}
+
+		{if $page_name == "index" || $page_name == "category" || $page_name == "search" || $page_name == "product" || $page_name == "order" || ($page_name == "authentication" && !empty($smarty.get.back))}
+
+
+			<script type="text/javascript">
+				{literal}
+					var USER_ID = {/literal}{if isset($GTM_DATAS.$page_name.USER_ID)}{$GTM_DATAS.$page_name.USER_ID}{else}''{/if}{literal};
+					var page_type = {/literal}{if isset($GTM_DATAS.$page_name.page_type)}{$GTM_DATAS.$page_name.page_type}{else}''{/if}{literal};
+					var product_ID = {/literal}{if isset($GTM_DATAS.$page_name.product_ID)}{$GTM_DATAS.$page_name.product_ID}{else}''{/if}{literal};
+					var product_name = {/literal}{if isset($GTM_DATAS.$page_name.product_name)}{$GTM_DATAS.$page_name.product_name}{else}''{/if}{literal};
+					var product_price = {/literal}{if isset($GTM_DATAS.$page_name.product_price)}{$GTM_DATAS.$page_name.product_price}{else}''{/if}{literal};
+					var total_value = {/literal}{if isset($GTM_DATAS.$page_name.total_value)}{$GTM_DATAS.$page_name.total_value}{else}''{/if}{literal};
+				{/literal}
+			</script>
+		{/if}
+
+		{if $page_name == "order-confirmation" || $page_name == "module-paypal-submit"}
+
+			<script type="text/javascript">
+				{literal}
+					var USER_ID = {/literal}{if isset($GTM_DATAS.$page_name.USER_ID)}{$GTM_DATAS.$page_name.USER_ID}{else}''{/if}{literal};
+					var page_type = {/literal}{if isset($GTM_DATAS.$page_name.page_type)}{$GTM_DATAS.$page_name.page_type}{else}''{/if}{literal};
+					var product_ID = {/literal}{if isset($GTM_DATAS.$page_name.product_ID)}{$GTM_DATAS.$page_name.product_ID}{else}''{/if}{literal};
+					var product_name = {/literal}{if isset($GTM_DATAS.$page_name.product_name)}{$GTM_DATAS.$page_name.product_name}{else}''{/if}{literal};
+					var product_price = {/literal}{if isset($GTM_DATAS.$page_name.product_price)}{$GTM_DATAS.$page_name.product_price}{else}''{/if}{literal};
+					var total_value = {/literal}{if isset($GTM_DATAS.$page_name.total_value)}{$GTM_DATAS.$page_name.total_value}{else}''{/if}{literal};
+					var event = {/literal}{if isset($page_name)}'{$page_name}'{else}''{/if}{literal};
+					var transactionId = {/literal}{if isset($GTM_DATAS.$page_name.transactionId)}{$GTM_DATAS.$page_name.transactionId}{else}''{/if}{literal};
+					var transactionAffiliation = {/literal}{if isset($GTM_DATAS.$page_name.transactionAffiliation)}{$GTM_DATAS.$page_name.transactionAffiliation}{else}''{/if}{literal};
+					var transactionTotal = {/literal}{if isset($GTM_DATAS.$page_name.transactionTotal)}{$GTM_DATAS.$page_name.transactionTotal}{else}''{/if}{literal};
+					var transactionTax = {/literal}{if isset($GTM_DATAS.$page_name.transactionTax)}{$GTM_DATAS.$page_name.transactionTax}{else}''{/if}{literal};
+					var transactionShipping = {/literal}{if isset($GTM_DATAS.$page_name.transactionShipping)}{$GTM_DATAS.$page_name.transactionShipping}{else}''{/if}{literal};
+					var transactionProducts = {/literal}{if isset($GTM_DATAS.$page_name.transactionProducts)}{$GTM_DATAS.$page_name.transactionProducts}{else}''{/if}{literal};
+				{/literal}
+			</script>
+		{/if}
+
+	{/if}
+
 	{if !isset($content_only) || !$content_only}
 		{if isset($restricted_country_mode) && $restricted_country_mode}
 			<div id="restricted-country">

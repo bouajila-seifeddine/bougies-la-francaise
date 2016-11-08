@@ -1,0 +1,53 @@
+Google Trusted Stores Module for Prestashop
+Author: Business Tech
+Contact: http://www.businesstech.fr/en/contact-us 
+
+-----------------------------------------
+Change history for Google Trusted Stores
+-----------------------------------------
+Version 1.1.8 (11/02/2016)
+- Updated logo
+- Added doc info box
+- Updated API url
+
+Version 1.1.7 (05/11/2015)
+- Remove all features only the USA
+
+Version 1.1.6 (20/10/2014)
+- Update badge management for USA
+
+Version 1.1.5 (20/10/2014)
+- update override FrontController for using $_SERVER['REQUEST_URI']
+- bug fix tooltips
+
+Version 1.1.4 (15/10/2014)
+- added system to manage order_delivery_est_date (is requiered out of the usa)
+
+Version 1.1.3 (14/10/2014)
+- bug fix for override 1.4
+- bug fix for override 1.5/1.6
+- Added option to hide optionnal feature for shop out of USA
+- Update folder for override
+- Update PDF (fr/en)
+- Update FR translate
+
+Version 1.1.2 (09/10/2014)
+- Fix for decimal
+- Fix for product id when Google Merchant Center is not installed
+
+Version 1.1.1 (08/10/2014)
+- Update path for FrontController override
+
+Version 1.1.0 (01/10/2014)
+- Update for PS 1.6
+- Added message for feature only available for USE
+- Update template with bootstrap layout
+- Added custom CSS management for badge
+- Updated script for the badge
+- Updated price management in order_confirmation.tpl to have only 2 digits
+- Added override for Paypal and SSL management
+- Updated PDF doc
+
+Version 1.0.0 (19/12/2013)
+
+- Original release

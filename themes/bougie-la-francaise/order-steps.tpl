@@ -87,3 +87,13 @@
 </ul>
 <!-- /Steps -->
 {/if}
+{if isset($ARRAY_STEP) && !empty($ARRAY_STEP)}
+{foreach from=$ARRAY_STEP item=step key=k}
+	{if $k == $current_step}
+		<script type="text/javascript">
+			var step = {$step};
+		</script>
+	{/if}
+{/foreach}
+{/if}
+

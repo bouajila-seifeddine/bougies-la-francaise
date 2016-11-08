@@ -1,0 +1,12 @@
+
+#container-homeimageblock {
+    width: 100%;
+}
+
+    #homeimageblock {
+        margin: 0 auto;
+    }
+
+        #homeimageblock li {
+            list-style-type: none;
+        }

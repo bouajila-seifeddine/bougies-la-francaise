@@ -630,13 +630,19 @@ if (!defined('_PS_VERSION_'))
 				  $id_group = $id_customer ? Customer::getDefaultGroupId($id_customer) : _PS_DEFAULT_CUSTOMER_GROUP_;
 				  $id_lang = (int)$params['cookie']->id_lang;
 
+				  /*** OLD clause where
+					WHERE level_depth > 1 And level_depth < 3
+					ADD INNER JOIN `'._DB_PREFIX_.'category` cc
+				  ***/
+
 				  $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->ExecuteS('
 				  SELECT DISTINCT c.*, cl.*
 				  FROM `'._DB_PREFIX_.'category` c
 				  LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON (c.`id_category` = cl.`id_category` AND `id_lang` = '.$id_lang.')
 				  LEFT JOIN `'._DB_PREFIX_.'category_group` cg ON (cg.`id_category` = c.`id_category`)
 				  LEFT JOIN `'._DB_PREFIX_.'category_shop` cs ON (cs.`id_category` = c.`id_category`)
-				  WHERE level_depth > 1 And level_depth < 3
+				  INNER JOIN `'._DB_PREFIX_.'category` cc ON (cc.`id_category` = c.`id_parent` AND cc.`id_parent` = 3)
+				  WHERE c.`level_depth` = 4
 				  AND c.`active` = 1
 				  AND cg.`id_group` = '.$id_group.'
 				  GROUP BY c.`id_category` 

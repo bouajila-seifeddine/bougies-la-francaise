@@ -56,6 +56,7 @@
 <module name="stampsdotcom" position="16"/>
 <module name="twengabid" position="17"/>
 <module name="twengafeed" position="18"/>
+<module name="smartsupp" position="19"/>
 </tab>
 <tab class_name="AdminInvoices" display_type="slider_list">
 <module name="neotaxesupdater" position="1"/>
@@ -76,12 +77,13 @@
 <module name="packlink" position="8"/>
 <module name="envoimoinscher" position="9"/>
 <module name="chronopost" position="10"/>
-<module name="lowcostexpress" position="11"/>
-<module name="dpdfrance" position="12"/>
-<module name="emtshipping" position="13"/>
-<module name="purolator" position="14"/>
-<module name="upstracking" position="15"/>
-<module name="stampsdotcom" position="16"/>
+<module name="lanavettepickup" position="11"/>
+<module name="lowcostexpress" position="12"/>
+<module name="dpdfrance" position="13"/>
+<module name="emtshipping" position="14"/>
+<module name="purolator" position="15"/>
+<module name="upstracking" position="16"/>
+<module name="stampsdotcom" position="17"/>
 </tab>
 <tab class_name="AdminSlip" display_type="slider_list">
 <module name="lgabonos" position="1"/>
@@ -97,12 +99,13 @@
 <module name="tntcarrier" position="7"/>
 <module name="packlink" position="8"/>
 <module name="envoimoinscher" position="9"/>
-<module name="chronopost" position="10"/>
-<module name="lowcostexpress" position="11"/>
-<module name="dpdfrance" position="12"/>
-<module name="emtshipping" position="13"/>
-<module name="purolator" position="14"/>
-<module name="upstracking" position="15"/>
+<module name="lanavettepickup" position="10"/>
+<module name="chronopost" position="11"/>
+<module name="lowcostexpress" position="12"/>
+<module name="dpdfrance" position="13"/>
+<module name="emtshipping" position="14"/>
+<module name="purolator" position="15"/>
+<module name="upstracking" position="16"/>
 </tab>
 <tab class_name="AdminOrderMessage" display_type="slider_list">
 <module name="etranslation" position="1"/>
@@ -140,6 +143,7 @@
 <module name="liveperson" position="5"/>
 <module name="veplatform" position="6"/>
 <module name="yousticeresolutionsystem" position="7"/>
+<module name="smartsupp" position="8"/>
 </tab>
 <tab class_name="AdminContacts" display_type="slider_list">
 <module name="sendinblue" position="1"/>
@@ -148,7 +152,7 @@
 <module name="iadvize" position="4"/>
 <module name="liveperson" position="5"/>
 <module name="webcallback" position="6"/>
-<module name="liveperson" position="7"/>
+<module name="smartsupp" position="7"/>
 <module name="veplatform" position="8"/>
 </tab>
 <tab class_name="AdminCartRules" display_type="slider_list">
@@ -157,6 +161,7 @@
 <module name="pushoncart" position="3"/>
 <module name="cartabandonmentpro" position="4"/>
 <module name="liveperson" position="5"/>
+<module name="smartsupp" position="6"/>
 </tab>
 <tab class_name="AdminSpecificPriceRule" display_type="slider_list">
 <module name="pushoncart" position="1"/>
@@ -184,23 +189,24 @@
 <module name="pushoncart" position="18"/>
 <module name="prestanotify" position="19"/>
 <module name="pushslide" position="20"/>
-<module name="seohelping" position="21"/>
-<module name="vente_flash" position="22"/>
-<module name="privatesale" position="23"/>
-<module name="veplatform" position="24"/>
-<module name="referralprogram" position="25"/>
+<module name="smartsupp" position="21"/>
+<module name="seohelping" position="22"/>
+<module name="vente_flash" position="23"/>
+<module name="privatesale" position="24"/>
+<module name="veplatform" position="25"/>
+<module name="referralprogram" position="26"/>
 </tab>
 <tab class_name="AdminPayment" display_type="default_list">
 <module name="psphipay" position="1"/>
 <module name="nimblepayment" position="2"/>
-<module name="popularpayments" position="3"/>
-<module name="heidelpay" position="4"/>
-<module name="paygreen" position="5"/>
-<module name="pilipay" position="6"/>
-<module name="alipay" position="7"/>
-<module name="payolution" position="8"/>
-<module name="pagseguro" position="9"/>
-<module name="payulatam" position="10"/>
+<module name="heidelpay" position="3"/>
+<module name="paygreen" position="4"/>
+<module name="pilipay" position="5"/>
+<module name="alipay" position="6"/>
+<module name="payolution" position="7"/>
+<module name="pagseguro" position="8"/>
+<module name="payulatam" position="9"/>
+<module name="klarnaofficial" position="10"/>
 <module name="firstdata" position="11"/>
 <module name="secureframe" position="12"/>
 <module name="paypal" position="13"/>
@@ -241,13 +247,14 @@
 <module name="pilipay" position="8"/>
 <module name="envoimoinscher" position="9"/>
 <module name="geodisfranceexpress" position="10"/>
-<module name="chronopost" position="11"/>
-<module name="lowcostexpress" position="12"/>
-<module name="dpdfrance" position="13"/>
-<module name="emtshipping" position="14"/>
-<module name="purolator" position="15"/>
-<module name="expeditor" position="16"/>
-<module name="upstracking" position="17"/>
+<module name="lanavettepickup" position="11"/>
+<module name="chronopost" position="12"/>
+<module name="lowcostexpress" position="13"/>
+<module name="dpdfrance" position="14"/>
+<module name="emtshipping" position="15"/>
+<module name="purolator" position="16"/>
+<module name="expeditor" position="17"/>
+<module name="upstracking" position="18"/>
 </tab>
 <tab class_name="AdminShipping" display_type="slider_list">
 <module name="bpostshm" position="1"/>
@@ -260,16 +267,17 @@
 <module name="pilipay" position="8"/>
 <module name="envoimoinscher" position="9"/>
 <module name="geodisfranceexpress" position="10"/>
-<module name="chronopost" position="11"/>
-<module name="lowcostexpress" position="12"/>
-<module name="dpdfrance" position="13"/>
-<module name="emtshipping" position="14"/>
-<module name="printlabels" position="15"/>
-<module name="expeditor" position="16"/>
-<module name="orderpreparation" position="17"/>
-<module name="upstracking" position="18"/>
-<module name="dateofdelivery" position="19"/>
-<module name="carriercompare" position="20"/>
+<module name="lanavettepickup" position="11"/>
+<module name="chronopost" position="12"/>
+<module name="lowcostexpress" position="13"/>
+<module name="dpdfrance" position="14"/>
+<module name="emtshipping" position="15"/>
+<module name="printlabels" position="16"/>
+<module name="expeditor" position="17"/>
+<module name="orderpreparation" position="18"/>
+<module name="upstracking" position="19"/>
+<module name="dateofdelivery" position="20"/>
+<module name="carriercompare" position="21"/>
 </tab>
 <tab class_name="AdminLocalization" display_type="slider_list">
 <module name="avalaratax" position="1"/>
@@ -359,6 +367,7 @@
 <module name="mailchimp" position="5"/>
 <module name="liveperson" position="6"/>
 <module name="etranslation" position="7"/>
+<module name="smartsupp" position="8"/>
 </tab>
 <tab class_name="AdminImport" display_type="slider_list">
 </tab>
@@ -384,9 +393,10 @@
 </tab>
 <tab class_name="AdminStats" display_type="slider_list">
 <module name="ganalytics" position="1"/>
-<module name="statsbestmanufacturers" position="2"/>
-<module name="ordertaxprofitreport" position="3"/>
-<module name="dmurealtimestats" position="4"/>
+<module name="brainify" position="2"/>
+<module name="statsbestmanufacturers" position="3"/>
+<module name="ordertaxprofitreport" position="4"/>
+<module name="dmurealtimestats" position="5"/>
 </tab>
 <tab class_name="AdminSearchEngines" display_type="slider_list">
 <module name="gadwords" position="1"/>

@@ -1,0 +1,176 @@
+*INFO* 	2016/09/05 - 17:20:22: Form data generation for cart #14048 with standard payment.
+*INFO* 	2016/09/05 - 17:20:22: Data to be sent to payment platform : Array
+(
+    [signature] => 40f74763c32d37fba235dd3d42e415fcf8d0d625
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 10830
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 10 rue test 
+    [vads_cust_country] => FR
+    [vads_cust_email] => laetitia@yateo.com
+    [vads_cust_id] => 4385
+    [vads_cust_phone] => 0165987896
+    [vads_cust_title] => Mme
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75012
+    [vads_language] => fr
+    [vads_order_id] => 14048
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160905152021
+    [vads_trans_id] => 624219
+    [vads_url_return] => http://blf.dev.yateo.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => Laetitia
+    [vads_cust_last_name] => klein
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2016/09/05 - 17:20:59: User return to shop process starts for cart #14048.
+*INFO* 	2016/09/05 - 17:20:59: Payment failed, redirect to order checkout page, cart ID : #14048.
+*INFO* 	2016/09/08 - 14:48:47: Form data generation for cart #14052 with standard payment.
+*INFO* 	2016/09/08 - 14:48:47: Data to be sent to payment platform : Array
+(
+    [signature] => a411f3117c8d28a1fe742bfd29824f1ffb475a04
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 7980
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => testt 
+    [vads_cust_country] => FR
+    [vads_cust_email] => wei_z@hotmail.fr
+    [vads_cust_id] => 4386
+    [vads_cust_phone] => 123456789
+    [vads_cust_title] => M.
+    [vads_cust_city] => tgtst
+    [vads_cust_zip] => 44450
+    [vads_language] => fr
+    [vads_order_id] => 14052
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 123456789
+    [vads_ship_to_street] => testt
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => tgtst
+    [vads_ship_to_zip] => 44450
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160908124847
+    [vads_trans_id] => 533275
+    [vads_url_return] => http://new.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => test
+    [vads_cust_last_name] => test
+    [vads_ship_to_first_name] => test
+    [vads_ship_to_last_name] => test
+)
+
+*INFO* 	2016/09/08 - 14:49:41: User return to shop process starts for cart #14052.
+*INFO* 	2016/09/08 - 14:49:41: Payment failed, redirect to order checkout page, cart ID : #14052.
+*INFO* 	2016/09/14 - 19:27:12: Form data generation for cart #14055 with standard payment.
+*INFO* 	2016/09/14 - 19:27:12: Data to be sent to payment platform : Array
+(
+    [signature] => eab51e716f9a82edf8e5b5af66d6da801f899200
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 9730
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => 10 rue test 
+    [vads_cust_country] => FR
+    [vads_cust_email] => laetitia@yateo.com
+    [vads_cust_id] => 4385
+    [vads_cust_phone] => 0165987896
+    [vads_cust_title] => Mme
+    [vads_cust_city] => paris
+    [vads_cust_zip] => 75012
+    [vads_language] => fr
+    [vads_order_id] => 14055
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160914172712
+    [vads_trans_id] => 700325
+    [vads_url_return] => http://new.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => Laetitia
+    [vads_cust_last_name] => klein
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+
+*INFO* 	2016/09/16 - 16:53:15: Form data generation for cart #14058 with standard payment.
+*INFO* 	2016/09/16 - 16:53:15: Data to be sent to payment platform : Array
+(
+    [signature] => 751e2a9c081f2cef535f8455504d8d5199967a8e
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4680
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => testt 
+    [vads_cust_country] => FR
+    [vads_cust_email] => zhangwei.fr@gmail.com
+    [vads_cust_id] => 4387
+    [vads_cust_phone] => 123456789
+    [vads_cust_title] => M.
+    [vads_cust_city] => tgtst
+    [vads_cust_zip] => 44450
+    [vads_language] => fr
+    [vads_order_id] => 14058
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 
+    [vads_ship_to_country] => FR
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20160916145315
+    [vads_trans_id] => 607951
+    [vads_url_return] => http://new.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => test
+    [vads_cust_last_name] => test
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+)
+

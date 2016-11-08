@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,19 +14,28 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
+$sep = DIRECTORY_SEPARATOR;
+require_once dirname(__FILE__).$sep.'..'.$sep.'..'.$sep.'loader.php';
+try
+{
+	loadFile('core');
+} catch(Exception $e)
+{
+	echo date('Y-m-d : H:i:s ').$e->getMessage().'<br />';
+}
 /**
  * The Lengow's Admin Controller.
  *
- * @author Ludovic Drin <ludovic@lengow.com>
- * @copyright 2013 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
-class AdminLengowController extends ModuleAdminController {
-
+class AdminLengowController extends ModuleAdminController
+{
 	protected $id_current_category;
 
 	/**
@@ -43,7 +52,7 @@ class AdminLengowController extends ModuleAdminController {
 		if (_PS_VERSION_ >= '1.6')
 			$this->bootstrap = true;
 
-		require_once _PS_MODULE_DIR_.'lengow'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR.'lengow.product.class.php';
+		require_once LengowCore::getLengowFolder().DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR.'lengow.product.class.php';
 
 		parent::__construct();
 
@@ -95,14 +104,14 @@ class AdminLengowController extends ModuleAdminController {
 			if (Shop::getContext() == Shop::CONTEXT_SHOP)
 			{
 				$this->_join .= ' JOIN `'._DB_PREFIX_.'product_shop` sa ON (a.`id_product` = sa.`id_product` AND sa.id_shop = '.(int)$this->context->shop->id.')
-				LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.$alias.'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = '.(int)$this->context->shop->id.')
+				LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.pSQL($alias).'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = '.(int)$this->context->shop->id.')
 				LEFT JOIN `'._DB_PREFIX_.'shop` shop ON (shop.id_shop = '.(int)$this->context->shop->id.')
 				LEFT JOIN `'._DB_PREFIX_.'image_shop` image_shop ON (image_shop.`id_image` = i.`id_image` AND image_shop.`cover` = 1 AND image_shop.id_shop='.(int)$this->context->shop->id.')';
 			}
 			else
 			{
 				$this->_join .= ' LEFT JOIN `'._DB_PREFIX_.'product_shop` sa ON (a.`id_product` = sa.`id_product` AND sa.id_shop = a.id_shop_default)
-				LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.$alias.'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = a.id_shop_default)
+				LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.pSQL($alias).'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = a.id_shop_default)
 				LEFT JOIN `'._DB_PREFIX_.'shop` shop ON (shop.id_shop = a.id_shop_default)
 				LEFT JOIN `'._DB_PREFIX_.'image_shop` image_shop ON (image_shop.`id_image` = i.`id_image` AND image_shop.`cover` = 1 AND image_shop.id_shop=a.id_shop_default)';
 			}
@@ -112,17 +121,17 @@ class AdminLengowController extends ModuleAdminController {
 		{
 			$alias = 'a';
 			$alias_image = 'i';
-			$this->_join .= 'LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.$alias.'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = 1)';
+			$this->_join .= 'LEFT JOIN `'._DB_PREFIX_.'category_lang` cl ON ('.pSQL($alias).'.`id_category_default` = cl.`id_category` AND b.`id_lang` = cl.`id_lang` AND cl.id_shop = 1)';
 		}
 
-		$this->_select .= 'MAX('.$alias_image.'.id_image) id_image,';
+		$this->_select .= 'MAX('.pSQL($alias_image).'.id_image) id_image,';
 
 		$this->_join .= ($join_category ? 'INNER JOIN `'._DB_PREFIX_.'category_product` cp ON (cp.`id_product` = a.`id_product` AND cp.`id_category` = '.(int)$this->_category->id.')' : '').'
 		LEFT JOIN `'._DB_PREFIX_.'stock_available` sav ON (sav.`id_product` = a.`id_product` AND sav.`id_product_attribute` = 0
 		'.StockAvailable::addSqlShopRestriction(null, null, 'sav').') ';
-		$this->_select .= 'cl.name `name_category` '.($join_category ? ', cp.`position`' : '').', '.$alias.'.`price`, 0 AS price_final, sav.`quantity` as sav_quantity, '.$alias.'.`active`, IFNULL(lp.`id_product`, 0) as `id_lengow_product`	';
+		$this->_select .= 'cl.name `name_category` '.($join_category ? ', cp.`position`' : '').', '.pSQL($alias).'.`price`, 0 AS price_final, sav.`quantity` as sav_quantity, '.pSQL($alias).'.`active`, IFNULL(lp.`id_product`, 0) as `id_lengow_product`	';
 
-		$this->_group = 'GROUP BY '.$alias.'.id_product';
+		$this->_group = 'GROUP BY '.pSQL($alias).'.id_product';
 
 		$this->fields_list = array();
 
@@ -431,95 +440,50 @@ class AdminLengowController extends ModuleAdminController {
 	}
 
 	/**
-	* Ajax action to update flow's conf
-	*
-	* @return json Return parameters
+	* Re-import order
 	*/
-	public function displayAjaxUpdateFlow()
-	{
-		@set_time_limit(0);
-		$sep = DIRECTORY_SEPARATOR;
-		require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.connector.class.php';
-		$lengow_connector = new LengowConnector((integer)LengowCore::getIdCustomer(), LengowCore::getTokenCustomer());
-		$params = 'format='.Tools::getValue('format');
-		$params .= '&mode='.Tools::getValue('mode');
-		$params .= '&all='.Tools::getValue('all');
-		$params .= '&shop='.Tools::getValue('shop');
-		$params .= '&cur='.Tools::getValue('cur');
-		$params .= '&lang='.Tools::getValue('lang');
-		$is_https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] ? 's' : '';
-		$shop_url = new ShopUrl((integer)Tools::getValue('shop'));
-		$new_flow = 'http'.$is_https.'://'.$shop_url->domain.__PS_BASE_URI__.'modules/lengow/webservice/export.php?'.$params;
-		$args = array(
-				'idClient' => LengowCore::getIdCustomer(),
-				'idGroup' => LengowCore::getGroupCustomer(),
-				'urlFlux' => $new_flow
-				);
-		$data_flows = get_object_vars(Tools::jsonDecode(Configuration::get('LENGOW_FLOW_DATA')));
-		if ($id_flow = Tools::getValue('idFlow'))
-		{
-			$args['idFlux'] = $id_flow;
-			$data_flows[$id_flow] = array(
-				'format' => Tools::getValue('format') ,
-				'mode' => Tools::getValue('mode') == 'yes' ? 1 : 0,
-				'all' => Tools::getValue('all') == 'yes' ? 1 : 0 ,
-				'currency' => Tools::getValue('cur') ,
-				'shop' => Tools::getValue('shop') ,
-				'language' => Tools::getValue('lang') ,
-			);
-			Configuration::updateValue('LENGOW_FLOW_DATA', Tools::jsonEncode($data_flows));
-		}
-		if ($lengow_connector->api('updateRootFeed', $args))
-			echo Tools::jsonEncode(array('return' => true, 'flow' => $new_flow));
-		else
-			echo Tools::jsonEncode(array('return' => false));
-	}
-
 	public function displayAjaxReimportOrder()
 	{
 		@set_time_limit(0);
 		$sep = DIRECTORY_SEPARATOR;
-		require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.import.class.php';
+		require_once LengowCore::getLengowFolder().$sep.'models'.$sep.'lengow.import.class.php';
+		require_once LengowCore::getLengowFolder().$sep.'models'.$sep.'lengow.importv2.class.php';
 
-		$error = false;
 		$order_id = Tools::getValue('id_order');
-		$order = new LengowOrder($order_id);
-		$lengow_order_id = Tools::getValue('lengoworderid');
-		$feed_id = Tools::getValue('feed_id');
-
-		if ($lengow_order_id == '')
-			return Tools::jsonEncode(array('status' => 'error', 'msg' => 'No Lengow Order Id'));
-
-		if ($order == '')
-			return Tools::jsonEncode(array('status' => 'error', 'msg' => 'No Order Id'));
-
-		LengowCore::deleteProcessOrder($lengow_order_id);
-		$import = new LengowImport();
-		$new_lengow_order = $import->exec('commands', array('id_order_lengow' => $lengow_order_id, 'feed_id' => $feed_id));
-
-		if ($new_lengow_order != false && is_numeric($new_lengow_order))
-		{
-			// Cancel Order
-			$id_state_cancel = Configuration::get('LENGOW_STATE_ERROR');
-			$order->setCurrentState($id_state_cancel, (int)$this->context->employee->id);
-			// Redirect to the new order
-			$new_lengow_order_url = 'index.php?controller=AdminOrders&id_order='.$new_lengow_order.'&vieworder&token='.Tools::getAdminTokenLite('AdminOrders');
-			$reimport_message = sprintf($this->l('You can see the new order by clicking here : <a href=\'%s\'>View Order %s</a>'), $new_lengow_order_url, $new_lengow_order);
+		// make sure order is from Lengow
+		if (LengowOrder::isFromLengow($order_id))
+		{	
+			$order = new LengowOrder($order_id);
+			if (!(!Configuration::get('LENGOW_SWITCH_V3') && $order->id_flux == null))
+			{
+				// disable order
+				LengowOrder::disable($order->id);
+				// suppress log to allow order to be reimported
+				if ($order->lengow_delivery_address_id != null)
+					LengowLog::deleteLogByOrderId($order->id_lengow, $order->lengow_delivery_address_id);
+				else
+					LengowLog::deleteLogByOrderIdV2($order->id_lengow);
+				// start import for re-import order
+				if (Configuration::get('LENGOW_SWITCH_V3'))
+				{
+					// compatibility V2
+					if ($order->id_flux != null)
+						$order->checkAndChangeMarketplaceName();
+					$import = new LengowImport($order->id_lengow, $order->lengow_marketplace);
+					$import->exec();
+				}
+				else
+				{
+					if ($order->id_flux != null)
+					{
+						$importV2 = new LengowImportV2($order->id_lengow, $order->id_flux);
+						$importV2->exec();
+					}
+				}	
+			}
 		}
-		else
-		{
-			$error = true;
-			$reimport_message = $this->l('Error during import');
-			$this->context->controller->warnings[] = $this->l('Error during import');
-		}
-
-		$result = array(
-			'status' => ($error == false) ? 'success' : 'error',
-			'msg' => $reimport_message,
-			'new_order_url' => $new_lengow_order_url,
-			'new_order_id' => $new_lengow_order
-		);
-
-		echo Tools::jsonEncode($result);
+		// redirection
+		$order_url = 'index.php?controller=AdminOrders&id_order='.$order_id.'&vieworder&token='.Tools::getAdminTokenLite('AdminOrders');
+		Tools::redirectAdmin($order_url);
 	}
 }

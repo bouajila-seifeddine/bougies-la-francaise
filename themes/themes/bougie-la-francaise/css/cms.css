@@ -1,0 +1,453 @@
+/**************************************************************
+					CMS Pages Styles
+***************************************************************/
+#cms #center_column .block-cms {
+  padding-bottom: 20px; }
+#cms #center_column h1 {
+  margin-bottom: 25px; }
+/*#cms #center_column h3 {
+  font-size: 16px;
+  border-bottom: none;
+  margin: 0;
+  padding: 0 0 17px 0; }*/
+#cms #center_column p {
+  line-height: 18px; }
+#cms #center_column .list-1 li {
+  padding: 4px 0 6px 0;
+  font-weight: bold;
+  color: #46a74e;
+  border-top: 1px solid #d6d4d4; }
+  #cms #center_column .list-1 li:first-child {
+    border: none; }
+  #cms #center_column .list-1 li em {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 15px;
+    vertical-align: -2px; }
+#cms #center_column img {
+  margin: 4px 0 17px;
+  max-width: 100%;
+  height: auto; }
+#cms #center_column .testimonials {
+  border: 1px solid;
+  border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0;
+  margin: 4px 0 13px 0;
+  position: relative; }
+  #cms #center_column .testimonials .inner {
+    border: 1px solid #fff;
+    padding: 19px 18px 11px 18px;
+    background: #fbfbfb;
+    background: -moz-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(100%, #fefefe));
+    background: -webkit-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -o-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #fbfbfb 0%, #fefefe 100%);
+    background: linear-gradient(to bottom, #fbfbfb 0%, #fefefe 100%); }
+    #cms #center_column .testimonials .inner span {
+      text-indent: -5000px;
+      display: inline-block;
+      width: 20px;
+      height: 15px; }
+      #cms #center_column .testimonials .inner span.before {
+        background: url(../img/bl-before-bg.png) no-repeat;
+        margin-right: 8px; }
+      #cms #center_column .testimonials .inner span.after {
+        background: url(../img/bl-after-bg.png) no-repeat;
+        margin-left: 8px; }
+  #cms #center_column .testimonials:after {
+    content: ".";
+    display: block;
+    text-indent: -5000px;
+    position: absolute;
+    bottom: -16px;
+    left: 21px;
+    width: 15px;
+    height: 16px;
+    background: url(../img/testimon-after.gif) no-repeat; }
+  #cms #center_column .testimonials + p {
+    padding-left: 45px;
+    margin-bottom: 18px; }
+#cms #center_column p.bottom-indent {
+  margin-bottom: 18px; }
+#cms #center_column #admin-action-cms {
+  background: none repeat 0 0 #F6F6F6;
+  border: 1px solid #d2d0d0;
+  padding: 10px; }
+  #cms #center_column #admin-action-cms p {
+    margin: 0; }
+    #cms #center_column #admin-action-cms p span {
+      display: block;
+      padding-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333; }
+    #cms #center_column #admin-action-cms p .button {
+      font: 700 17px/21px Arial, Helvetica, sans-serif;
+      padding: 0;
+      border: 1px solid;
+      padding: 10px 14px;
+      display: inline-block; }
+      #cms #center_column #admin-action-cms p .button.publish_button {
+        color: #fff;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+        border-color: #0079b6 #006fa8 #012740 #006fa8;
+        background: #009ad0;
+        background: -moz-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #009ad0), color-stop(100%, #007ab7));
+        background: -webkit-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+        background: -o-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+        background: -ms-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+        background: linear-gradient(to bottom, #009ad0 0%, #007ab7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ad0', endColorstr='#007ab7',GradientType=0); }
+        #cms #center_column #admin-action-cms p .button.publish_button:hover {
+          border-color: #01314e #004b74 #0079b6 #004b74;
+          filter: none;
+          background: #0084bf; }
+      #cms #center_column #admin-action-cms p .button.lnk_view {
+        color: #333;
+        text-shadow: 1px 1px white;
+        border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
+        background: #f7f7f7;
+        background: -moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ededed));
+        background: -webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+        background: -o-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+        background: -ms-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+        background: linear-gradient(to bottom, #f7f7f7 0%, #ededed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ededed',GradientType=0); }
+        #cms #center_column #admin-action-cms p .button.lnk_view:hover {
+          border-color: #9e9e9e #9e9e9e #c8c8c8 #9e9e9e;
+          filter: none;
+          background: #e7e7e7; }
+
+
+
+/* Template 1 (Collections, universe) */
+
+#template_1 {}
+#template_1 h3.secondary-title{
+	color: #baa58d;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#template_1 h3.secondary-title,
+#template_2 h3.secondary-title {
+  /*font-size: 24px !important;*/
+  margin-bottom:50px;
+}
+#template_1 .template-1-block,
+#template_2 .template-2-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2px;
+  padding: 50px;
+}
+
+.template-1-block-content > .row {
+	margin:0 -35px;
+}
+.template-1-block-content > .row > div{
+	padding:0 35px;
+}
+
+
+#template_1 .template-1-block#quintessence { background-image: url('../image/design/our-collection-quintessence.jpg'); }
+#template_1 .template-1-block#boudoir { background-image: url('../image/design/our-collection-boudoir.jpg'); }
+#template_1 .template-1-block#lounge_spirit { background-image: url('../image/design/our-collection-lounge-spirit.jpg'); }
+#template_1 .template-1-block .template-1-block-content,
+#template_2 .template-2-block .template-2-block-content {
+  background: #FFF;
+  color: #a4907a;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#template_1 .template-1-block .template-1-block-content {
+	padding:30px 35px;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-container {
+  border: 2px solid #baa58d; 
+  margin: 20px 0 0;
+  padding: 5px;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description {
+  border: 1px solid #e3dbd1;
+  padding: 15px 40px;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description h4,
+#template_2 .template-2-block .template-2-block-content .template-2-block-title h4 {
+  color: #000;
+  font-size:24px;
+  font-weight:200;
+  margin-bottom: 15px;
+  position: relative;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description a,
+#template_2 .template-2-block .template-2-block-content .template-2-block-title a {
+  color: #866b4e;
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  font-size:16px;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-pics { padding: 0 40px; }
+#template_1 .template-1-block .template-1-block-content .template-1-block-pics .template-1-block-picture {
+  float: left;
+  height: 169px;
+  margin: 0;
+  width: 169px;
+}
+#template_1 .template-1-block .template-1-block-content .template-1-block-pics .template-1-block-picture img { margin: 0 !important; }
+
+/* Template 2 (univers parfumé) */
+
+#template_2 {}
+#template_2 .template-2-block#floral { background-image: url('../image/design/univers-floral.jpg'); }
+#template_2 .template-2-block#poudre { background-image: url('../image/design/univers-poudre.jpg'); }
+#template_2 .template-2-block#regressif { background-image: url('../image/design/univers-regressif.jpg'); }
+#template_2 .template-2-block .template-2-block-border {
+  border: 8px solid rgba(255,255,255,0.9);
+  padding: 2px;
+}
+#template_2 .template-2-block .template-2-block-content { background: rgba(255,255,255,0.9); }
+#template_2 .template-2-block .template-2-block-content .template-2-block-title h4 { padding: 12px 0; }
+#template_2 .template-2-block .template-2-block-content .template-2-block-title h4::before {
+  border-bottom: 1px solid #cdc1bb;
+  border-top: 1px solid #cdc1bb;
+  content: "";
+  height: 48px;
+  left: 50%;
+  margin-left: -16px;
+  position: absolute;
+  top: 0;
+  width: 32px;
+}
+#template_2 .template-2-block .template-2-block-content .template-2-block-title a { font-size: 14px; }
+#template_2 .template-2-block .template-2-block-content .template-2-block-description {
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+  text-transform: none;
+  line-height:1.3;
+}
+
+
+/* Template 3 (cirier) */
+
+#cms #center_column #template_3 p {
+	margin-bottom:20px;
+	line-height:1.3;
+}
+
+#template_3 .section-block { 
+	padding: 50px 0 40px; 
+}
+#template_3 #first_section { 
+  background-image: url('../image/design/century-04.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:125px 0;
+}
+#template_3 #first_section .slug {
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  font-size: 30px; 
+  line-height: 32px;
+  padding: 30px;
+  margin:auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 430px;
+}
+#template_3 #first_section .slug div{
+  line-height:1.3;
+}
+#template_3 #first_section .slug h5 { 
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px; 
+}
+#template_3 #first_section .slug h5 span {
+  color: #b19d86;
+  display: block;
+  font-size: 190px;
+  line-height: 62px;
+  text-transform: none;
+}
+
+#template_3 #second_section .description { color: #000; }
+
+#template_3 #third_section { background: url('../image/design/motif_01.png'); }
+#template_3 #third_section .third-section-picture {
+  border: 1px solid #e3dbd1;
+  background: #fff;
+  padding: 5px;
+  margin-bottom:10px;
+}
+#template_3 #third_section .third-section-picture img { margin: 0; width:100%;}
+
+#template_3 #fourth_section { background: url('../image/design/footer-logo-bg.png') no-repeat 80% 50px; }
+#template_3 #fourth_section h3.dragoniscoming-title {
+  color: #866b4e;
+  font-size: 120px;
+  line-height: 92px;
+  margin: 40px 0;
+  text-align: center;
+}
+#template_3 #fourth_section h3.dragoniscoming-title::before {
+  border-bottom: 1px solid #866b4e;
+  border-top: 1px solid #866b4e;
+  content: "";
+  height: 92px;
+  left: 50%;
+  margin-left: -16px;
+  position: absolute;
+  top: 0;
+  width: 32px;
+}
+#template_3 #fourth_section h3.dragoniscoming-title span {
+  font-size: 60px;
+  margin-right: 10px;
+}
+#template_3 #fourth_section .description { color: #000; }
+
+#template_3 #fifth_section {
+  background-image: url('../image/design/century-05.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 390px;
+}
+
+/* Template 4 (Ambiance) */
+
+#template_4 {
+	
+}
+#template_4 br{
+	display:none;
+}
+
+.ambiance-head {
+	position:relative;
+	margin-top:-50px;
+	text-align:center;
+	/*height:470px;*/
+}
+#cms #center_column .ambiance-head img{
+	max-width:100%;
+	display:block;
+	margin:0;
+	width:100%;
+}
+
+.ambiance-title {
+	position:absolute;
+	border:3px solid #baa58d;
+	background:#fff;
+	padding:7px;
+	text-align:center;
+	width:350px;
+	left:50%;
+	top:50%;
+	margin:-65px 0 0 -175px;
+	text-transform:uppercase;
+}
+.ambiance-title > div{
+	border:1px solid #baa58d;
+	padding:20px 15px;
+}
+.ambiance-title h2{
+	font-size:30px;
+	color:#000;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	font-weight:200;
+}
+.ambiance-title a{
+	color:#866b4e;
+	text-decoration:underline;
+	font-size:16px;
+}
+.ambiance-title a:hover{
+	color:#866b4e;
+}
+
+.ambiance-grid {
+	
+}
+.ambiance-grid::after,
+.ambiance-grid p::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+#cms #center_column .ambiance-grid img{
+	float:left;
+	width:33.33%;
+	margin:0;
+}
+.ambiance-grid p{
+	margin:0;
+}
+.ambiance-end-link {
+	padding:30px 0 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+.ambiance-end-link a{
+	color:#866b4e;
+	text-decoration:underline;
+	font-size:16px;
+}
+.ambiance-end-link a:hover{
+	color:#866b4e;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+	#template_1 .template-1-block .template-1-block-content .template-1-block-container {
+		margin:0 0 15px;
+	}
+	#template_1 .template-1-block .template-1-block-content .template-1-block-pics {
+		text-align:center;
+	}
+	#template_1 .template-1-block .template-1-block-content .template-1-block-pics .template-1-block-picture {
+		float:none;
+		display:inline-block;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #template_3 #fourth_section h3.dragoniscoming-title {
+    font-size: 76px;
+    line-height:1;
+  }
+}@media only screen and (max-width : 480px) {
+	#template_3 #first_section .slug {
+    width: auto;
+  }
+  #template_3 #fourth_section h3.dragoniscoming-title { font-size: 46px; }
+  #template_3 #fourth_section h3.dragoniscoming-title::before { height: 52px; }
+  #template_3 #fourth_section h3.dragoniscoming-title span { font-size: 30px; }
+
+  #template_1 .template-1-block, #template_2 .template-2-block { padding: 20px; }
+  #template_1 .template-1-block .template-1-block-content .template-1-block-pics { margin-top: 20px; }
+  #template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description { padding: 15px; }
+  #template_1 .template-1-block .template-1-block-content .template-1-block-container .template-1-block-description h4, 
+  #template_2 .template-2-block .template-2-block-content .template-2-block-title h4 {font-size: 20px;}
+
+  .ambiance-title { margin:13px 0 0 -105px; top: 0; width: 210px;}
+  .ambiance-title > div { padding: 15px; }
+  .ambiance-title h2 { font-size: 20px; }
+  .ambiance-title a { font-size: 14px; }
+  
+}
+
+/*# sourceMappingURL=cms.css.map */

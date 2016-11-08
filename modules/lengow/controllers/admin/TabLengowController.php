@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,21 +14,22 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
  * The AdminTab Lengow Class.
  *
- * @author Ludovic Drin <ludovic@lengow.com>
- * @copyright 2013 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
 include_once PS_ADMIN_DIR.'/tabs/AdminProfiles.php';
 include_once PS_ADMIN_DIR.'/tabs/AdminCatalog.php';
 
-class AdminLengow14 extends AdminTab {
+class AdminLengow14 extends AdminTab
+{
 
 	protected $_pagination = array(1, 20, 50, 100, 300, 500, 1000);
 
@@ -71,24 +72,6 @@ class AdminLengow14 extends AdminTab {
 		$this->_group = 'GROUP BY a.`id_product`';
 
 		parent::__construct();
-	}
-
-	private function _cleanMetaKeywords($keywords)
-	{
-		if (!empty($keywords) && $keywords != '')
-		{
-			$out = array();
-			$words = explode(',', $keywords);
-			foreach ($words as $word_item)
-			{
-				$word_item = trim($word_item);
-				if (!empty($word_item) && $word_item != '')
-					$out[] = $word_item;
-			}
-			return ((count($out) > 0) ? implode(',', $out) : '');
-		}
-		else
-			return '';
 	}
 
 	public function getList($id_lang, $orderBy = null, $orderWay = null, $start = 0, $limit = null)
@@ -169,22 +152,6 @@ class AdminLengow14 extends AdminTab {
 			LengowProduct::publish(Tools::getValue('lengowunpublishproduct'), 0);
 		elseif (Tools::getValue('lengowpublishproduct'))
 			LengowProduct::publish(Tools::getValue('lengowpublishproduct'));
-		if (Tools::getValue('importorder'))
-		{
-			@set_time_limit(0);
-			require_once _PS_MODULE_DIR_.'lengow'.$sep.'models'.$sep.'lengow.import.class.php';
-			$import = new LengowImport();
-			$import->force_log_output = false;
-			$date_to = date('Y-m-d');
-			$days = (integer)LengowCore::getCountDaysToImport();
-			$date_from = date('Y-m-d', strtotime(date('Y-m-d').' -'.$days.'days'));
-			$result = $import->exec('commands', array('dateFrom' => $date_from,
-				'dateTo' => $date_to));
-			if ($result && ($result['new'] > 0 || $result['update'] > 0))
-				Tools::redirectAdmin('index.php?tab=AdminLengow14&conf=1&token='.($token ? $token : $this->token));
-			else
-				$this->_errors[] = Tools::displayError('No available order to import or update.');
-		}
 		parent::postProcess($token);
 	}
 
@@ -208,7 +175,6 @@ class AdminLengow14 extends AdminTab {
 	{
 		$cookie = Context::getContext()->cookie;
 		$this->getList((int)($cookie->id_lang), !$cookie->__get($this->table.'Orderby') ? 'id_product' : null, !$cookie->__get($this->table.'Orderway') ? 'ASC' : null);
-		echo '<a class="button" href="index.php?tab=AdminLengow14&importorder=1&token='.($token != null ? $token : $this->token).'"> '.$this->l('Import orders from Lengow').'</a>';
 		echo '<div style="margin: 3px 0;">';
 		$this->displayList($token);
 		echo '</div>';

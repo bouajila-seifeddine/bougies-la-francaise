@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Lengow SAS.
+ * Copyright 2015 Lengow SAS.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,18 +14,19 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  *
- *  @author    Ludovic Drin <ludovic@lengow.com> Romain Le Polh <romain@lengow.com>
- *  @copyright 2014 Lengow SAS
+ *  @author    Team Connector <team-connector@lengow.com>
+ *  @copyright 2015 Lengow SAS
  *  @license   http://www.apache.org/licenses/LICENSE-2.0
  */
 
 /**
  * The Lengow SpecificPrice Class.
  *
- * @author Ludovic Drin <ludovic@lengow.com>
- * @copyright 2013 Lengow SAS
+ * @author Team Connector <team-connector@lengow.com>
+ * @copyright 2015 Lengow SAS
  */
-class LengowSpecificPriceAbstract extends SpecificPrice {
+class LengowSpecificPriceAbstract extends SpecificPrice
+{
 
 	public static function clear()
 	{

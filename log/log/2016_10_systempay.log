@@ -1,0 +1,90 @@
+*INFO* 	2016/10/04 - 16:19:31: Form data generation for cart #14065 with standard payment.
+*INFO* 	2016/10/04 - 16:19:31: Data to be sent to payment platform : Array
+(
+    [signature] => 75d5e1ae20bb516196be9cfd6bba2dee06df4f4c
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 4680
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => test 
+    [vads_cust_country] => FR
+    [vads_cust_email] => wzhang@devineau.fr
+    [vads_cust_id] => 4388
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => tgtst
+    [vads_cust_zip] => 44450
+    [vads_language] => fr
+    [vads_order_id] => 14065
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_phone_num] => 
+    [vads_ship_to_street] => test
+    [vads_ship_to_street2] => 
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => tgtst
+    [vads_ship_to_zip] => 44450
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20161004141931
+    [vads_trans_id] => 587717
+    [vads_url_return] => http://new.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => wei
+    [vads_cust_last_name] => zhang
+    [vads_ship_to_first_name] => wei
+    [vads_ship_to_last_name] => zhang
+)
+
+*INFO* 	2016/10/25 - 16:32:17: Form data generation for cart #14083 with standard payment.
+*INFO* 	2016/10/25 - 16:32:17: Data to be sent to payment platform : Array
+(
+    [signature] => c40f29e4ce12505347d3cec0685653c3dab13d90
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 1790
+    [vads_contrib] => Prestashop1.5.0.x_1.2f/1.6.1.6
+    [vads_ctx_mode] => PRODUCTION
+    [vads_currency] => 978
+    [vads_cust_address] => test 
+    [vads_cust_country] => FR
+    [vads_cust_email] => wzhang@devineau.fr
+    [vads_cust_id] => 4388
+    [vads_cust_phone] => 
+    [vads_cust_title] => M.
+    [vads_cust_city] => tgtst
+    [vads_cust_zip] => 44450
+    [vads_language] => fr
+    [vads_order_id] => 14083
+    [vads_order_info] => Paiement par carte bancaire
+    [vads_page_action] => PAYMENT
+    [vads_payment_cards] => CB;VISA;VISA_ELECTRON;MASTERCARD;MAESTRO;E-CARTEBLEUE
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 0
+    [vads_return_mode] => GET
+    [vads_ship_to_street] => 20 PLACE DE L EGLISE 20 PLACE DE L EGLISE  
+    [vads_ship_to_country] => FR
+    [vads_ship_to_city] => LA CHAPELLE BASSE MER
+    [vads_ship_to_zip] => 44450
+    [vads_site_id] => 84119951
+    [vads_trans_date] => 20161025143217
+    [vads_trans_id] => 595377
+    [vads_url_return] => http://new.bougies-la-francaise.com/module/systempay/submit
+    [vads_version] => V2
+    [vads_threeds_mpi] => 2
+    [vads_cust_first_name] => wei
+    [vads_cust_last_name] => zhang
+    [vads_ship_to_first_name] => Livraison Commerce de proximité
+    [vads_ship_to_last_name] => LE LOUISIANE
+)
+

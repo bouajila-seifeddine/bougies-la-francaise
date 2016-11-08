@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>twenga</name>
+	<displayName><![CDATA[Acquisition avanc&eacute;e de trafic sur le r&eacute;seau Twenga]]></displayName>
+	<version><![CDATA[3.0.3]]></version>
+	<description><![CDATA[Cette solution int&egrave;gre votre flux produit sur les moteurs de recherche Twenga ainsi que sur plus de 1500 sites partenaires tels que des comparateurs de prix, des guides d&#039;achat et des sites &eacute;ditoriaux.]]></description>
+	<author><![CDATA[Twenga]]></author>
+	<tab><![CDATA[market_place]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

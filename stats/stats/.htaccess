@@ -1,0 +1,7 @@
+AuthName "bougies-la-francaise.com statistics"
+AuthType Basic
+AuthUserFile /home/bougies-la-francaise/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

@@ -1,0 +1,15 @@
+ID produit*;Attribut (Nom:Type:Position)*;Valeur (Valeur:Position)*;Référence fournisseur;Référence;EAN13;UPC;Prix d'achat;Impact sur le prix;Eco taxe;Quantité;Quantité minimale;Impact sur le poids;Valeurs par défaut (0 = Non, 1 = oui);Position de l'image;URL de l'image;Supprimer les images existantes (0 = non, 1 = oui);ID ou nom de la boutique
+2230702;Couleur:color:0;Naturel:0;;;;;;0;;50;;;0;;;0;1
+2230714;Couleur:color:0;Naturel:0;;;;;;0;;50;;;0;;;0;1
+2230731;Couleur:color:0;Jaune:0;;;;;;0;;50;;;0;;;0;1
+2230784;Couleur:color:0;Vert:0;;;;;;0;;50;;;0;;;0;1
+2230726;Couleur:color:0;Bleu:0;;;;;;0;;50;;;0;;;0;1
+2230752;Couleur:color:0;Gris:0;;;;;;0;;50;;;0;;;0;1
+2230725;Couleur:color:0;Violet:0;;;;;;0;;50;;;0;;;0;1
+2230756;Couleur:color:0;Rose:0;;;;;;0;;50;;;0;;;0;1
+2230718;Couleur:color:0;Gris:0;;;;;;0;;50;;;0;;;0;1
+2230787;Couleur:color:0;Rouge:0;;;;;;0;;50;;;0;;;0;1
+2253400;Couleur:color:0;Blanc:0;;;;;;0;;50;;;0;;;0;1
+2135936;Couleur:color:0;Blanc:0;;;;;;0;;50;;;0;;;0;1
+2230749;Couleur:color:0;Gris:0;;;;;;0;;50;;;0;;;0;1
+2230701;Couleur:color:0;Blanc:0;;;;;;0;;50;;;0;;;0;1

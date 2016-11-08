@@ -25,39 +25,94 @@ div.star.star_on:after{
 	{if $proconfigcategoryradio7 ==1 } 
 		<h2 class="blf-title">{l s='Our Collections' mod='procategory'}</h2>
 	{/if}
-<div class="row">
-<div class="span12">
-		<div class="carousel owl-theme">
-			<ul id="owl-example-category" class="owl-carousel owl-origin">
-                 {foreach from=$categories item=category name=homeCategories}
-                 <li class="item  ajax_block_product clearfix {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if}">
-                  	<div class="wrap-category">
-                        <a href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}" title="{$category.name|truncate:35}"  class="lnk_img">
-						{if $proconfigcategoryradio1 ==1 } <img alt="{$category.name|truncate:35}" src="{$img_cat_dir}{$category.id_category}.jpg"  />{/if}
-						</a>
-						<div class="box-cat">
-							<div>
-								{if $proconfigcategoryradio4 ==1 }
-									<h5>{$category.name|truncate:35}</h5>
-								{/if}
-								{if $proconfigcategoryradio6 ==1 }
-									<div class="category-desc">
-										{$category.description}
-										<a class="collection-products-link" href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}">
-											{l s='Show products' mod='procategory'}
-										</a>
-										{*$category.description|truncate:100*}
-									</div>
-								{/if}
-							</div>
-						</div>
-						  
-					</div>
-                </li>
-       	 {/foreach}
-		</ul>
-	</div>
-    </div>
+    <div class="row">
+        <div class="span12">
+    		<div class="carousel owl-theme">
+    			<ul id="owl-example-category" class="owl-carousel owl-origin">
+                    {foreach from=$categories item=category name=homeCategories}
+                        {if $smarty.foreach.homeCategories.last}
+                            <li class="item  ajax_block_product clearfix {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if}">
+                                <div class="wrap-category">
+                                    <a href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}" title="{$category.name|truncate:35}"  class="lnk_img">
+                                        {if $proconfigcategoryradio1 ==1 } <img alt="{$category.name|truncate:35}" src="{$img_cat_dir}{$category.id_category}.jpg"  />{/if}
+                                    </a>
+                                    <div class="box-cat">
+                                        <div>
+                                        {if $proconfigcategoryradio4 ==1 }
+                                            <h5>{$category.name|truncate:35}</h5>
+                                        {/if}
+                                        {if $proconfigcategoryradio6 ==1 }
+                                            <div class="category-desc">
+                                                {$category.description}
+                                                <a class="collection-products-link" href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}">
+                                                    {l s='Show products' mod='procategory'}
+                                                </a>
+                                                {*$category.description|truncate:100*}
+                                            </div>
+                                        {/if}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        {/if}
+                    {/foreach}
+
+                    {foreach from=$categories item=category name=homeCategories}
+                        <li class="item  ajax_block_product clearfix {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if}">
+                            <div class="wrap-category">
+                                <a href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}" title="{$category.name|truncate:35}"  class="lnk_img">
+                                    {if $proconfigcategoryradio1 ==1 } <img alt="{$category.name|truncate:35}" src="{$img_cat_dir}{$category.id_category}.jpg"  />{/if}
+                                </a>
+                                <div class="box-cat">
+                                    <div>
+                                    {if $proconfigcategoryradio4 ==1 }
+                                        <h5>{$category.name|truncate:35}</h5>
+                                    {/if}
+                                    {if $proconfigcategoryradio6 ==1 }
+                                        <div class="category-desc">
+                                            {$category.description}
+                                            <a class="collection-products-link" href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}">
+                                                {l s='Show products' mod='procategory'}
+                                            </a>
+                                            {*$category.description|truncate:100*}
+                                        </div>
+                                    {/if}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    {/foreach}
+
+                    {foreach from=$categories item=category name=homeCategories}
+                        {if $smarty.foreach.homeCategories.first}
+                            <li class="item  ajax_block_product clearfix {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if}">
+                                <div class="wrap-category">
+                                    <a href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}" title="{$category.name|truncate:35}"  class="lnk_img">
+                                        {if $proconfigcategoryradio1 ==1 } <img alt="{$category.name|truncate:35}" src="{$img_cat_dir}{$category.id_category}.jpg"  />{/if}
+                                    </a>
+                                    <div class="box-cat">
+                                        <div>
+                                        {if $proconfigcategoryradio4 ==1 }
+                                            <h5>{$category.name|truncate:35}</h5>
+                                        {/if}
+                                        {if $proconfigcategoryradio6 ==1 }
+                                            <div class="category-desc">
+                                                {$category.description}
+                                                <a class="collection-products-link" href="{$link->getcategoryLink($category.id_category, $category.link_rewrite)}">
+                                                    {l s='Show products' mod='procategory'}
+                                                </a>
+                                                {*$category.description|truncate:100*}
+                                            </div>
+                                        {/if}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        {/if}
+                    {/foreach}
+                </ul>
+    	   </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">		
