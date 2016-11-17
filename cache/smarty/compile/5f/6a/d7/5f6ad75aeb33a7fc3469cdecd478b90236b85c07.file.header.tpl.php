@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:55
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:55:10
          compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17608106755821b9c7be9f62-46583107%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1362594576582d8c8e17f147-03334879%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5f6ad75aeb33a7fc3469cdecd478b90236b85c07' => 
     array (
       0 => '/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/header.tpl',
-      1 => 1478537097,
+      1 => 1479223394,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17608106755821b9c7be9f62-46583107',
+  'nocache_hash' => '1362594576582d8c8e17f147-03334879',
   'function' => 
   array (
   ),
@@ -68,9 +68,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c7e03b53_69256804',
+  'unifunc' => 'content_582d8c8e39d0b5_08721102',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c7e03b53_69256804')) {function content_5821b9c7e03b53_69256804($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.replace.php';
+<?php if ($_valid && !is_callable('content_582d8c8e39d0b5_08721102')) {function content_582d8c8e39d0b5_08721102($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.replace.php';
 if (!is_callable('smarty_modifier_regex_replace')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.regex_replace.php';
 if (!is_callable('smarty_function_implode')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/function.implode.php';
 ?>
@@ -246,11 +246,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 
 	<input name="tfh" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['page_name']->value;?>
 "> -->
-	<?php if ($_smarty_tpl->tpl_vars['GTM_DATAS']->value!='') {?>
+		<?php if ($_smarty_tpl->tpl_vars['GTM_DATAS']->value!='') {?>
 
-		<?php if ($_smarty_tpl->tpl_vars['page_name']->value=="index"||$_smarty_tpl->tpl_vars['page_name']->value=="category"||$_smarty_tpl->tpl_vars['page_name']->value=="search"||$_smarty_tpl->tpl_vars['page_name']->value=="product"||$_smarty_tpl->tpl_vars['page_name']->value=="order"||($_smarty_tpl->tpl_vars['page_name']->value=="authentication"&&!empty($_GET['back']))) {?>
-
-
+		<?php if ($_smarty_tpl->tpl_vars['page_name']->value=="index"||$_smarty_tpl->tpl_vars['page_name']->value=="category"||$_smarty_tpl->tpl_vars['page_name']->value=="search"||$_smarty_tpl->tpl_vars['page_name']->value=="product"||$_smarty_tpl->tpl_vars['page_name']->value=="order"||$_smarty_tpl->tpl_vars['page_name']->value=="my-account"||$_smarty_tpl->tpl_vars['page_name']->value=="order-confirmation"||$_smarty_tpl->tpl_vars['page_name']->value=="module-paypal-submit") {?>
 			<script type="text/javascript">
 				
 					var USER_ID = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['USER_ID'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['USER_ID'];?>
@@ -265,12 +263,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php } else { ?>''<?php }?>;
 					var total_value = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['total_value'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['total_value'];?>
 <?php } else { ?>''<?php }?>;
+					var step = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['step'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['step'];?>
+<?php } else { ?>0<?php }?>;
 				
 			</script>
 		<?php }?>
 
 		<?php if ($_smarty_tpl->tpl_vars['page_name']->value=="order-confirmation"||$_smarty_tpl->tpl_vars['page_name']->value=="module-paypal-submit") {?>
-
 			<script type="text/javascript">
 				
 					var USER_ID = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['USER_ID'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['USER_ID'];?>
@@ -285,8 +284,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php } else { ?>''<?php }?>;
 					var total_value = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['total_value'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['total_value'];?>
 <?php } else { ?>''<?php }?>;
-					var event = <?php if (isset($_smarty_tpl->tpl_vars['page_name']->value)) {?>'<?php echo $_smarty_tpl->tpl_vars['page_name']->value;?>
-'<?php } else { ?>''<?php }?>;
+					var event = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['event'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['event'];?>
+<?php } else { ?>''<?php }?>;
 					var transactionId = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['transactionId'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['transactionId'];?>
 <?php } else { ?>''<?php }?>;
 					var transactionAffiliation = <?php if (isset($_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['transactionAffiliation'])) {?><?php echo $_smarty_tpl->tpl_vars['GTM_DATAS']->value[$_smarty_tpl->tpl_vars['page_name']->value]['transactionAffiliation'];?>
@@ -304,6 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<?php }?>
 
 	<?php }?>
+
 
 	<?php if (!isset($_smarty_tpl->tpl_vars['content_only']->value)||!$_smarty_tpl->tpl_vars['content_only']->value) {?>
 		<?php if (isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)&&$_smarty_tpl->tpl_vars['restricted_country_mode']->value) {?>
@@ -432,7 +432,7 @@ if (!empty($_capture_buffer)) {
 						</div>
 					</div>
 
-					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='contact'&&$_smarty_tpl->tpl_vars['page_name']->value!='module-blocknewsletter-form'&&$_smarty_tpl->tpl_vars['page_name']->value!='authentication'&&$_smarty_tpl->tpl_vars['page_name']->value!='address'&&$_smarty_tpl->tpl_vars['page_name']->value!='identity'&&$_smarty_tpl->tpl_vars['page_name']->value!='module-braintree-payment'&&$_GET['id_cms']!=6) {?>
+					<?php if ($_smarty_tpl->tpl_vars['page_name']->value!='index'&&$_smarty_tpl->tpl_vars['page_name']->value!='contact'&&$_smarty_tpl->tpl_vars['page_name']->value!='module-blocknewsletter-form'&&$_smarty_tpl->tpl_vars['page_name']->value!='authentication'&&$_smarty_tpl->tpl_vars['page_name']->value!='address'&&$_smarty_tpl->tpl_vars['page_name']->value!='identity'&&$_smarty_tpl->tpl_vars['page_name']->value!='module-braintree-payment'&&$_GET['id_cms']!=6&&$_GET['id_cms']!=7) {?>
 						<div class="container">
 							<div class="row">
 					<?php }?>

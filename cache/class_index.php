@@ -229,7 +229,7 @@
   ),
   'AdminCarrierWizardController' => 
   array (
-    'path' => '',
+    'path' => 'override/controllers/admin/AdminCarrierWizardController.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -337,7 +337,7 @@
   ),
   'AdminController' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/controller/AdminController.php',
     'type' => 'class',
     'override' => false,
   ),

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:52
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:53:23
          compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/product-list-colors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13467217855821b9c47453a6-14774302%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:142738014582d8c23bb9746-50751765%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13467217855821b9c47453a6-14774302',
+  'nocache_hash' => '142738014582d8c23bb9746-50751765',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c478df67_28796054',
+  'unifunc' => 'content_582d8c23c0ad01_08528613',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c478df67_28796054')) {function content_5821b9c478df67_28796054($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_582d8c23c0ad01_08528613')) {function content_582d8c23c0ad01_08528613($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['colors_list']->value)) {?>
 <ul class="color_to_pick_list clearfix">
 	<?php  $_smarty_tpl->tpl_vars['color'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['color']->_loop = false;

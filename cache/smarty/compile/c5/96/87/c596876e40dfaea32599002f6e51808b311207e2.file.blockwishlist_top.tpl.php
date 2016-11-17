@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:57
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:55:19
          compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/modules/blockwishlist/blockwishlist_top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11748034065821b9c91e08a3-21442472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:971163772582d8c970bd609-20902858%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11748034065821b9c91e08a3-21442472',
+  'nocache_hash' => '971163772582d8c970bd609-20902858',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c91f3ae9_53172862',
+  'unifunc' => 'content_582d8c970d1090_40780165',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c91f3ae9_53172862')) {function content_5821b9c91f3ae9_53172862($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_582d8c970d1090_40780165')) {function content_582d8c970d1090_40780165($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('wishlistProductsIds'=>$_smarty_tpl->tpl_vars['wishlist_products']->value),$_smarty_tpl);?>
 <?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'loggin_required')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'loggin_required'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 <?php echo smartyTranslate(array('s'=>'You must be logged in to manage your wishlist.','mod'=>'blockwishlist','js'=>1),$_smarty_tpl);?>

@@ -7737,6 +7737,10 @@ a.price_discount_delete {
 .cart_discount_delete {
   text-align: center; }
 
+#order-detail-content #cart_summary .cart_discount {
+	background:#f6f6f6;
+}
+  
 @media (max-width: 767px) {
   #order-detail-content #cart_summary table, #order-detail-content #cart_summary thead, #order-detail-content #cart_summary tbody, #order-detail-content #cart_summary th, #order-detail-content #cart_summary td, #order-detail-content #cart_summary tr {
     display: block; }
@@ -7802,7 +7806,25 @@ a.price_discount_delete {
   #order-detail-content #cart_summary tfoot tr .text-right, #order-detail-content #cart_summary tfoot tr tbody td.cart_unit, #order-detail-content #cart_summary tbody tfoot tr td.cart_unit, #order-detail-content #cart_summary tfoot tr tbody td.cart_total, #order-detail-content #cart_summary tbody tfoot tr td.cart_total, #order-detail-content #cart_summary tfoot tr .price {
     display: block;
     float: left;
-    width: 50%; } }
+    width: 50%; } 
+
+	#order-detail-content #cart_summary td.cart_discount_name {
+		line-height:36px;
+		width:50%
+	}
+	#order-detail-content #cart_summary td.cart_discount_price,
+	#order-detail-content #cart_summary td.cart_discount_delete {
+		display:none;
+	}
+	#order-detail-content #cart_summary td.cart_discount_del {
+		
+	}
+	#order-detail-content #cart_summary td.cart_discount_price_total {
+		display:block;
+		float:right;
+	}
+	
+}
 @media (max-width: 768px) {
   #order-detail-content #cart_summary tbody td .price {
     text-align: center; }

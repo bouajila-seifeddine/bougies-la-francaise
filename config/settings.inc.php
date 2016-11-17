@@ -1,6 +1,6 @@
 <?php
 define('_DB_SERVER_', 'localhost');
-define('_DB_NAME_', 'new');
+define('_DB_NAME_', 'blf_new');
 define('_DB_USER_', 'bougies-la-franc');
 define('_DB_PASSWD_', 'k982wgT7KDvC');
 define('_DB_PREFIX_', 'ps_');

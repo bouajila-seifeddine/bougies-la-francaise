@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:57
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:55:19
          compiled from "/home/bougies-la-francaise/public_html/modules/gtrustedstores/views/templates/hook/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11157610575821b9c919e618-26719674%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1981697323582d8c97080744-15382369%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11157610575821b9c919e618-26719674',
+  'nocache_hash' => '1981697323582d8c97080744-15382369',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c91c1019_06314751',
+  'unifunc' => 'content_582d8c970a3f75_81317790',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c91c1019_06314751')) {function content_5821b9c91c1019_06314751($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_582d8c970a3f75_81317790')) {function content_582d8c970a3f75_81317790($_smarty_tpl) {?>
 
 <!-- START: Google Trusted Stores module: Badge -->
 	<script type="text/javascript">

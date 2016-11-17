@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:55
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:31:13
          compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/stores.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:12572774435821b9c7af1357-08059598%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1699710128582d86f1c0ce64-06063986%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12572774435821b9c7af1357-08059598',
+  'nocache_hash' => '1699710128582d86f1c0ce64-06063986',
   'function' => 
   array (
   ),
@@ -38,9 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c7bb49d6_82311354',
+  'unifunc' => 'content_582d86f1cb3155_26346874',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c7bb49d6_82311354')) {function content_5821b9c7bb49d6_82311354($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.replace.php';
+<?php if ($_valid && !is_callable('content_582d86f1cb3155_26346874')) {function content_582d86f1cb3155_26346874($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.replace.php';
 ?>
 
 <?php $_smarty_tpl->_capture_stack[0][] = array('path', null, null); ob_start(); ?><?php echo smartyTranslate(array('s'=>'Our stores'),$_smarty_tpl);?>

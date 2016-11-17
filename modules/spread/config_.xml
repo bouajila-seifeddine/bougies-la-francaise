@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>spread</name>
+	<displayName><![CDATA[Spread]]></displayName>
+	<version><![CDATA[2.2]]></version>
+	<description><![CDATA[Automatically integrates Spread in Prestashop to increase your sales through social networks]]></description>
+	<author><![CDATA[Spread]]></author>
+	<tab><![CDATA[advertising_marketing]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

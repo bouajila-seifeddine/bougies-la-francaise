@@ -1,0 +1,77 @@
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:49:33
+         compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/modules/homeimageblock/views/templates/hook/home.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1174637537582d8b3d089c77-08739956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '6661eae301de75fd2cf38e01b85c5637b78f8cb7' => 
+    array (
+      0 => '/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/modules/homeimageblock/views/templates/hook/home.tpl',
+      1 => 1478110007,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1174637537582d8b3d089c77-08739956',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'images' => 0,
+    'image_block_backgroud' => 0,
+    'left_margin' => 0,
+    'bottom_margin' => 0,
+    'image' => 0,
+    'animate' => 0,
+    'animate_px' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_582d8b3d0bf395_84470078',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_582d8b3d0bf395_84470078')) {function content_582d8b3d0bf395_84470078($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/home/bougies-la-francaise/public_html/tools/smarty/plugins/modifier.escape.php';
+?>
+<?php if (!empty($_smarty_tpl->tpl_vars['images']->value)) {?>
+<div id="homeimageblock-bg" style="background-color:<?php echo $_smarty_tpl->tpl_vars['image_block_backgroud']->value;?>
+;">
+	<div class="container">
+		<div class="row">
+			<div id="container-homeimageblock" style="margin-left: -<?php echo (smarty_modifier_escape($_smarty_tpl->tpl_vars['left_margin']->value, 'intval'))/2;?>
+px">
+				<ul id="homeimageblock" class="masonry">
+					<!-- product attribute to add at cart when click on add button -->
+					<?php  $_smarty_tpl->tpl_vars['image'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['image']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['images']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['image']->key => $_smarty_tpl->tpl_vars['image']->value) {
+$_smarty_tpl->tpl_vars['image']->_loop = true;
+?>
+						<li class="item" style="margin-left: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['left_margin']->value, ENT_QUOTES, 'UTF-8', true);?>
+px; margin-bottom: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['bottom_margin']->value, ENT_QUOTES, 'UTF-8', true);?>
+px; width:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['image_width'], ENT_QUOTES, 'UTF-8', true);?>
+px; height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['image_height'], ENT_QUOTES, 'UTF-8', true);?>
+px">
+							<?php if (htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['url'], ENT_QUOTES, 'UTF-8', true)!='') {?>
+								<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['url'], ENT_QUOTES, 'UTF-8', true);?>
+" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
+" <?php if (htmlspecialchars($_smarty_tpl->tpl_vars['animate']->value, ENT_QUOTES, 'UTF-8', true)==1) {?>class="animate"<?php }?>>
+							<?php }?>
+									<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['image'], ENT_QUOTES, 'UTF-8', true);?>
+" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
+" width="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['image_width'], ENT_QUOTES, 'UTF-8', true);?>
+" height="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['image_height'], ENT_QUOTES, 'UTF-8', true);?>
+" style="display: block;"/>
+							 <?php if (htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['url'], ENT_QUOTES, 'UTF-8', true)!='') {?>
+								</a>
+							<?php }?>    
+						</li>
+					<?php } ?>
+				</ul>
+				<script type="text/javascript">
+					var margin_animation = <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['animate_px']->value, ENT_QUOTES, 'UTF-8', true);?>
+;
+				</script>   
+			</div>
+		</div>
+    </div>
+</div>
+<?php }?><?php }} ?>

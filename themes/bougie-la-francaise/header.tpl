@@ -135,11 +135,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- 
 	<input name="tfh" type="hidden" value="{$page_name}"> -->
-	{if $GTM_DATAS != ''}
+		{if $GTM_DATAS != ''}
 
-		{if $page_name == "index" || $page_name == "category" || $page_name == "search" || $page_name == "product" || $page_name == "order" || ($page_name == "authentication" && !empty($smarty.get.back))}
-
-
+		{if $page_name == "index" || $page_name == "category" || $page_name == "search" || $page_name == "product" || $page_name == "order" || $page_name == "my-account" || $page_name == "order-confirmation" || $page_name == "module-paypal-submit" }
 			<script type="text/javascript">
 				{literal}
 					var USER_ID = {/literal}{if isset($GTM_DATAS.$page_name.USER_ID)}{$GTM_DATAS.$page_name.USER_ID}{else}''{/if}{literal};
@@ -148,12 +146,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					var product_name = {/literal}{if isset($GTM_DATAS.$page_name.product_name)}{$GTM_DATAS.$page_name.product_name}{else}''{/if}{literal};
 					var product_price = {/literal}{if isset($GTM_DATAS.$page_name.product_price)}{$GTM_DATAS.$page_name.product_price}{else}''{/if}{literal};
 					var total_value = {/literal}{if isset($GTM_DATAS.$page_name.total_value)}{$GTM_DATAS.$page_name.total_value}{else}''{/if}{literal};
+					var step = {/literal}{if isset($GTM_DATAS.$page_name.step)}{$GTM_DATAS.$page_name.step}{else}0{/if}{literal};
 				{/literal}
 			</script>
 		{/if}
 
 		{if $page_name == "order-confirmation" || $page_name == "module-paypal-submit"}
-
 			<script type="text/javascript">
 				{literal}
 					var USER_ID = {/literal}{if isset($GTM_DATAS.$page_name.USER_ID)}{$GTM_DATAS.$page_name.USER_ID}{else}''{/if}{literal};
@@ -162,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					var product_name = {/literal}{if isset($GTM_DATAS.$page_name.product_name)}{$GTM_DATAS.$page_name.product_name}{else}''{/if}{literal};
 					var product_price = {/literal}{if isset($GTM_DATAS.$page_name.product_price)}{$GTM_DATAS.$page_name.product_price}{else}''{/if}{literal};
 					var total_value = {/literal}{if isset($GTM_DATAS.$page_name.total_value)}{$GTM_DATAS.$page_name.total_value}{else}''{/if}{literal};
-					var event = {/literal}{if isset($page_name)}'{$page_name}'{else}''{/if}{literal};
+					var event = {/literal}{if isset($GTM_DATAS.$page_name.event)}{$GTM_DATAS.$page_name.event}{else}''{/if}{literal};
 					var transactionId = {/literal}{if isset($GTM_DATAS.$page_name.transactionId)}{$GTM_DATAS.$page_name.transactionId}{else}''{/if}{literal};
 					var transactionAffiliation = {/literal}{if isset($GTM_DATAS.$page_name.transactionAffiliation)}{$GTM_DATAS.$page_name.transactionAffiliation}{else}''{/if}{literal};
 					var transactionTotal = {/literal}{if isset($GTM_DATAS.$page_name.transactionTotal)}{$GTM_DATAS.$page_name.transactionTotal}{else}''{/if}{literal};
@@ -174,6 +172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		{/if}
 
 	{/if}
+
 
 	{if !isset($content_only) || !$content_only}
 		{if isset($restricted_country_mode) && $restricted_country_mode}
@@ -269,6 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						&& $page_name != 'identity'
 						&& $page_name != 'module-braintree-payment'
 						&&  $smarty.get.id_cms != 6
+						&& $smarty.get.id_cms != 7
 					}
 						<div class="container">
 							<div class="row">

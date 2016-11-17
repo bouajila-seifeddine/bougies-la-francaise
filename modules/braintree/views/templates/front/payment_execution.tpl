@@ -22,10 +22,12 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <style type="text/css">
   #cvv{
     width: 50px !important;
+  }
+  #postal_code{
+    width: 100px !important;
   }
   #card_name, #card_number{
     width: 300px !important;
@@ -46,16 +48,18 @@
     <li>- {l s='The total amount of your order is' mod='braintree'} <span class="bold">{displayPrice price=$total}</span> (tax incl.) </li>
   </ul>
   <div class="error_msg"></div>
+  {if $cardholdername}
   <div class="form-group">
-    <label for="card_name" class="">{l s='Card Name' mod='braintree'}</label>
-    <input type="text" class="form-control" id="card_name" placeholder="Card Name" name="card_name">
+    <label for="card_name" class="">{$bt_card_name}</label>
+    <input type="text" class="form-control" id="card_name" placeholder="{$bt_card_name_holder}" name="card_name">
+  </div>
+  {/if}
+  <div class="form-group">
+    <label for="card_number" class="">{$bt_card_number}</label>
+    <input type="text" class="form-control" id="card_number" placeholder="{$bt_card_number_holder}" name="card_number">
   </div>
   <div class="form-group">
-    <label for="card_number" class="">{l s='Card Number' mod='braintree'}</label>
-    <input type="text" class="form-control" id="card_number" placeholder="Card Number" name="card_number">
-  </div>
-  <div class="form-group">
-    <label for="inputEmail3" class="">{l s='Expiration Date' mod='braintree'}</label>
+    <label for="inputEmail3" class="">{$bt_expiration_date}</label>
     <br>
     <select name="expiration_month">
       <option value="01">01</option>
@@ -78,11 +82,17 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="cvv" class="">{l s='CVV' mod='braintree'}</label>
+    <label for="cvv" class="">{$bt_cvv}</label>
     <input type="text" class="form-control" id="cvv" placeholder="" name="cvv">
   </div>
+  {if $postal_code}
   <div class="form-group">
-    <input type="submit" class="btn btn-primary braintree_submit" value="{l s='Submit Payment' mod='braintree'}" name="submit"></input>
+    <label for="postal_code" class="">{$bt_postal_code}</label>
+    <input type="text" class="form-control" id="postal_code" placeholder="" name="postal_code">
+  </div>
+  {/if}
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary braintree_submit" value="{$bt_submit_button}" name="submit"></input>
   </div>
 </form>
 
@@ -90,7 +100,7 @@
   $(function(){
     $('#braintree_cc_submit').submit(function(){
       $('.alert').remove();
-      $('.braintree_submit').val('Processing Payment...');
+      $('.braintree_submit').val('{$bt_submit_processing}');
 
       var data = $(this).serialize();
 
@@ -102,7 +112,7 @@
         success: function(data) {
           if(data.errorMsg){
             $(data.msg).appendTo('.error_msg');
-            $('.braintree_submit').val('Submit Payment');
+            $('.braintree_submit').val('{$bt_submit_button}');
           } else {
             window.location = data.msg;
           }
@@ -122,19 +132,16 @@
   <ul>
     <li>- {l s='The total amount of your order is' mod='braintree'} <span class="bold">{displayPrice price=$total}</span> (tax incl.) </li>
   </ul>
-  <div class="error_msg_dropin"></div>
 <form action="{$link->getModuleLink('braintree', 'validation', [], true)|escape:'htmlall':'UTF-8'}" method="post" class="" id="braintree_cc_submit_dropin" style="background: #fbfbfb none repeat scroll 0 0;
     border: 1px solid #d6d4d4;
     line-height: 23px;
     margin: 0 0 30px;
     padding: 14px 18px 13px;">
+  <div class="error_msg"></div>
   <div id="payment-form"></div>
-  {if $three_d_secure == 1}
-    <input type="hidden" name="payment_method_nonce" value="" class="nonce">
-  {/if}
-  <input type="submit" value="{l s='Submit Payment' mod='braintree'}" class="btn btn-primary dropin_submit">
+  <input type="hidden" name="payment_method_nonce" value="" class="nonce">
+  <input type="submit" value="{$bt_submit_button}" class="btn btn-primary dropin_submit">
 </form>
-<script src="https://js.braintreegateway.com/js/braintree-2.21.0.min.js"></script>
   {if $three_d_secure == 1}
     <script>
       var clientToken = "{$client_token|escape:'htmlall':'UTF-8'}";
@@ -154,11 +161,14 @@
             $('.nonce').val(response.nonce);
 
             if(result == 'true'){
-              // $('#braintree_cc_submit_dropin').submit();
+              $('#braintree_cc_submit_dropin').submit();
             } else {
-              $('.error_msg_dropin').html('<div class="alert alert-danger">{l s="Please select a payment method." mod="braintree"}</div>');
+              $('.error_msg_dropin').html("<div class='alert alert-danger'>{$bt_select_payment_method}</div>");
             }
           });
+        },
+        onError: function (obj) {
+          // nothing to do
         }
       });
 
@@ -171,7 +181,33 @@
       var clientToken = "{$client_token|escape:'htmlall':'UTF-8'}";
 
       braintree.setup(clientToken, "dropin", {
-        container: "payment-form"
+        container: "payment-form",
+        onPaymentMethodReceived: function(obj) {
+          $('#braintree_cc_submit_dropin .alert').remove();
+          $('.dropin_submit').val('{$bt_submit_processing}');
+
+          $('.nonce').val(obj.nonce);
+          var data = $('#braintree_cc_submit_dropin').serialize();
+
+          var query = $.ajax({
+            type: 'POST',
+            url: baseDir + 'index.php?fc=module&module=braintree&controller=validation',
+            data: data,
+            dataType: 'json',
+            success: function(data) {
+              if(data.errorMsg){
+                $('.dropin_submit').val('{$bt_submit_button}');
+                $(data.msg).appendTo('.error_msg');
+              } else {
+                window.location = data.msg;
+              }
+            }
+          });
+          return false;
+        },
+        onError: function (obj) {
+          // nothing to do
+        }
       });
     </script>
   {/if}

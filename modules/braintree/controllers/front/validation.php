@@ -37,6 +37,7 @@ class BraintreeValidationModuleFrontController extends ModuleFrontController
     public function postProcess()
     {
         $bt_merchant_id = '';
+       
         $currency = $this->context->currency;
         $submit_for_settlement = false;
         $multicurrency = Configuration::get('MULTICURRENCY');
@@ -93,31 +94,36 @@ class BraintreeValidationModuleFrontController extends ModuleFrontController
             $validation = false;
             $error = '<div class="alert alert-danger">';
             // validate the user input first.
-            if (Tools::getValue('card_name') == null) {
+            if (Tools::getValue('card_name') == null && Configuration::get('CARDHOLDERNAME') && !Configuration::get('ONEPAGECHECKOUT')) {
                 $validation = true;
-                $error .= $this->module->l('Card Name is required.') . ' ';
+                $error .= '<p>'.$this->module->l('Card Name is required.') . '</p>';
             }
 
             if (Tools::getValue('card_number') == null) {
                 $validation = true;
-                $error .= $this->module->l('Card Number is required.').' ';
+                $error .= '<p>'.$this->module->l('Card Number is required.').'</p>';
             }
 
             if (Tools::getValue('expiration_month') == null && Tools::getValue('expiration_year') == null) {
                 $validation = true;
-                $error .= $this->module->l('Expiration Date is required.').' ';
+                $error .= '<p>'.$this->module->l('Expiration Date is required.').'</p>';
             }
 
             $card_exp = strtotime(Tools::getValue('expiration_year') . '-' . Tools::getValue('expiration_month') . '-' . date('d', time()));
 
             if ($card_exp <= time()) {
                 $validation = true;
-                $error .= $this->module->l('Expiration Date is invalid.').' ';
+                $error .= '<p>'.$this->module->l('Expiration Date is invalid.').'</p>';
             }
 
             if (Tools::getValue('cvv') == null) {
                 $validation = true;
-                $error .= $this->module->l('CVV is required.').' ';
+                $error .= '<p>'.$this->module->l('CVV is required.').' ';
+            }
+
+            if (Tools::getValue('postal_code') == null && Configuration::get('POSTALCODE')) {
+                $validation = true;
+                $error .= '<p>'.$this->module->l('Postal Code is required.').'</p>';
             }
 
             $error .= '</div>';
@@ -155,67 +161,58 @@ class BraintreeValidationModuleFrontController extends ModuleFrontController
                 die();
             }
 
-            if ($bt_merchant_id != '') {
-                $result = Braintree_Transaction::sale(array(
-                    'amount' => $total,
-                    'merchantAccountId' => $bt_merchant_id,
-                    'paymentMethodNonce' => Tools::getValue('payment_method_nonce'),
-                    'options' => array(
-                        'submitForSettlement' => $submit_for_settlement,
-                        'three_d_secure' => array(
-                            'required' => $three_d_secure
-                        )
+            $user_data = array(
+                'amount' => $total,
+                'paymentMethodNonce' => Tools::getValue('payment_method_nonce'),
+                'options' => array(
+                    'submitForSettlement' => $submit_for_settlement,
+                    'three_d_secure' => array(
+                        'required' => $three_d_secure
                     )
-                ));
+                ),
+                'customer' => array(
+                    'firstName' => $this->context->customer->firstname,
+                    'lastName' => $this->context->customer->lastname
+                )
+            );
 
-            } else {
-                $result = Braintree_Transaction::sale(array(
-                    'amount' => $total,
-                    'paymentMethodNonce' => Tools::getValue('payment_method_nonce'),
-                    'options' => array(
-                        'submitForSettlement' => $submit_for_settlement,
-                        'three_d_secure' => array(
-                            'required' => $three_d_secure
-                        )
-                    )
-                ));
+            if ($bt_merchant_id != '') {
+                $user_data['merchantAccountId'] = $bt_merchant_id;
             }
         } else {
+            $cardholderName = Tools::getValue('card_name');
+            $postalcode = Tools::getValue('postal_code');
+
+            $user_data = array(
+                'amount' => $total,
+                'creditCard' => array(
+                    'cardholderName' => $cardholderName,
+                    // 'number' => '3566002020360505',
+                    'number' => Tools::getValue('card_number'),
+                    'expirationDate' => Tools::getValue('expiration_month') . '/' . Tools::getValue('expiration_year'),
+                    'cvv' => Tools::getValue('cvv')
+                ),
+                'options' => array(
+                    'submitForSettlement' => $submit_for_settlement
+                ),
+                'billing' => array(
+                    'postalCode' => $postalcode
+                ),
+                'customer' => array(
+                    'firstName' => $this->context->customer->firstname,
+                    'lastName' => $this->context->customer->lastname
+                )
+            );
+
             if ($bt_merchant_id != '') {
-                $result = Braintree_Transaction::sale(array(
-                    'amount' => $total,
-                    'merchantAccountId' => $bt_merchant_id,
-                    'creditCard' => array(
-                        'cardholderName' => Tools::getValue('card_name'),
-                        // 'number' => '3566002020360505',
-                        'number' => Tools::getValue('card_number'),
-                        'expirationDate' => Tools::getValue('expiration_month') . '/' . Tools::getValue('expiration_year'),
-                        'cvv' => Tools::getValue('cvv')
-                    ),
-                    'options' => array(
-                        'submitForSettlement' => $submit_for_settlement
-                    )
-                ));
-            } else {
-                $result = Braintree_Transaction::sale(array(
-                    'amount' => $total,
-                    'creditCard' => array(
-                        'cardholderName' => Tools::getValue('card_name'),
-                        // 'number' => '3566002020360505',
-                        'number' => Tools::getValue('card_number'),
-                        'expirationDate' => Tools::getValue('expiration_month') . '/' . Tools::getValue('expiration_year'),
-                        'cvv' => Tools::getValue('cvv')
-                    ),
-                    'options' => array(
-                        'submitForSettlement' => $submit_for_settlement
-                    )
-                ));
-            }
-            
+                $user_data['merchantAccountId'] = $bt_merchant_id;
+            }     
         }
 
+        $result = Braintree_Transaction::sale($user_data);
+
         if ($result->success) {
-            // Braintree_Transaction::submitForSettlement($result->transaction->id);
+            Braintree_Transaction::submitForSettlement($result->transaction->id);
 
             $this->module->validateOrder(
                 (int)$cart->id,
@@ -229,9 +226,9 @@ class BraintreeValidationModuleFrontController extends ModuleFrontController
                 $customer->secure_key
             );
 
-            // $custom = explode(';', Tools::getValue('custom'));
+            $custom = explode(';', Tools::getValue('custom'));
             // $shop = new Shop((int)$custom[1]);
-            // $context = Context::getContext();
+            $context = Context::getContext();
             // $context->shop = $shop;
 
             $environment = Configuration::get('ENVIRONMENT');
@@ -255,30 +252,63 @@ class BraintreeValidationModuleFrontController extends ModuleFrontController
 
             $this->addTransaction($data, 'payment');
 
-            // Tools::redirect('index.php?controller=history');
             $this->json['errorMsg'] = false;
-            $this->json['msg'] = 'index.php?controller=history';
-
-            if (Configuration::get('FORM_TYPE') == 1) {
-                Tools::redirect('index.php?controller=history');
-            }
-        } elseif ($result->transaction) {
-            // print_r($result);
-            // print_r("Error processing transaction:");
-            // print_r("\n  code: " . $result->transaction->processorResponseCode);
-            // print_r("\n  text: " . ;
-
-            $error_msg = $result->transaction->processorResponseText;
-            $this->json['msg'] = '<div class="alert alert-danger">'.$error_msg.'</div>';
+            $this->json['msg'] = __PS_BASE_URI__.'index.php?controller=order-confirmation&id_cart='.(int)$this->context->cart->id.'&id_module='.(int)$this->module->id.'&id_order='.(int)$this->module->currentOrder.'&key='.$customer->secure_key;
         } else {
-            // print_r("Validation errors: \n");
-            // print_r($result->errors->deepAll());
+            $this->json['msg'] = '<div class="alert alert-danger">';
+            $this->json['msg'] .= '<p>There was an error processing your card. Please try again.</p>';
 
-            $this->json['msg'] = '<div class="alert alert-danger">'.$result->message.'</div>';
+            foreach ($result->errors->deepAll() as $row) {
+                $this->json['msg'] .= $this->validation_error_messages($row->code);
+            }
+
+            $this->json['msg'] .= '</div>';
         }
 
         echo Tools::jsonEncode($this->json);
         die();
+    }
+
+    private function validation_error_messages($code){
+        $message = '';
+
+        if ($code == 81723) {
+            $message .= '<p>'.$this->module->l('Cardholder name is too long.').'</p>';
+        }
+
+        if ($code == 81703 || $code == 91726 || $code == 91734) {
+            $message .= '<p>'.$this->module->l('Credit card type is not accepted by this merchant account.').'</p>';
+        }
+
+        if ($code == 81707) {
+            $message .= '<p>'.$this->module->l('CVV verification failed.').'</p>';
+        }
+
+        if ($code == 81736) {
+            $message .= '<p>'.$this->module->l('CVV must be 4 digits for American Express and 3 digits for other card types.').'</p>';
+        }
+
+        if ($code == 81710) {
+            $message .= '<p>'.$this->module->l('Expiration date is invalid.').'</p>';
+        }
+
+        if ($code == 81715) {
+            $message .= '<p>'.$this->module->l('Credit card number is invalid.').'</p>';
+        }
+
+        if ($code == 81716) {
+            $message .= '<p>'.$this->module->l('Credit card number must be 12-19 digits.').'</p>';
+        }
+
+        if ($code == 81737) {
+            $message .= '<p>'.$this->module->l('Postal code verification failed.').'</p>';
+        }
+
+        if ($code == 81750) {
+            $message .= '<p>'.$this->module->l('Credit card number is prohibited.').'</p>';
+        }
+
+        return $message;
     }
 
     private function addTransaction($details, $type = 'payment')

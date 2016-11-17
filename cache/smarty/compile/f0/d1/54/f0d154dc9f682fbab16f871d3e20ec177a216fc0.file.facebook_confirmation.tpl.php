@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:55
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:55:09
          compiled from "/home/bougies-la-francaise/public_html/modules/allinone_rewards/views/templates/hook/facebook_confirmation.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13520293065821b9c78d0c45-23042025%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:246601370582d8c8e0109d5-47076016%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13520293065821b9c78d0c45-23042025',
+  'nocache_hash' => '246601370582d8c8e0109d5-47076016',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c78da861_11730493',
+  'unifunc' => 'content_582d8c8e01a953_08324649',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c78da861_11730493')) {function content_5821b9c78da861_11730493($_smarty_tpl) {?><!-- MODULE allinone_rewards -->
+<?php if ($_valid && !is_callable('content_582d8c8e01a953_08324649')) {function content_582d8c8e01a953_08324649($_smarty_tpl) {?><!-- MODULE allinone_rewards -->
 <script type="text/javascript">
 //<![CDATA[
 	var url_allinone_facebook="<?php echo $_smarty_tpl->tpl_vars['link']->value->getModuleLink('allinone_rewards','facebook',array(),true);?>

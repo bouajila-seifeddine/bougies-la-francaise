@@ -37,11 +37,19 @@ class BrainTree extends PaymentModule
     public $private_key;
     public $environment;
     public $extra_mail_vars;
+    public $secure_key;
+    public $form_type;
+    public $submit_to_settlement;
+    public $multicurrency;
+    public $threedsecure;
+    public $onepagecheckout;
+    public $cardholdername;
+    public $postalcode;
 
     public function __construct()
     {
         $this->name = 'braintree';
-        $this->version = '1.1.4';
+        $this->version = '1.1.6';
         $this->author = 'Peter Michael Solidum';
         $this->controllers = array('payment', 'validation');
         $this->tab = 'payments_gateways';
@@ -52,7 +60,7 @@ class BrainTree extends PaymentModule
 
         parent::__construct();
 
-        $config = Configuration::getMultiple(array('MERCHANT_ID', 'PUBLIC_KEY', 'PRIVATE_KEY', 'ENVIRONMENT', 'FORM_TYPE', 'SUBMITFORSETTLEMENT', 'MULTICURRENCY', 'THREEDSECURE'));
+        $config = Configuration::getMultiple(array('MERCHANT_ID', 'PUBLIC_KEY', 'PRIVATE_KEY', 'ENVIRONMENT', 'FORM_TYPE', 'SUBMITFORSETTLEMENT', 'MULTICURRENCY', 'THREEDSECURE', 'ONEPAGECHECKOUT', 'CARDHOLDERNAME', 'POSTALCODE'));
         if (isset($config['MERCHANT_ID'])) {
             $this->merchant_id = $config['MERCHANT_ID'];
         }
@@ -66,19 +74,28 @@ class BrainTree extends PaymentModule
             $this->environment = $config['ENVIRONMENT'];
         }
         if (isset($config['SECURE_KEY'])) {
-            $this->environment = $config['SECURE_KEY'];
+            $this->secure_key = $config['SECURE_KEY'];
         }
         if (isset($config['FORM_TYPE'])) {
-            $this->environment = $config['FORM_TYPE'];
+            $this->form_type = $config['FORM_TYPE'];
         }
         if (isset($config['SUBMITFORSETTLEMENT'])) {
-            $this->environment = $config['SUBMITFORSETTLEMENT'];
+            $this->submit_to_settlement = $config['SUBMITFORSETTLEMENT'];
         }
         if (isset($config['MULTICURRENCY'])) {
-            $this->environment = $config['MULTICURRENCY'];
+            $this->multicurrency = $config['MULTICURRENCY'];
         }
         if (isset($config['THREEDSECURE'])) {
-            $this->environment = $config['THREEDSECURE'];
+            $this->threedsecure = $config['THREEDSECURE'];
+        }
+        if (isset($config['ONEPAGECHECKOUT'])) {
+            $this->onepagecheckout = $config['ONEPAGECHECKOUT'];
+        }
+        if (isset($config['CARDHOLDERNAME'])) {
+            $this->cardholdername = $config['CARDHOLDERNAME'];
+        }
+        if (isset($config['POSTALCODE'])) {
+            $this->postalcode = $config['POSTALCODE'];
         }
 
         $this->displayName = $this->l('BrainTree Payment Gateway');
@@ -94,15 +111,16 @@ class BrainTree extends PaymentModule
             '{form_type}' => Configuration::get('FORM_TYPE'),
             '{submitforsettlement}' => Configuration::get('SUBMITFORSETTLEMENT'),
             '{multicurrency}' => Configuration::get('MULTICURRENCY'),
-            '{threedsecure}' => Configuration::get('THREEDSECURE')
+            '{threedsecure}' => Configuration::get('THREEDSECURE'),
+            '{onepagecheckout}' => Configuration::get('ONEPAGECHECKOUT'),
+            '{cardholdername}' => Configuration::get('CARDHOLDERNAME'),
+            '{postalcode}' => Configuration::get('POSTALCODE')
         );
     }
 
     public function install()
     {
-        return parent::install() && $this->registerHook('payment') && $this->registerHook('header')
-            && $this->registerHook('displayPaymentEU') && $this->registerHook('adminOrder')
-            && $this->registerHook('BackOfficeHeader') && $this->installDb();
+        return parent::install() && $this->registerHook('payment') && $this->registerHook('displayPaymentEU') && $this->registerHook('adminOrder') && $this->registerHook('orderConfirmation') && $this->registerHook('BackOfficeHeader') && $this->registerHook('header') && $this->installDb();
     }
 
     public function uninstall()
@@ -117,6 +135,9 @@ class BrainTree extends PaymentModule
             !Configuration::deleteByName('displayPaymentEU') ||
             !Configuration::deleteByName('MULTICURRENCY') ||
             !Configuration::deleteByName('THREEDSECURE') ||
+            !Configuration::deleteByName('ONEPAGECHECKOUT') ||
+            !Configuration::deleteByName('CARDHOLDERNAME') ||
+            !Configuration::deleteByName('POSTALCODE') ||
             !parent::uninstall()) {
             return false;
         }
@@ -142,15 +163,114 @@ class BrainTree extends PaymentModule
 		ENGINE='._MYSQL_ENGINE_.' DEFAULT CHARSET=utf8 AUTO_INCREMENT=1');
     }
 
+    public function hookHeader($params)
+    {
+        if (Configuration::get('FORM_TYPE') == 1) {
+            $this->context->controller->addJS('https://js.braintreegateway.com/js/braintree-2.21.0.min.js');
+        }
+    }
+
+    public function braintreeSetting()
+    {
+        $bt_merchant_id = '';
+        $client_token = '';
+        // for custom
+
+        $cart = $this->context->cart;
+        $year_now = date('Y', time());
+        $year_end = date('Y', time()) + 8;
+        $exp_dates = array();
+
+        for ($x = $year_now; $x < $year_end; $x++) {
+            array_push($exp_dates, $x);
+        }
+
+        // for drop-in feature
+        $environment = Configuration::get('ENVIRONMENT');
+        if ($environment) {
+            $mode = 'production';
+        } else {
+            $mode = 'sandbox';
+        }
+
+        require_once _PS_MODULE_DIR_.'/braintree/lib/Braintree.php';
+
+        Braintree_Configuration::environment($mode);
+        Braintree_Configuration::merchantId(Configuration::get('MERCHANT_ID'));
+        Braintree_Configuration::publicKey(Configuration::get('PUBLIC_KEY'));
+        Braintree_Configuration::privateKey(Configuration::get('PRIVATE_KEY'));
+
+        $currency = $this->context->currency;
+        $multicurrency = Configuration::get('MULTICURRENCY');
+        if ($multicurrency != '') {
+            $multicurrency_array = explode(',', $multicurrency);
+            foreach ($multicurrency_array as $row) {
+                $exploded_currency = explode('=', $row);
+                if ($exploded_currency[1] == $currency->iso_code) {
+                    $bt_merchant_id = $exploded_currency[0];
+                }
+            }
+        }
+
+        if ($bt_merchant_id != '') {
+            $client_token = Braintree_ClientToken::generate(
+                array(
+                    'merchantAccountId' => $bt_merchant_id
+                )
+            );
+        } else {
+            $client_token = Braintree_ClientToken::generate();
+        }
+
+        $cust_firstname = $this->context->customer->firstname != '' ? $this->context->customer->firstname : '';
+        $cust_lastname = $this->context->customer->lastname != '' ? $this->context->customer->lastname : '';
+
+        $this->smarty->assign(array(
+            'nbProducts' => $cart->nbProducts(),
+            'cust_currency' => $cart->id_currency,
+            'currencies' => $this->getCurrency((int)$cart->id_currency),
+            'total' => $cart->getOrderTotal(true, Cart::BOTH),
+            'this_path' => $this->_path,
+            'this_path_bw' => $this->_path,
+            'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/',
+            'exp_dates' => $exp_dates,
+            'client_token' => $client_token,
+            'form_type' => Configuration::get('FORM_TYPE'),
+            'three_d_secure' => Configuration::get('THREEDSECURE'),
+            'onepagecheckout' => Configuration::get('ONEPAGECHECKOUT'),
+            'cardholdername' => Configuration::get('CARDHOLDERNAME'),
+            'customer_full_name' => $cust_firstname . ' ' . $cust_lastname,
+            'postal_code' => Configuration::get('POSTALCODE')
+        ));
+    }
+
     public function hookPayment($params)
     {
         if (!$this->adminSettings()) {
             return;
         }
 
-        $this->smarty->assign(array(
-            'this_path' => $this->_path,
-            'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/'
+        if (Configuration::get('ONEPAGECHECKOUT')) {
+            $this->braintreeSetting();
+        } else {
+            $this->context->smarty->assign(array(
+                'this_path' => $this->_path,
+                'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/',
+                'onepagecheckout' => Configuration::get('ONEPAGECHECKOUT')
+            ));
+        }
+
+        $this->context->smarty->assign(array(
+            'bt_submit_button' => $this->l('Submit Payment'),
+            'bt_submit_processing' => $this->l('Processing Payment...'),
+            'bt_card_name' => $this->l('Card Name'),
+            'bt_card_name_holder' => $this->l('Card Name'),
+            'bt_card_number' => $this->l('Card Number'),
+            'bt_card_number_holder' => $this->l('Card Number'),
+            'bt_cvv' => $this->l('CVV'),
+            'bt_postal_code' => $this->l('Card Number'),
+            'bt_expiration_date' => $this->l('Expiration Date'),
+            'bt_select_payment_method' => $this->l('Please select a payment method.')
         ));
 
         return $this->display(__FILE__, 'payment.tpl');
@@ -173,9 +293,6 @@ class BrainTree extends PaymentModule
         $this->html .= $this->renderForm();
         $this->html .= '<div style="margin: 30px">';
         $this->html .= '<h3>Additional Instructions:</h3>';
-        $this->html .= '<span style="font-weight:bold">3D SECURE - IMPORTANT NOTE</span></p>';
-        $this->html .= '<p>This feature only works for <strong>Drop-in Payment UI</strong></p>';
-        $this->html .= '<p>When enabling 3D Secure feature. Make sure you have activated it on your braintree admin panel, otherwise this feature will not work.<br>If using multi-currency: ALL Merchant Account MUST have 3D Secure faeture enabled.</p>';
         $this->html .= '<span style="font-weight:bold">Sample Credit Card</span></p>';
         $this->html .= '<p>Sample Valid Credit Card # for sandbox ONLY: ';
         $this->html .= '<span style="font-weight:bold">3566002020360505</span></p>';
@@ -186,7 +303,6 @@ class BrainTree extends PaymentModule
         $this->html .= '<ul><li>Merchant Account ID=Currency ISO Code</li><li>Example: MerchantAccountID=USD</li><li>If none added, it will select the default currency of Prestashop & your Braintree Account</li></ul>';
         $this->html .= '<p style="font-weight:bold">Currency Setup(Multiple):</p>';
         $this->html .= '<ul><li>Merchant Account ID=Currency ISO Code</li><li>Example: MerchantAccountID=USD, MechantAccountIDtwo=EUR, MechantAccountIDthree=GBP</li><li>Each currency must be separated by COMMA.</li><li>If none added, it will select the default currency of Prestashop & your Braintree Account</li></ul>';
-        $this->html .= '<p style="font-weight:bold">NOTE: If currency setup left blank or wrong Merchant Account ID, it will charge the customer with the default currency setup in Braintree Account.</p>';
         $this->html .= '</div>';
 
         return $this->html;
@@ -289,6 +405,9 @@ class BrainTree extends PaymentModule
             Configuration::updateValue('SUBMITFORSETTLEMENT', Tools::getValue('SUBMITFORSETTLEMENT'));
             Configuration::updateValue('MULTICURRENCY', Tools::getValue('MULTICURRENCY'));
             Configuration::updateValue('THREEDSECURE', Tools::getValue('THREEDSECURE'));
+            Configuration::updateValue('ONEPAGECHECKOUT', Tools::getValue('ONEPAGECHECKOUT'));
+            Configuration::updateValue('CARDHOLDERNAME', Tools::getValue('CARDHOLDERNAME'));
+            Configuration::updateValue('POSTALCODE', Tools::getValue('POSTALCODE'));
         }
         $this->html .= $this->displayConfirmation($this->l('Settings updated'));
     }
@@ -356,7 +475,46 @@ class BrainTree extends PaymentModule
                         'required' => true,
                     ),
                     array(
-                        'type' => 'radio',
+                        'type' => 'switch',
+                        'label' => $this->l('Require Card Holder Name (Custom Payment UI)'),
+                        'name' => 'CARDHOLDERNAME',
+                        'values' => array(
+                            array(
+                                'id' => 'yes',
+                                'value' => 1,
+                                'label' => $this->l('Yes')
+                            ),
+                            array(
+                                'id' => 'no',
+                                'value' => 0,
+                                'label' => $this->l('No')
+                            )
+                        ),
+                        'is_bool' => true,
+                        'required' => true,
+                    ),
+                    array(
+                        'type' => 'switch',
+                        'label' => $this->l('Requie Postal Code (Custom Payment UI)'),
+                        'name' => 'POSTALCODE',
+                        'desc' => 'Basic Credit Card Fraud Tools AVS (Postal Code ONLY)',
+                        'values' => array(
+                            array(
+                                'id' => 'yes',
+                                'value' => 1,
+                                'label' => $this->l('Yes')
+                            ),
+                            array(
+                                'id' => 'no',
+                                'value' => 0,
+                                'label' => $this->l('No')
+                            )
+                        ),
+                        'is_bool' => true,
+                        'required' => true,
+                    ),
+                    array(
+                        'type' => 'switch',
                         'label' => $this->l('Automatically Submit for Settlement?'),
                         'name' => 'SUBMITFORSETTLEMENT',
                         'values' => array(
@@ -378,9 +536,10 @@ class BrainTree extends PaymentModule
                         'type' => 'textarea',
                         'label' => $this->l('Currency setup'),
                         'name' => 'MULTICURRENCY',
+                        'desc' => 'If currency setup left blank or wrong Merchant Account ID, it will charge the customer with the default currency setup in Braintree Account.'
                     ),
                     array(
-                        'type' => 'radio',
+                        'type' => 'switch',
                         'label' => $this->l('3D Secure'),
                         'name' => 'THREEDSECURE',
                         'values' => array(
@@ -397,6 +556,32 @@ class BrainTree extends PaymentModule
                         ),
                         'is_bool' => true,
                         'required' => true,
+                        'desc' => 'This feature only works for <strong>Drop-in Payment UI</strong>.
+                            <br>
+                            When enabling 3D Secure feature. Make sure you have activated it on your Braintree Account, otherwise this feature will not work.
+                            <br>
+                            If using multi-currency: ALL Merchant Account MUST have 3D Secure faeture enabled.'
+                    ),
+                    array(
+                        'type' => 'switch',
+                        'label' => $this->l('Show payment form directly'),
+                        'name' => 'ONEPAGECHECKOUT',
+                        'values' => array(
+                            array(
+                                'id' => 'yes',
+                                'value' => 1,
+                                'label' => $this->l('Yes')
+                            ),
+                            array(
+                                'id' => 'no',
+                                'value' => 0,
+                                'label' => $this->l('No')
+                            )
+                        ),
+                        'is_bool' => true,
+                        'required' => true,
+                        'desc' => 'allows you to integrate this module with <strong>One Page Checkout PS</strong> module.<br>
+                            More details here: <a href="http://addons.prestashop.com/en/8503-one-page-checkout-ps-easy-fast-intuitive.html">http://addons.prestashop.com/en/8503-one-page-checkout-ps-easy-fast-intuitive.html</a>'
                     ),
                 ),
                 'submit' => array(
@@ -443,6 +628,9 @@ class BrainTree extends PaymentModule
             'SUBMITFORSETTLEMENT' => Tools::getValue('SUBMITFORSETTLEMENT', Configuration::get('SUBMITFORSETTLEMENT')),
             'MULTICURRENCY' => Tools::getValue('MULTICURRENCY', Configuration::get('MULTICURRENCY')),
             'THREEDSECURE' => Tools::getValue('THREEDSECURE', Configuration::get('THREEDSECURE')),
+            'ONEPAGECHECKOUT' => Tools::getValue('ONEPAGECHECKOUT', Configuration::get('ONEPAGECHECKOUT')),
+            'CARDHOLDERNAME' => Tools::getValue('CARDHOLDERNAME', Configuration::get('CARDHOLDERNAME')),
+            'POSTALCODE' => Tools::getValue('POSTALCODE', Configuration::get('POSTALCODE')),
         );
     }
 
@@ -563,5 +751,17 @@ class BrainTree extends PaymentModule
 
             $this->processRefund($data);
         }
+    }
+
+    public function hookOrderConfirmation($params)
+    {
+        if (!isset($params['objOrder']) || ($params['objOrder']->module != $this->name))
+            return false;
+        if (isset($params['objOrder']) && Validate::isLoadedObject($params['objOrder']) && isset($params['objOrder']->valid) &&
+                version_compare(_PS_VERSION_, '1.5', '>=') && isset($params['objOrder']->reference))
+        {
+            $this->smarty->assign('braintree_order', array('id' => $params['objOrder']->id,  'valid' => $params['objOrder']->valid, 'reference' => $params['objOrder']->reference));
+            return $this->display(__FILE__, 'views/templates/hook/order-confirmation.tpl');
+        }        
     }
 }

@@ -99,6 +99,18 @@ class BraintreePaymentModuleFrontController extends ModuleFrontController
             'client_token' => $this->client_token,
             'form_type' => Configuration::get('FORM_TYPE'),
             'three_d_secure' => Configuration::get('THREEDSECURE'),
+            'cardholdername' => Configuration::get('CARDHOLDERNAME'),
+            'postal_code' => Configuration::get('POSTALCODE'),
+            'bt_submit_button' => $this->module->l('Submit Payment'),
+            'bt_submit_processing' => $this->module->l('Processing Payment...'),
+            'bt_card_name' => $this->module->l('Card Name'),
+            'bt_card_name_holder' => $this->module->l('Card Name'),
+            'bt_card_number' => $this->module->l('Card Number'),
+            'bt_card_number_holder' => $this->module->l('Card Number'),
+            'bt_cvv' => $this->module->l('CVV'),
+            'bt_postal_code' => $this->module->l('Card Number'),
+            'bt_expiration_date' => $this->module->l('Expiration Date'),
+            'bt_select_payment_method' => $this->module->l('Please select a payment method.')
         ));
 
         $this->setTemplate('payment_execution.tpl');

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-11-08 12:40:57
+<?php /* Smarty version Smarty-3.1.19, created on 2016-11-17 11:55:19
          compiled from "/home/bougies-la-francaise/public_html/themes/bougie-la-francaise/modules/ph_megamenu/views/templates/hook/ph_megamenu.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2640821475821b9c9241696-75487163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1193632297582d8c9712a003-14514750%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2640821475821b9c9241696-75487163',
+  'nocache_hash' => '1193632297582d8c9712a003-14514750',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5821b9c92f6e51_94170275',
+  'unifunc' => 'content_582d8c971e2b62_21294207',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5821b9c92f6e51_94170275')) {function content_5821b9c92f6e51_94170275($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_582d8c971e2b62_21294207')) {function content_582d8c971e2b62_21294207($_smarty_tpl) {?>
 <?php if ($_smarty_tpl->tpl_vars['menu']->value) {?>
 <div class="ph_megamenu_mobile_toggle container">
 	<a href="#" class="show_megamenu"><i class="fa fa-bars"></i><?php echo smartyTranslate(array('s'=>'Show menu','mod'=>'ph_megamenu'),$_smarty_tpl);?>

@@ -1,0 +1,805 @@
+v=1&tid=0&did=d6YPbH&cid=473858804.1471689973&uip=46.35.16.82&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F602.2.14+%28KHTML%2C+like+Gecko%29+Version%2F10.0.1+Safari%2F602.2.14&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2510601-bougie-parfumee-40h-cannelle-vin-chaud.html&pa=add&in=Bougie+parfum%C3%A9e+40h+cannelle+vin+chaud&ic=2510601&ip=16.5&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Collection+Hiver+&srt=191&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=473858804.1471689973\u0026uip=xxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2510601-bougie-parfumee-40h-cannelle-vin-chaud.html\u0026pa=add\u0026in=Bougie parfumée 40h cannelle vin chaud\u0026ic=2510601\u0026ip=16.5\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Collection Hiver \u0026srt=191\u0026_s=1\u0026_anon_uip=46.35.16.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=871073767.1479133692&uip=84.101.239.15&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.87+Safari%2F537.36&de=UTF-8&ul=fr&utm_campaign=googleshopping&utm_source=googleshopping&utm_medium=lengowcpc&gclid=CJSPmYTGqNACFUMTGwodGKsFPg&t=event&ea=Checkout&ec=Ecommerce&pa=checkout&dl=%2Fauthentication.html&cos=2&col=authentication&el=authentication&ev=1&srt=1320&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=871073767.1479133692\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026utm_campaign=googleshopping\u0026utm_source=googleshopping\u0026utm_medium=lengowcpc\u0026gclid=CJSPmYTGqNACFUMTGwodGKsFPg\u0026t=event\u0026ea=Checkout\u0026ec=Ecommerce\u0026pa=checkout\u0026dl=/authentication.html\u0026cos=2\u0026col=authentication\u0026el=authentication\u0026ev=1\u0026srt=1320\u0026_s=1\u0026_anon_uip=84.101.239.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=2098222184.1467356747&uip=185.57.53.4&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_1%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2391845-diffuseur-de-parfum-a-tiges-150ml-santal-troublant.html&pa=add&in=Diffuseur+de+parfum+%C3%A0+tiges+150ml+santal+troublant&ic=2391845&ip=39.9&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Toutes+nos+collections&srt=370&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=2098222184.1467356747\u0026uip=xxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2391845-diffuseur-de-parfum-a-tiges-150ml-santal-troublant.html\u0026pa=add\u0026in=Diffuseur de parfum à tiges 150ml santal troublant\u0026ic=2391845\u0026ip=39.9\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Toutes nos collections\u0026srt=370\u0026_s=1\u0026_anon_uip=185.57.53.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=2098222184.1467356747&uip=185.57.53.4&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_1%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2391845-diffuseur-de-parfum-a-tiges-150ml-santal-troublant.html&pa=add&in=Diffuseur+de+parfum+%C3%A0+tiges+150ml+santal+troublant&ic=2391845&ip=39.9&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Toutes+nos+collections&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=2098222184.1467356747\u0026uip=xxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2391845-diffuseur-de-parfum-a-tiges-150ml-santal-troublant.html\u0026pa=add\u0026in=Diffuseur de parfum à tiges 150ml santal troublant\u0026ic=2391845\u0026ip=39.9\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Toutes nos collections\u0026_s=2\u0026_anon_uip=185.57.53.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2381650-bougie-parfumee-20h-coton-tout-doux.html&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=83&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2381650-bougie-parfumee-20h-coton-tout-doux.html\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=83\u0026_s=1\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2381650-bougie-parfumee-20h-coton-tout-doux.html&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2381650-bougie-parfumee-20h-coton-tout-doux.html\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026_s=2\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2Fcommande&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=221&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/commande\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=221\u0026_s=1\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2Fcommande&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=182&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/commande\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=182\u0026_s=1\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2Fcommande&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=199&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/commande\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=199\u0026_s=1\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1968149526.1479137960&uip=82.242.205.252&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2Fcommande&pa=add&in=Bougie+parfum%C3%A9e+20h+coton+tout+doux&ic=2381650&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=286&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1968149526.1479137960\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/commande\u0026pa=add\u0026in=Bougie parfumée 20h coton tout doux\u0026ic=2381650\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=286\u0026_s=1\u0026_anon_uip=82.242.205.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2386960-bougie-parfumee-40h-fondant-au-chocolat.html&pa=add&in=Bougie+parfum%C3%A9e+40h+fondant+au+chocolat&ic=2386960&ip=16.5&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Toutes+nos+collections&srt=286&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2386960-bougie-parfumee-40h-fondant-au-chocolat.html\u0026pa=add\u0026in=Bougie parfumée 40h fondant au chocolat\u0026ic=2386960\u0026ip=16.5\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Toutes nos collections\u0026srt=286\u0026_s=1\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2386960-bougie-parfumee-40h-fondant-au-chocolat.html&pa=add&in=Bougie+parfum%C3%A9e+40h+fondant+au+chocolat&ic=2386960&ip=16.5&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Toutes+nos+collections&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2386960-bougie-parfumee-40h-fondant-au-chocolat.html\u0026pa=add\u0026in=Bougie parfumée 40h fondant au chocolat\u0026ic=2386960\u0026ip=16.5\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Toutes nos collections\u0026_s=2\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2628050-coffret-bougie-parfumee-coquelicot-barbe-a-papa.html&pa=add&in=Coffret+bougie+parfum%C3%A9e+40h+coquelicot+barbe+%C3%A0+papa&ic=2628050&ip=18.996&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Offres+sp%C3%A9ciales&srt=320&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2628050-coffret-bougie-parfumee-coquelicot-barbe-a-papa.html\u0026pa=add\u0026in=Coffret bougie parfumée 40h coquelicot barbe à papa\u0026ic=2628050\u0026ip=18.996\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Offres spéciales\u0026srt=320\u0026_s=1\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2381465-bougie-parfumee-boite-a-the-55h-tiare-sunshine.html&pa=add&in=Bougie+parfum%C3%A9e+bo%C3%AEte+%C3%A0+th%C3%A9+65h+tiar%C3%A9+sunshine&ic=2381465&ip=18.504&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&srt=313&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2381465-bougie-parfumee-boite-a-the-55h-tiare-sunshine.html\u0026pa=add\u0026in=Bougie parfumée boîte à thé 65h tiaré sunshine\u0026ic=2381465\u0026ip=18.504\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026srt=313\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2381465-bougie-parfumee-boite-a-the-55h-tiare-sunshine.html&pa=add&in=Bougie+parfum%C3%A9e+bo%C3%AEte+%C3%A0+th%C3%A9+65h+tiar%C3%A9+sunshine&ic=2381465&ip=18.504&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Colorama&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2381465-bougie-parfumee-boite-a-the-55h-tiare-sunshine.html\u0026pa=add\u0026in=Bougie parfumée boîte à thé 65h tiaré sunshine\u0026ic=2381465\u0026ip=18.504\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Colorama\u0026_s=2\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2386925-bougie-parfumee-40h-reglisse-roudoudou.html&pa=add&in=Bougie+parfum%C3%A9e+40h+r%C3%A9glisse+roudoudou&ic=2386925&ip=15&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Offres+sp%C3%A9ciales&srt=164&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2386925-bougie-parfumee-40h-reglisse-roudoudou.html\u0026pa=add\u0026in=Bougie parfumée 40h réglisse roudoudou\u0026ic=2386925\u0026ip=15\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Offres spéciales\u0026srt=164\u0026_s=1\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2391250-bougie-parfumee-40h-mure-gourmande.html&pa=add&in=Bougie+parfum%C3%A9e+40h+m%C3%BBre+gourmande&ic=2391250&ip=15&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Charme&srt=150&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2391250-bougie-parfumee-40h-mure-gourmande.html\u0026pa=add\u0026in=Bougie parfumée 40h mûre gourmande\u0026ic=2391250\u0026ip=15\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Charme\u0026srt=150\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&ea=Checkout&ec=Ecommerce&pa=checkout&dl=%2Fauthentication.html&cos=2&col=authentication&el=authentication&ev=1&srt=128&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026ea=Checkout\u0026ec=Ecommerce\u0026pa=checkout\u0026dl=/authentication.html\u0026cos=2\u0026col=authentication\u0026el=authentication\u0026ev=1\u0026srt=128\u0026_s=1\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1250844531.1478516560&uip=90.107.240.81&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=event&ec=Customer&ea=Registration&el=New+customer&ev=1&ni=1&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1250844531.1478516560\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026ec=Customer\u0026ea=Registration\u0026el=New customer\u0026ev=1\u0026ni=1\u0026_s=2\u0026_anon_uip=90.107.240.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2381695-bougie-parfumee-20h-jasmin-coquin.html&pa=add&in=Bougie+parfum%C3%A9e+20h+jasmin+coquin&ic=2381695&ip=11.004&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Th%C3%A8mes+et+cadeaux&srt=234&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2381695-bougie-parfumee-20h-jasmin-coquin.html\u0026pa=add\u0026in=Bougie parfumée 20h jasmin coquin\u0026ic=2381695\u0026ip=11.004\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Thèmes et cadeaux\u0026srt=234\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2386975-bougie-parfumee-bonbonniere-55h-creme-brulee-vanille.html&pa=add&in=Bougie+parfum%C3%A9e+bonbonni%C3%A8re+55h+cr%C3%A8me+br%C3%BBl%C3%A9e+vanille&ic=2386975&ip=19.848&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Toutes+nos+collections&srt=226&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2386975-bougie-parfumee-bonbonniere-55h-creme-brulee-vanille.html\u0026pa=add\u0026in=Bougie parfumée bonbonnière 55h crème brûlée vanille\u0026ic=2386975\u0026ip=19.848\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Toutes nos collections\u0026srt=226\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&cu=EUR&dl=%2F2391200-bougie-parfumee-40h-pivoine-celeste.html&pa=add&in=Bougie+parfum%C3%A9e+40h+pivoine+c%C3%A9leste&ic=2391200&ip=15&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Charme&srt=292&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026cu=EUR\u0026dl=/2391200-bougie-parfumee-40h-pivoine-celeste.html\u0026pa=add\u0026in=Bougie parfumée 40h pivoine céleste\u0026ic=2391200\u0026ip=15\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Charme\u0026srt=292\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&ea=Checkout&ec=Ecommerce&pa=checkout&dl=%2Fauthentication.html&cos=2&col=authentication&el=authentication&ev=1&srt=49&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026ea=Checkout\u0026ec=Ecommerce\u0026pa=checkout\u0026dl=/authentication.html\u0026cos=2\u0026col=authentication\u0026el=authentication\u0026ev=1\u0026srt=49\u0026_s=1\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=110578786.1479139939&uip=92.149.154.68&ua=Mozilla%2F5.0+%28Linux%3B+Android+5.0%3B+LG-D855+Build%2FLRX21R.A1439892504%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.85+Mobile+Safari%2F537.36&de=UTF-8&ul=fr&gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB&t=event&ec=Customer&ea=Registration&el=New+customer&ev=1&ni=1&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=110578786.1479139939\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1439892504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026gclid=CjwKEAiA3qXBBRD4_b_V7ZLFsX4SJAB0AtEVbS_e0wwhPv8io_zfz7WRORS-s0wT3Egz9HDVJAuXEhoCXsrw_wcB\u0026t=event\u0026ec=Customer\u0026ea=Registration\u0026el=New customer\u0026ev=1\u0026ni=1\u0026_s=2\u0026_anon_uip=92.149.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1157439186.1479141448&uip=92.131.164.213&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2391270-bougie-parfumee-40h-figue-millenaire.html&pa=add&in=Bougie+parfum%C3%A9e+40h+figue+mill%C3%A9naire&ic=2391270&ip=15&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Charme&srt=309&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1157439186.1479141448\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2391270-bougie-parfumee-40h-figue-millenaire.html\u0026pa=add\u0026in=Bougie parfumée 40h figue millénaire\u0026ic=2391270\u0026ip=15\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Charme\u0026srt=309\u0026_s=1\u0026_anon_uip=92.131.164.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=0&did=d6YPbH&cid=1157439186.1479141448&uip=92.131.164.213&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&t=event&cu=EUR&dl=%2F2391270-bougie-parfumee-40h-figue-millenaire.html&pa=add&in=Bougie+parfum%C3%A9e+40h+figue+mill%C3%A9naire&ic=2391270&ip=15&iq=1&ea=Add+to+Cart&ec=Ecommerce&iv=Charme&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": false,
+    "parserMessage": [ {
+      "messageType": "ERROR",
+      "description": "The value provided for parameter 'tid' is invalid. Please see http://goo.gl/a8d4RP#tid for details.",
+      "messageCode": "VALUE_INVALID",
+      "parameter": "tid"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=0\u0026did=d6YPbH\u0026cid=1157439186.1479141448\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026t=event\u0026cu=EUR\u0026dl=/2391270-bougie-parfumee-40h-figue-millenaire.html\u0026pa=add\u0026in=Bougie parfumée 40h figue millénaire\u0026ic=2391270\u0026ip=15\u0026iq=1\u0026ea=Add to Cart\u0026ec=Ecommerce\u0026iv=Charme\u0026_s=2\u0026_anon_uip=92.131.164.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=693134576.1478788939&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=https%3A%2F%2Fwww.bougies-la-francaise.com%2Fcommande%3Fstep%3D1&uid=5243&t=pageview&dl=%2Forder%2Fstep3.html&dt=Commande+-+Bougies+la+Fran%C3%A7aise&srt=1498&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=693134576.1478788939\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=https://www.bougies-la-francaise.com/commande?step=1\u0026uid=5243\u0026t=pageview\u0026dl=/order/step3.html\u0026dt=Commande - Bougies la Française\u0026srt=1498\u0026_s=1\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=693134576.1478788939&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=https%3A%2F%2Fwww.bougies-la-francaise.com%2Fcommande%3Fstep%3D1&uid=5243&t=event&ea=Checkout&ec=Ecommerce&pa=checkout&dl=%2Forder%2Fstep3.html&cos=4&col=carrier&el=carrier&ev=1&pr1id=2459220&pr1nm=Bougie+parfum%C3%A9e+bonbonni%C3%A8re+30h+orange+confite&pr1qt=1&pr1pr=14.9&pr1ps=1&pr1ca=Collection+Hiver+&pr1br=Bougies+la+Fran%C3%A7aise&pr2id=2510345&pr2nm=2+bougies+parfum%C3%A9es+s%C3%A9rigraphie+cuivr%C3%A9e+20h+cristaux+de+neige&pr2qt=1&pr2pr=19.8&pr2ps=2&pr2ca=Collection+Hiver+&pr2br=Bougies+la+Fran%C3%A7aise&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'pr1ca' was modified before saving. Please see http://goo.gl/a8d4RP#pr_ca for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "pr1ca"
+    }, {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'pr2ca' was modified before saving. Please see http://goo.gl/a8d4RP#pr_ca for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "pr2ca"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=693134576.1478788939\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=https://www.bougies-la-francaise.com/commande?step=1\u0026uid=5243\u0026t=event\u0026ea=Checkout\u0026ec=Ecommerce\u0026pa=checkout\u0026dl=/order/step3.html\u0026cos=4\u0026col=carrier\u0026el=carrier\u0026ev=1\u0026pr1id=2459220\u0026pr1nm=Bougie parfumée bonbonnière 30h orange confite\u0026pr1qt=1\u0026pr1pr=14.9\u0026pr1ps=1\u0026pr1ca=Collection Hiver \u0026pr1br=Bougies la Française\u0026pr2id=2510345\u0026pr2nm=2 bougies parfumées sérigraphie cuivrée 20h cristaux de neige\u0026pr2qt=1\u0026pr2pr=19.8\u0026pr2ps=2\u0026pr2ca=Collection Hiver \u0026pr2br=Bougies la Française\u0026_s=2\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=385449493.1478909836&uip=90.105.173.40&ua=Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+10_1_1+like+Mac+OS+X%29+AppleWebKit%2F602.2.14+%28KHTML%2C+like+Gecko%29+Mobile%2F14B100&de=UTF-8&ul=fr&t=pageview&dl=%2F5-univers-parfume&dt=Univers+parfum%C3%A9+-+Bougies+la+Fran%C3%A7aise&srt=1358&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=385449493.1478909836\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/5-univers-parfume\u0026dt=Univers parfumé - Bougies la Française\u0026srt=1358\u0026_s=1\u0026_anon_uip=90.105.173.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=693134576.1478788939&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=https%3A%2F%2Fws.colissimo.fr%2Fpudo-fo-frame%2FsubmitEtape3.do&uid=5243&t=pageview&dl=%2Forder%2Fstep4.html&dt=Commande+-+Bougies+la+Fran%C3%A7aise&srt=1573&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=693134576.1478788939\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=https://ws.colissimo.fr/pudo-fo-frame/submitEtape3.do\u0026uid=5243\u0026t=pageview\u0026dl=/order/step4.html\u0026dt=Commande - Bougies la Française\u0026srt=1573\u0026_s=1\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=693134576.1478788939&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=https%3A%2F%2Fws.colissimo.fr%2Fpudo-fo-frame%2FsubmitEtape3.do&uid=5243&t=event&ea=Checkout&ec=Ecommerce&pa=checkout&dl=%2Forder%2Fstep4.html&cos=5&col=payment&el=payment&ev=1&pr1id=2459220&pr1nm=Bougie+parfum%C3%A9e+bonbonni%C3%A8re+30h+orange+confite&pr1qt=1&pr1pr=14.9&pr1ps=1&pr1ca=Collection+Hiver+&pr1br=Bougies+la+Fran%C3%A7aise&pr2id=2510345&pr2nm=2+bougies+parfum%C3%A9es+s%C3%A9rigraphie+cuivr%C3%A9e+20h+cristaux+de+neige&pr2qt=1&pr2pr=19.8&pr2ps=2&pr2ca=Collection+Hiver+&pr2br=Bougies+la+Fran%C3%A7aise&_s=2
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'pr1ca' was modified before saving. Please see http://goo.gl/a8d4RP#pr_ca for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "pr1ca"
+    }, {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'pr2ca' was modified before saving. Please see http://goo.gl/a8d4RP#pr_ca for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "pr2ca"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=693134576.1478788939\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=https://ws.colissimo.fr/pudo-fo-frame/submitEtape3.do\u0026uid=5243\u0026t=event\u0026ea=Checkout\u0026ec=Ecommerce\u0026pa=checkout\u0026dl=/order/step4.html\u0026cos=5\u0026col=payment\u0026el=payment\u0026ev=1\u0026pr1id=2459220\u0026pr1nm=Bougie parfumée bonbonnière 30h orange confite\u0026pr1qt=1\u0026pr1pr=14.9\u0026pr1ps=1\u0026pr1ca=Collection Hiver \u0026pr1br=Bougies la Française\u0026pr2id=2510345\u0026pr2nm=2 bougies parfumées sérigraphie cuivrée 20h cristaux de neige\u0026pr2qt=1\u0026pr2pr=19.8\u0026pr2ps=2\u0026pr2ca=Collection Hiver \u0026pr2br=Bougies la Française\u0026_s=2\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=620244152.1479141802&uip=82.67.154.131&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_11_6%29+AppleWebKit%2F602.2.14+%28KHTML%2C+like+Gecko%29+Version%2F10.0.1+Safari%2F602.2.14&de=UTF-8&ul=fr&dr=https%3A%2F%2Fwww.bougies-la-francaise.com%2Fcontent%2F7-fabricant-de-bougie-savoir-faire&t=pageview&dl=%2F7-offres-speciales&dt=Offres+sp%C3%A9ciales+-+Bougies+la+Fran%C3%A7aise&srt=1203&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=620244152.1479141802\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14\u0026de=UTF-8\u0026ul=fr\u0026dr=https://www.bougies-la-francaise.com/content/7-fabricant-de-bougie-savoir-faire\u0026t=pageview\u0026dl=/7-offres-speciales\u0026dt=Offres spéciales - Bougies la Française\u0026srt=1203\u0026_s=1\u0026_anon_uip=82.67.154.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1157439186.1479141448&uip=92.131.164.213&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&dr=http%3A%2F%2Ffr.fyvor.com%2Fcodes-promo%2Fbougies-la-francaise%2F&t=pageview&dl=%2F49-bougies-epicees&dt=Bougies+parfum%C3%A9es+senteur+%C3%A9pic%C3%A9e+-+Bougies+la+Fran%C3%A7aise&srt=1356&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1157439186.1479141448\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026dr=http://fr.fyvor.com/codes-promo/bougies-la-francaise/\u0026t=pageview\u0026dl=/49-bougies-epicees\u0026dt=Bougies parfumées senteur épicée - Bougies la Française\u0026srt=1356\u0026_s=1\u0026_anon_uip=92.131.164.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1024277036.1479134995&uip=37.73.244.191&ua=Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+10_1_1+like+Mac+OS+X%29+AppleWebKit%2F602.2.14+%28KHTML%2C+like+Gecko%29+Version%2F10.0+Mobile%2F14B100+Safari%2F602.1&de=UTF-8&ul=fr&dr=https%3A%2F%2Fwww.bougies-la-francaise.com%2F&t=pageview&dl=%2F6-univers-deco&dt=Univers+d%C3%A9co+-+Bougies+la+Fran%C3%A7aise&srt=1308&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1024277036.1479134995\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0 Mobile/14B100 Safari/602.1\u0026de=UTF-8\u0026ul=fr\u0026dr=https://www.bougies-la-francaise.com/\u0026t=pageview\u0026dl=/6-univers-deco\u0026dt=Univers déco - Bougies la Française\u0026srt=1308\u0026_s=1\u0026_anon_uip=37.73.244.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1157439186.1479141448&uip=92.131.164.213&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&dr=http%3A%2F%2Fwww.ma-reduc.com%2Freductions-pour-bougies-la-francaise.php&t=pageview&dl=%2F&dt=Bougies+parfum%C3%A9es%2C+bougies+d%C3%A9co%2C+diffuseurs++-+Bougies+la+Fran%C3%A7aise&srt=1054&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'dt' was modified before saving. Please see http://goo.gl/a8d4RP#dt for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "dt"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1157439186.1479141448\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026dr=http://www.ma-reduc.com/reductions-pour-bougies-la-francaise.php\u0026t=pageview\u0026dl=/\u0026dt=Bougies parfumées, bougies déco, diffuseurs  - Bougies la Française\u0026srt=1054\u0026_s=1\u0026_anon_uip=92.131.164.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1157439186.1479141448&uip=92.131.164.213&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&dr=https%3A%2F%2Fwww.bougies-la-francaise.com%2F&t=pageview&dl=%2F49-bougies-epicees&dt=Bougies+parfum%C3%A9es+senteur+%C3%A9pic%C3%A9e+-+Bougies+la+Fran%C3%A7aise&srt=1192&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1157439186.1479141448\u0026uip=xxxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026dr=https://www.bougies-la-francaise.com/\u0026t=pageview\u0026dl=/49-bougies-epicees\u0026dt=Bougies parfumées senteur épicée - Bougies la Française\u0026srt=1192\u0026_s=1\u0026_anon_uip=92.131.164.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1024277036.1479134995&uip=37.73.244.191&ua=Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+10_1_1+like+Mac+OS+X%29+AppleWebKit%2F602.2.14+%28KHTML%2C+like+Gecko%29+Version%2F10.0+Mobile%2F14B100+Safari%2F602.1&de=UTF-8&ul=fr&t=pageview&dl=%2F2024204-bougie-ronde-striee-o6cm-7h-ivoire.html&dt=Bougie+ronde+stri%C3%A9e+6cm+ivoire&pa=detail&pr1id=2024204-177&pr1nm=Bougie+ronde+stri%C3%A9e+%C3%986cm+7h+ivoire&pr1pr=5.004&cu=EUR&pr1ca=Colorama&pr1va=Blanc&pr1br=Bougies+la+Fran%C3%A7aise&srt=1950&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1024277036.1479134995\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0 Mobile/14B100 Safari/602.1\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/2024204-bougie-ronde-striee-o6cm-7h-ivoire.html\u0026dt=Bougie ronde striée 6cm ivoire\u0026pa=detail\u0026pr1id=2024204-177\u0026pr1nm=Bougie ronde striée Ø6cm 7h ivoire\u0026pr1pr=5.004\u0026cu=EUR\u0026pr1ca=Colorama\u0026pr1va=Blanc\u0026pr1br=Bougies la Française\u0026srt=1950\u0026_s=1\u0026_anon_uip=37.73.244.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=507949958.1479138229&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A49.0%29+Gecko%2F20100101+Firefox%2F49.0&de=UTF-8&ul=fr&uid=5243&t=pageview&dl=%2Fcommande%3Fstep%3D3%26cgv%3D1%26id_carrier%3D90&dt=Commande+-+Bougies+la+Fran%C3%A7aise&srt=1245&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=507949958.1479138229\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0\u0026de=UTF-8\u0026ul=fr\u0026uid=5243\u0026t=pageview\u0026dl=/commande?step=3\u0026cgv=1\u0026id_carrier=90\u0026dt=Commande - Bougies la Française\u0026srt=1245\u0026_s=1\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=118345209.1479141919&uip=185.57.53.4&ua=Microsoft+Office%2F14.0+%28Windows+NT+6.1%3B+Microsoft+Outlook+14.0.7173%3B+Pro%29&de=UTF-8&ul=fr&t=pageview&dl=%2Fautodiscover%2Fautodiscover.xml&dt=Erreur+404+-+Bougies+la+Fran%C3%A7aise&srt=1042&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=118345209.1479141919\u0026uip=xxxxxxxxxxx\u0026ua=Microsoft Office/14.0 (Windows NT 6.1; Microsoft Outlook 14.0.7173; Pro)\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/autodiscover/autodiscover.xml\u0026dt=Erreur 404 - Bougies la Française\u0026srt=1042\u0026_s=1\u0026_anon_uip=185.57.53.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=832264397.1479141923&uip=90.109.29.201&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=http%3A%2F%2Fimages.google.fr%2Fimgres%3Fimgurl%3Dhttps%253A%252F%252Fwww.bougies-la-francaise.com%252F949%252Fcloche-parfumeur-verre-20cm.jpg%26imgrefurl%3Dhttps%253A%252F%252Fwww.bougies-la-francaise.com%252F2452455-cloche-parfumeur-verre-20cm.html%26h%3D1725%26w%3D1395%26tbnid%3DDd4zHK10VdvHbM%253A%26vet%3D1%26docid%3DaNkLEthJOtyAXM%26ei%3DHuopWIGJD8i6UfHvhYAJ%26tbm%3Disch%26iact%3Drc%26uact%3D3%26dur%3D704%26page%3D0%26start%3D0%26ndsp%3D22%26ved%3D0ahUKEwiBkPCE2ajQAhVIXRQKHfF3AZAQMwgeKAMwAw%26bih%3D638%26biw%3D1366&t=pageview&dl=%2F2452455-cloche-parfumeur-verre-20cm.html&dt=Cloche+parfumeur+verre&pa=detail&pr1id=2452455&pr1nm=Cloche+parfumeur+verre+20cm&pr1pr=30&cu=EUR&pr1ca=Univers+d%C3%A9co&pr1br=Bougies+la+Fran%C3%A7aise&srt=2805&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=832264397.1479141923\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=http://images.google.fr/imgres?imgurl=https%3A%2F%2Fwww.bougies-la-francaise.com%2F949%2Fcloche-parfumeur-verre-20cm.jpg\u0026imgrefurl=https%3A%2F%2Fwww.bougies-la-francaise.com%2F2452455-cloche-parfumeur-verre-20cm.html\u0026h=1725\u0026w=1395\u0026tbnid=Dd4zHK10VdvHbM%3A\u0026vet=1\u0026docid=aNkLEthJOtyAXM\u0026ei=HuopWIGJD8i6UfHvhYAJ\u0026tbm=isch\u0026iact=rc\u0026uact=3\u0026dur=704\u0026page=0\u0026start=0\u0026ndsp=22\u0026ved=0ahUKEwiBkPCE2ajQAhVIXRQKHfF3AZAQMwgeKAMwAw\u0026bih=638\u0026biw=1366\u0026t=pageview\u0026dl=/2452455-cloche-parfumeur-verre-20cm.html\u0026dt=Cloche parfumeur verre\u0026pa=detail\u0026pr1id=2452455\u0026pr1nm=Cloche parfumeur verre 20cm\u0026pr1pr=30\u0026cu=EUR\u0026pr1ca=Univers déco\u0026pr1br=Bougies la Française\u0026srt=2805\u0026_s=1\u0026_anon_uip=90.109.29.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=832264397.1479141923&uip=90.109.29.201&ua=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&dr=http%3A%2F%2Fimages.google.fr%2Fimgres%3Fimgurl%3Dhttps%253A%252F%252Fwww.bougies-la-francaise.com%252F949%252Fcloche-parfumeur-verre-20cm.jpg%26imgrefurl%3Dhttps%253A%252F%252Fwww.bougies-la-francaise.com%252F2452455-cloche-parfumeur-verre-20cm.html%26h%3D1725%26w%3D1395%26tbnid%3DDd4zHK10VdvHbM%253A%26vet%3D1%26docid%3DaNkLEthJOtyAXM%26ei%3DHuopWIGJD8i6UfHvhYAJ%26tbm%3Disch%26iact%3Drc%26uact%3D3%26dur%3D704%26page%3D0%26start%3D0%26ndsp%3D22%26ved%3D0ahUKEwiBkPCE2ajQAhVIXRQKHfF3AZAQMwgeKAMwAw%26bih%3D638%26biw%3D1366&t=pageview&dl=%2F2452455-cloche-parfumeur-verre-20cm.html&dt=Cloche+parfumeur+verre&pa=detail&pr1id=2452455&pr1nm=Cloche+parfumeur+verre+20cm&pr1pr=30&cu=EUR&pr1ca=Univers+d%C3%A9co&pr1br=Bougies+la+Fran%C3%A7aise&srt=1895&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=832264397.1479141923\u0026uip=xxxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026dr=http://images.google.fr/imgres?imgurl=https%3A%2F%2Fwww.bougies-la-francaise.com%2F949%2Fcloche-parfumeur-verre-20cm.jpg\u0026imgrefurl=https%3A%2F%2Fwww.bougies-la-francaise.com%2F2452455-cloche-parfumeur-verre-20cm.html\u0026h=1725\u0026w=1395\u0026tbnid=Dd4zHK10VdvHbM%3A\u0026vet=1\u0026docid=aNkLEthJOtyAXM\u0026ei=HuopWIGJD8i6UfHvhYAJ\u0026tbm=isch\u0026iact=rc\u0026uact=3\u0026dur=704\u0026page=0\u0026start=0\u0026ndsp=22\u0026ved=0ahUKEwiBkPCE2ajQAhVIXRQKHfF3AZAQMwgeKAMwAw\u0026bih=638\u0026biw=1366\u0026t=pageview\u0026dl=/2452455-cloche-parfumeur-verre-20cm.html\u0026dt=Cloche parfumeur verre\u0026pa=detail\u0026pr1id=2452455\u0026pr1nm=Cloche parfumeur verre 20cm\u0026pr1pr=30\u0026cu=EUR\u0026pr1ca=Univers déco\u0026pr1br=Bougies la Française\u0026srt=1895\u0026_s=1\u0026_anon_uip=90.109.29.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=531245417.1479142004&uip=193.104.158.251&ua=Python-urllib%2F3.5&de=UTF-8&ul=fr&t=pageview&dl=%2F&dt=Bougies+parfum%C3%A9es%2C+bougies+d%C3%A9co%2C+diffuseurs++-+Bougies+la+Fran%C3%A7aise&srt=1337&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'dt' was modified before saving. Please see http://goo.gl/a8d4RP#dt for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "dt"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=531245417.1479142004\u0026uip=xxxxxxxxxxxxxxx\u0026ua=Python-urllib/3.5\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/\u0026dt=Bougies parfumées, bougies déco, diffuseurs  - Bougies la Française\u0026srt=1337\u0026_s=1\u0026_anon_uip=193.104.158.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1883982800.1479142013&uip=193.104.158.251&ua=python-requests%2F2.10.0&de=UTF-8&ul=fr&t=pageview&dl=%2F&dt=Bougies+parfum%C3%A9es%2C+bougies+d%C3%A9co%2C+diffuseurs++-+Bougies+la+Fran%C3%A7aise&srt=1474&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1625995668.1479136534&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=pageview&dl=%2F&dt=Bougies+parfum%C3%A9es%2C+bougies+d%C3%A9co%2C+diffuseurs++-+Bougies+la+Fran%C3%A7aise&srt=1568&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'dt' was modified before saving. Please see http://goo.gl/a8d4RP#dt for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "dt"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1883982800.1479142013\u0026uip=xxxxxxxxxxxxxxx\u0026ua=python-requests/2.10.0\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/\u0026dt=Bougies parfumées, bougies déco, diffuseurs  - Bougies la Française\u0026srt=1474\u0026_s=1\u0026_anon_uip=193.104.158.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'dt' was modified before saving. Please see http://goo.gl/a8d4RP#dt for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "dt"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1625995668.1479136534\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/\u0026dt=Bougies parfumées, bougies déco, diffuseurs  - Bougies la Française\u0026srt=1568\u0026_s=1\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+
+v=1&tid=UA-55919110-1&did=d6YPbH&cid=1625995668.1479136534&uip=80.12.87.174&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F54.0.2840.71+Safari%2F537.36&de=UTF-8&ul=fr&t=pageview&dl=%2F&dt=Bougies+parfum%C3%A9es%2C+bougies+d%C3%A9co%2C+diffuseurs++-+Bougies+la+Fran%C3%A7aise&srt=1856&_s=1
+https://www.google-analytics.com/debug/collect *socket*
+{
+  "hitParsingResult": [ {
+    "valid": true,
+    "parserMessage": [ {
+      "messageType": "INFO",
+      "description": "The value provided for parameter 'dt' was modified before saving. Please see http://goo.gl/a8d4RP#dt for details.",
+      "messageCode": "VALUE_MODIFIED",
+      "parameter": "dt"
+    } ],
+    "hit": "/debug/collect?v=1\u0026tid=UA-55919110-1\u0026did=d6YPbH\u0026cid=1625995668.1479136534\u0026uip=xxxxxxxxxxxx\u0026ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36\u0026de=UTF-8\u0026ul=fr\u0026t=pageview\u0026dl=/\u0026dt=Bougies parfumées, bougies déco, diffuseurs  - Bougies la Française\u0026srt=1856\u0026_s=1\u0026_anon_uip=80.12.87.0"
+  } ],
+  "parserMessage": [ {
+    "messageType": "INFO",
+    "description": "Found 1 hit in the request."
+  } ]
+}
+

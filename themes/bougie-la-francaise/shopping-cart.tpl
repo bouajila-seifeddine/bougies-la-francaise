@@ -372,7 +372,7 @@
 											href="{$link->getPageLink('cart', true, NULL, "delete=1&amp;id_product={$product.id_product|intval}&amp;ipa={$product.id_product_attribute|intval}&amp;id_customization={$id_customization}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$token_cart}")|escape:'html':'UTF-8'}"
 											rel="nofollow"
 											title="{l s='Delete'}">
-											<i class="icon-trash"></i>
+											<i class="icon-trash-o"></i>
 										</a>
 									{/if}
 								</td>
@@ -419,11 +419,11 @@
 										href="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}?deleteDiscount={$discount.id_discount}"
 										class="price_discount_delete"
 										title="{l s='Delete'}">
-										<i class="icon-trash"></i>
+										<i class="icon-trash-o"></i>
 									</a>
 								{/if}
 							</td>
-							<td class="cart_discount_price">
+							<td class="cart_discount_price cart_discount_price_total">
 								<span class="price-discount price">{if !$priceDisplay}{displayPrice price=$discount.value_real*-1}{else}{displayPrice price=$discount.value_tax_exc*-1}{/if}</span>
 							</td>
 						</tr>

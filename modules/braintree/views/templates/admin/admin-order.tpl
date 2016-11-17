@@ -24,7 +24,7 @@
 *}
 <div style="background-color: #fff; border: 1px solid #e6e6e6; border-radius: 5px; box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 3px #fff inset; margin-bottom: 20px; padding: 20px;">
 	<form method="post" action="">
-		<h3><i class="icon-credit-card"></i> {l s='Process BrainTree Refund' mod="braintree"}</h3>
+		<h3><i class="icon-credit-card"></i> {l s='Process BrainTree Refund' mod='braintree'}</h3>
 		<input type="text" class="form-control" name="amount" value="{$total_paid|escape:'htmlall':'UTF-8'}">
 		<input type="hidden" class="form-control" name="id_transaction" value="{$id_transaction|escape:'htmlall':'UTF-8'}">
 		<input type="hidden" class="form-control" name="status" value="{$status|escape:'htmlall':'UTF-8'}">

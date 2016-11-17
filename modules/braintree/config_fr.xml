@@ -2,7 +2,7 @@
 <module>
 	<name>braintree</name>
 	<displayName><![CDATA[BrainTree Payment Gateway]]></displayName>
-	<version><![CDATA[1.1.4]]></version>
+	<version><![CDATA[1.1.6]]></version>
 	<description><![CDATA[Allow you to accept credit cards from your website using BrainTree.]]></description>
 	<author><![CDATA[Peter Michael Solidum]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>

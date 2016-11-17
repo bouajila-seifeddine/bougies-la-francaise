@@ -27,8 +27,8 @@ class FrontController extends FrontControllerCore
 
 	
     public function initContent() {
-		self::doGTM();
 		$id_order = (int)Tools::getValue('id_order');
+		self::doGTM();
 		if (!empty($id_order)) {
 			$order = new Order((int)($id_order));
 			$currency = new Currency($order->id_currency);
@@ -56,24 +56,28 @@ class FrontController extends FrontControllerCore
     {
     	$gtm_datas = array();
     	$site_name = "'" . Configuration::get('PS_SHOP_NAME') . "'";
+    	$site_url_t = _PS_BASE_URL_ ;
+    	$site_url = "'" . substr($site_url_t, 11) . "'";
     	$page_name = (string)$this->php_self;
     	$page_name_formated =  (string)"'" . $this->php_self . "'";
 
     	if($page_name == '')
     	{
-    		// request for paypal on order-confirmation page
-    		if(strstr($_SERVER['REQUEST_URI'], 'paypal'))
-    		{
-    			$page_name = 'module-paypal-submit';
-    			$page_name_formated =  (string)"'" . $page_name . "'";
-    		}
+	 		if(strpos($_SERVER['REQUEST_URI'], '/module/paypal/submit?key=') == 1)
+	 		{
+				$page_name = 'module-paypal-submit';
+				$page_name_formated =  (string) '"'. 'module-paypal-submit' .'"';
+	 		}
     	}
 
     	if($this->context->customer->isLogged())
     		$gtm_datas[$page_name]['USER_ID'] = (int)$this->context->customer->id;
 
+    	if($page_name != 'order')
+    		$gtm_datas[$page_name]['step']= '0';
+
     	// gtm page home / category / search
-    	if($page_name == 'index' || $page_name == 'category' || $page_name == 'search' || $page_name == 'product' || $page_name == 'order' || $page_name == 'module-paypal-submit' || $page_name == 'order-confirmation'  || ($page_name == "authentication" && !empty(Tools::getValue('back'))))
+    	if($page_name == 'index' || $page_name == 'category' || $page_name == 'search' || $page_name == 'product' || $page_name == 'order' || $page_name == 'module-paypal-submit' || $page_name == 'order-confirmation' || $page_name == 'my-account')
     	{
     		$gtm_datas[$page_name]['page_type'] = (string)$page_name_formated;
     		$gtm_datas_cart = self::doGTMCart($gtm_datas,$page_name);
@@ -81,7 +85,7 @@ class FrontController extends FrontControllerCore
     			$gtm_datas = array_merge($gtm_datas,$gtm_datas_cart);
     	}
 
-    	if($page_name == 'order' || ($page_name == "authentication" && !empty(Tools::getValue('back'))))
+    	if($page_name == 'order' || ($page_name == "authentification" && !empty(Tools::getValue('back'))))
     	{
     		$array_steps = array("summary" => 1 ,"login" => 2 ,"address" => 3 ,"shipping" => 4,"payment" => 5);
     		$this->context->smarty->assign("ARRAY_STEP" , $array_steps);
@@ -94,7 +98,6 @@ class FrontController extends FrontControllerCore
     		if(!empty($id_product))
     		{
     			$product = new Product((int)($id_product));
-
     			$gtm_datas[$page_name]['product_ID'] 	= (int)$id_product;
 				$gtm_datas[$page_name]['product_name'] 	= "'" . (string)$product->name[$this->context->cookie->id_lang] . "'";
 				$gtm_datas[$page_name]['product_price'] = (float)number_format($product->getPublicPrice(),2);
@@ -104,11 +107,13 @@ class FrontController extends FrontControllerCore
     	// gtm page confirm-commande
     	if($page_name == 'order-confirmation' || $page_name == 'module-paypal-submit')
     	{
-    		$str = '';
+    		$gtm_datas[$page_name]['step'] = 6;
+    		$str = '[';
     		$str_id = '';
 			$str_product_name = '';
 			$str_product_price = '';
     		$event = "'confirmation'";
+
     		$id_order = (int)Tools::getValue('id_order');
     		if (!empty($id_order)) 
     		{
@@ -119,33 +124,30 @@ class FrontController extends FrontControllerCore
 	    		$i=0;
 				if (is_array($products) && !empty($products)) {
 					$len = count($products);
+
+					if($len > 1)
+					{
+						$str_id .= '[';
+						$str_product_name .= '[';
+						$str_product_price .= '[';
+					}
+
 					foreach($products as $k => $v)
 					{
 						$cat = new Category($v['id_category_default']);
-						$str .= '[{';  
+						$str .= '{';  
 						$str .= "product_name: '" . (string)$v['product_name'] . "', ";
-						$str .= "product_ID: '" . (int)$v['product_id'] . "', ";
-						$str .= "price: '" . (float)$v['product_price'] . "', ";
+						$str .= "product_ID: " . (int)$v['product_id'] . ", ";
+						$str .= "price: " . (float)$v['product_price'] . ", ";
 						$str .= "category: '" . (string)$cat->name[$this->context->cookie->id_lang] . "', ";
-						$str .= "quantity: '" . (int)$v['product_quantity'] . "', ";
-						$str .= '}';
-						if($i == $len - 1)
-							$str .= '';
-						else
-							$str .= ',';
-						$str .= ']';
+						$str .= "quantity: " . (int)$v['product_quantity'] ;
+						
 
-						if($len > 1 && $i == 0)
-	    				{
-		    				$str_id .= '['; 
-		    				$str_product_name .= '['; 
-		    				$str_product_price  .= '['; 
-	    				}
 	    				$pdt = new Product($v['id_product']);
 
-	    				$str_id .= "'" . (int)$v['product_id'] . "'";
+	    				$str_id .=  (int)$v['product_id'] ;
 	    				$str_product_name .=  "'" . (string)$v['product_name'] . "'"; 
-	    				$str_product_price  .= "'" . (float)$v['product_price']  . "'"; 
+	    				$str_product_price  .= (float)$v['product_price']; 
 
 	    				if ($len > 1 && ($i != $len - 1))
 	    				{
@@ -153,19 +155,26 @@ class FrontController extends FrontControllerCore
 		    				$str_product_name .= ','; 
 		    				$str_product_price  .= ','; 
 	    				}
-	    				if($len > 1 && ($i == $len - 1))
-	    				{
-	    					$str_id .= ']'; 
-		    				$str_product_name .= ']'; 
-		    				$str_product_price  .= ']'; 
-	    				}
-					$i++;
+						$str .= '}';
+						if ($len > 1 && $i != $len - 1)
+							$str .= ',';
+						else
+							$str .= '';
+						$i++;
+					}
+
+					if($len > 1)
+					{
+						$str_id .= ']';
+						$str_product_name .= ']';
+						$str_product_price .= ']';
 					}
 				}
+				$str .= ']';
 				$gtm_datas[$page_name]['event'] 				 = (string)$event;
 				$gtm_datas[$page_name]['total_value'] 			 = (float)$order->total_paid;
 				$gtm_datas[$page_name]['transactionId'] 		 = (int)$id_order;
-				$gtm_datas[$page_name]['transactionAffiliation'] = $site_name;
+				$gtm_datas[$page_name]['transactionAffiliation'] = $site_url;
 				$gtm_datas[$page_name]['transactionTotal'] 		 = (float)$order->total_paid;
 				$gtm_datas[$page_name]['transactionTax'] 		 = (float)$order_taxes;
 				$gtm_datas[$page_name]['transactionShipping'] 	 = (float)$order->total_shipping_tax_excl;
@@ -199,20 +208,19 @@ class FrontController extends FrontControllerCore
 		$str_id = '';
 		$str_product_name = '';
 		$str_product_price = '';
-		$i = 0;
 		if(!empty($cart_products))
 		{
 			if (is_array($cart_products) && !empty($cart_products)) {
 				$len = count($cart_products);
+				if($len > 1)
+				{
+					$str_id .= '[';
+					$str_product_name .= '[';
+					$str_product_price .= '[';
+				}
+				$i = 0;
     			foreach ($cart_products as $k => $v) {
-    				if($len > 1 && $i == 0)
-    				{
-	    				$str_id .= '['; 
-	    				$str_product_name .= '['; 
-	    				$str_product_price  .= '['; 
-    				}
     				$pdt = new Product($v['id_product']);
-
     				$str_id .= "'" . $v['id_product'] . "'";
     				$str_product_name .= (string) "'" . $pdt->name[$this->context->cookie->id_lang] . "'"; 
     				$str_product_price  .= "'" . (float)number_format($pdt->getPublicPrice(),2)  . "'"; 
@@ -223,17 +231,16 @@ class FrontController extends FrontControllerCore
 	    				$str_product_name .= ','; 
 	    				$str_product_price  .= ','; 
     				}
-    				if($len > 1 && ($i == $len - 1))
-    				{
-    					$str_id .= ']'; 
-	    				$str_product_name .= ']'; 
-	    				$str_product_price  .= ']'; 
-    				}
-    				
     				$i++;    				
     			}
-
+				if($len > 1)
+				{
+					$str_id .= ']';
+					$str_product_name .= ']';
+					$str_product_price .= ']';
+				}
 			}
+
 			$gtm_datas[$page_name]['total_value'] = (float)$this->context->cart->getOrderTotal();
 			$gtm_datas[$page_name]['product_ID'] = $str_id;
 			$gtm_datas[$page_name]['product_name'] = $str_product_name;

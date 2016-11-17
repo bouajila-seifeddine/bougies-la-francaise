@@ -4,6 +4,13 @@
 // 4275 - recuperation des clients a partir de cet ID (les autres sont identiques)
 // 4274 - recuperation des commandes a partir de cet ID (les autres sont identiques)
 
+// connexion a la bdd BLF
+require('../config/config.inc.php');
+
+$connect = mysql_connect('localhost', 'root','a8GReg1VXxqw') or die('erreur de connexion');
+mysql_select_db('bougies_la_francaise', $connect) or die('erreur de bdd');
+
+// limit
 $limit_customer_begin = 4384;
 $limit_order_begin = 4418;
 
@@ -17,7 +24,8 @@ function doInsertSql($array_res_sql, $str_sql)
 		$j = 0;
 		$len_value = count($value);
 		foreach ($value as $k => $v){
-			$str_sql .= "'" . $v . "'";
+			// $str_sql .= '"'. $v . '"';
+			$str_sql .=  mysql_real_escape_string($v) ;
 			if($j != $len_value - 1)
 				$str_sql .= ",";
 			$j++;
@@ -30,11 +38,14 @@ function doInsertSql($array_res_sql, $str_sql)
 	return $str_sql;
 } 
 
-// connexion a la bdd BLF
-require('../config/config.inc.php');
-
-$connect = mysql_connect('localhost', 'root','a8GReg1VXxqw') or die('erreur de connexion');
-mysql_select_db('bougies_la_francaise', $connect) or die('erreur de bdd');
+function executeSelectReq($sql){
+	$array = array();
+	$a = mysql_query($sql);
+	while ($row = mysql_fetch_assoc($a)) 
+		$array[] = $row;
+	mysql_free_result($a);
+	return $array;
+}
 
 // REQUETES DE RECUPERATIONS 
 $sql_customers = "SELECT * FROM `ps_customer` ps_c WHERE ps_c.`id_customer` > ". $limit_customer_begin . ";";
@@ -55,22 +66,24 @@ $sql_order_invoice_tax = "SELECT ps_oi.`id_order_invoice`, ps_oit.* FROM `ps_ord
 $sql_order_payment = "SELECT ps_op.* FROM `ps_orders` ps_o INNER JOIN `ps_order_payment` ps_op ON (ps_o.`reference` = ps_op.`order_reference`) WHERE ps_o.`id_order` > ". $limit_customer_begin . ";";
 // $sql_order_return = "SELECT * FROM `ps_order_return` ps_or WHERE ps_or.`id_order` > ". $limit_customer_begin . ";";
 
-$res_customer = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customers);
-$res_customer_group = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customer_group);
-$res_customer_thread = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customer_thread);
-$res_customer_address = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customer_address);
+// $res_customer = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customers);
+$res_customer = executeSelectReq($sql_customers);
+
+$res_customer_group = executeSelectReq($sql_customer_group);
+$res_customer_thread = executeSelectReq($sql_customer_thread);
+$res_customer_address = executeSelectReq($sql_customer_address);
 // $res_customer_message = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_customer_message);
 
-$res_orders = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_orders);
-$res_order_carrier = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_carrier);
-$res_order_cart_rule = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_cart_rule);
-$res_order_detail = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_detail);
-$res_order_detail_tax = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_detail_tax);
-$res_order_history = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_history);
-$res_order_invoice = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_invoice);
-$res_order_invoice_payment = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_invoice_payment);
-$res_order_invoice_tax = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_invoice_tax);
-$res_order_payment = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_payment);
+$res_orders = executeSelectReq($sql_orders);
+$res_order_carrier = executeSelectReq($sql_order_carrier);
+$res_order_cart_rule = executeSelectReq($sql_order_cart_rule);
+$res_order_detail = executeSelectReq($sql_order_detail);
+$res_order_detail_tax = executeSelectReq($sql_order_detail_tax);
+$res_order_history = executeSelectReq($sql_order_history);
+$res_order_invoice = executeSelectReq($sql_order_invoice);
+$res_order_invoice_payment = executeSelectReq($sql_order_invoice_payment);
+$res_order_invoice_tax = executeSelectReq($sql_order_invoice_tax);
+$res_order_payment = executeSelectReq($sql_order_payment);
 // $res_order_return = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql_order_return);
 
 // CUSTOMER
